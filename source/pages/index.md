@@ -1,5 +1,5 @@
 ---
-title: Test IG HomePage
+title: Argonaut Clinical Notes HomePage
 layout: default
 active: home
 topofpage: true

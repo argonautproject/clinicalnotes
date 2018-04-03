@@ -11,4 +11,40 @@ FHIR SME and Facilitator: [Brett Marquard](brett@waveoneassociates.com)
 
 ## Scope of Work
 
-Support basic patient and provider access to Clinical Notes. 
+Support basic patient and provider access to Clinical Notes.
+
+## Directory Tree
+
+~~~
+├── README.md
+├── base.html
+├── definitions.csv
+├── dependencies
+│   └── uscore-vp
+├── docs
+│   ├──{xhtml output}
+├── ex.html
+├── format.html
+├── framework
+│   ├── _includes
+│   ├── _layouts
+│   └── assets
+├── generated_output
+│   ├── qa
+│   ├── temp
+│   └── txCache
+├── ig.json
+├── meeting-notes
+├── pub3.sh
+├── push.sh
+├── sd-definitions.html
+├── sd-mappings.html
+├── sd.html
+└── source
+    ├── examples
+    ├── pages
+    └── resources
+
+20 directories,
+
+~~~
