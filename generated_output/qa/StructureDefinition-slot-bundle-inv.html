@@ -1,0 +1,37 @@
+﻿<html>
+<head>
+  <title>StructureDefinition-slot-bundle-inv</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<h4>Constraints</h4>
+<table class="list">
+<tr><td width="60"><b>Id</b></td><td><b>Path</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
+<tr><td>bdl-7</td><td>Bundle</td><td>FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId<br/>: entry.where(fullUrl).select(fullUrl&amp;resource.meta.versionId).isDistinct()</td><td></td></tr>
+<tr><td>bdl-9</td><td>Bundle</td><td>A document must have an identifier with a system and a value<br/>: type = 'document' implies (identifier.system.exists() and identifier.value.exists())</td><td></td></tr>
+<tr><td>bdl-3</td><td>Bundle</td><td>entry.request only for some types of bundles<br/>: entry.request.empty() or type = 'batch' or type = 'transaction' or type = 'history'</td><td></td></tr>
+<tr><td>bdl-4</td><td>Bundle</td><td>entry.response only for some types of bundles<br/>: entry.response.empty() or type = 'batch-response' or type = 'transaction-response'</td><td></td></tr>
+<tr><td>bdl-1</td><td>Bundle</td><td>total only when a search or history<br/>: total.empty() or (type = 'searchset') or (type = 'history')</td><td></td></tr>
+<tr><td>bdl-2</td><td>Bundle</td><td>entry.search only when a search<br/>: entry.search.empty() or (type = 'searchset')</td><td></td></tr>
+<tr><td>ele-1</td><td>Bundle.link</td><td>All FHIR elements must have a @value or children<br/>: hasValue() | (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>Bundle.entry</td><td>All FHIR elements must have a @value or children<br/>: hasValue() | (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>bdl-8</td><td>Bundle.entry</td><td>fullUrl cannot be a version specific reference<br/>: fullUrl.contains('/_history/').not()</td><td></td></tr>
+<tr><td>bdl-5</td><td>Bundle.entry</td><td>must be a resource unless there's a request or response<br/>: resource.exists() or request.exists() or response.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>Bundle.entry.search</td><td>All FHIR elements must have a @value or children<br/>: hasValue() | (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>Bundle.entry.request</td><td>All FHIR elements must have a @value or children<br/>: hasValue() | (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>Bundle.entry.response</td><td>All FHIR elements must have a @value or children<br/>: hasValue() | (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>Bundle.entry</td><td>All FHIR elements must have a @value or children<br/>: hasValue() | (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>bdl-8</td><td>Bundle.entry</td><td>fullUrl cannot be a version specific reference<br/>: fullUrl.contains('/_history/').not()</td><td></td></tr>
+<tr><td>bdl-5</td><td>Bundle.entry</td><td>must be a resource unless there's a request or response<br/>: resource.exists() or request.exists() or response.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>Bundle.entry.search</td><td>All FHIR elements must have a @value or children<br/>: hasValue() | (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>Bundle.entry.request</td><td>All FHIR elements must have a @value or children<br/>: hasValue() | (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>Bundle.entry.response</td><td>All FHIR elements must have a @value or children<br/>: hasValue() | (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>Bundle.entry</td><td>All FHIR elements must have a @value or children<br/>: hasValue() | (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>bdl-8</td><td>Bundle.entry</td><td>fullUrl cannot be a version specific reference<br/>: fullUrl.contains('/_history/').not()</td><td></td></tr>
+<tr><td>bdl-5</td><td>Bundle.entry</td><td>must be a resource unless there's a request or response<br/>: resource.exists() or request.exists() or response.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>Bundle.entry.search</td><td>All FHIR elements must have a @value or children<br/>: hasValue() | (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>Bundle.entry.request</td><td>All FHIR elements must have a @value or children<br/>: hasValue() | (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>Bundle.entry.response</td><td>All FHIR elements must have a @value or children<br/>: hasValue() | (children().count() &gt; id.count())</td><td></td></tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,165 @@
+﻿<html>
+<head>
+  <title>Observation-satO2-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://hl7.org/fhir/STU3/observation.html#Observation">resourceType</a>" : "Observation",
+  "<a href="http://hl7.org/fhir/STU3/observation.html#Observation.id">id</a>" : "satO2",
+  "<a href="http://hl7.org/fhir/STU3/observation.html#Observation.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://www.fhir.org/guides/test3/StructureDefinition/obs"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/STU3/observation.html#Observation.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: satO2&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: o1223435-10&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Vital Signs &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {http://acme.com code '81260-2' = '81260-2', given as 'Foo'}; {http://acme.com code 'foo' = 'foo', given as 'Foo'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Oxygen saturation in Arterial blood by Pulse oximetry &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {LOINC code '81260-2' = '81260-2', given as 'Oxygen saturation in Arterial blood by Pulse oximetry'}; {urn:iso:std:iso:11073:10101 code '150456' = '150456', given as 'MDC_PULS_OXIM_SAT_O2'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Patient/example&quot;&gt;Patient/example&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Dec 5, 2014 9:30:10 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 95 %&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM code % = '%')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;interpretation&lt;/b&gt;: Normal (applies to non-numeric results) &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {http://hl7.org/fhir/v2/0078 code 'N' = 'Normal', given as 'Normal'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;device&lt;/b&gt;: &lt;a href=&quot;DeviceMetric/example&quot;&gt;DeviceMetric/example&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;ReferenceRanges&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Low&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;High&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;90 %&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM code % = '%')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;99 %&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM code % = '%')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Systolic blood pressure &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {LOINC code '8480-6' = '8480-6', given as 'Systolic blood pressure'}; {SNOMED CT code '271649006' = '271649006', given as 'Systolic blood pressure'}; {http://acme.org/devices/clinical-codes code 'bp-s' = 'bp-s', given as 'Systolic Blood pressure'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 107 mmHg&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM code mm[Hg] = 'mm[Hg]')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;interpretation&lt;/b&gt;: Normal &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {http://hl7.org/fhir/v2/0078 code 'N' = 'Normal', given as 'normal'})&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Diastolic blood pressure &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {LOINC code '8462-4' = '8462-4', given as 'Diastolic blood pressure'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 60 mmHg&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM code mm[Hg] = 'mm[Hg]')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;interpretation&lt;/b&gt;: Below low normal &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {http://hl7.org/fhir/v2/0078 code 'L' = 'Low', given as 'low'})&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/STU3/observation.html#Observation.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.system">system</a>" : "http://goodcare.org/observation/id",
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a>" : "o1223435-10"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/STU3/observation.html#Observation.status">status</a>" : "final",
+  "<a href="http://hl7.org/fhir/STU3/observation.html#Observation.category">category</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://acme.com",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "81260-2",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "Foo"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://acme.com",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "foo",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "Foo"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Vital Signs"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/STU3/observation.html#Observation.code">code</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "81260-2",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "Oxygen saturation in Arterial blood by Pulse oximetry"
+      },
+      {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:11073:10101",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "150456",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "MDC_PULS_OXIM_SAT_O2"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/STU3/observation.html#Observation.subject">subject</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "Patient/example"
+  },
+  "<a href="http://hl7.org/fhir/STU3/observation.html#Observation.effective[x]">effectiveDateTime</a>" : "2014-12-05T09:30:10+01:00",
+  "<a href="http://hl7.org/fhir/STU3/observation.html#Observation.value[x]">valueQuantity</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Quantity#Quantity.value">value</a>" : 95,
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Quantity#Quantity.unit">unit</a>" : "%",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Quantity#Quantity.code">code</a>" : "%"
+  },
+  "<a href="http://hl7.org/fhir/STU3/observation.html#Observation.interpretation">interpretation</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/v2/0078",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "N",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "Normal"
+      }
+    ],
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Normal (applies to non-numeric results)"
+  },
+  "<a href="http://hl7.org/fhir/STU3/observation.html#Observation.device">device</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "DeviceMetric/example"
+  },
+  "<a href="http://hl7.org/fhir/STU3/observation.html#Observation.referenceRange">referenceRange</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/observation.html#Observation.referenceRange.low">low</a>" : {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#SimpleQuantity#Quantity.value">value</a>" : 90,
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#SimpleQuantity#Quantity.unit">unit</a>" : "%",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#SimpleQuantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#SimpleQuantity#Quantity.code">code</a>" : "%"
+      },
+      "<a href="http://hl7.org/fhir/STU3/observation.html#Observation.referenceRange.high">high</a>" : {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#SimpleQuantity#Quantity.value">value</a>" : 99,
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#SimpleQuantity#Quantity.unit">unit</a>" : "%",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#SimpleQuantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#SimpleQuantity#Quantity.code">code</a>" : "%"
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/STU3/observation.html#Observation.component">component</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/observation.html#Observation.component.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "8480-6",
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "Systolic blood pressure"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "271649006",
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "Systolic blood pressure"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://acme.org/devices/clinical-codes",
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "bp-s",
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "Systolic Blood pressure"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/STU3/observation.html#Observation.component.value[x]">valueQuantity</a>" : {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Quantity#Quantity.value">value</a>" : 107,
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Quantity#Quantity.unit">unit</a>" : "mmHg",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Quantity#Quantity.code">code</a>" : "mm[Hg]"
+      },
+      "<a href="http://hl7.org/fhir/STU3/observation.html#Observation.component.interpretation">interpretation</a>" : {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/v2/0078",
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "N",
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "normal"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Normal"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/observation.html#Observation.component.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "8462-4",
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "Diastolic blood pressure"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/STU3/observation.html#Observation.component.value[x]">valueQuantity</a>" : {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Quantity#Quantity.value">value</a>" : 60,
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Quantity#Quantity.unit">unit</a>" : "mmHg",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Quantity#Quantity.code">code</a>" : "mm[Hg]"
+      },
+      "<a href="http://hl7.org/fhir/STU3/observation.html#Observation.component.interpretation">interpretation</a>" : {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/v2/0078",
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "L",
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "low"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Below low normal"
+      }
+    }
+  ]
+}</pre>
+</body>
+</html>

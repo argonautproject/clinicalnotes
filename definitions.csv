@@ -1,0 +1,34 @@
+Configuration Parameter,Configuration Value ( use '|' for lists)
+igtemplate-dir,/Users/ehaas/Documents/FHIR/IG-Template2/
+working-dir,/Users/ehaas/Documents/FHIR/argonaut-clinicalnotes/
+title,Argonaut Clinical Notes
+status,draft
+publisher,Argonaut Project
+extensions,
+searches,
+codesystems,
+valuesets,
+structuremaps,
+source,ig.xml
+version,3.0.1
+fixed-business-version,0.0.0
+paths.pages,framework|source/pages
+paths.resources,source/resources|source/examples
+paths.temp,generated_output/temp
+paths.output,docs
+paths.txCache,generated_output/txCache
+paths.qa,generated_output/qa
+paths.specification,http://hl7.org/fhir/STU3
+jurisdiction,
+sct-edition,
+no-inactive-codes,FALSE
+broken-links,warning
+gen-examples,FALSE
+do-transforms,FALSE
+canonicalBase,http://fhir.org/guides/argonaut-clinicalnotes
+dependencyList.location,http://hl7.org/fhir/us/core/1.0.1/
+dependencyList.name,uscore
+dependencyList.source,dependencies/uscore-vp
+special-urls,
+tool,jekyll
+logging,progress

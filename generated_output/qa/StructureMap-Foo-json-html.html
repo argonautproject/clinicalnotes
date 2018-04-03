@@ -1,0 +1,225 @@
+﻿<html>
+<head>
+  <title>StructureMap-Foo-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap">resourceType</a>" : "StructureMap",
+  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.id">id</a>" : "Foo",
+  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;pre&gt;map &amp;quot;http://www.fhir.org/guides/test3/StructureMap/Foo&amp;quot; = &amp;quot;LogicalModel --&amp;gt; Foo Mapping&amp;quot;
+
+uses &amp;quot;http://www.fhir.org/guides/test3/StructureDefinition/LogicalModel&amp;quot; as source
+
+group for types LogicalModel
+  input source : LogicalModel as source
+
+  LogicalModel : for source make create(&amp;quot;Appointment&amp;quot;) as appt then {
+    LogicalModel.UniqueID : for source.UniqueID : string 1..1 as v make  appt.identifier as t,  t.value = v
+    LogicalModel.foo : for source.foo : backboneelement 1..1 as bbe then {
+      LogicalModel.foo.bar : for bbe.bar : code 1..1 as v make appt.status = v
+      LogicalModel.foo.baz : for bbe.baz : string 0..1 as v make appt.description = v
+    }
+
+    LogicalModel.blah : for source.blah : string 0..1 as v make  appt.slot as t,  t.display = v
+  }
+
+
+endgroup
+&lt;/pre&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.url">url</a>" : "http://www.fhir.org/guides/test3/StructureMap/Foo",
+  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.version">version</a>" : "0.0.0",
+  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.name">name</a>" : "LogicalModel --&gt; Foo Mapping",
+  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.date">date</a>" : "2017-07-18T13:39:26-07:00",
+  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "US",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "United States of America"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.structure">structure</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.structure.url">url</a>" : "http://www.fhir.org/guides/test3/StructureDefinition/LogicalModel",
+      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.structure.mode">mode</a>" : "source"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group">group</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.name">name</a>" : "LogicalModel",
+      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.typeMode">typeMode</a>" : "none",
+      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.input">input</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.input.name">name</a>" : "source",
+          "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.input.type">type</a>" : "LogicalModel",
+          "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.input.mode">mode</a>" : "source"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule">rule</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.name">name</a>" : "LogicalModel",
+          "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "source"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.variable">variable</a>" : "appt",
+              "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "create",
+              "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueString</a>" : "Appointment"
+                }
+              ]
+            }
+          ],
+          "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.name">name</a>" : "LogicalModel.UniqueID",
+              "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "source",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.min">min</a>" : 1,
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.max">max</a>" : "1",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.type">type</a>" : "string",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "UniqueID",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "v"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "appt",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "identifier",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.variable">variable</a>" : "t"
+                },
+                {
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "t",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "value",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "v"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.name">name</a>" : "LogicalModel.foo",
+              "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "source",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.min">min</a>" : 1,
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.max">max</a>" : "1",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.type">type</a>" : "backboneelement",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "foo",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "bbe"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.name">name</a>" : "LogicalModel.foo.bar",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "bbe",
+                      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.min">min</a>" : 1,
+                      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.max">max</a>" : "1",
+                      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.type">type</a>" : "code",
+                      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "bar",
+                      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "v"
+                    }
+                  ],
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "appt",
+                      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "status",
+                      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "v"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.name">name</a>" : "LogicalModel.foo.baz",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "bbe",
+                      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.min">min</a>" : 0,
+                      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.max">max</a>" : "1",
+                      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.type">type</a>" : "string",
+                      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "baz",
+                      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "v"
+                    }
+                  ],
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "appt",
+                      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "description",
+                      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "v"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.name">name</a>" : "LogicalModel.blah",
+              "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "source",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.min">min</a>" : 0,
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.max">max</a>" : "1",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.type">type</a>" : "string",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "blah",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "v"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "appt",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "slot",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.variable">variable</a>" : "t"
+                },
+                {
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "t",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "display",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                  "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/STU3/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "v"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}</pre>
+</body>
+</html>

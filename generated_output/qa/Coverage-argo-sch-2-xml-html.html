@@ -1,0 +1,90 @@
+﻿<html>
+<head>
+  <title>Coverage-argo-sch-2-xml-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="xml">
+
+&lt;<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage">Coverage</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.id">id</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;argo-sch-2&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.meta">meta</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.profile">profile</a>
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://fhir.org/guides/argonaut-scheduling/StructureDefinition/argo-coverage&quot;/&gt;
+  &lt;/meta&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: argo-sch-2&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;contained&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: DZW9200000001&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: health insurance plan policy &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {http://hl7.org/fhir/v3/ActCode code 'HIP' = 'health insurance plan policy', given as 'health insurance plan policy'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subscriber&lt;/b&gt;: First M LastName Jr. Generated Summary: unknown resource contained&lt;/p&gt;&lt;p&gt;&lt;b&gt;subscriberId&lt;/b&gt;: DZW9200000000&lt;/p&gt;&lt;p&gt;&lt;b&gt;relationship&lt;/b&gt;: Daughter &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {http://hl7.org/fhir/policyholder-relationship code 'child' = 'Child', given as 'Child'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: Jan 1, 2016 --&amp;gt; (ongoing)&lt;/p&gt;&lt;p&gt;&lt;b&gt;payor&lt;/b&gt;: Anthem Blue Cross of California&lt;/p&gt;&lt;h3&gt;Groupings&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Plan&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;PlanDisplay&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1FZQ&lt;/td&gt;&lt;td&gt;Anthem Bronze 60 D HSA PPO&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/relatedperson.html#RelatedPerson">contained</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/relatedperson.html#RelatedPerson">RelatedPerson</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/relatedperson.html#RelatedPerson.id">id</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;argo-sch-1&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/relatedperson.html#RelatedPerson.active">active</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/relatedperson.html#RelatedPerson.patient">patient</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient/argo-sch-patient-2&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Daughter M LastName&quot;/&gt;
+      &lt;/patient&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/relatedperson.html#RelatedPerson.name">name</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.family">family</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;LastName&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.given">given</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;First&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.given">given</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;M&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.suffix">suffix</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Jr&quot;/&gt;
+      &lt;/name&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/relatedperson.html#RelatedPerson.telecom">telecom</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;phone&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;555-555-5555&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.use">use</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;home&quot;/&gt;
+      &lt;/telecom&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/relatedperson.html#RelatedPerson.telecom">telecom</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;email&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;myemail@example.com&quot;/&gt;
+      &lt;/telecom&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/relatedperson.html#RelatedPerson.gender">gender</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;male&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/relatedperson.html#RelatedPerson.birthDate">birthDate</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#date">value</a>=&quot;1964-06-19&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/relatedperson.html#RelatedPerson.address">address</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.line">line</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;123 Main St&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.city">city</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Santa Rosa&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.state">state</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;CA&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.postalCode">postalCode</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;95555&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.country">country</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;US&quot;/&gt;
+      &lt;/address&gt;
+    &lt;/RelatedPerson&gt;
+  &lt;/contained&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.identifier">identifier</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;https://www.anthem.com/ca&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;DZW9200000001&quot;/&gt;
+  &lt;/identifier&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.status">status</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.type">type</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/v3/ActCode&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;HIP&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;health insurance plan policy&quot;/&gt;
+    &lt;/coding&gt;
+  &lt;/type&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.subscriber">subscriber</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;#argo-sch-1&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;First M LastName Jr&quot;/&gt;
+  &lt;/subscriber&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.subscriberId">subscriberId</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;DZW9200000000&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.relationship">relationship</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/policyholder-relationship&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;child&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Child&quot;/&gt;
+    &lt;/coding&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Daughter&quot;/&gt;
+  &lt;/relationship&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.period">period</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Period#Period.start">start</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2016-01-01&quot;/&gt;
+  &lt;/period&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.payor">payor</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Anthem Blue Cross of California&quot;/&gt;
+  &lt;/payor&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.grouping">grouping</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.grouping.plan">plan</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;1FZQ&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.grouping.planDisplay">planDisplay</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Anthem Bronze 60 D HSA PPO&quot;/&gt;
+  &lt;/grouping&gt;
+&lt;/Coverage&gt;</pre>
+</body>
+</html>

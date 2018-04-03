@@ -1,0 +1,247 @@
+﻿<html>
+<head>
+  <title>CodeSystem-visit-type-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.id">id</a>" : "visit-type",
+  "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;h2&gt;Argonaut Visit Type Codes&lt;/h2&gt;&lt;div&gt;&lt;p&gt;The Argonaut Visit Types are a prioritized valueset of the most common 'business types' for scheduling and have been identified as the baseline use cases for the  Argonaut Scheduling Implementation Guide.  This is intended to facilitates implementation of the IG by provide a common starting point for interoperability.  The Visit types can be extended by implementers to meet there use cases.  In order to align with the FHIR Appointment, Schedule and Slot resources, these concepts are mapped to the Argonaut Appointment Types and Argonaut Scheduling Services Valuesets which are Snomed Concepts.&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;This code system http://fhir.org/guides/argonaut-scheduling/CodeSystem/visit-type defines the following codes:&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;breast-imaging&lt;a name=&quot;visit-type-breast-imaging&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;BREAST IMAGING&lt;/td&gt;&lt;td&gt;breast imaging  visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;consult&lt;a name=&quot;visit-type-consult&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CONSULTATION&lt;/td&gt;&lt;td&gt;consultation visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;ct&lt;a name=&quot;visit-type-ct&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;COMPUTED TOMOGRAPHY SCAN(CT)&lt;/td&gt;&lt;td&gt;computed tomography scan(ct) visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;dental&lt;a name=&quot;visit-type-dental&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;DENTAL&lt;/td&gt;&lt;td&gt;dental visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;dxa&lt;a name=&quot;visit-type-dxa&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;DUAL-ENERGY X-RAY ABSORPTIOMETRY(DXA)&lt;/td&gt;&lt;td&gt;Dual-energy X-ray absorptiometry(dxa) visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;echo&lt;a name=&quot;visit-type-echo&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ECHOCARDIOGRAPHY(ECHO)&lt;/td&gt;&lt;td&gt;echocardiography(echo) visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;echo-stresstest&lt;a name=&quot;visit-type-echo-stresstest&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ECHOCARDIOGRAPHY(ECHO) STRESS TEST&lt;/td&gt;&lt;td&gt;echocardiography(echo) stress test visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;ed-followup&lt;a name=&quot;visit-type-ed-followup&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EDUCATION FOLLOW UP&lt;/td&gt;&lt;td&gt;education follow up visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;eeg&lt;a name=&quot;visit-type-eeg&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ELECTROENCEPHALOGRAPHY(EEG)&lt;/td&gt;&lt;td&gt;Electroencephalography(eeg) visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;egd&lt;a name=&quot;visit-type-egd&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ESOPHAGOGASTRODUODENOSCOPY(EGD)&lt;/td&gt;&lt;td&gt;esophagogastroduodenoscopy(egd) visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;ekg&lt;a name=&quot;visit-type-ekg&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ELECTROCARDIOGRAM(EKG)&lt;/td&gt;&lt;td&gt;electrocardiogram(ekg) visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;evaluation&lt;a name=&quot;visit-type-evaluation&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EVALUATION&lt;/td&gt;&lt;td&gt;evaluation visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;flu-shot-clinic&lt;a name=&quot;visit-type-flu-shot-clinic&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;INFLUENZA VACCINATION CLINIC&lt;/td&gt;&lt;td&gt;Influenza vaccination clinic visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;fluoroscopy&lt;a name=&quot;visit-type-fluoroscopy&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;FLUOROSCOPY&lt;/td&gt;&lt;td&gt;fluoroscopy visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;follow-up&lt;a name=&quot;visit-type-follow-up&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;FOLLOW UP&lt;/td&gt;&lt;td&gt;follow up visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;home-health&lt;a name=&quot;visit-type-home-health&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HOME HEALTH VISIT&lt;/td&gt;&lt;td&gt;home health visit visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;injection&lt;a name=&quot;visit-type-injection&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;INJECTION&lt;/td&gt;&lt;td&gt;injection visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;inter-rad&lt;a name=&quot;visit-type-inter-rad&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;INTERVENTIONAL RADIOLOGY&lt;/td&gt;&lt;td&gt;interventional radiology visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;lab&lt;a name=&quot;visit-type-lab&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;LABORATORY TESTS&lt;/td&gt;&lt;td&gt;Laboratory Testing visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;minor-surgery&lt;a name=&quot;visit-type-minor-surgery&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MINOR SURGERY&lt;/td&gt;&lt;td&gt;minor surgery visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;mri&lt;a name=&quot;visit-type-mri&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MAGNETIC RESONANCE IMAGING(MRI)&lt;/td&gt;&lt;td&gt;magnetic resonance imaging(mri) visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;new-patient&lt;a name=&quot;visit-type-new-patient&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;NEW PATIENT&lt;/td&gt;&lt;td&gt;new patient visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;nuc-med&lt;a name=&quot;visit-type-nuc-med&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;NUCLEAR MEDICINE&lt;/td&gt;&lt;td&gt;nuclear medicine visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;occup-therapy&lt;a name=&quot;visit-type-occup-therapy&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OCCUPATIONAL THERAPY&lt;/td&gt;&lt;td&gt;occupational therapy visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;office-visit&lt;a name=&quot;visit-type-office-visit&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OFFICE VISIT&lt;/td&gt;&lt;td&gt;office visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;physical&lt;a name=&quot;visit-type-physical&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PHYSICAL&lt;/td&gt;&lt;td&gt;physical visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;post-op&lt;a name=&quot;visit-type-post-op&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;POST-OPERATIVE(POST-OP)&lt;/td&gt;&lt;td&gt;post-operative visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;pre-admit-testing&lt;a name=&quot;visit-type-pre-admit-testing&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PRE-ADMISSION TESTING VISIT&lt;/td&gt;&lt;td&gt;pre-admission testing visit visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;pre-op&lt;a name=&quot;visit-type-pre-op&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PRE-OPERATIVE(PRE-OP)&lt;/td&gt;&lt;td&gt;pre-operative(pre-op) visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;procedure&lt;a name=&quot;visit-type-procedure&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PROCEDURE&lt;/td&gt;&lt;td&gt;procedure visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;same-day&lt;a name=&quot;visit-type-same-day&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SAME DAY&lt;/td&gt;&lt;td&gt;same day visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;stress-test&lt;a name=&quot;visit-type-stress-test&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;STRESS TEST&lt;/td&gt;&lt;td&gt;stress test visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;surgery&lt;a name=&quot;visit-type-surgery&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SURGERY&lt;/td&gt;&lt;td&gt;surgery visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;treatment&lt;a name=&quot;visit-type-treatment&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TREATMENT&lt;/td&gt;&lt;td&gt;treatment visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;ultrasound&lt;a name=&quot;visit-type-ultrasound&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ULTRASOUND&lt;/td&gt;&lt;td&gt;ultrasound visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;urgent&lt;a name=&quot;visit-type-urgent&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;URGENT&lt;/td&gt;&lt;td&gt;urgent visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;vaccine&lt;a name=&quot;visit-type-vaccine&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;VACCINATION&lt;/td&gt;&lt;td&gt;vaccination visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;vision&lt;a name=&quot;visit-type-vision&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;VISION&lt;/td&gt;&lt;td&gt;vision visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;walk-in&lt;a name=&quot;visit-type-walk-in&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;WALK IN&lt;/td&gt;&lt;td&gt;walk in visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;well-child&lt;a name=&quot;visit-type-well-child&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;WELL CHILD&lt;/td&gt;&lt;td&gt;well child visit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;x-ray&lt;a name=&quot;visit-type-x-ray&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;X-RAY&lt;/td&gt;&lt;td&gt;x-ray visit&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.url">url</a>" : "http://fhir.org/guides/argonaut-scheduling/CodeSystem/visit-type",
+  "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.version">version</a>" : "1.0.0",
+  "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.name">name</a>" : "Argonaut_Visit_Types_Codes",
+  "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.title">title</a>" : "Argonaut Visit Type Codes",
+  "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.experimental">experimental</a>" : false,
+  "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.date">date</a>" : "2017-07-30T09:46:45-07:00",
+  "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.description">description</a>" : "The Argonaut Visit Types are a prioritized valueset of the most common 'business types' for scheduling and have been identified as the baseline use cases for the  Argonaut Scheduling Implementation Guide.  This is intended to facilitates implementation of the IG by provide a common starting point for interoperability.  The Visit types can be extended by implementers to meet there use cases.  In order to align with the FHIR Appointment, Schedule and Slot resources, these concepts are mapped to the Argonaut Appointment Types and Argonaut Scheduling Services Valuesets which are Snomed Concepts.",
+  "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "US",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "United States of America"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a>" : true,
+  "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.valueSet">valueSet</a>" : "http://fhir.org/guides/argonaut-scheduling/ValueSet/visit-type",
+  "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "breast-imaging",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "BREAST IMAGING",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "breast imaging  visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "consult",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "CONSULTATION",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "consultation visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "ct",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "COMPUTED TOMOGRAPHY SCAN(CT)",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "computed tomography scan(ct) visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "dental",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "DENTAL",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "dental visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "dxa",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "DUAL-ENERGY X-RAY ABSORPTIOMETRY(DXA)",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Dual-energy X-ray absorptiometry(dxa) visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "echo",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "ECHOCARDIOGRAPHY(ECHO)",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "echocardiography(echo) visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "echo-stresstest",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "ECHOCARDIOGRAPHY(ECHO) STRESS TEST",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "echocardiography(echo) stress test visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "ed-followup",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "EDUCATION FOLLOW UP",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "education follow up visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "eeg",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "ELECTROENCEPHALOGRAPHY(EEG)",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Electroencephalography(eeg) visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "egd",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "ESOPHAGOGASTRODUODENOSCOPY(EGD)",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "esophagogastroduodenoscopy(egd) visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "ekg",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "ELECTROCARDIOGRAM(EKG)",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "electrocardiogram(ekg) visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "evaluation",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "EVALUATION",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "evaluation visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "flu-shot-clinic",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "INFLUENZA VACCINATION CLINIC",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Influenza vaccination clinic visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "fluoroscopy",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "FLUOROSCOPY",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "fluoroscopy visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "follow-up",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "FOLLOW UP",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "follow up visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "home-health",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "HOME HEALTH VISIT",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "home health visit visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "injection",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "INJECTION",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "injection visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "inter-rad",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "INTERVENTIONAL RADIOLOGY",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "interventional radiology visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "lab",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "LABORATORY TESTS",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Laboratory Testing visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "minor-surgery",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "MINOR SURGERY",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "minor surgery visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "mri",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "MAGNETIC RESONANCE IMAGING(MRI)",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "magnetic resonance imaging(mri) visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "new-patient",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "NEW PATIENT",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "new patient visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "nuc-med",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "NUCLEAR MEDICINE",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "nuclear medicine visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "occup-therapy",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "OCCUPATIONAL THERAPY",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "occupational therapy visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "office-visit",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "OFFICE VISIT",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "office visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "physical",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "PHYSICAL",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "physical visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "post-op",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "POST-OPERATIVE(POST-OP)",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "post-operative visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "pre-admit-testing",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "PRE-ADMISSION TESTING VISIT",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "pre-admission testing visit visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "pre-op",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "PRE-OPERATIVE(PRE-OP)",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "pre-operative(pre-op) visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "procedure",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "PROCEDURE",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "procedure visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "same-day",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "SAME DAY",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "same day visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "stress-test",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "STRESS TEST",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "stress test visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "surgery",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "SURGERY",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "surgery visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "treatment",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "TREATMENT",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "treatment visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "ultrasound",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "ULTRASOUND",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "ultrasound visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "urgent",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "URGENT",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "urgent visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "vaccine",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "VACCINATION",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "vaccination visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "vision",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "VISION",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "vision visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "walk-in",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "WALK IN",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "walk in visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "well-child",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "WELL CHILD",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "well child visit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a>" : "x-ray",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a>" : "X-RAY",
+      "<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a>" : "x-ray visit"
+    }
+  ]
+}</pre>
+</body>
+</html>

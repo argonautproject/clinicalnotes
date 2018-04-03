@@ -1,0 +1,64 @@
+﻿<html>
+<head>
+  <title>Coverage-argo-sch-1-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage">resourceType</a>" : "Coverage",
+  "<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.id">id</a>" : "argo-sch-1",
+  "<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://fhir.org/guides/argonaut-scheduling/StructureDefinition/argo-coverage"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: argo-sch-1&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: DZW9200000000&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: health insurance plan policy &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {http://hl7.org/fhir/v3/ActCode code 'HIP' = 'health insurance plan policy', given as 'health insurance plan policy'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subscriber&lt;/b&gt;: &lt;a href=&quot;Patient-argo-sch-patient-1.html&quot;&gt;First M LastName Jr. Generated Summary: id: argo-sch-patient-1; Medical Record Number = 1032702 (USUAL); active; First M LastName ; ph: 555-555-5555(HOME), myemail@example.com; gender: male; birthDate: Jun 19, 1964&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subscriberId&lt;/b&gt;: DZW9200000000&lt;/p&gt;&lt;p&gt;&lt;b&gt;relationship&lt;/b&gt;: Self &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {http://hl7.org/fhir/policyholder-relationship code 'self' = 'Self', given as 'Self'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: Jan 1, 2016 --&amp;gt; (ongoing)&lt;/p&gt;&lt;p&gt;&lt;b&gt;payor&lt;/b&gt;: Anthem Blue Cross of California&lt;/p&gt;&lt;h3&gt;Groupings&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Plan&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;PlanDisplay&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1FZQ&lt;/td&gt;&lt;td&gt;Anthem Bronze 60 D HSA PPO&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.system">system</a>" : "https://www.anthem.com/ca",
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a>" : "DZW9200000000"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.type">type</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/v3/ActCode",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "HIP",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "health insurance plan policy"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.subscriber">subscriber</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "Patient/argo-sch-patient-1",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a>" : "First M LastName Jr"
+  },
+  "<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.subscriberId">subscriberId</a>" : "DZW9200000000",
+  "<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.relationship">relationship</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/policyholder-relationship",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "self",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "Self"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.period">period</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Period#Period.start">start</a>" : "2016-01-01"
+  },
+  "<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.payor">payor</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a>" : "Anthem Blue Cross of California"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.grouping">grouping</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.grouping.plan">plan</a>" : "1FZQ",
+    "<a href="http://hl7.org/fhir/STU3/coverage.html#Coverage.grouping.planDisplay">planDisplay</a>" : "Anthem Bronze 60 D HSA PPO"
+  }
+}</pre>
+</body>
+</html>

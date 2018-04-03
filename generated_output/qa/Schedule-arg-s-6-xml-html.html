@@ -1,0 +1,44 @@
+﻿<html>
+<head>
+  <title>Schedule-arg-s-6-xml-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="xml">
+
+&lt;<a href="http://hl7.org/fhir/STU3/schedule.html#Schedule">Schedule</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/schedule.html#Schedule.id">id</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;arg-s-6&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/schedule.html#Schedule.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: arg-s-6&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceType&lt;/b&gt;: WELL CHILD &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {http://fhir.org/guides/argonaut-scheduling/CodeSystem/visit-type code 'well-child' = 'WELL CHILD', given as 'WELL CHILD'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;specialty&lt;/b&gt;: Family practice &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {SNOMED CT code '419772000' = '419772000', given as 'Family practice'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;actor&lt;/b&gt;: &lt;a href=&quot;Practitioner-dr-y.html&quot;&gt;Dr. Y. Generated Summary: id: dr-y; 9941339108, 25456; Y &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;planningHorizon&lt;/b&gt;: Aug 7, 2017 --&amp;gt; Aug 7, 2017&lt;/p&gt;&lt;p&gt;&lt;b&gt;comment&lt;/b&gt;: two week schedule for Dr. Y&lt;/p&gt;&lt;/div&gt;
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/schedule.html#Schedule.active">active</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/schedule.html#Schedule.serviceType">serviceType</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>
+              <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://fhir.org/guides/argonaut-scheduling/CodeSystem/visit-type&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;well-child&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;WELL CHILD&quot;/&gt;
+    &lt;/coding&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;WELL CHILD&quot;/&gt;
+  &lt;/serviceType&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/schedule.html#Schedule.specialty">specialty</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;419772000&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Family practice&quot;/&gt;
+    &lt;/coding&gt;
+  &lt;/specialty&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/schedule.html#Schedule.actor">actor</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Practitioner/dr-y&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Dr. Y&quot;/&gt;
+  &lt;/actor&gt;
+&lt;!-- two week horizon --&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/schedule.html#Schedule.planningHorizon">planningHorizon</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Period#Period.start">start</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2017-08-07&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Period#Period.end">end</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2017-08-07&quot;/&gt;
+  &lt;/planningHorizon&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/schedule.html#Schedule.comment">comment</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;two week schedule for Dr. Y&quot;/&gt;
+&lt;/Schedule&gt;</pre>
+</body>
+</html>

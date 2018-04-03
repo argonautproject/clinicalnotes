@@ -1,0 +1,32 @@
+﻿<html>
+<head>
+  <title>Schedule-example1-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://hl7.org/fhir/STU3/schedule.html#Schedule">resourceType</a>" : "Schedule",
+  "<a href="http://hl7.org/fhir/STU3/schedule.html#Schedule.id">id</a>" : "example1",
+  "<a href="http://hl7.org/fhir/STU3/schedule.html#Schedule.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://fhir.org/guides/argonaut-scheduling/StructureDefinition/argo-sched-notif"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/STU3/schedule.html#Schedule.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: example1&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;actor&lt;/b&gt;: &lt;a href=&quot;Practitioner-dr-y.html&quot;&gt;Crusher, Beverly. Generated Summary: id: dr-y; 9941339108, 25456; Y &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;planningHorizon&lt;/b&gt;: Feb 13, 2018 --&amp;gt; Feb 13, 2018&lt;/p&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/STU3/schedule.html#Schedule.actor">actor</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "Practitioner/dr-y",
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a>" : "Crusher, Beverly"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/STU3/schedule.html#Schedule.planningHorizon">planningHorizon</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Period#Period.start">start</a>" : "2018-02-13",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Period#Period.end">end</a>" : "2018-02-13"
+  }
+}</pre>
+</body>
+</html>

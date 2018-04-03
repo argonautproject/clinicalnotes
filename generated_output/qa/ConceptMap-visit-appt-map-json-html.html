@@ -1,0 +1,558 @@
+﻿<html>
+<head>
+  <title>ConceptMap-visit-appt-map-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap">resourceType</a>" : "ConceptMap",
+  "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.id">id</a>" : "visit-appt-map",
+  "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+			&lt;h2&gt;Argonaut Scheduling Visit Type to Appointment Type Mapping(http://fhir.org/guides/argonaut-scheduling/ConceptMap/visit-appt-map)&lt;/h2&gt;
+			&lt;p&gt;Mapping from &lt;a href=&quot;http://fhir.org/guides/argonaut-scheduling/ValueSet/visit-type&quot;&gt;http://fhir.org/guides/argonaut-scheduling/ValueSet/visit-type&lt;/a&gt; to &lt;a href=&quot;http://fhir.org/guides/argonaut-scheduling/ValueSet/appt-type&quot;&gt;http://fhir.org/guides/argonaut-scheduling/ValueSet/appt-type&lt;/a&gt;
+			&lt;/p&gt;
+			&lt;p&gt;DRAFT. Published on Oct 30, 2017 6:49:44 PM by Argonaut Project&lt;/p&gt;
+			&lt;p&gt;The source concepts are Argonaut Visit Types which are a prioritized valueset of the most common appointment types for scheduling and have been identified as the baseline use cases for the  Argonaut scheduling Implementation Guide.   The Visit types are mapped to the target concepts from the Argonaut Appointment Types Valueset in order to align with the FHIR Appointment, Schedule and Slot resources.  &lt;strong&gt;Note&lt;/strong&gt;: where the there is no mapping the appointment type is assumed to be 'ROUTINE'.&lt;/p&gt;
+			&lt;br/&gt;
+			&lt;table class=&quot;grid&quot;&gt;
+				&lt;thead&gt;
+					&lt;tr&gt;
+						&lt;th&gt;
+							&lt;strong&gt;Source Code&lt;/strong&gt;
+						&lt;/th&gt;
+						&lt;th&gt;
+							&lt;strong&gt;Equivalence&lt;/strong&gt;
+						&lt;/th&gt;
+						&lt;th&gt;
+							&lt;strong&gt;Destination Code&lt;/strong&gt;
+						&lt;/th&gt;
+						&lt;th&gt;
+							&lt;strong&gt;Destination CodeSystem&lt;/strong&gt;
+						&lt;/th&gt;
+						&lt;th&gt;
+							&lt;strong&gt;Comment&lt;/strong&gt;
+						&lt;/th&gt;
+					&lt;/tr&gt;
+				&lt;/thead&gt;
+				&lt;tbody&gt;
+					&lt;tr&gt;
+						&lt;td&gt;breast-imaging&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;consult&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;ct&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;dental&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;dxa&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;echo&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;echo-stresstest&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;ed-followup&lt;/td&gt;
+						&lt;td&gt;equivalent&lt;/td&gt;
+						&lt;td&gt;FOLLOWUP&lt;/td&gt;
+						&lt;td&gt;
+							&lt;a href=&quot;http://hl7.org/fhir/v2/0276&quot;&gt;http://hl7.org/fhir/v2/0276&lt;/a&gt;
+						&lt;/td&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;eeg&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;egd&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;ekg&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;evaluation&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;flu-shot-clinic&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;fluoroscopy&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;follow-up&lt;/td&gt;
+						&lt;td&gt;equivalent&lt;/td&gt;
+						&lt;td&gt;FOLLOWUP&lt;/td&gt;
+						&lt;td&gt;
+							&lt;a href=&quot;http://hl7.org/fhir/v2/0276&quot;&gt;http://hl7.org/fhir/v2/0276&lt;/a&gt;
+						&lt;/td&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;home-heath visit&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;injection&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;interventional-rad&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;lab&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;minor-surgery&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;mri&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;new-patient&lt;/td&gt;
+						&lt;td&gt;equal&lt;/td&gt;
+						&lt;td&gt;new-patient&lt;/td&gt;
+						&lt;td&gt;
+							&lt;a href=&quot;http://fhir.org/guides/argonaut-scheduling/CodeSystem/appt-types&quot;&gt;http://fhir.org/guides/argonaut-scheduling/CodeSystem/appt-types&lt;/a&gt;
+						&lt;/td&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;nuc-med&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;occup-therapy&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;office-visit&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;physical&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;post-op&lt;/td&gt;
+						&lt;td&gt;equal&lt;/td&gt;
+						&lt;td&gt;post-op&lt;/td&gt;
+						&lt;td&gt;
+							&lt;a href=&quot;http://fhir.org/guides/argonaut-scheduling/CodeSystem/appt-types&quot;&gt;http://fhir.org/guides/argonaut-scheduling/CodeSystem/appt-types&lt;/a&gt;
+						&lt;/td&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;pre-admit-testing&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;pre-op&lt;/td&gt;
+						&lt;td&gt;equal&lt;/td&gt;
+						&lt;td&gt;pre-op&lt;/td&gt;
+						&lt;td&gt;
+							&lt;a href=&quot;http://fhir.org/guides/argonaut-scheduling/CodeSystem/appt-types&quot;&gt;http://fhir.org/guides/argonaut-scheduling/CodeSystem/appt-types&lt;/a&gt;
+						&lt;/td&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;procedure&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;same-day&lt;/td&gt;
+						&lt;td&gt;equal&lt;/td&gt;
+						&lt;td&gt;same-day&lt;/td&gt;
+						&lt;td&gt;
+							&lt;a href=&quot;http://fhir.org/guides/argonaut-scheduling/CodeSystem/appt-types&quot;&gt;http://fhir.org/guides/argonaut-scheduling/CodeSystem/appt-types&lt;/a&gt;
+						&lt;/td&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;stress-test&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;surgery&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;treatment&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;ultrasound&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;urgent&lt;/td&gt;
+						&lt;td&gt;equal&lt;/td&gt;
+						&lt;td&gt;urgent&lt;/td&gt;
+						&lt;td&gt;
+							&lt;a href=&quot;http://fhir.org/guides/argonaut-scheduling/CodeSystem/appt-types&quot;&gt;http://fhir.org/guides/argonaut-scheduling/CodeSystem/appt-types&lt;/a&gt;
+						&lt;/td&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;vaccine&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;vision&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;walk-in&lt;/td&gt;
+						&lt;td&gt;equivalent&lt;/td&gt;
+						&lt;td&gt;WALKIN&lt;/td&gt;
+						&lt;td&gt;
+							&lt;a href=&quot;http://hl7.org/fhir/v2/0276&quot;&gt;http://hl7.org/fhir/v2/0276&lt;/a&gt;
+						&lt;/td&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;well-child&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;x-ray&lt;/td&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+						&lt;td/&gt;
+					&lt;/tr&gt;
+				&lt;/tbody&gt;
+			&lt;/table&gt;
+		&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.url">url</a>" : "http://fhir.org/guides/argonaut-scheduling/ConceptMap/visit-appt-map",
+  "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.version">version</a>" : "1.0.0",
+  "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.name">name</a>" : "Argonaut_Scheduiing_Visit_Type_to_Appointment_Type_Mapping",
+  "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.title">title</a>" : "Argonaut Scheduiing Visit Type to Appointment Type Mapping",
+  "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.date">date</a>" : "2017-10-31T10:57:43-07:00",
+  "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.publisher">publisher</a>" : "Argonaut Project",
+  "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.description">description</a>" : "The source concepts are Argonaut Visit Types which are a prioritized valueset of the most common appointment types for scheduling and have been identified as the baseline use cases for the  Argonaut scheduling Implementation Guide.   The Visit types are mapped to the target concepts from the Argonaut Appointment Types Valueset in order to align with the FHIR Appointment, Schedule and Slot resources.  Note where the there is no mapping the appointment type is assumed to be 'ROUTINE'.",
+  "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "US",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "United States of America"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.source[x]">sourceUri</a>" : "http://fhir.org/guides/argonaut-scheduling/ValueSet/visit-type",
+  "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.target[x]">targetUri</a>" : "http://fhir.org/guides/argonaut-scheduling/ValueSet/appt-type",
+  "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group">group</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.target">target</a>" : "http://hl7.org/fhir/v2/0276",
+      "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element">element</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "ed-followup",
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.target">target</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.target.code">code</a>" : "FOLLOWUP",
+              "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a>" : "equivalent"
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "follow-up",
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.target">target</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.target.code">code</a>" : "FOLLOWUP",
+              "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a>" : "equivalent"
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "walk-in",
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.target">target</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.target.code">code</a>" : "WALKIN",
+              "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a>" : "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.target">target</a>" : "http://fhir.org/guides/argonaut-scheduling/CodeSystem/appt-types",
+      "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element">element</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "new-patient",
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.target">target</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.target.code">code</a>" : "new-patient",
+              "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a>" : "equal"
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "post-op",
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.target">target</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.target.code">code</a>" : "post-op",
+              "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a>" : "equal"
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "pre-op",
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.target">target</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.target.code">code</a>" : "pre-op",
+              "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a>" : "equal"
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "same-day",
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.target">target</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.target.code">code</a>" : "same-day",
+              "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a>" : "equal"
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "urgent",
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.target">target</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.target.code">code</a>" : "urgent",
+              "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a>" : "equal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element">element</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "breast-imaging"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "consult"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "ct"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "dental"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "dxa"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "echo"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "echo-stresstest"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "eeg"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "egd"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "ekg"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "evaluation"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "flu-shot-clinic"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "fluoroscopy"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "home-heath visit"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "injection"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "interventional-rad"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "lab"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "minor-surgery"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "mri"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "nuc-med"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "occup-therapy"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "office-visit"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "physical"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "pre-admit-testing"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "procedure"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "stress-test"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "surgery"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "treatment"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "ultrasound"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "vaccine"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "vision"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "well-child"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "x-ray"
+        }
+      ]
+    }
+  ]
+}</pre>
+</body>
+</html>

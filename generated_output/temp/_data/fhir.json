@@ -1,0 +1,26 @@
+﻿{
+  "path": "http://hl7.org/fhir/STU3",
+  "canonical": "http://fhir.org/guides/argonaut-clinicalnotes",
+  "igId": "ig",
+  "igName": "Argonaut Clinical Notes",
+  "errorCount": 4,
+  "version": "3.0.1",
+  "revision": "11917",
+  "versionFull": "3.0.1-11917",
+  "toolingVersion": "3.2.0",
+  "toolingRevision": "13475",
+  "toolingVersionFull": "3.2.0-13475",
+  "totalFiles": 3,
+  "processedFiles": 97,
+  "genDate": "Tue, Apr 3, 2018 13:15-0700",
+  "ig": {
+    "id": "ig",
+    "name": "Argonaut Clinical Notes",
+    "url": "http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig",
+    "version": "0.0.0",
+    "status": "draft",
+    "experimental": true,
+    "publisher": "Argonaut Project"
+  },
+  "uscore": "http://hl7.org/fhir/us/core/1.0.1/"
+}

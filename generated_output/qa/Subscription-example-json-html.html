@@ -1,0 +1,47 @@
+﻿<html>
+<head>
+  <title>Subscription-example-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://hl7.org/fhir/STU3/subscription.html#Subscription">resourceType</a>" : "Subscription",
+  "<a href="http://hl7.org/fhir/STU3/subscription.html#Subscription.id">id</a>" : "example",
+  "<a href="http://hl7.org/fhir/STU3/subscription.html#Subscription.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://fhir.org/guides/argonaut-scheduling/StructureDefinition/argo-sub-notif"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/STU3/subscription.html#Subscription.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: example&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;reason&lt;/b&gt;: Notify subscriber of schedule changes to trigger the subscriber prefetch updated slots&lt;/p&gt;&lt;p&gt;&lt;b&gt;criteria&lt;/b&gt;: &lt;/p&gt;&lt;h3&gt;Channels&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Extension&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Endpoint&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Payload&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td/&gt;&lt;td&gt;rest-hook&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://feed-handler.com/notification&quot;&gt;https://feed-handler.com/notification&lt;/a&gt;&lt;/td&gt;&lt;td&gt;application/fhir+json&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/STU3/subscription.html#Subscription.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/STU3/subscription.html#Subscription.reason">reason</a>" : "Notify subscriber of schedule changes to trigger the subscriber prefetch updated slots",
+  "<a href="http://hl7.org/fhir/STU3/subscription.html#Subscription.criteria">_criteria</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#string#string.extension">extension</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://fhir.org/guides/argonaut-scheduling/StructureDefinition/extension-subscription-triggerevent",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "schedule where any slot that reference it has changed"
+      },
+      {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://fhir.org/guides/argonaut-scheduling/StructureDefinition/extension-subscription-eventfocus",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueCode</a>" : "Slot"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/STU3/subscription.html#Subscription.channel">channel</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/subscription.html#Subscription.channel.extension">extension</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://fhir.org/guides/argonaut-scheduling/StructureDefinition/extension-subscription-payloadprofile",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "http://fhir.org/guides/argonaut-scheduling/StructureDefinition/argo-sched-notif"
+      }
+    ],
+    "<a href="http://hl7.org/fhir/STU3/subscription.html#Subscription.channel.type">type</a>" : "rest-hook",
+    "<a href="http://hl7.org/fhir/STU3/subscription.html#Subscription.channel.endpoint">endpoint</a>" : "https://feed-handler.com/notification",
+    "<a href="http://hl7.org/fhir/STU3/subscription.html#Subscription.channel.payload">payload</a>" : "application/fhir+json"
+  }
+}</pre>
+</body>
+</html>

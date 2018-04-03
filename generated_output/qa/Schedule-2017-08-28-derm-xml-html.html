@@ -1,0 +1,44 @@
+﻿<html>
+<head>
+  <title>Schedule-2017-08-28-derm-xml-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="xml">
+
+&lt;<a href="http://hl7.org/fhir/STU3/schedule.html#Schedule">Schedule</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/schedule.html#Schedule.id">id</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;2017-08-28-derm&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/schedule.html#Schedule.meta">meta</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.profile">profile</a>
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://fhir.org/guides/argonaut-scheduling/StructureDefinition/argo-sched-notif&quot;/&gt;
+  &lt;/meta&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/schedule.html#Schedule.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 2017-08-28-derm&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceType&lt;/b&gt;: OFFICE VISIT &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {http://fhir.org/guides/argonaut-scheduling/CodeSystem/visit-type code 'office-visit' = 'OFFICE VISIT', given as 'OFFICE VISIT'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;specialty&lt;/b&gt;: Dermatology &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {[not stated] code '394582007' = '394582007', given as 'Dermatology'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;actor&lt;/b&gt;: &lt;a href=&quot;Practitioner-dr-y.html&quot;&gt;Crusher, Beverly. Generated Summary: id: dr-y; 9941339108, 25456; Y &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;planningHorizon&lt;/b&gt;: Aug 28, 2017 --&amp;gt; Aug 28, 2018&lt;/p&gt;&lt;/div&gt;
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/schedule.html#Schedule.serviceType">serviceType</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>
+              <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://fhir.org/guides/argonaut-scheduling/CodeSystem/visit-type&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;office-visit&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;OFFICE VISIT&quot;/&gt;
+    &lt;/coding&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;OFFICE VISIT&quot;/&gt;
+  &lt;/serviceType&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/schedule.html#Schedule.specialty">specialty</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;394582007&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Dermatology&quot;/&gt;
+    &lt;/coding&gt;
+  &lt;/specialty&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/schedule.html#Schedule.actor">actor</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Practitioner/dr-y&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Crusher, Beverly&quot;/&gt;
+  &lt;/actor&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/schedule.html#Schedule.planningHorizon">planningHorizon</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Period#Period.start">start</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2017-08-28&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Period#Period.end">end</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2018-08-28&quot;/&gt;
+  &lt;/planningHorizon&gt;
+&lt;/Schedule&gt;</pre>
+</body>
+</html>
