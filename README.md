@@ -35,8 +35,6 @@ Support basic patient and provider access to Clinical Notes.
 │   └── txCache
 ├── ig.json
 ├── meeting-notes
-├── pub3.sh
-├── push.sh
 ├── sd-definitions.html
 ├── sd-mappings.html
 ├── sd.html

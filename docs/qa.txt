@@ -1,23 +1,24 @@
 ﻿Argonaut Clinical Notes : Validation Results
 =========================================
 
-err = 8, warn = 0, info = 0
-Generated Tue Apr 03 13:39:43 PDT 2018. FHIR version 3.2.0 for 3.0.1
+err = 4, warn = 0, info = 0
+Generated Tue Apr 10 15:57:32 PDT 2018. FHIR version 3.3.0 for 3.0.1
 
- Build Errors : 4 / 0
+ Build Errors : 5 / 0
  /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/capabilitystatement-client : 1 / 0
  /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/capabilitystatement-server : 1 / 0
- /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/ig : 2 / 0
+ /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/ig : 0 / 0
+ /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/structuredefinition-argo-clinicalnotes : 0 / 0
 </table>
 == n/a ==
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/toc.html#/html/head/link/body/div/div/div/div/div/div/div/ul/li/ul/li/a at Line 244, column 14: The link 'index.html#cat-facts-to-show-how-the-text-wraps-around-the-contents-block' cannot be resolved (valid targets: [page-content-wrapper, jekyll-site-variables, segment-header, publish-box, markdown-toc-introduction, segment-post-footer, markdown-toc-and-more-stuff, markdown-toc, stripe, markdown-toc-more-stuff, back-to-top, segment-footer, segment-navbar, more-stuff, and-more-stuff, project-status, introduction, markdown-toc-jekyll-site-variables])
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/toc.html#/html/head/link/body/div/div/div/div/div/div/div/ul/li/ul/li/a at Line 254, column 10: The link 'guidance.html#introduction' cannot be resolved (valid targets: [page-content-wrapper, use-case-1, segment-header, usage, foo, markdown-toc-usage, segment-post-footer, markdown-toc-general-guidance, general-guidance, markdown-toc, stripe, segment-footer, information, segment-navbar, foo-1, markdown-toc-use-case-1, project-status])
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/toc.html#/html/head/link/body/div/div/div/div/div/div/div/ul/li/ul/li/a at Line 255, column 10: The link 'guidance.html#more-stuff' cannot be resolved (valid targets: [page-content-wrapper, use-case-1, segment-header, usage, foo, markdown-toc-usage, segment-post-footer, markdown-toc-general-guidance, general-guidance, markdown-toc, stripe, segment-footer, information, segment-navbar, foo-1, markdown-toc-use-case-1, project-status])
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/toc.html#/html/head/link/body/div/div/div/div/div/div/div/ul/li/ul/li/ul/li/a at Line 256, column 14: The link 'guidance.html#and-more-stuff' cannot be resolved (valid targets: [page-content-wrapper, use-case-1, segment-header, usage, foo, markdown-toc-usage, segment-post-footer, markdown-toc-general-guidance, general-guidance, markdown-toc, stripe, segment-footer, information, segment-navbar, foo-1, markdown-toc-use-case-1, project-status])
+ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/toc.html#/html/head/link/body/div/div/div/div/div/div/div/ul/li/ul/li/a at Line 244, column 14: The link 'index.html#cat-facts-to-show-how-the-text-wraps-around-the-contents-block' for "Cat Facts (To Show How the Text Wraps around the Contents Block)" cannot be resolved (valid targets: [page-content-wrapper, jekyll-site-variables, segment-header, publish-box, markdown-toc-introduction, segment-post-footer, markdown-toc-and-more-stuff, markdown-toc, stripe, markdown-toc-more-stuff, back-to-top, segment-footer, segment-navbar, more-stuff, and-more-stuff, project-status, introduction, markdown-toc-jekyll-site-variables])
+ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/toc.html#/html/head/link/body/div/div/div/div/div/div/div/ul/li/ul/li/a at Line 254, column 10: The link 'guidance.html#introduction' for "Introduction" cannot be resolved (valid targets: [page-content-wrapper, use-case-1, segment-header, usage, foo, markdown-toc-usage, segment-post-footer, markdown-toc-general-guidance, general-guidance, markdown-toc, stripe, segment-footer, information, segment-navbar, foo-1, markdown-toc-use-case-1, project-status])
+ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/toc.html#/html/head/link/body/div/div/div/div/div/div/div/ul/li/ul/li/a at Line 255, column 10: The link 'guidance.html#more-stuff' for "More Stuff" cannot be resolved (valid targets: [page-content-wrapper, use-case-1, segment-header, usage, foo, markdown-toc-usage, segment-post-footer, markdown-toc-general-guidance, general-guidance, markdown-toc, stripe, segment-footer, information, segment-navbar, foo-1, markdown-toc-use-case-1, project-status])
+ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/toc.html#/html/head/link/body/div/div/div/div/div/div/div/ul/li/ul/li/ul/li/a at Line 256, column 14: The link 'guidance.html#and-more-stuff' for "And More Stuff" cannot be resolved (valid targets: [page-content-wrapper, use-case-1, segment-header, usage, foo, markdown-toc-usage, segment-post-footer, markdown-toc-general-guidance, general-guidance, markdown-toc, stripe, segment-footer, information, segment-navbar, foo-1, markdown-toc-use-case-1, project-status])
+ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-argo-clinicalnotes.html#/html/head/link/body/div/div/div/div/div/div/ul/li/p/a at Line 356, column 9: The link 'MedicationAdministration-medadmin-1.html' for "Med Admin 1" cannot be resolved
 == /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/capabilitystatement-client.xml ==
 ERROR: CapabilityStatement/client: CapabilityStatement.profile: Unable to resolve resource 'http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/template-basic'
 == /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/capabilitystatement-server.xml ==
 ERROR: CapabilityStatement/server: CapabilityStatement.profile: Unable to resolve resource 'http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/template-basic'
 == /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/ig.xml ==
-ERROR: ImplementationGuide/ig: ImplementationGuide.page: Profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide, Element 'ImplementationGuide.page.kind': minimum required = 1, but only found 0
-ERROR: ImplementationGuide/ig: ImplementationGuide.page.page: Profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide, Element 'ImplementationGuide.page.page.kind': minimum required = 1, but only found 0
+== /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/structuredefinition-argo-clinicalnotes.xml ==

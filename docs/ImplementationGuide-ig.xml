@@ -14,6 +14,15 @@
     <name value="base"/>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-argo-clinicalnotes.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/argo-clinicalnotes"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CapabilityStatement-server.html"/>
       </extension>
       <example value="false"/>
@@ -34,9 +43,11 @@
   <page>
     <source value="index.md"/>
     <title value="Argonaut Clinical Notes Homepage"/>
+    <kind value="page"/>
     <page>
       <source value="_includes/toc.md"/>
       <title value="Argonaut Clinical Notes Table of Contents"/>
+      <kind value="page"/>
     </page>
   </page>
 </ImplementationGuide>

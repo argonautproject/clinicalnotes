@@ -19,6 +19,18 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-argo-clinicalnotes.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/argo-clinicalnotes"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "CapabilityStatement-server.html"
             }
           ],
@@ -45,10 +57,12 @@
   "page": {
     "source": "index.md",
     "title": "Argonaut Clinical Notes Homepage",
+    "kind": "page",
     "page": [
       {
         "source": "_includes/toc.md",
-        "title": "Argonaut Clinical Notes Table of Contents"
+        "title": "Argonaut Clinical Notes Table of Contents",
+        "kind": "page"
       }
     ]
   }

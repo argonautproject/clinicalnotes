@@ -1,6 +1,6 @@
 Configuration Parameter,Configuration Value ( use '|' for lists)
 igtemplate-dir,/Users/ehaas/Documents/FHIR/IG-Template2/
-working-dir,/Users/ehaas/Documents/FHIR/argonaut-clinicalnotes/
+working-dir,/Users/ehaas/Documents/FHIR/Argonaut-ClinicalNotes/
 title,Argonaut Clinical Notes
 status,draft
 publisher,Argonaut Project

@@ -26,6 +26,18 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-argo-clinicalnotes.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-clinicalnotes>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/argo-clinicalnotes" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "CapabilityStatement-server.html" ]
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
@@ -34,7 +46,7 @@
          fhir:Reference.reference [ fhir:value "CapabilityStatement/server" ]
        ]
      ], [
-       fhir:index 1;
+       fhir:index 2;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -50,10 +62,12 @@
   fhir:ImplementationGuide.page [
      fhir:ImplementationGuide.page.source [ fhir:value "index.md" ];
      fhir:ImplementationGuide.page.title [ fhir:value "Argonaut Clinical Notes Homepage" ];
+     fhir:ImplementationGuide.page.kind [ fhir:value "page" ];
      fhir:ImplementationGuide.page.page [
        fhir:index 0;
        fhir:ImplementationGuide.page.source [ fhir:value "_includes/toc.md" ];
-       fhir:ImplementationGuide.page.title [ fhir:value "Argonaut Clinical Notes Table of Contents" ]
+       fhir:ImplementationGuide.page.title [ fhir:value "Argonaut Clinical Notes Table of Contents" ];
+       fhir:ImplementationGuide.page.kind [ fhir:value "page" ]
      ]
   ] .
 

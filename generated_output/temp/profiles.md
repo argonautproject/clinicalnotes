@@ -7,11 +7,8 @@ active: profiles
 
 The following Profiles have been defined for this implementation guide.
 
-<!-- remove this line to list profiles  -->{% raw %} *use this line to list the profiles*
-
 {% include list-profiles.xhtml %}
 
-{% endraw %} <!-- remove this line to list profiles  -->
 
 <br />
 

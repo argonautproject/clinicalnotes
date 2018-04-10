@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="argo-clinicalnotes" />
+  <url value="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-clinicalnotes" />
+  <name value="Argonaut Clinical Notes" />
+  <status value="draft" />
+  <date value="2018-04-10T09:48:14.298-04:00" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="DocumentReference" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="DocumentReference">
+      <path value="DocumentReference"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="DocumentReference.identifier">
+      <path value="DocumentReference.identifier" />
+      <mustSupport value="false" />
+    </element>
+    <element id="DocumentReference.subject">
+      <path value="DocumentReference.subject" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" />
+      </type>
+    </element>
+    <element id="DocumentReference.author">
+      <path value="DocumentReference.author" />
+      <min value="1" />
+    </element>
+    <element id="DocumentReference.custodian">
+      <path value="DocumentReference.custodian" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" />
+      </type>
+    </element>
+    <element id="DocumentReference.context">
+      <path value="DocumentReference.context" />
+      <min value="1" />
+    </element>
+    <element id="DocumentReference.context.encounter">
+      <path value="DocumentReference.context.encounter" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>
