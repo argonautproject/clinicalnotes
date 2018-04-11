@@ -2,7 +2,7 @@
 =========================================
 
 err = 4, warn = 2, info = 0
-Generated Wed Apr 11 08:36:54 EDT 2018. FHIR version 3.3.0 for 3.0.1
+Generated Wed Apr 11 09:52:52 EDT 2018. FHIR version 3.3.0 for 3.0.1
 
  Build Errors : 5 / 0
  C:\clinicalnotes\source\resources\capabilitystatement-client : 1 / 0
@@ -15,7 +15,7 @@ ERROR: C:\clinicalnotes\docs\toc.html#/html/head/link/body/div/div/div/div/div/d
 ERROR: C:\clinicalnotes\docs\toc.html#/html/head/link/body/div/div/div/div/div/div/div/ul/li/ul/li/a at Line 254, column 10: The link 'guidance.html#introduction' for "Introduction" cannot be resolved (valid targets: [page-content-wrapper, use-case-1, segment-header, usage, foo, markdown-toc-usage, segment-post-footer, markdown-toc-general-guidance, general-guidance, markdown-toc, stripe, segment-footer, information, segment-navbar, foo-1, markdown-toc-use-case-1, project-status])
 ERROR: C:\clinicalnotes\docs\toc.html#/html/head/link/body/div/div/div/div/div/div/div/ul/li/ul/li/a at Line 255, column 10: The link 'guidance.html#more-stuff' for "More Stuff" cannot be resolved (valid targets: [page-content-wrapper, use-case-1, segment-header, usage, foo, markdown-toc-usage, segment-post-footer, markdown-toc-general-guidance, general-guidance, markdown-toc, stripe, segment-footer, information, segment-navbar, foo-1, markdown-toc-use-case-1, project-status])
 ERROR: C:\clinicalnotes\docs\toc.html#/html/head/link/body/div/div/div/div/div/div/div/ul/li/ul/li/ul/li/a at Line 256, column 14: The link 'guidance.html#and-more-stuff' for "And More Stuff" cannot be resolved (valid targets: [page-content-wrapper, use-case-1, segment-header, usage, foo, markdown-toc-usage, segment-post-footer, markdown-toc-general-guidance, general-guidance, markdown-toc, stripe, segment-footer, information, segment-navbar, foo-1, markdown-toc-use-case-1, project-status])
-ERROR: C:\clinicalnotes\docs\StructureDefinition-argo-clinicalnotes.html#/html/head/link/body/div/div/div/div/div/div/ul/li/p/a at Line 356, column 9: The link 'MedicationAdministration-medadmin-1.html' for "Med Admin 1" cannot be resolved
+ERROR: C:\clinicalnotes\docs\StructureDefinition-argo-clinicalnotes.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 314, column 9: The link 'http://hl7.org/fhir/STU3/DocumentReference.html' for "DocumentReference" cannot be resolved
 == C:\clinicalnotes\source\resources\capabilitystatement-client.xml ==
 ERROR: CapabilityStatement/client: CapabilityStatement.profile: Unable to resolve resource 'http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/template-basic'
 == C:\clinicalnotes\source\resources\capabilitystatement-server.xml ==

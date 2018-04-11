@@ -1,12 +1,12 @@
 
-`GET /MedicationAdministration?patient=[id]{&_include=MedicationAdministration:medication}`
+`GET [base]/DocumentReference?patient=[id]&type=[type]`
 
 **Example:**
 
--  GET /MedicationAdministration?patient=14676
--  GET /MedicationAdministration?patient=14676&_include=MedicationAdministration:medication
+-  GET [base]/DocumentReference?patient=1234&type=http://loinc.org | 11488-4
 
-*Support:* Mandatory for server and client to support search by patient. Mandatory for client to support the _include parameter. Optional for server to support the _include parameter.
+
+*Support:* Mandatory for server and client to support search by patient and note type....rest all TBD. Mandatory for client to support the _include parameter. Optional for server to support the _include parameter.
 
 *Implementation Notes:*   This query searches for all MedicationAdministration resources for a patient and returns a Bundle of all MedicationAdministration and resources for the specified patient. The server application represents the medication using either an inline code or a contained or external reference to the Medication resource. [(how to search by reference)], and [(how to search by _include)].
 

@@ -1,30 +1,27 @@
 
 
-The [MedicationAdministration] resource is used to record a patient consuming or otherwise being administered a medication.  For more information about the context and usage, refer to the resource page in the FHIR specification.  This profile sets minimum expectations for recording, searching and fetching a patient's MedicationAdministration resource. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile.
+The [DocumentReference] resource is used to index documents in a healthcare ssytem.  For more information about the context and usage, refer to the resource page in the FHIR specification.  This profile sets minimum expectations for recording, searching and fetching a patient's DocumentReference resource. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile.
 
 **Example Usage Scenarios:**
 
 The following are example usage scenarios:
 
-- Query for medications that have been administered to a particular patient
-- Query for all medications administered during an encounter
-- Query for all medications which were not administered during an encounter
+- Query for Clinical Notes for a set time period
+- Query for Clinical None for an Encounter
+- Query for specific Documents
+
 
 ##### Mandatory Data Elements and Terminology
 
 The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and examples are provided as well.  The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and terminology requirements.
 
-**Each MedicationAdministration must have:**
+**Each DocumentReference must have:**
 
-1.  a status
-1.  a medication
-1.  a patient
-1.  a date or date range
+1.  TBD
 
-In addition, a system [*Must Support*](http://hl7.org/FHIR/us/daf/2016Sep/daf-core.html#mustsupport).
+In addition, a system [*Must Support*](http://hl7.org/fhir/us/core/guidance.html#must-support).
 
-1. who administered the medication
-2. dosage information
+1. TBD
 
 **Profile specific implementation guidance:**
 
@@ -32,15 +29,17 @@ In addition, a system [*Must Support*](http://hl7.org/FHIR/us/daf/2016Sep/daf-co
 
 ##### Examples
 
-- [Med Admin 1](MedicationAdministration-medadmin-1.html)
+- TBD
 
 
   [Medication Clinical Drug (RxNorm)]: valueset-daf-medication-codes.html
   [MedicationOrderStatus]: http://hl7.org/fhir/us/daf/valueset-medication-order-status.html
-[MedicationAdministrationStatus]: http://hl7.org/fhir/us/daf/valueset-medication-Administration-status.html
+[DocumentReferenceStatus]: http://hl7.org/fhir/us/daf/valueset-medication-Administration-status.html
 [MedicationStatement]:{{ site.data.fhir.path }}/medicationstatement.html
-[MedicationAdministration]:{{ site.data.fhir.path }}/medicationadministration.html
+[DocumentReference]:{{ site.data.fhir.path }}/DocumentReference.html
  [MedicationOrder]: {{ site.data.fhir.path }}/medicationorder.html
  [Medication]:{{ site.data.fhir.path }}/medication.html
- [Conformance]: daf-core-medicationAdministration-conformance.html
- [boundaries section]: {{ site.data.fhir.path }}/medicationadministration.html#bnr
+ [Conformance]: daf-core-DocumentReference-conformance.html
+ [boundaries section]: {{ site.data.fhir.path }}/DocumentReference.html#bnr
+
+ 

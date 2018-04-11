@@ -81,6 +81,14 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="DocumentReference.content.attachment.size">
+      <path value="DocumentReference.content.attachment.size" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DocumentReference.content.format">
+      <path value="DocumentReference.content.format" />
+      <mustSupport value="true" />
+    </element>
     <element id="DocumentReference.context">
       <path value="DocumentReference.context" />
       <min value="1" />
