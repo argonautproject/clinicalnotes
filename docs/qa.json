@@ -1,9 +1,9 @@
 ﻿{
   "url" : "http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig",
   "name" : "Argonaut Clinical Notes",
-  "date" : "Tue, 10 Apr, 2018 15:57:08 -0700",
+  "date" : "Wed, 11 Apr, 2018 08:36:25 -0400",
   "errs" : "4",
-  "warnings" : "0",
+  "warnings" : "2",
   "hints" : "0",
   "version" : "3.0.1",
   "tool" : "3.3.0-13659"

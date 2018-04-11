@@ -379,6 +379,7 @@
   <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The status of the document reference.<br/>The codes SHALL be taken from <a href="http://hl7.org/fhir/STU3/valueset-document-reference-status.html">DocumentReferenceStatus</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>This is the status of the DocumentReference object, which might be independent from the docStatus element.</p>
 <p>This element is labeled as a modifier because the status contains the codes that mark the document or reference as not currently valid.</p>
 </td></tr>
@@ -396,6 +397,7 @@
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Precise type of clinical document.<br/>The codes SHOULD be taken from <a href="http://hl7.org/fhir/STU3/valueset-c80-doc-typecodes.html">Document Type Value Set</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>Key metadata element describing the document, used in searching/filtering.</p>
 </td></tr>
   <tr><td colspan="2" class="structure"><a name="DocumentReference.class"> </a><b>DocumentReference.class</b></td></tr>
@@ -413,7 +415,8 @@
   <tr><td>Definition</td><td><p>Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/patient.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]">Patient</a>)(<a href="http://hl7.org/fhir/us/core/1.0.1//StructureDefinition-us-core-patient.html" title="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient">US Core Patient Profile</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/us/core/1.0.1//StructureDefinition-us-core-patient.html" title="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient">US Core Patient Profile</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td colspan="2" class="structure"><a name="DocumentReference.created"> </a><b>DocumentReference.created</b></td></tr>
   <tr><td>Definition</td><td><p>When the document was created.</p>
 </td></tr>
@@ -432,7 +435,8 @@
   <tr><td>Definition</td><td><p>Identifies who is responsible for adding the information to the document.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/practitioner.html" title="http://hl7.org/fhir/StructureDefinition/Practitioner">Practitioner</a> | <a href="http://hl7.org/fhir/STU3/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a> | <a href="http://hl7.org/fhir/STU3/device.html" title="http://hl7.org/fhir/StructureDefinition/Device">Device</a> | <a href="http://hl7.org/fhir/STU3/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a> | <a href="http://hl7.org/fhir/STU3/relatedperson.html" title="http://hl7.org/fhir/StructureDefinition/RelatedPerson">RelatedPerson</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/us/core/1.0.1//StructureDefinition-us-core-practitioner.html" title="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner">US  Core Practitioner Profile</a> | <a href="http://hl7.org/fhir/us/core/1.0.1//StructureDefinition-us-core-organization.html" title="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization">US Core Organization Profile</a> | <a href="http://hl7.org/fhir/STU3/device.html" title="http://hl7.org/fhir/StructureDefinition/Device">Device</a> | <a href="http://hl7.org/fhir/us/core/1.0.1//StructureDefinition-us-core-patient.html" title="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient">US Core Patient Profile</a> | <a href="http://hl7.org/fhir/STU3/relatedperson.html" title="http://hl7.org/fhir/StructureDefinition/RelatedPerson">RelatedPerson</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>Not necessarily who did the actual data entry (i.e. typist) it in or who was the source (informant).</p>
 </td></tr>
   <tr><td colspan="2" class="structure"><a name="DocumentReference.authenticator"> </a><b>DocumentReference.authenticator</b></td></tr>
@@ -446,7 +450,8 @@
   <tr><td>Definition</td><td><p>Identifies the organization or group who is responsible for ongoing maintenance of and access to the document.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]">Organization</a>)(<a href="http://hl7.org/fhir/us/core/1.0.1//StructureDefinition-us-core-organization.html" title="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization">US Core Organization Profile</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/us/core/1.0.1//StructureDefinition-us-core-organization.html" title="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization">US Core Organization Profile</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>Identifies the logical organization to go to find the current version, where to report issues, etc. This is different from the physical location of the document, which is the technical location of the document, which host may be delegated to the management of some other organization.</p>
 </td></tr>
   <tr><td colspan="2" class="structure"><a name="DocumentReference.relatesTo"> </a><b>DocumentReference.relatesTo</b></td></tr>
@@ -518,6 +523,7 @@
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#BackboneElement">BackboneElement</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><a name="DocumentReference.content.id"> </a><b>DocumentReference.content.id</b></td></tr>
@@ -547,6 +553,95 @@
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Attachment">Attachment</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="DocumentReference.content.attachment.id"> </a><b>DocumentReference.content.attachment.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="DocumentReference.content.attachment.extension"> </a><b>DocumentReference.content.attachment.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Extension">Extension</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
+  <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="DocumentReference.content.attachment.contentType"> </a><b>DocumentReference.content.attachment.contentType</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies the type of the data in the attachment and allows a method to be chosen to interpret or render the data. Includes mime type parameters such as charset where appropriate.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The mime type of an attachment. Any valid mime type is allowed.<br/>The codes SHALL be taken from  <a href="http://www.rfc-editor.org/bcp/bcp13.txt">http://www.rfc-editor.org/bcp/bcp13.txt</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>Processors of the data need to be able to know how to interpret the data.</p>
+</td></tr>
+  <tr><td>Example</td><td><br/><b>General</b>:text/plain; charset=UTF-8, image/png
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="DocumentReference.content.attachment.language"> </a><b>DocumentReference.content.attachment.language</b></td></tr>
+  <tr><td>Definition</td><td><p>The human language of the content. The value can be any valid value according to BCP 47.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>A human language.<br/>The codes SHALL be taken from <a href="http://hl7.org/fhir/STU3/valueset-languages.html">Common Languages</a>; other codes may be used where these codes are not suitable</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
+  <tr><td>Requirements</td><td><p>Users need to be able to choose between the languages in a set of attachments.</p>
+</td></tr>
+  <tr><td>Example</td><td><br/><b>General</b>:en-AU
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="DocumentReference.content.attachment.data"> </a><b>DocumentReference.content.attachment.data</b></td></tr>
+  <tr><td>Definition</td><td><p>The actual data of the attachment - a sequence of bytes. In XML, represented using base64.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#base64Binary">base64Binary</a></td></tr>
+  <tr><td>Requirements</td><td><p>The data needs to able to be transmitted inline.</p>
+</td></tr>
+  <tr><td>Comments</td><td><p>The base64-encoded data SHALL be expressed in the same character set as the base resource XML or JSON.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="DocumentReference.content.attachment.url"> </a><b>DocumentReference.content.attachment.url</b></td></tr>
+  <tr><td>Definition</td><td><p>An alternative location where the data can be accessed.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a></td></tr>
+  <tr><td>Requirements</td><td><p>The data needs to be transmitted by reference.</p>
+</td></tr>
+  <tr><td>Comments</td><td><p>If both data and url are provided, the url SHALL point to the same content as the data contains. Urls may be relative references or may reference transient locations such as a wrapping envelope using cid: though this has ramifications for using signatures. Relative URLs are interpreted relative to the service url, like a resource reference, rather than relative to the resource itself. If a URL is provided, it SHALL resolve to actual data.</p>
+</td></tr>
+  <tr><td>Example</td><td><br/><b>General</b>:http://www.acme.com/logo-small.png
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="DocumentReference.content.attachment.size"> </a><b>DocumentReference.content.attachment.size</b></td></tr>
+  <tr><td>Definition</td><td><p>The number of bytes of data that make up this attachment (before base64 encoding, if that is done).</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">unsignedInt</a></td></tr>
+  <tr><td>Requirements</td><td><p>Representing the size allows applications to determine whether they should fetch the content automatically in advance, or refuse to fetch it at all.</p>
+</td></tr>
+  <tr><td>Comments</td><td><p>The number of bytes is redundant if the data is provided as a base64binary, but is useful if the data is provided as a url reference.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="DocumentReference.content.attachment.hash"> </a><b>DocumentReference.content.attachment.hash</b></td></tr>
+  <tr><td>Definition</td><td><p>The calculated hash of the data using SHA-1. Represented using base64.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#base64Binary">base64Binary</a></td></tr>
+  <tr><td>Requirements</td><td><p>Included so that applications can verify that the contents of a location have not changed and so that a signature of the content can implicitly sign the content of an image without having to include the data in the instance or reference the url in the signature.</p>
+</td></tr>
+  <tr><td>Comments</td><td><p>The hash is calculated on the data prior to base64 encoding, if the data is based64 encoded.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="DocumentReference.content.attachment.title"> </a><b>DocumentReference.content.attachment.title</b></td></tr>
+  <tr><td>Definition</td><td><p>A label or set of text to display in place of the data.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
+  <tr><td>Requirements</td><td><p>Applications need a label to display to a human user in place of the actual data if the data cannot be rendered or perceived by the viewer.</p>
+</td></tr>
+  <tr><td>Example</td><td><br/><b>General</b>:Official Corporate Logo
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="DocumentReference.content.attachment.creation"> </a><b>DocumentReference.content.attachment.creation</b></td></tr>
+  <tr><td>Definition</td><td><p>The date that the attachment was first created.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">dateTime</a></td></tr>
+  <tr><td>Requirements</td><td><p>This is often tracked as an integrity issue for use of the attachment.</p>
+</td></tr>
   <tr><td colspan="2" class="structure"><a name="DocumentReference.content.format"> </a><b>DocumentReference.content.format</b></td></tr>
   <tr><td>Definition</td><td><p>An identifier of the document encoding, structure, and template that the document conforms to beyond the base format indicated in the mimeType.</p>
 </td></tr>
@@ -560,6 +655,7 @@
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#BackboneElement">BackboneElement</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>These values are primarily added to help with searching for interesting/relevant documents.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -711,7 +807,7 @@
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            Argonaut Clinical Notes Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Tue, Apr 10, 2018 15:57-0700. |
+            Argonaut Clinical Notes Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, Apr 11, 2018 08:36-0400. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="argo-clinicalnotes" />
   <url value="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-clinicalnotes" />
@@ -13,39 +13,78 @@
   <derivation value="constraint" />
   <differential>
     <element id="DocumentReference">
-      <path value="DocumentReference"/>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
-    </element>
-    <element id="DocumentReference.identifier">
-      <path value="DocumentReference.identifier" />
+      <path value="DocumentReference" />
       <mustSupport value="false" />
+      <isModifier value="false" />
+    </element>
+    <element id="DocumentReference.status">
+      <path value="DocumentReference.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DocumentReference.type">
+      <path value="DocumentReference.type" />
+      <mustSupport value="true" />
     </element>
     <element id="DocumentReference.subject">
       <path value="DocumentReference.subject" />
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Patient" />
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="DocumentReference.author">
       <path value="DocumentReference.author" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
+      <mustSupport value="true" />
     </element>
     <element id="DocumentReference.custodian">
       <path value="DocumentReference.custodian" />
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="DocumentReference.content">
+      <path value="DocumentReference.content" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DocumentReference.content.attachment">
+      <path value="DocumentReference.content.attachment" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DocumentReference.content.attachment.contentType">
+      <path value="DocumentReference.content.attachment.contentType" />
+      <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="DocumentReference.context">
       <path value="DocumentReference.context" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="DocumentReference.context.encounter">
       <path value="DocumentReference.context.encounter" />
