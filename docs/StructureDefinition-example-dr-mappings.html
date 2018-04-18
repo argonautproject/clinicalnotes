@@ -226,7 +226,7 @@
         /
         <a class="breadcrumb-item" href="profiles.html">Profiles</a>
         /
-        <span class="breadcrumb-item active">StructureDefinition-argo-clinicalnotes-mappings</span>
+        <span class="breadcrumb-item active">StructureDefinition-example-dr-mappings</span>
 
     
   
@@ -248,26 +248,26 @@
 	{ % if content == "definitions"  % }
 		<li class="active"><a href="#">Detailed Descriptions</a></li>
 	{ % else % }
-		<li><a href="StructureDefinition-argo-clinicalnotes-definitions.html">Detailed Descriptions</a></li>
+		<li><a href="StructureDefinition-example-dr-definitions.html">Detailed Descriptions</a></li>
 	{ % endif % }
 	{ % if content == "mappings" % }
 		<li class="active"><a href="#">Mappings</a></li>
 	{ % else % }
-		<li><a href="StructureDefinition-argo-clinicalnotes-mappings.html">Mappings</a></li>
+		<li><a href="StructureDefinition-example-dr-mappings.html">Mappings</a></li>
 	{ % endif % }
 { % endif % }
 -->
 
-<li><a href="StructureDefinition-argo-clinicalnotes.xml.html">XML</a></li>
+<li><a href="StructureDefinition-example-dr.xml.html">XML</a></li>
 
 
-	<li><a href="StructureDefinition-argo-clinicalnotes.json.html">JSON</a></li>
+	<li><a href="StructureDefinition-example-dr.json.html">JSON</a></li>
 
 <!--
 { % if content == "turtle" % }
 	<li class="active"><a href="#">Turtle</a></li>
 { % else % }
-	<li><a href="StructureDefinition-argo-clinicalnotes.ttl.html">Turtle</a></li>
+	<li><a href="StructureDefinition-example-dr.ttl.html">Turtle</a></li>
 { % endif % }
 -->
 </ul>
@@ -279,10 +279,10 @@
 
 <!-- ============CONTENT CONTENT=============== -->
 
-<h3>Mappings for the StructureDefinition-argo-clinicalnotes Profile.</h3>
+<h3>Mappings for the StructureDefinition-example-dr Profile.</h3>
 
 <a name="rim"> </a><h3>Mappings for RIM Mapping (http://hl7.org/v3)</h3><table class="grid">
- <tr><td colspan="3"><b>Argonaut Clinical Notes</b></td></tr>
+ <tr><td colspan="3"><b>Example DR to show how to base off of US Core DR</b></td></tr>
  <tr><td>DocumentReference</td><td>Entity. Role, or Act</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
@@ -342,7 +342,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ref</td><td>./outboundRelationship[typeCode=&quot;PERT&quot; and isNormalActRelationship()] / target[isNormalAct].text.reference</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for W5 Mapping (http://hl7.org/fhir/w5)</h3><table class="grid">
- <tr><td colspan="3"><b>Argonaut Clinical Notes</b></td></tr>
+ <tr><td colspan="3"><b>Example DR to show how to base off of US Core DR</b></td></tr>
  <tr><td>DocumentReference</td><td>infrastructure.documents</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;masterIdentifier</td><td>id</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>id</td> </tr>
@@ -359,7 +359,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;encounter</td><td>context</td> </tr>
 </table>
 <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (http://hl7.org/v2)</h3><table class="grid">
- <tr><td colspan="3"><b>Argonaut Clinical Notes</b></td></tr>
+ <tr><td colspan="3"><b>Example DR to show how to base off of US Core DR</b></td></tr>
  <tr><td>DocumentReference</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;masterIdentifier</td><td>TXA-12</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>TXA-16?</td> </tr>
@@ -379,7 +379,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url</td><td>RP.1+RP.2 - if they refer to a URL (see v2.6)</td> </tr>
 </table>
 <a name="xds"> </a><h3>Mappings for XDS metadata equivalent (http://ihe.net/xds)</h3><table class="grid">
- <tr><td colspan="3"><b>Argonaut Clinical Notes</b></td></tr>
+ <tr><td colspan="3"><b>Example DR to show how to base off of US Core DR</b></td></tr>
  <tr><td>DocumentReference</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;masterIdentifier</td><td>DocumentEntry.uniqueId</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>DocumentEntry.entryUUID</td> </tr>

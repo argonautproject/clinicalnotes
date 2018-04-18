@@ -442,3 +442,16 @@ p, li {
  border-color: #cccccc;
  padding: 10px
 }
+
+/*----pseudo json styling ----*/
+
+pre.spec {
+  font-size: 11px;
+  width: 650px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.15);
+  border-image: initial;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 5px;
+}
