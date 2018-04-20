@@ -5,18 +5,18 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://www.fhir.org/guides/test3/ImplementationGuide/ig> a fhir:ImplementationGuide;
+<http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "ig"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IG-Test3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/ig</pre></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Argonaut Clinical Notes</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig</pre></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "http://www.fhir.org/guides/test3/ImplementationGuide/ig"];
-  fhir:ImplementationGuide.name [ fhir:value "IG-Test3"];
+  fhir:ImplementationGuide.url [ fhir:value "http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig"];
+  fhir:ImplementationGuide.name [ fhir:value "Argonaut Clinical Notes"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:ImplementationGuide.publisher [ fhir:value "Health eData Inc"];
+  fhir:ImplementationGuide.publisher [ fhir:value "Argonaut Project"];
   fhir:ImplementationGuide.package [
      fhir:index 0;
      fhir:Element.id [ fhir:value "p1" ];
@@ -26,99 +26,27 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Observation-foofoo.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-example-dr.html" ]
        ];
-       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://www.fhir.org/guides/test3/Observation/foofoo>;
-         fhir:Reference.reference [ fhir:value "Observation/foofoo" ]
+         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/example-dr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/example-dr" ]
        ]
      ], [
        fhir:index 1;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-blah-codes.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-argo-clinicalnotes.html" ]
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://www.fhir.org/guides/test3/ValueSet/blah-codes>;
-         fhir:Reference.reference [ fhir:value "ValueSet/blah-codes" ]
+         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-clinicalnotes>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/argo-clinicalnotes" ]
        ]
      ], [
        fhir:index 2;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-template-basic.html" ]
-       ];
-       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://www.fhir.org/guides/test3/StructureDefinition/template-basic>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/template-basic" ]
-       ]
-     ], [
-       fhir:index 3;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-extension-complex.html" ]
-       ];
-       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://www.fhir.org/guides/test3/StructureDefinition/extension-complex>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/extension-complex" ]
-       ]
-     ], [
-       fhir:index 4;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-extension-blah.html" ]
-       ];
-       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://www.fhir.org/guides/test3/StructureDefinition/extension-blah>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/extension-blah" ]
-       ]
-     ], [
-       fhir:index 5;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-bt.html" ]
-       ];
-       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://www.fhir.org/guides/test3/StructureDefinition/bt>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/bt" ]
-       ]
-     ], [
-       fhir:index 6;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "SearchParameter-blah.html" ]
-       ];
-       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://www.fhir.org/guides/test3/SearchParameter/blah>;
-         fhir:Reference.reference [ fhir:value "SearchParameter/blah" ]
-       ]
-     ], [
-       fhir:index 7;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CodeSystem-blah-codes.html" ]
-       ];
-       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://www.fhir.org/guides/test3/CodeSystem/blah-codes>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/blah-codes" ]
-       ]
-     ], [
-       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -126,11 +54,11 @@
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://www.fhir.org/guides/test3/CapabilityStatement/server>;
+         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/server>;
          fhir:Reference.reference [ fhir:value "CapabilityStatement/server" ]
        ]
      ], [
-       fhir:index 9;
+       fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -138,26 +66,26 @@
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://www.fhir.org/guides/test3/CapabilityStatement/client>;
+         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/client>;
          fhir:Reference.reference [ fhir:value "CapabilityStatement/client" ]
        ]
      ]
   ];
   fhir:ImplementationGuide.page [
      fhir:ImplementationGuide.page.source [ fhir:value "index.md" ];
-     fhir:ImplementationGuide.page.title [ fhir:value "IG-Test3 Homepage" ];
+     fhir:ImplementationGuide.page.title [ fhir:value "Argonaut Clinical Notes Homepage" ];
      fhir:ImplementationGuide.page.kind [ fhir:value "page" ];
      fhir:ImplementationGuide.page.page [
        fhir:index 0;
        fhir:ImplementationGuide.page.source [ fhir:value "_includes/toc.md" ];
-       fhir:ImplementationGuide.page.title [ fhir:value "IG-Test3 Table of Contents" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "Argonaut Clinical Notes Table of Contents" ];
        fhir:ImplementationGuide.page.kind [ fhir:value "page" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://www.fhir.org/guides/test3/ImplementationGuide/ig.ttl> a owl:Ontology;
+<http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

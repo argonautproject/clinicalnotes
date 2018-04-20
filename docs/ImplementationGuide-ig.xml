@@ -3,85 +3,31 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>IG-Test3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/ig</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Argonaut Clinical Notes</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig</pre></div>
   </text>
-  <url value="http://www.fhir.org/guides/test3/ImplementationGuide/ig"/>
-  <name value="IG-Test3"/>
+  <url value="http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig"/>
+  <name value="Argonaut Clinical Notes"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <publisher value="Health eData Inc"/>
+  <publisher value="Argonaut Project"/>
   <package id="p1">
     <name value="base"/>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-foofoo.html"/>
+        <valueUri value="StructureDefinition-example-dr.html"/>
       </extension>
-      <example value="true"/>
+      <example value="false"/>
       <sourceReference>
-        <reference value="Observation/foofoo"/>
+        <reference value="StructureDefinition/example-dr"/>
       </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-blah-codes.html"/>
+        <valueUri value="StructureDefinition-argo-clinicalnotes.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
-        <reference value="ValueSet/blah-codes"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-template-basic.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/template-basic"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-extension-complex.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/extension-complex"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-extension-blah.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/extension-blah"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-bt.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/bt"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="SearchParameter-blah.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="SearchParameter/blah"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-blah-codes.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="CodeSystem/blah-codes"/>
+        <reference value="StructureDefinition/argo-clinicalnotes"/>
       </sourceReference>
     </resource>
     <resource>
@@ -105,11 +51,11 @@
   </package>
   <page>
     <source value="index.md"/>
-    <title value="IG-Test3 Homepage"/>
+    <title value="Argonaut Clinical Notes Homepage"/>
     <kind value="page"/>
     <page>
       <source value="_includes/toc.md"/>
-      <title value="IG-Test3 Table of Contents"/>
+      <title value="Argonaut Clinical Notes Table of Contents"/>
       <kind value="page"/>
     </page>
   </page>

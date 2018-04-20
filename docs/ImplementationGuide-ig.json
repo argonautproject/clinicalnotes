@@ -3,13 +3,13 @@
   "id": "ig",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IG-Test3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/ig</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Argonaut Clinical Notes</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig</pre></div>"
   },
-  "url": "http://www.fhir.org/guides/test3/ImplementationGuide/ig",
-  "name": "IG-Test3",
+  "url": "http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig",
+  "name": "Argonaut Clinical Notes",
   "status": "draft",
   "experimental": true,
-  "publisher": "Health eData Inc",
+  "publisher": "Argonaut Project",
   "package": [
     {
       "id": "p1",
@@ -19,96 +19,24 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Observation-foofoo.html"
+              "valueUri": "StructureDefinition-example-dr.html"
             }
           ],
-          "example": true,
+          "example": false,
           "sourceReference": {
-            "reference": "Observation/foofoo"
+            "reference": "StructureDefinition/example-dr"
           }
         },
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "ValueSet-blah-codes.html"
+              "valueUri": "StructureDefinition-argo-clinicalnotes.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "ValueSet/blah-codes"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-template-basic.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/template-basic"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-extension-complex.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/extension-complex"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-extension-blah.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/extension-blah"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-bt.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/bt"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "SearchParameter-blah.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "SearchParameter/blah"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "CodeSystem-blah-codes.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "CodeSystem/blah-codes"
+            "reference": "StructureDefinition/argo-clinicalnotes"
           }
         },
         {
@@ -140,12 +68,12 @@
   ],
   "page": {
     "source": "index.md",
-    "title": "IG-Test3 Homepage",
+    "title": "Argonaut Clinical Notes Homepage",
     "kind": "page",
     "page": [
       {
         "source": "_includes/toc.md",
-        "title": "IG-Test3 Table of Contents",
+        "title": "Argonaut Clinical Notes Table of Contents",
         "kind": "page"
       }
     ]

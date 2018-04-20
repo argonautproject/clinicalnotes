@@ -1,10 +1,10 @@
 ﻿{
-  "url" : "http://www.fhir.org/guides/test3/ImplementationGuide/ig",
-  "name" : "IG-Test3",
-  "date" : "Thu, 19 Apr, 2018 17:03:11 -0700",
-  "errs" : "10",
-  "warnings" : "4",
-  "hints" : "2",
+  "url" : "http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig",
+  "name" : "Argonaut Clinical Notes",
+  "date" : "Fri, 20 Apr, 2018 06:51:42 -0700",
+  "errs" : "4",
+  "warnings" : "0",
+  "hints" : "0",
   "version" : "3.0.1",
   "tool" : "3.4.0-13690"
 }
