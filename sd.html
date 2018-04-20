@@ -7,6 +7,8 @@ layout: fhir-artifact
 type: {{[type]}}
 id: {{[id]}}
 topofpage: true
+allviews: true
+mappings: false
 ---
 <!-- ============CONTENT CONTENT=============== -->
 
@@ -142,7 +144,8 @@ This profile builds on <a href= "{{site.data.structuredefinitions.{{[id]}}.basep
  <div id="tabs-json">
   <div id="json">
    <div id="json-inner">
-{% include {{[type]}}-{{[id]}}-pseudo-json.xhtml %}
+      {% include {{[type]}}-{{[id]}}-pseudo-json.xhtml %}
+    </pre>
    </div>
   </div>
  </div>
@@ -152,59 +155,62 @@ This profile builds on <a href= "{{site.data.structuredefinitions.{{[id]}}.basep
 
 
  <div id="tabs-all">
-
-{% unless "{{[id]}}" contains "extension" %}
+<!-- =======Summary======== -->
+{% unless "{{[id]}}" contains "extension"%}
   <div id="all-tbl-summ">
-
-   <div id="all-tbl-summ-inner">
+    <div id="all-tbl-summ-inner">
      <a name="summary"> </a>
 {% include {{[type]}}-{{[id]}}-summary.xhtml %}
 <!--{% raw %}
-{% capture my-include %}{% include {{[id]}}-summary.md id="{{[id]}}" %}{% endcapture %}{{ my-include | markdownify }}
+{% include {{[id]}}-summary.md id="{{[id]}}" %}
 {% endraw %}-->
    </div>
-
   </div>
-  {% endunless %}
-
+{% endunless %}
+<!-- =======Differential level 1======== -->
  <div id="all-tbl-diff">
    <p><b>Differential View</b></p>
-
    <div id="all-tbl-diff-inner">
-   {% include {{[type]}}-{{[id]}}-diff.xhtml %}
+     {% include {{[type]}}-{{[id]}}-diff.xhtml %}
    </div>
-
-  </div>
-
+   <!-- =======Differential level 2 ( if want to show an intermediate diff if profiling a profile) ========= -->
+      <div id="all-tbl-diff2-inner">
+        {% include {{[id]}}-diff2.md type="{{[type]}}" id="{{[id]}}" %}
+      </div>
+</div>
+<!-- =======Snapshot======== -->
+{% unless {{site.data.structuredefinitions.{{[id]}}.kind}} == "logical" %}
   <div id="all-tbl-snap">
    <p><b>Snapshot View</b></p>
-
    <div id="all-tbl-snap-inner">
-{% include {{[type]}}-{{[id]}}-snapshot.xhtml %}
-   </div>
-
-  </div>
-
-
-
-  <!--{% raw %}
-  <div id="all-xml">
-   <p><b>XML Template</b></p>
-   <div id="all-xml-inner">
-{% include {{[type]}}-{{[id]}}-pseudo-xml.xhtml %}
+     {% include {{[type]}}-{{[id]}}-snapshot.xhtml %}
    </div>
   </div>
-
-  <div id="all-json">
-   <p><b>JSON Template</b></p>
-   <div id="all-json-inner">
-{% include {{[type]}}-{{[id]}}-pseudo-json.xhtml %}
-   </div>
+{% endunless %}
+<!-- =======XML and JSON ======== -->
+{% if page.allviews %}
+    <!--{% raw %}
+        <div id="all-xml">
+         <p><b>XML Template</b></p>
+         <div id="all-xml-inner">
+      {% include {{[type]}}-{{[id]}}-pseudo-xml.xhtml %}
+         </div>
+        </div>
+    {% endraw %}-->
+    <div id="all-json">
+     <p><b>JSON Template</b></p>
+     <div id="all-json-inner">
+        <pre class="spec">
+         {% include {{[type]}}-{{[id]}}-pseudo-json.xhtml %}
+        </pre>
+    </div>
   </div>
-{% endraw %}-->
+{% endif %}
+
  </div>
 </div>
 
+<br />
 
 <a name="downloads"> </a>
 <p>Downloads: StructureDefinition: (<a href="{{[type]}}-{{[id]}}.xml" download>XML</a>, <a href="{{[type]}}-{{[id]}}.json" download>JSON</a>), Schema:  <a href="{{[id]}}.sch" download>XML Schematron</a></p>
@@ -212,21 +218,32 @@ This profile builds on <a href= "{{site.data.structuredefinitions.{{[id]}}.basep
 <p>&nbsp;</p>
 
 
-{% if "{{[id]}}" contains "extension" %}
+{% if {{site.data.structuredefinitions.{{[id]}}.kind}} == "resource" %}
 
-<hr/>
+  <!-- search text here-->
+  <a name="search"> </a>
+  <h3><span class="sectioncount">SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}.2  </span>Quick Start</h3>
+  <p>Below is an overview of the required set of RESTful FHIR interactions - for example, search and read operations - for this profile.  See the <a href="capstatements.html"/>Conformance requirements</a> for a complete list of supported RESTful interactions for this IG.</p>
 
- See the <a href="capstatements.html"/>Conformance requirements</a> for a complete list of supported RESTful interactions for this IG.</p>
+  {% include {{[id]}}-search.md  id="{{[id]}}" %}
 
+{% elsif {{site.data.structuredefinitions.{{[id]}}.kind}} == "logical" %}
+
+  <a name="mapping-tables"> </a>
+  <h3><span class="sectioncount">SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}.2  </span>Mappings</h3>
+  <p>Below are mappings for this model. These mappings are informative and are provided to help implementers of this specification understand the content and use it correctly.</p>
+
+  <div markdown='0'>
+      <!--reduce the header size -->
+  {% capture mapping %}{% include StructureDefinition-{{id}}-maps.xhtml %}{% endcapture %}
+  {{ mapping| replace: 'h3', 'b' }}
+  </div>
+  <br />
 {% else %}
 
-<!-- search text here-->
-<a name="search"> </a>
-<h3><span class="sectioncount">SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}.2  </span>Quick Start</h3>
-<p>Below is an overview of the required set of RESTful FHIR interactions - for example, search and read operations - for this profile.  See the <a href="capstatements.html"/>Conformance requirements</a> for a complete list of supported RESTful interactions for this IG.</p>
+  <hr/>
 
-{% capture my-include %}{% include {{[id]}}-search.md  id="{{[id]}}" %}{% endcapture %}{{ my-include | markdownify }}
-
+   See the <a href="capstatements.html"/>Conformance requirements</a> for a complete list of supported RESTful interactions for this IG.</p>
 
 {% endif %}
   <!-- ==============END CONTENT END CONTENT=================== -->
