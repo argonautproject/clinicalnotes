@@ -5,11 +5,11 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>Argonaut Clinical Notes</title>
+  <title>IG-Test3</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Argonaut Clinical Notes Implemenation Guide" />
-<meta name="author" content="Argonaut Project"/>
+<meta name="description" content="IG-Test3 Implemenation Guide" />
+<meta name="author" content="Health eData Inc"/>
   <link href="fhir.css" rel="stylesheet"/>
 
 
@@ -55,11 +55,18 @@
 <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
 </a>
 
-================THIS IS FOR THE PROJECT LOGO AND URL ===============
+your logo here
+
+[![visit our website](assets/images/org_logo.png)](your web site.html)
+{: .img-responsive #org_logo}
+
+can only resize using html  or css ;-(
+
 -->
 
-<a no-external="true" href="http://argonautwiki.hl7.org">
-<img alt="visit our website" class="img-responsive project-logo" src="assets/images/ArgonautProject_logo_black.png"/>
+
+<a no-external="true" href="http://www.openmhealth.org/">
+<img alt="visit our website" class="img-responsive project-logo" src="assets/images/org_logo.jpg"/>
 </a>
 
   <!-- end org logo -->
@@ -68,7 +75,7 @@
       <div id="project-status" class="project-status"> <!-- ig title text -->
 
       
-      <strong>Argonaut Clinical Notes Implementation Guide CI Build</strong>
+      <strong>IG-Test3 Implementation Guide CI Build</strong>
       
 
     </div><!-- end ig title text -->
@@ -101,56 +108,19 @@
         <a class="navbar-brand hidden" href="http://hl7.org/fhir/STU3/index.html">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
 
-       
-<!--{:.nav .navbar-nav} don't remove the line above - to add or remove a menu item commeent in or out - [Home](index.html)- [Use Cases...](guidance.html){: .dropdown-toggle data-toggle="dropdown"}  - [Patient Based Scheduling](patient-scheduling.html)  - [Provider based Scheduling](provider-scheduling.html)  {: .dropdown-menu}- [Operations](operations.html)- [Profiles/Extensions](profiles.html)- [Terminology](terminology.html)- [Capability Statements...](capstatements.html){: .dropdown-toggle data-toggle="dropdown"}  - [Conformance requirements for Server](CapabilityStatement-server.html)  - [Conformance requirements for Client](client-capstatement.html)  {: .dropdown-menu}- [Downloads](downloads.html)-->
+       <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
 <ul class="nav navbar-nav">
-  <li>
-    <a href="index.html">Home</a>
-  </li>
-  <li>
-    <a href="guidance.html">Guidance</a>
-  </li>
-
-  <!--
-  <li class="dropdown">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Use Cases<b class="caret">
-    </b>
-  </a>
-  <ul class="dropdown-menu">
-    <li>
-      <a href="patient-scheduling.html">Patient Based Scheduling</a>
-    </li>
-    <li>
-      <a href="provider-scheduling.html">Provider Based Scheduling</a>
-    </li>
-  </ul>
-</li>
-<li>
-  <a href="operations.html">Operations</a>
-</li>
--->
-<li>
-  <a href="profiles.html">Profiles/Extensions</a>
-</li>
-<li>
-  <a href="terminology.html">Terminology</a>
-</li>
-<li class="dropdown">
-  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Capability Statements<b class="caret">
-  </b>
-</a>
-<ul class="dropdown-menu">
-  <li>
-    <a href="CapabilityStatement-server.html">Conformance requirements for Server</a>
-  </li>
-  <li>
-    <a href="CapabilityStatement-client.html">Conformance requirements for Client</a>
-  </li>
-</ul>
-</li>
-<li>
-  <a href="downloads.html">Downloads</a>
-</li>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="guidance.html">General Guidance</a></li>
+  <li><a href="profiles.html">Profiles and Logical Models</a></li>
+  <li><a href="structuremaps.html">Mappings</a>
+<!-- - [Extensions](extensions.html) --></li>
+  <li><a href="terminology.html">Terminology</a>
+<!-- - [Search Parameters](searchparams.html) --></li>
+  <li><a href="capstatements.html">Capability Statements</a>
+<!-- - [Security](security.html) -->
+<!-- - [Examples](examples.html) --></li>
+  <li><a href="downloads.html">Downloads</a></li>
 </ul>
 
 
@@ -239,23 +209,14 @@
 
 <p>The following Profiles have been defined for this implementation guide.</p>
 
-<li><a href="StructureDefinition-argo-clinicalnotes.html">Argonaut Clinical Notes</a> Argonaut Clinical Notes</li>
-<li><a href="StructureDefinition-example-dr.html">Example DR to show how to base off of US Core DR</a> Example DR to show how to base off of US Core DR</li>
+<li><a href="StructureDefinition-bt.html">BT</a></li>
+<li><a href="StructureDefinition-template-basic.html">Profile template-basic</a></li>
 
-<p><br /></p>
+<h4 id="logical-models">Logical Models</h4>
 
-<h4 id="extensions">Extensions</h4>
+<p>The following Logical Models have been defined for this implementation guide.</p>
 
-<p>These extensions have been defined for this implementation guide.</p>
-
-<!-- remove this line to list profiles  -->
-<p><em>use this line to list the profiles</em></p>
-
-<p>{% include list-extensions.xhtml %}</p>
-
-<p><!-- remove this line to list profiles  --></p>
-
-<p><br /></p>
+<hr />
 
 
 
@@ -289,7 +250,7 @@
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            Argonaut Clinical Notes Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, Apr 18, 2018 16:24-0700. |
+            IG-Test3 Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Thu, Apr 19, 2018 17:03-0700. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>
