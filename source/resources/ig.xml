@@ -1,1 +1,57 @@
-<?xml version="1.0" encoding="UTF-8"?><!--Hidden IG for de facto IG publishing--><ImplementationGuide xmlns="http://hl7.org/fhir"><id value="ig"/><url value="http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig"/><name value="Argonaut Clinical Notes"/><status value="draft"/><experimental value="true"/><publisher value="Argonaut Project"/><package><name value="base"/><resource><example value="false"/><sourceReference><reference value="StructureDefinition/example-dr"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="StructureDefinition/argo-clinicalnotes"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="CapabilityStatement/server"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="CapabilityStatement/client"/></sourceReference></resource></package><page><source value="index.md"/><title value="Argonaut Clinical Notes Homepage"/><kind value="page"/><page><source value="_includes/toc.md"/><title value="Argonaut Clinical Notes Table of Contents"/><kind value="page"/></page></page></ImplementationGuide>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Hidden IG for de facto IG publishing-->
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://Mac/Home/Documents/FHIR/FHIR%20tools/STU3Schema/fhir-all.xsd">
+	<id value="ig"/>
+	<url value="http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig"/>
+	<name value="Argonaut Clinical Notes"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<publisher value="Argonaut Project"/>
+	<package>
+		<name value="base"/>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/cn-plus-uscore"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/example-dr"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/argo-clinicalnotes"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="CapabilityStatement/server"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="CapabilityStatement/client"/>
+			</sourceReference>
+		</resource>
+	</package>
+	<global>
+		<type value="Practitioner"></type>
+		<profile> <reference value="StructureDefinition/us-core-practitioner"></reference></profile>
+	</global>
+	<page>
+		<source value="index.md"/>
+		<title value="Argonaut Clinical Notes Homepage"/>
+		<kind value="page"/>
+		<page>
+			<source value="_includes/toc.md"/>
+			<title value="Argonaut Clinical Notes Table of Contents"/>
+			<kind value="page"/>
+		</page>
+	</page>
+</ImplementationGuide>

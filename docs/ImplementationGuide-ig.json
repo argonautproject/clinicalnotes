@@ -19,6 +19,18 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-cn-plus-uscore.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/cn-plus-uscore"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-example-dr.html"
             }
           ],
@@ -64,6 +76,14 @@
           }
         }
       ]
+    }
+  ],
+  "global": [
+    {
+      "type": "Practitioner",
+      "profile": {
+        "reference": "StructureDefinition/us-core-practitioner"
+      }
     }
   ],
   "page": {

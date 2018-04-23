@@ -14,6 +14,15 @@
     <name value="base"/>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-cn-plus-uscore.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/cn-plus-uscore"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-example-dr.html"/>
       </extension>
       <example value="false"/>
@@ -49,6 +58,12 @@
       </sourceReference>
     </resource>
   </package>
+  <global>
+    <type value="Practitioner"/>
+    <profile>
+      <reference value="StructureDefinition/us-core-practitioner"/>
+    </profile>
+  </global>
   <page>
     <source value="index.md"/>
     <title value="Argonaut Clinical Notes Homepage"/>
