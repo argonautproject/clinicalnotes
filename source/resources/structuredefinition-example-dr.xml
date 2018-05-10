@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://Mac/Home/Documents/FHIR/FHIR%20tools/STU3Schema/fhir-all.xsd">
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/fhir-all-xsd%20-STU3/fhir-all.xsd">
 	<id value="example-dr"/>
 	<url value="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/example-dr"/>
 	<name value="Example DR to show how to base off of US Core DR"/>
@@ -16,6 +16,32 @@
 			<path value="DocumentReference"/>
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
+		</element>
+		<element id="DocumentReference.type">
+			<path value="DocumentReference.type"/>
+			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+			<isModifier value="false"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet">
+					<valueUri value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/dr-type"/>
+				</extension>
+				<strength value="required"/>
+				<description value="This is the code specifying the precise type of document"/>
+				<valueSetReference>
+					<reference value="http://hl7.org/fhir/ValueSet/c80-doc-typecodes"/>
+				</valueSetReference>
+			</binding>
+		</element>
+		<element id="DocumentReference.class">
+			<path value="DocumentReference.class"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+			<binding>
+				<strength value="extensible"/>
+				<valueSetUri value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/dr-category"/>
+			</binding>
 		</element>
 		<element id="DocumentReference.author">
 			<path value="DocumentReference.author"/>

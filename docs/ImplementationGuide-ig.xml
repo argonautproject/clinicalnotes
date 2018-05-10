@@ -14,6 +14,24 @@
     <name value="base"/>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-dr-type.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/dr-type"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-dr-category.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/dr-category"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-cn-plus-uscore.html"/>
       </extension>
       <example value="false"/>
@@ -41,6 +59,15 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-dr-category.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CodeSystem/dr-category"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CapabilityStatement-server.html"/>
       </extension>
       <example value="false"/>
@@ -58,12 +85,6 @@
       </sourceReference>
     </resource>
   </package>
-  <global>
-    <type value="Practitioner"/>
-    <profile>
-      <reference value="StructureDefinition/us-core-practitioner"/>
-    </profile>
-  </global>
   <page>
     <source value="index.md"/>
     <title value="Argonaut Clinical Notes Homepage"/>

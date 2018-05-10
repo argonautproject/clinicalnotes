@@ -1,14 +1,17 @@
 ﻿Argonaut Clinical Notes : Validation Results
 =========================================
 
-err = 6, warn = 2, info = 0
-Generated Mon Apr 23 15:42:31 PDT 2018. FHIR version 3.4.0 for 3.0.1
+err = 4, warn = 0, info = 0
+Generated Wed May 09 18:59:52 PDT 2018. FHIR version 3.4.0 for 3.0.1
 
- Build Errors : 5 / 0
- /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/StructureDefinition-us-core-diff-documentreference : 0 / 1
+ Build Errors : 6 / 0
+ /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/CodeSystem-dr-category : 0 / 0
+ /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/StructureDefinition-us-core-diff-documentreference : 0 / 0
+ /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/ValueSet-dr-category : 0 / 0
+ /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/ValueSet-dr-type : 0 / 0
  /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/capabilitystatement-client : 1 / 0
  /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/capabilitystatement-server : 1 / 0
- /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/ig : 1 / 0
+ /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/ig : 0 / 0
  /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/structuredefinition-argo-clinicalnotes : 0 / 0
  /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/structuredefinition-example-dr : 0 / 0
 </table>
@@ -54,18 +57,20 @@ ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-cl
 <script src="assets/js/jquery-ui.min.js"> </script>
 <script>
 try {
-  var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index')'' (last text = ' for a complete list of supported RESTful interactions for this IG.' at line 669 column 75
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/link/body/div/div/div/div/div/div/div/ul/li/ul/li/a at Line 243, column 14: The link 'index.html#cat-facts-to-show-how-the-text-wraps-around-the-contents-block' for "Cat Facts (To Show How the Text Wraps around the Contents Block)" cannot be resolved (valid targets: [page-content-wrapper, jekyll-site-variables, segment-header, publish-box, markdown-toc-introduction, segment-post-footer, markdown-toc-and-more-stuff, markdown-toc, stripe, markdown-toc-more-stuff, back-to-top, segment-footer, segment-navbar, more-stuff, and-more-stuff, project-status, introduction, markdown-toc-jekyll-site-variables])
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/link/body/div/div/div/div/div/div/div/ul/li/ul/li/a at Line 253, column 10: The link 'guidance.html#introduction' for "Introduction" cannot be resolved (valid targets: [page-content-wrapper, use-case-1, segment-header, usage, foo, markdown-toc-usage, segment-post-footer, markdown-toc-general-guidance, general-guidance, markdown-toc, stripe, segment-footer, information, segment-navbar, foo-1, markdown-toc-use-case-1, project-status])
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/link/body/div/div/div/div/div/div/div/ul/li/ul/li/a at Line 254, column 10: The link 'guidance.html#more-stuff' for "More Stuff" cannot be resolved (valid targets: [page-content-wrapper, use-case-1, segment-header, usage, foo, markdown-toc-usage, segment-post-footer, markdown-toc-general-guidance, general-guidance, markdown-toc, stripe, segment-footer, information, segment-navbar, foo-1, markdown-toc-use-case-1, project-status])
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/link/body/div/div/div/div/div/div/div/ul/li/ul/li/ul/li/a at Line 255, column 14: The link 'guidance.html#and-more-stuff' for "And More Stuff" cannot be resolved (valid targets: [page-content-wrapper, use-case-1, segment-header, usage, foo, markdown-toc-usage, segment-post-footer, markdown-toc-general-guidance, general-guidance, markdown-toc, stripe, segment-footer, information, segment-navbar, foo-1, markdown-toc-use-case-1, project-status])
+  var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index')'' (last text = ' for a complete list of supported RESTful interactions for this IG.' at line 670 column 75
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/div/div/div/div/ul/li/ul/li/a at Line 244, column 14: The link 'index.html#cat-facts-to-show-how-the-text-wraps-around-the-contents-block' for "Cat Facts (To Show How the Text Wraps around the Contents Block)" cannot be resolved (valid targets: [page-content-wrapper, jekyll-site-variables, segment-header, publish-box, markdown-toc-introduction, segment-post-footer, markdown-toc-and-more-stuff, markdown-toc, stripe, markdown-toc-more-stuff, back-to-top, segment-footer, segment-navbar, more-stuff, and-more-stuff, project-status, introduction, markdown-toc-jekyll-site-variables])
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/div/div/div/div/ul/li/ul/li/a at Line 254, column 10: The link 'guidance.html#introduction' for "Introduction" cannot be resolved (valid targets: [page-content-wrapper, use-case-1, segment-header, usage, foo, markdown-toc-usage, segment-post-footer, markdown-toc-general-guidance, general-guidance, markdown-toc, stripe, segment-footer, information, segment-navbar, foo-1, markdown-toc-use-case-1, project-status])
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/div/div/div/div/ul/li/ul/li/a at Line 255, column 10: The link 'guidance.html#more-stuff' for "More Stuff" cannot be resolved (valid targets: [page-content-wrapper, use-case-1, segment-header, usage, foo, markdown-toc-usage, segment-post-footer, markdown-toc-general-guidance, general-guidance, markdown-toc, stripe, segment-footer, information, segment-navbar, foo-1, markdown-toc-use-case-1, project-status])
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/div/div/div/div/ul/li/ul/li/ul/li/a at Line 256, column 14: The link 'guidance.html#and-more-stuff' for "And More Stuff" cannot be resolved (valid targets: [page-content-wrapper, use-case-1, segment-header, usage, foo, markdown-toc-usage, segment-post-footer, markdown-toc-general-guidance, general-guidance, markdown-toc, stripe, segment-footer, information, segment-navbar, foo-1, markdown-toc-use-case-1, project-status])
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore-definitions.html#/html/head/body/div/div/div/div/div/div/table/tr/td/p/a at Line 398, column 113: The link 'http://hl7.org/fhir/STU3/ValueSet-dr-type.html' for "6 concepts" cannot be resolved
+== /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/CodeSystem-dr-category.xml ==
 == /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/StructureDefinition-us-core-diff-documentreference.xml ==
-WARNING: StructureDefinition/cn-plus-uscore: StructureDefinition.jurisdiction: Error null validating CodeableConcept
+== /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/ValueSet-dr-category.xml ==
+== /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/ValueSet-dr-type.xml ==
 == /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/capabilitystatement-client.xml ==
 ERROR: CapabilityStatement/client: CapabilityStatement.profile: Unable to resolve resource 'http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/template-basic'
 == /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/capabilitystatement-server.xml ==
 ERROR: CapabilityStatement/server: CapabilityStatement.profile: Unable to resolve resource 'http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/template-basic'
 == /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/ig.xml ==
-ERROR: ImplementationGuide/ig: ImplementationGuide.global.profile: Unable to resolve resource 'StructureDefinition/us-core-practitioner'
 == /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/structuredefinition-argo-clinicalnotes.xml ==
 == /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/structuredefinition-example-dr.xml ==

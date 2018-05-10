@@ -7,6 +7,7 @@
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-cn-plus-uscore-definitions.html#DocumentReference.identifier" title="null">identifier</a><a name="DocumentReference.identifier"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.4">0</span>..<span style="opacity: 0.4">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-cn-plus-uscore-definitions.html#DocumentReference.status" title="null">status</a><a name="DocumentReference.status"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.4">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.4">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/STU3/valueset-document-reference-status.html">DocumentReferenceStatus</a> (<a href="http://hl7.org/fhir/STU3/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set">required</a>)</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-cn-plus-uscore-definitions.html#DocumentReference.type" title="null">type</a><a name="DocumentReference.type"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.4">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.4">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/STU3/valueset-c80-doc-typecodes.html">Document Type Value Set</a> (<a href="http://hl7.org/fhir/STU3/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set">required</a>)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-cn-plus-uscore-definitions.html#DocumentReference.class" title="null">class</a><a name="DocumentReference.class"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">Binding: </span><a href="ValueSet-dr-category.html">DRCategory</a> (<a href="http://hl7.org/fhir/STU3/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>)</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-cn-plus-uscore-definitions.html#DocumentReference.subject" title="null">subject</a><a name="DocumentReference.subject"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(<a href="http://hl7.org/fhir/us/core/1.0.1//StructureDefinition-us-core-patient.html">US Core Patient Profile</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-cn-plus-uscore-definitions.html#DocumentReference.created" title="null">created</a><a name="DocumentReference.created"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.4">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.4">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-cn-plus-uscore-definitions.html#DocumentReference.author" title="null">author</a><a name="DocumentReference.author"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(<a href="http://hl7.org/fhir/us/core/1.0.1//StructureDefinition-us-core-organization.html">US Core Organization Profile</a> | <a href="http://hl7.org/fhir/us/core/1.0.1//StructureDefinition-us-core-practitioner.html">US Core Practitioner</a> | <a href="http://hl7.org/fhir/us/core/1.0.1//StructureDefinition-us-core-patient.html">US Core Patient Profile</a> | <a href="http://hl7.org/fhir/STU3/device.html">Device</a> | <a href="http://hl7.org/fhir/STU3/relatedperson.html">RelatedPerson</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
@@ -448,7 +449,7 @@
       <path value="DocumentReference.type"/>
       <short value="Kind of document (LOINC if possible)"/>
       <definition value="Specifies the particular kind of document referenced  (e.g. History and Physical, Discharge Summary, Progress Note). This usually equates to the purpose of making the document referenced."/>
-      <comment value="Key metadata element describing the document, used in searching/filtering."/>
+      <comment value="The `DocumentReference.type` binding must support at a minimum these [6 concepts](ValueSet-dr-type.html) and may extend to the full  [HITSP C80 Table 2-144 Document Class Value Set Definition](http://build.fhir.org/valueset-c80-doc-typecodes.html)"/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -462,8 +463,11 @@
       <mustSupport value="true"/>
       <isSummary value="true"/>
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet">
+          <valueUri value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/dr-type"/>
+        </extension>
         <strength value="required"/>
-        <description value="Provider role codes consisting of NUCC Health Care Provider Taxonomy Code Set for providers."/>
+        <description value="This is the code specifying the precise type of document"/>
         <valueSetReference>
           <reference value="http://hl7.org/fhir/ValueSet/c80-doc-typecodes"/>
         </valueSetReference>
@@ -492,7 +496,7 @@
       <comment value="This is a metadata field from [XDS/MHD](http://wiki.ihe.net/index.php?title=Mobile_access_to_Health_Documents_(MHD))."/>
       <requirements value="Helps humans to assess whether the document is of interest when viewing a list of documents."/>
       <alias value="kind"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <base>
         <path value="DocumentReference.class"/>
@@ -502,16 +506,11 @@
       <type>
         <code value="CodeableConcept"/>
       </type>
+      <mustSupport value="true"/>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="DocumentC80Class"/>
-        </extension>
-        <strength value="example"/>
-        <description value="High-level kind of a clinical document at a macro level."/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/c80-doc-classcodes"/>
-        </valueSetReference>
+        <strength value="extensible"/>
+        <valueSetUri value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/dr-category"/>
       </binding>
       <mapping>
         <identity value="rim"/>
@@ -1856,16 +1855,29 @@
     </element>
     <element id="DocumentReference.type">
       <path value="DocumentReference.type"/>
+      <comment value="The `DocumentReference.type` binding must support at a minimum these [6 concepts](ValueSet-dr-type.html) and may extend to the full  [HITSP C80 Table 2-144 Document Class Value Set Definition](http://build.fhir.org/valueset-c80-doc-typecodes.html)"/>
       <min value="1"/>
       <max value="1"/>
       <mustSupport value="true"/>
       <isModifier value="false"/>
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet">
+          <valueUri value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/dr-type"/>
+        </extension>
         <strength value="required"/>
-        <description value="Provider role codes consisting of NUCC Health Care Provider Taxonomy Code Set for providers."/>
+        <description value="This is the code specifying the precise type of document"/>
         <valueSetReference>
           <reference value="http://hl7.org/fhir/ValueSet/c80-doc-typecodes"/>
         </valueSetReference>
+      </binding>
+    </element>
+    <element id="DocumentReference.class">
+      <path value="DocumentReference.class"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="extensible"/>
+        <valueSetUri value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/dr-category"/>
       </binding>
     </element>
     <element id="DocumentReference.subject">

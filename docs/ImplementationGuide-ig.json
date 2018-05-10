@@ -19,6 +19,30 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-dr-type.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/dr-type"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-dr-category.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/dr-category"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-cn-plus-uscore.html"
             }
           ],
@@ -55,6 +79,18 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CodeSystem-dr-category.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CodeSystem/dr-category"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "CapabilityStatement-server.html"
             }
           ],
@@ -76,14 +112,6 @@
           }
         }
       ]
-    }
-  ],
-  "global": [
-    {
-      "type": "Practitioner",
-      "profile": {
-        "reference": "StructureDefinition/us-core-practitioner"
-      }
     }
   ],
   "page": {

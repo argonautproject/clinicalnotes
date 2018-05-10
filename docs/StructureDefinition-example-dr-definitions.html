@@ -19,12 +19,13 @@
 
   <link href="assets/css/bootstrap.css" rel="stylesheet"/>
   <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
-  <link href="assets/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-glyphicons.css" rel="stylesheet"/>
 
   <!-- Project extras -->
   <link href="assets/css/project.css" rel="stylesheet"/>
   <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
 	<link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+
 
 
 
@@ -391,7 +392,7 @@
   <tr><td>Definition</td><td><p>Specifies the particular kind of document referenced  (e.g. History and Physical, Discharge Summary, Progress Note). This usually equates to the purpose of making the document referenced.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Provider role codes consisting of NUCC Health Care Provider Taxonomy Code Set for providers.<br/>The codes SHALL be taken from <a href="http://hl7.org/fhir/STU3/valueset-c80-doc-typecodes.html">Document Type Value Set</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>This is the code specifying the precise type of document<br/>The codes SHALL be taken from <a href="http://hl7.org/fhir/STU3/valueset-c80-doc-typecodes.html">Document Type Value Set</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>Key metadata element describing the document, used in searching/filtering.</p>
@@ -399,9 +400,10 @@
   <tr><td colspan="2" class="structure"><a name="DocumentReference.class"> </a><b>DocumentReference.class</b></td></tr>
   <tr><td>Definition</td><td><p>A categorization for the type of document referenced - helps for indexing and searching. This may be implied by or derived from the code specified in the DocumentReference.type.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>High-level kind of a clinical document at a macro level.<br/>For example codes, see <a href="http://hl7.org/fhir/STU3/valueset-c80-doc-classcodes.html">Document Class Value Set</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-dr-category.html">DRCategory</a>; other codes may be used where these codes are not suitable</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Helps humans to assess whether the document is of interest when viewing a list of documents.</p>
 </td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>kind</td></tr>
@@ -807,9 +809,7 @@
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            Argonaut Clinical Notes Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Mon, Apr 23, 2018 15:41-0700. |
-             <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
-                <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+            Argonaut Clinical Notes Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, May 9, 2018 18:59-0700. | <a no-external = "true" style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>
         </p>
    </div>  <!-- /inner-wrapper -->
@@ -844,7 +844,7 @@
 <!-- Analytics Below
 ================================================== -->
 
-<!-- add acnhors before the closing body tag. -->
+<!-- add anchors before the closing body tag. -->
 <script> anchors.add()</script>
 
 
