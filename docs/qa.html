@@ -1,19 +1,19 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 6, errors = 2, warn = 0, info = 0 -->
+<!-- broken links = 51, errors = 2, warn = 4, info = 0 -->
 <head>
   <title>Argonaut Clinical Notes : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for Argonaut Clinical Notes</h1>
- <p>Generated Wed May 09 18:59:52 PDT 2018. FHIR version 3.4.0 for 3.0.1</p>
+ <p>Generated Tue Jun 19 15:09:16 PDT 2018. FHIR version 3.4.0 for 3.0.1</p>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Information messages &amp; Warnings</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>6</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>51</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_Users_ehaas_Documents_FHIR_Argo-ClinicalNotes_source_resources_CodeSystem-dr-category"><b>/Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/CodeSystem-dr-category</b></a></td><td><b>0</b></td><td><b>0</b></td>
@@ -28,10 +28,10 @@
      <td><a href="#_Users_ehaas_Documents_FHIR_Argo-ClinicalNotes_source_resources_ValueSet-dr-type"><b>/Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/ValueSet-dr-type</b></a></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_ehaas_Documents_FHIR_Argo-ClinicalNotes_source_resources_capabilitystatement-client"><b>/Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/capabilitystatement-client</b></a></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#_Users_ehaas_Documents_FHIR_Argo-ClinicalNotes_source_resources_capabilitystatement-client"><b>/Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/capabilitystatement-client</b></a></td><td><b>1</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_ehaas_Documents_FHIR_Argo-ClinicalNotes_source_resources_capabilitystatement-server"><b>/Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/capabilitystatement-server</b></a></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#_Users_ehaas_Documents_FHIR_Argo-ClinicalNotes_source_resources_capabilitystatement-server"><b>/Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/capabilitystatement-server</b></a></td><td><b>1</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_Users_ehaas_Documents_FHIR_Argo-ClinicalNotes_source_resources_ig"><b>/Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/ig</b></a></td><td><b>0</b></td><td><b>0</b></td>
@@ -51,63 +51,157 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html</b></td><td><b>error</b></td><td><b>unable to parse character reference 'type=[type]`
-
-**Example:**
-
--  GET [base]/DocumentReference?patient=1234&amp;type=http://loinc.org | 11488-4
-
-
-*Support:* Mandatory for server and client to support search by patient and note type....rest all TBD. Mandatory for client to support the _include parameter. Optional for server to support the _include parameter.
-
-*Implementation Notes:*   This query searches for all MedicationAdministration resources for a patient and returns a Bundle of all MedicationAdministration and resources for the specified patient. The server application represents the medication using either an inline code or a contained or external reference to the Medication resource. [(how to search by reference)], and [(how to search by _include)].
-
--------
-
-  [(how to search by reference)]: http://hl7.org/fhir/STU3/search.html#reference
-  [(how to search by token)]: http://hl7.org/fhir/STU3/search.html#token
-  [Composite Search Parameters]: http://hl7.org/fhir/STU3/search.html#combining
-  [(how to search by date)]: http://hl7.org/fhir/STU3/search.html#date
-  [(how to search by _include)]: http://hl7.org/fhir/STU3/search.html#_include
-
-
-
-  &lt;!-- ==============END CONTENT END CONTENT=================== --&gt;
-
-
-
-  &lt;!-- ==============END CONTENT END CONTENT=================== --&gt;
-
-
-&lt;/div&gt;  &lt;!-- col --&gt;
-&lt;/div&gt;  &lt;!-- /inner-wrapper --&gt;
-&lt;/div&gt;  &lt;!-- /row --&gt;
-&lt;/div&gt;  &lt;!-- /container --&gt;
-&lt;/div&gt;  &lt;!-- /page content --&gt;
-&lt;/div&gt;  &lt;!-- /page content wrapper --&gt;
-
-
-
-  &lt;script src=&quot;assets/js/jquery.js&quot;&gt; &lt;/script&gt;
-&lt;script src=&quot;assets/js/jquery-ui.min.js&quot;&gt; &lt;/script&gt;
-&lt;script&gt;
-try {
-  var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index')'' (last text = ' for a complete list of supported RESTful interactions for this IG.' at line 670 column 75</b></td>
+     <td><b>DocumentReference.content.attachment.contentType</b></td><td><b>error</b></td><td><b>The reference http://hl7.org/fhir/ValueSet/mimetypes could not be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#4606f776-61f3-4cdc-9338-11d445e83062">/Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/div/div/div/div/ul/li/ul/li/a at Line 244, column 14</a></b></td><td><b>error</b></td><td><b>The link 'index.html#cat-facts-to-show-how-the-text-wraps-around-the-contents-block' for &quot;Cat Facts (To Show How the Text Wraps around the Contents Block)&quot; cannot be resolved (valid targets: [page-content-wrapper, jekyll-site-variables, segment-header, publish-box, markdown-toc-introduction, segment-post-footer, markdown-toc-and-more-stuff, markdown-toc, stripe, markdown-toc-more-stuff, back-to-top, segment-footer, segment-navbar, more-stuff, and-more-stuff, project-status, introduction, markdown-toc-jekyll-site-variables])</b></td>
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#421b1ecd-f4dc-497b-a7fb-ce9b4e31a4d1">/Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/div/div/div/div/ul/li/ul/li/a at Line 244, column 14</a></b></td><td><b>error</b></td><td><b>The link 'index.html#cat-facts-to-show-how-the-text-wraps-around-the-contents-block' for &quot;Cat Facts (To Show How the Text Wraps around the Contents Block)&quot; cannot be resolved (valid targets: [page-content-wrapper, jekyll-site-variables, segment-header, publish-box, markdown-toc-introduction, segment-post-footer, markdown-toc-and-more-stuff, markdown-toc, stripe, markdown-toc-more-stuff, back-to-top, segment-footer, segment-navbar, more-stuff, and-more-stuff, project-status, introduction, markdown-toc-jekyll-site-variables])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#59c64c36-dbea-44c0-bd23-16d90ab6b73a">/Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/div/div/div/div/ul/li/ul/li/a at Line 254, column 10</a></b></td><td><b>error</b></td><td><b>The link 'guidance.html#introduction' for &quot;Introduction&quot; cannot be resolved (valid targets: [page-content-wrapper, use-case-1, segment-header, usage, foo, markdown-toc-usage, segment-post-footer, markdown-toc-general-guidance, general-guidance, markdown-toc, stripe, segment-footer, information, segment-navbar, foo-1, markdown-toc-use-case-1, project-status])</b></td>
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#a206bca0-94f6-40e2-bbf0-f12b74eecc42">/Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/div/div/div/div/ul/li/ul/li/a at Line 254, column 10</a></b></td><td><b>error</b></td><td><b>The link 'guidance.html#introduction' for &quot;Introduction&quot; cannot be resolved (valid targets: [page-content-wrapper, use-case-1, segment-header, usage, foo, markdown-toc-usage, segment-post-footer, markdown-toc-general-guidance, general-guidance, markdown-toc, stripe, segment-footer, information, segment-navbar, foo-1, markdown-toc-use-case-1, project-status])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#7db44a80-dade-490e-84ed-040b759926be">/Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/div/div/div/div/ul/li/ul/li/a at Line 255, column 10</a></b></td><td><b>error</b></td><td><b>The link 'guidance.html#more-stuff' for &quot;More Stuff&quot; cannot be resolved (valid targets: [page-content-wrapper, use-case-1, segment-header, usage, foo, markdown-toc-usage, segment-post-footer, markdown-toc-general-guidance, general-guidance, markdown-toc, stripe, segment-footer, information, segment-navbar, foo-1, markdown-toc-use-case-1, project-status])</b></td>
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#4e53f53b-4864-4c42-9d98-a12ffc5eca6e">/Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/div/div/div/div/ul/li/ul/li/a at Line 255, column 10</a></b></td><td><b>error</b></td><td><b>The link 'guidance.html#more-stuff' for &quot;More Stuff&quot; cannot be resolved (valid targets: [page-content-wrapper, use-case-1, segment-header, usage, foo, markdown-toc-usage, segment-post-footer, markdown-toc-general-guidance, general-guidance, markdown-toc, stripe, segment-footer, information, segment-navbar, foo-1, markdown-toc-use-case-1, project-status])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#3f123573-9bd9-4693-8fcd-576e2349c547">/Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/div/div/div/div/ul/li/ul/li/ul/li/a at Line 256, column 14</a></b></td><td><b>error</b></td><td><b>The link 'guidance.html#and-more-stuff' for &quot;And More Stuff&quot; cannot be resolved (valid targets: [page-content-wrapper, use-case-1, segment-header, usage, foo, markdown-toc-usage, segment-post-footer, markdown-toc-general-guidance, general-guidance, markdown-toc, stripe, segment-footer, information, segment-navbar, foo-1, markdown-toc-use-case-1, project-status])</b></td>
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#a00634c8-77c6-4a94-bd1a-3fdf212dd36b">/Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/div/div/div/div/ul/li/ul/li/ul/li/a at Line 256, column 14</a></b></td><td><b>error</b></td><td><b>The link 'guidance.html#and-more-stuff' for &quot;And More Stuff&quot; cannot be resolved (valid targets: [page-content-wrapper, use-case-1, segment-header, usage, foo, markdown-toc-usage, segment-post-footer, markdown-toc-general-guidance, general-guidance, markdown-toc, stripe, segment-footer, information, segment-navbar, foo-1, markdown-toc-use-case-1, project-status])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore-definitions.html#19109396-908e-4e6f-b82f-4f4ce928c88e">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore-definitions.html#/html/head/body/div/div/div/div/div/div/table/tr/td/p/a at Line 398, column 113</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/ValueSet-dr-type.html' for &quot;6 concepts&quot; cannot be resolved</b></td>
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#20e6b381-dcf7-482c-b76b-54ecf2130c77">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/table/tr/td/a at Line 480, column 2220</a></b></td><td><b>error</b></td><td><b>The link 'mimetypes.html' for &quot;mimetypes&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#8c6e2eb1-861c-41d0-af02-d4cd48e86a2f">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/table/tr/td/a at Line 494, column 2086</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/v3/et/v3-ActCode/index.html' for &quot;et/v3-ActCode&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#a2962031-20c9-4a33-9361-e3c7df5b6033">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 529, column 406</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Language of the resource content&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#e00c46d4-4af4-4128-a1ad-29abef00c027">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 536, column 543</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;current | superseded | entered-in-error&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#46251dd9-4bd9-4c17-a9ba-02fb989b2688">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 537, column 395</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;preliminary | final | appended | amended | entered-in-error&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#4f0893d6-4913-4a5c-a95c-1dab1a685314">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 538, column 658</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Kind of document (LOINC if possible)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#56661230-2e02-4022-8579-ecd927a0cd2c">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 539, column 650</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Categorization of document&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#393b1666-8d80-447a-b854-303429039970">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 549, column 505</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;replaces | transforms | signs | appends&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#02f77c6f-5411-4c92-9380-a0bd1e7c9016">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 553, column 705</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Document security-tags&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#91864eda-035b-48da-b7f6-df0093e7076c">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 561, column 466</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Human language of the content (BCP-47)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#5b60e9e2-86f3-461c-8576-a320acbfe432">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 569, column 533</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Format/content rules for the document&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#4d962eb0-e00e-4264-8063-f2d401c725d1">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 575, column 687</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Main clinical acts documented&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#dcb09fc0-162b-44ed-913f-a500e44e60e5">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 577, column 435</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Kind of facility where patient was seen&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#f2572960-704d-4272-ac30-1f4c23192393">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-example-dr.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 578, column 526</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Additional details about where the content was created (e.g. clinical specialty)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#d0af83aa-7899-4b91-b24a-a7acfeff2532">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/table/tr/td/a at Line 484, column 2224</a></b></td><td><b>error</b></td><td><b>The link 'mimetypes.html' for &quot;mimetypes&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#2a0613bc-ff22-4368-b5dd-9656da7e190c">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/table/tr/td/a at Line 498, column 2090</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/v3/et/v3-ActCode/index.html' for &quot;et/v3-ActCode&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#faceb017-fe81-4aa4-b490-24920a408d1f">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 533, column 410</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Language of the resource content&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#c6338aae-bdc5-4d85-b413-93437b5c3eb8">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 540, column 547</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;current | superseded | entered-in-error&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#497d8065-494e-4ba0-9bb6-7a81ff636a8f">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 541, column 399</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;preliminary | final | appended | amended | entered-in-error&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#bc241fba-45a9-466a-9870-3be01c8fc502">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 542, column 662</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Kind of document (LOINC if possible)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#eae77405-ba29-4e93-90e5-ef183799d317">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 543, column 654</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Categorization of document&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#09d56ab7-bb50-4e7e-9e0c-1ed3aeecefac">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 553, column 509</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;replaces | transforms | signs | appends&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#1d4df68f-6e2c-494f-ab26-bdd25e918025">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 557, column 709</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Document security-tags&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#ed69ac85-b319-4263-9aeb-339ec6cf4b85">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 565, column 470</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Human language of the content (BCP-47)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#a22d1a13-168c-4975-894c-fe57a19c8040">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 573, column 537</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Format/content rules for the document&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#a5577bdf-b0d3-407f-a989-31d96945c17c">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 579, column 691</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Main clinical acts documented&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#e8a443a3-cc94-482c-9345-2df1f9a6965f">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 581, column 439</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Kind of facility where patient was seen&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#b26f1f73-7742-41ae-92d6-ef634b87ba67">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 582, column 530</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Additional details about where the content was created (e.g. clinical specialty)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#e49dfc96-6ee3-42f4-b498-82f36c8e6440">/Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 275, column 8</a></b></td><td><b>error</b></td><td><b>The link 'full-ig.zip' for &quot;Downloadable Copy&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#32ef8bfe-adcb-4e07-a0e2-2c4d9800b53c">/Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 283, column 8</a></b></td><td><b>error</b></td><td><b>The link 'registry.fhir.org.zip' for &quot;Registry Source file&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#18df353f-778d-4cb4-89dc-4568035c92f4">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#/html/head/body/div/div/div/div/div/div/p/a at Line 310, column 9</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/DocumentReference.html' for &quot;DocumentReference&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#6a45ffe8-6cb2-4e94-8fdf-ac6c12699ae2">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/table/tr/td/a at Line 496, column 2228</a></b></td><td><b>error</b></td><td><b>The link 'mimetypes.html' for &quot;mimetypes&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#6391f397-7ea7-4bad-ab46-8fcbac49154c">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/table/tr/td/a at Line 510, column 2094</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/v3/et/v3-ActCode/index.html' for &quot;et/v3-ActCode&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#4502236b-bf26-4a3a-944e-c10a41a01a25">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 545, column 414</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Language of the resource content&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#01976b5b-c7ad-480d-b4cb-4c41a0a0c8c4">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 552, column 551</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;current | superseded | entered-in-error&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#4f4e732d-6361-4ba7-b5ef-2cbaf4bdd592">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 553, column 403</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;preliminary | final | appended | amended | entered-in-error&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#b7fec36a-42a6-4867-b61d-7129c079583b">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 554, column 666</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Kind of document (LOINC if possible)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#1d12732c-d2fa-4261-9b8b-535bd129673a">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 555, column 548</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Categorization of document&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#88dc61e7-efe2-4a11-bc43-cbb0ab208bd0">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 565, column 513</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;replaces | transforms | signs | appends&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#4a98ae40-7afc-4404-8b8c-c0451177f189">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 569, column 713</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Document security-tags&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#c9e8cdfa-55b6-4cb7-839d-965ef9f2b365">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 577, column 474</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Human language of the content (BCP-47)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#229e4d9e-0b8b-41b4-bb9e-9936fb88b830">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 585, column 541</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Format/content rules for the document&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#cc54be76-f502-4422-9ccb-6f5a7e37640c">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 591, column 695</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Main clinical acts documented&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#f4fdbe47-4a34-42e4-9c77-3da19638d567">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 593, column 443</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Kind of facility where patient was seen&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#7a24f08e-062b-4da8-8a68-9ceb0286e37a">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 594, column 534</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Additional details about where the content was created (e.g. clinical specialty)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore-definitions.html#9507bfcc-9edf-47c7-9db9-3bde8079198b">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-cn-plus-uscore-definitions.html#/html/head/body/div/div/div/div/div/div/table/tr/td/p/a at Line 398, column 113</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/ValueSet-dr-type.html' for &quot;6 concepts&quot; cannot be resolved</b></td>
    </tr>
 </table>
 <hr/>
@@ -149,6 +243,12 @@ try {
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CapabilityStatement/client: CapabilityStatement.format[1]</b></td><td><b>warning</b></td><td><b>ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CapabilityStatement/client: CapabilityStatement.format[2]</b></td><td><b>warning</b></td><td><b>ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found</b></td>
+   </tr>
    <tr style="background-color: #ffcccc">
      <td><b>CapabilityStatement/client: CapabilityStatement.profile</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/template-basic'</b></td>
    </tr>
@@ -159,6 +259,12 @@ try {
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CapabilityStatement/server: CapabilityStatement.format[1]</b></td><td><b>warning</b></td><td><b>ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CapabilityStatement/server: CapabilityStatement.format[2]</b></td><td><b>warning</b></td><td><b>ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>CapabilityStatement/server: CapabilityStatement.profile</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/template-basic'</b></td>

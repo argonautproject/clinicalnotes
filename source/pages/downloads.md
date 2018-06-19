@@ -4,7 +4,7 @@ layout: default
 active: downloads
 ---
 
-**Validator Pack and Definitions:**
+**Validator Pack and Definitions**
 
 The following file contains all the value sets, profiles, extensions, list of pages and urls in the IG, etc defined as part of the this Implementation Guides.:
 
@@ -21,8 +21,22 @@ These files should be the first choice whenever generating any implementation ar
 
 - [Schematrons](#)
 
-**Examples:** all the examples that are used in this Implementation Guide available for download:
+**Examples**
+
+all the examples that are used in this Implementation Guide available for download:
 
 - [XML](examples.xml.zip)
 - [JSON](examples.json.zip)
 - [TTl](examples.ttl.zip)
+
+**Downloadable Copy of Entire Specification**
+
+A downloadable version is available so this Implementation Guide can be hosted locally:
+
+- [Downloadable Copy](full-ig.zip)
+
+**FHIR IG Registry Source Documentation**
+
+A file for uploading this Guide and all its artifacts to a FHIR Registry
+
+- [Registry Source file](registry.fhir.org.zip)
