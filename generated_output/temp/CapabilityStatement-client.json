@@ -22,16 +22,6 @@
     }
   ],
   "description": "This resource defines the expected capabilities ",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "urn:iso:std:iso:3166",
-          "code": "US"
-        }
-      ]
-    }
-  ],
   "kind": "requirements",
   "fhirVersion": "3.0.0",
   "format": [

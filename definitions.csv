@@ -29,7 +29,7 @@ canonicalBase,http://fhir.org/guides/argonaut-clinicalnotes
 dependencyList.location,http://hl7.org/fhir/us/core
 dependencyList.name,uscore
 dependencyList.source,dependencies/uscore-vp
-dependencyList.version,dev
+dependencyList.version,current
 special-urls,
 tool,jekyll
 logging,progress

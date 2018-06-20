@@ -1,6 +1,34 @@
 ﻿{
-  "argo-clinicalnotes": {
+  "cn-plus-uscore": {
     "index": 0,
+    "url": "http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/cn-plus-uscore",
+    "name": "Clinical Notes Plus US Core DocumentReference Differential Profile",
+    "path": "StructureDefinition-cn-plus-uscore.html",
+    "kind": "resource",
+    "type": "DocumentReference",
+    "base": "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+    "basename": "DocumentReference",
+    "basepath": "http://hl7.org/fhir/STU3/documentreference.html",
+    "status": "draft",
+    "date": "Sun Apr 22 17:00:00 PDT 2018",
+    "publisher": "ArgonautProject",
+    "description": "The DocumentReference profile used in show differentialof the Clinical Notes +  US Core Profile."
+  },
+  "example-dr": {
+    "index": 1,
+    "url": "http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/example-dr",
+    "name": "Example DR to show how to base off of US Core DR",
+    "path": "StructureDefinition-example-dr.html",
+    "kind": "resource",
+    "type": "DocumentReference",
+    "base": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference",
+    "basename": "US Core DocumentReference Profile",
+    "basepath": "http://hl7.org/fhir/us/core/StructureDefinition-us-core-documentreference.html",
+    "status": "draft",
+    "date": "Tue Apr 10 06:48:14 PDT 2018"
+  },
+  "argo-clinicalnotes": {
+    "index": 2,
     "url": "http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-clinicalnotes",
     "name": "Argonaut Clinical Notes",
     "path": "StructureDefinition-argo-clinicalnotes.html",

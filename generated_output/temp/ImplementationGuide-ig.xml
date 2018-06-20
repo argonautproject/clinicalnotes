@@ -6,12 +6,50 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Argonaut Clinical Notes</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig</pre></div>
   </text>
   <url value="http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig"/>
+  <version value="0.0.0"/>
   <name value="Argonaut Clinical Notes"/>
   <status value="draft"/>
   <experimental value="true"/>
   <publisher value="Argonaut Project"/>
+  <fhirVersion value="3.0.1"/>
   <package id="p1">
     <name value="base"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-dr-type.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/dr-type"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-dr-category.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/dr-category"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-cn-plus-uscore.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/cn-plus-uscore"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-example-dr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/example-dr"/>
+      </sourceReference>
+    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-argo-clinicalnotes.html"/>
@@ -19,6 +57,15 @@
       <example value="false"/>
       <sourceReference>
         <reference value="StructureDefinition/argo-clinicalnotes"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-dr-category.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CodeSystem/dr-category"/>
       </sourceReference>
     </resource>
     <resource>

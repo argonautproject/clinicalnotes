@@ -6,15 +6,65 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Argonaut Clinical Notes</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig</pre></div>"
   },
   "url": "http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig",
+  "version": "0.0.0",
   "name": "Argonaut Clinical Notes",
   "status": "draft",
   "experimental": true,
   "publisher": "Argonaut Project",
+  "fhirVersion": "3.0.1",
   "package": [
     {
       "id": "p1",
       "name": "base",
       "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-dr-type.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/dr-type"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-dr-category.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/dr-category"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-cn-plus-uscore.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/cn-plus-uscore"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-example-dr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/example-dr"
+          }
+        },
         {
           "extension": [
             {
@@ -25,6 +75,18 @@
           "example": false,
           "sourceReference": {
             "reference": "StructureDefinition/argo-clinicalnotes"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CodeSystem-dr-category.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CodeSystem/dr-category"
           }
         },
         {
