@@ -1,1 +1,111 @@
-{"dependencyList": [{"name": "uscore", "location": "http://hl7.org/fhir/us/core", "source": "dependencies/uscore-vp", "version": "current"}], "igtemplate-dir": "/Users/ehaas/Documents/FHIR/IG-Template2/", "html-template": "html-template.html", "swagger": [{"mode": "single", "capabilities": "server"}], "resources": {"CapabilityStatement/client": {"source": "capabilitystatement-client.xml", "base": "CapabilityStatement-client.html"}, "CodeSystem/dr-category": {"source": "CodeSystem-dr-category.xml", "base": "CodeSystem-dr-category.html"}, "ValueSet/dr-category": {"source": "ValueSet-dr-category.xml", "base": "ValueSet-dr-category.html"}, "StructureDefinition/cn-plus-uscore": {"source": "StructureDefinition-us-core-diff-documentreference.xml", "base": "StructureDefinition-cn-plus-uscore.html", "defns": "StructureDefinition-cn-plus-uscore-definitions.html"}, "StructureDefinition/argo-clinicalnotes": {"source": "structuredefinition-argo-clinicalnotes.xml", "base": "StructureDefinition-argo-clinicalnotes.html", "defns": "StructureDefinition-argo-clinicalnotes-definitions.html"}, "CapabilityStatement/server": {"source": "capabilitystatement-server.xml", "base": "CapabilityStatement-server.html"}, "ValueSet/dr-type": {"source": "ValueSet-dr-type.xml", "base": "ValueSet-dr-type.html"}, "StructureDefinition/example-dr": {"source": "structuredefinition-example-dr.xml", "base": "StructureDefinition-example-dr.html", "defns": "StructureDefinition-example-dr-definitions.html"}}, "working-dir": "/Users/ehaas/Documents/FHIR/Argonaut-ClinicalNotes/", "broken-links": "warning", "no-inactive-codes": "false", "publisher": "Argonaut Project", "topofpage": "true", "status": "draft", "fixed-business-version": "0.0.0", "extraTemplates": ["mappings"], "logging": ["progress"], "gen-examples": "false", "tool": "jekyll", "pub_url": "ehaas@healthedatainc.com", "allviews": "true", "license": "CC0-1.0", "canonicalBase": "http://fhir.org/guides/argonaut-clinicalnotes", "do-transforms": "false", "defaults": {"ConceptMap": {"template-base": "base.html"}, "StructureDefinition": {"template-defns": "sd-definitions.html", "template-base": "sd.html", "template-mappings": "sd-mappings.html"}, "SearchParameter": {"template-base": "base.html"}, "CapabilityStatement": {"template-base": "base.html"}, "CodeSystem": {"template-base": "base.html"}, "Any": {"template-base": "base.html", "template-format": "format.html"}, "StructureMap": {"profiles": false, "content": false, "template-base": "ex.html", "script": false}, "OperationDefinition": {"template-base": "base.html"}, "ValueSet": {"template-base": "base.html"}}, "npm-name": "healthedatainc.igtemplate", "source": "ig.xml", "version": "3.0.1", "title": "Argonaut Clinical Notes", "mappings": "true", "sct-edition": "http://snomed.info/sct/731000124108", "paths": {"output": "docs", "specification": "http://hl7.org/fhir/STU3", "temp": "generated_output/temp", "txCache": "generated_output/txCache", "qa": "generated_output/qa", "resources": ["source/resources", "source/examples"], "pages": ["framework", "source/pages"]}}
+{
+    "dependencyList": [{
+        "name": "uscore",
+        "location": "http://hl7.org/fhir/us/core",
+        "source": "dependencies/uscore-vp",
+        "version": "current"
+    }],
+    "igtemplate-dir": "/Users/ehaas/Documents/FHIR/IG-Template2/",
+    "html-template": "html-template.html",
+    "swagger": [{
+        "mode": "single",
+        "capabilities": "server"
+    }],
+    "resources": {
+        "CapabilityStatement/client": {
+            "source": "capabilitystatement-client.xml",
+            "base": "CapabilityStatement-client.html"
+        },
+        "CodeSystem/documentreference-category": {
+            "source": "CodeSystem-documentreference-category.xml",
+            "base": "CodeSystem-documentreference-category.html"
+        },
+        "ValueSet/documentreference-category": {
+            "source": "ValueSet-documentreference-category.xml",
+            "base": "ValueSet-documentreference-category.html"
+        },
+        "StructureDefinition/cn-plus-uscore": {
+            "source": "StructureDefinition-us-core-diff-documentreference.xml",
+            "base": "StructureDefinition-cn-plus-uscore.html",
+            "defns": "StructureDefinition-cn-plus-uscore-definitions.html"
+        },
+        "StructureDefinition/argo-clinicalnotes": {
+            "source": "structuredefinition-argo-clinicalnotes.xml",
+            "base": "StructureDefinition-argo-clinicalnotes.html",
+            "defns": "StructureDefinition-argo-clinicalnotes-definitions.html"
+        },
+        "CapabilityStatement/server": {
+            "source": "capabilitystatement-server.xml",
+            "base": "CapabilityStatement-server.html"
+        },
+        "ValueSet/argonaut-clinical-note-type": {
+            "source": "ValueSet-argonaut-clinical-note-type.xml",
+            "base": "ValueSet-argonaut-clinical-note-type.html"
+        },
+        "StructureDefinition/example-dr": {
+            "source": "structuredefinition-example-dr.xml",
+            "base": "StructureDefinition-example-dr.html",
+            "defns": "StructureDefinition-example-dr-definitions.html"
+        }
+    },
+    "working-dir": "/Users/ehaas/Documents/FHIR/Argonaut-ClinicalNotes/",
+    "broken-links": "warning",
+    "no-inactive-codes": "false",
+    "publisher": "Argonaut Project",
+    "topofpage": "true",
+    "status": "draft",
+    "fixed-business-version": "0.0.0",
+    "extraTemplates": ["mappings"],
+    "logging": ["progress"],
+    "gen-examples": "false",
+    "tool": "jekyll",
+    "pub_url": "ehaas@healthedatainc.com",
+    "allviews": "true",
+    "license": "CC0-1.0",
+    "canonicalBase": "http://fhir.org/guides/argonaut-clinicalnotes",
+    "do-transforms": "false",
+    "defaults": {
+        "ConceptMap": {"template-base": "base.html"},
+        "StructureDefinition": {
+            "template-defns": "sd-definitions.html",
+            "template-base": "sd.html",
+            "template-mappings": "sd-mappings.html"
+        },
+        "SearchParameter": {"template-base": "base.html"},
+        "CapabilityStatement": {"template-base": "base.html"},
+        "CodeSystem": {"template-base": "base.html"},
+        "Any": {
+            "template-base": "base.html",
+            "template-format": "format.html"
+        },
+        "StructureMap": {
+            "profiles": false,
+            "content": false,
+            "template-base": "ex.html",
+            "script": false
+        },
+        "OperationDefinition": {"template-base": "base.html"},
+        "ValueSet": {"template-base": "base.html"}
+    },
+    "npm-name": "healthedatainc.igtemplate",
+    "source": "ig.xml",
+    "version": "3.0.1",
+    "title": "Argonaut Clinical Notes",
+    "mappings": "true",
+    "sct-edition": "http://snomed.info/sct/731000124108",
+    "paths": {
+        "output": "docs",
+        "specification": "http://hl7.org/fhir/STU3",
+        "temp": "generated_output/temp",
+        "txCache": "generated_output/txCache",
+        "qa": "generated_output/qa",
+        "resources": [
+            "source/resources",
+            "source/examples"
+        ],
+        "pages": [
+            "framework",
+            "source/pages"
+        ]
+    }
+}

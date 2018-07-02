@@ -239,21 +239,61 @@
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
-<ul id="markdown-toc">
-  <li><a href="#general-guidance" id="markdown-toc-general-guidance">General Guidance</a></li>
-  <li><a href="#use-case-1" id="markdown-toc-use-case-1">Use Case 1</a>    <ul>
-      <li><a href="#usage" id="markdown-toc-usage">Usage</a></li>
-    </ul>
-  </li>
+<!--* Do not remove this line (it will not be displayed)
+ {:toc} -->
+
+<h3 id="clinical-notes">Clinical Notes</h3>
+
+<p>Clinical Notes are a key component to communicate the current status of a patient. Notes support transitions of care, care planning, quality reporting, billing and many other care activities. This implementation guide does not define new note types or set content requirements per note type. Instead, this implementation guide focuses on unlocking Clinical Notes captured in existing systems.</p>
+
+<p>Specifically, this implementation guide requires systems support the following 5 common clinical notes:</p>
+
+<ul>
+  <li>Consultation Note (11488-4)</li>
+  <li>Discharge Summary (18842-5)</li>
+  <li>History &amp; Physical Note (34117-2)</li>
+  <li>Procedures Note (28570-0)</li>
+  <li>Progress Note (11506-3)</li>
 </ul>
 
-<h3 id="general-guidance">General Guidance</h3>
+<p>These notes are defined in the <strong>INSERT VALUE SET HERE</strong>. These 5 note types represent the Common Clinicanl Notes and are the minimum set a system must support to claim conformance to this guide. Systems are encouraged to support many other common notes types, such as:</p>
 
-<p>blah blah blah</p>
+<ul>
+  <li>Imaging</li>
+  <li>Laboratory and pathology narrative</li>
+  <li>Referral Note</li>
+  <li>Surgical Operation Note</li>
+  <li>Nurse Note</li>
+</ul>
 
-<h3 id="use-case-1">Use Case 1</h3>
+<p>The Argonaut project team developed the initial list of 5 through a survey of the participants in Arognaut and the VA.</p>
 
-<p>Use case 1 …</p>
+<h3 id="selection-of-documentreference">Selection of DocumentReference</h3>
+
+<ul>
+  <li>Include history of resources considered, plus a new resource</li>
+  <li>Discussion on flipping to think about different formats rather than resources.
+*</li>
+</ul>
+
+<h3 id="clinical-notes-vs-clinicalimpression">Clinical Notes vs ClinicalImpression</h3>
+
+<p>The <a href="http://hl7.org/fhir/STU3">FHIR Version 3.0.1</a> includes the <a href="http://hl7.org/fhir/STU3/clinicalimpression.html">ClinicalImpression</a> resource to support the record of a clinical assessment.</p>
+
+<p>Taken from the Resource Definition:</p>
+
+<p>A record of a clinical assessment performed to determine what problem(s) may affect the patient and before planning the treatments or management strategies that are best to manage a patient’s condition. Assessments are often 1:1 with a clinical consultation / encounter, but this varies greatly depending on the clinical workflow. This resource is called “ClinicalImpression” rather than “ClinicalAssessment” to avoid confusion with the recording of assessment tools such as Apgar score</p>
+
+<ul>
+  <li>How do systems expect to store and expose “Progress satisfactory, continue with treatment”?</li>
+  <li>Will use 7/18/2018 call to flesh out</li>
+</ul>
+
+<p>New operation to retrieve value sets at a specific element</p>
+
+<h3 id="future-work">Future Work</h3>
+
+<p>Expand the number of notes systems must support.</p>
 
 <h4 id="usage">Usage</h4>
 
@@ -322,7 +362,7 @@ dfjkl
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            Argonaut Clinical Notes Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Tue, Jun 19, 2018 18:45-0700. |
+            Argonaut Clinical Notes Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Mon, Jul 2, 2018 10:41-0400. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

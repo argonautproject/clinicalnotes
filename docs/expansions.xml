@@ -1,95 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="6e062b08-5520-4715-bde7-ce7c6216955a"/>
+  <id value="f562a322-9fd8-4a60-b724-df974f459af2"/>
   <meta>
-    <lastUpdated value="2018-06-19T18:45:04.862-07:00"/>
+    <lastUpdated value="2018-07-02T10:41:54.739-04:00"/>
   </meta>
   <type value="collection"/>
-  <entry>
-    <fullUrl value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/dr-category"/>
-    <resource>
-      <ValueSet>
-        <id value="dr-category"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/dr-category version 0.0.0</p>
-            <p>All codes from system 
-              <a href="CodeSystem-dr-category.html">
-                <code>http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/dr-category</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---fhir.org-guides-argonaut-clinicalnotes-CodeSystem-dr-category-cinical-note"> </a>
-                  <a href="CodeSystem-dr-category.html#dr-category-cinical-note">cinical-note</a>
-                </td>
-                <td>Clinical Note</td>
-                <td>Part of a medical record where healthcare professionals record details to document a patient&#39;s clinical status or achievements during the course of a hospitalization or over the course of outpatient care ( [Wikipedia](https://en.wikipedia.org/wiki/Progress_note))</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---fhir.org-guides-argonaut-clinicalnotes-CodeSystem-dr-category-other"> </a>
-                  <a href="CodeSystem-dr-category.html#dr-category-other">other</a>
-                </td>
-                <td>Other</td>
-                <td>Indicates that the category is not covered by one of the pre-defined codes.</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/dr-category"/>
-        <version value="0.0.0"/>
-        <name value="DRCategory"/>
-        <title value="Argonaut DocumentReferences Category Value Set"/>
-        <status value="draft"/>
-        <date value="2018-05-02T08:16:34-07:00"/>
-        <description value="The Argonaut DocumentReferences Type Value Set is a &#39;starter set&#39; of categorie supported for fetching and storing clinical notes."/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-            <display value="United States of America"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:0fece3c2-40f6-4eed-a15b-bf8c331962cb"/>
-          <timestamp value="2018-06-19T18:45:12-07:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="profile"/>
-            <valueUri value="http://hl7.org/fhir/ExpansionProfile/dc8fd4bc-091a-424a-8a3b-6198ef146891"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/dr-category|0.0.0"/>
-          </parameter>
-          <contains>
-            <system value="http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/dr-category"/>
-            <code value="cinical-note"/>
-            <display value="Clinical Note"/>
-          </contains>
-          <contains>
-            <system value="http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/dr-category"/>
-            <code value="other"/>
-            <display value="Other"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
 </Bundle>

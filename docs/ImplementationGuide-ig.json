@@ -6,12 +6,10 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Argonaut Clinical Notes</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig</pre></div>"
   },
   "url": "http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig",
-  "version": "0.0.0",
   "name": "Argonaut Clinical Notes",
   "status": "draft",
   "experimental": true,
   "publisher": "Argonaut Project",
-  "fhirVersion": "3.0.1",
   "package": [
     {
       "id": "p1",
@@ -21,24 +19,24 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "ValueSet-dr-type.html"
+              "valueUri": "ValueSet-argonaut-clinical-note-type.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "ValueSet/dr-type"
+            "reference": "ValueSet/argonaut-clinical-note-type"
           }
         },
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "ValueSet-dr-category.html"
+              "valueUri": "ValueSet-documentreference-category.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "ValueSet/dr-category"
+            "reference": "ValueSet/documentreference-category"
           }
         },
         {
@@ -81,12 +79,12 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "CodeSystem-dr-category.html"
+              "valueUri": "CodeSystem-documentreference-category.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "CodeSystem/dr-category"
+            "reference": "CodeSystem/documentreference-category"
           }
         },
         {

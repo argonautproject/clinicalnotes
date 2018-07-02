@@ -13,12 +13,10 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Argonaut Clinical Notes</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig</pre></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig"];
-  fhir:ImplementationGuide.version [ fhir:value "0.0.0"];
   fhir:ImplementationGuide.name [ fhir:value "Argonaut Clinical Notes"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean];
   fhir:ImplementationGuide.publisher [ fhir:value "Argonaut Project"];
-  fhir:ImplementationGuide.fhirVersion [ fhir:value "3.0.1"];
   fhir:ImplementationGuide.package [
      fhir:index 0;
      fhir:Element.id [ fhir:value "p1" ];
@@ -28,24 +26,24 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-dr-type.html" ]
+         fhir:Extension.valueUri [ fhir:value "ValueSet-argonaut-clinical-note-type.html" ]
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/dr-type>;
-         fhir:Reference.reference [ fhir:value "ValueSet/dr-type" ]
+         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/argonaut-clinical-note-type>;
+         fhir:Reference.reference [ fhir:value "ValueSet/argonaut-clinical-note-type" ]
        ]
      ], [
        fhir:index 1;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-dr-category.html" ]
+         fhir:Extension.valueUri [ fhir:value "ValueSet-documentreference-category.html" ]
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/dr-category>;
-         fhir:Reference.reference [ fhir:value "ValueSet/dr-category" ]
+         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/documentreference-category>;
+         fhir:Reference.reference [ fhir:value "ValueSet/documentreference-category" ]
        ]
      ], [
        fhir:index 2;
@@ -88,12 +86,12 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CodeSystem-dr-category.html" ]
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-documentreference-category.html" ]
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/dr-category>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/dr-category" ]
+         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/documentreference-category" ]
        ]
      ], [
        fhir:index 6;

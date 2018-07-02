@@ -1,56 +1,8 @@
 {
-  "resourceType" : "Bundle",
-  "id" : "6e062b08-5520-4715-bde7-ce7c6216955a",
-  "meta" : {
-    "lastUpdated" : "2018-06-19T18:45:04.862-07:00"
+  "resourceType": "Bundle",
+  "id": "f562a322-9fd8-4a60-b724-df974f459af2",
+  "meta": {
+    "lastUpdated": "2018-07-02T10:41:54.739-04:00"
   },
-  "type" : "collection",
-  "entry" : [{
-    "fullUrl" : "http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/dr-category",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "dr-category",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\">Expansion based on http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/dr-category version 0.0.0</p><p>All codes from system <a href=\"CodeSystem-dr-category.html\"><code>http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/dr-category</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.org-guides-argonaut-clinicalnotes-CodeSystem-dr-category-cinical-note\"> </a><a href=\"CodeSystem-dr-category.html#dr-category-cinical-note\">cinical-note</a></td><td>Clinical Note</td><td>Part of a medical record where healthcare professionals record details to document a patient\'s clinical status or achievements during the course of a hospitalization or over the course of outpatient care ( [Wikipedia](https://en.wikipedia.org/wiki/Progress_note))</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.org-guides-argonaut-clinicalnotes-CodeSystem-dr-category-other\"> </a><a href=\"CodeSystem-dr-category.html#dr-category-other\">other</a></td><td>Other</td><td>Indicates that the category is not covered by one of the pre-defined codes.</td></tr></table></div>"
-      },
-      "url" : "http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/dr-category",
-      "version" : "0.0.0",
-      "name" : "DRCategory",
-      "title" : "Argonaut DocumentReferences Category Value Set",
-      "status" : "draft",
-      "date" : "2018-05-02T08:16:34-07:00",
-      "description" : "The Argonaut DocumentReferences Type Value Set is a \'starter set\' of categorie supported for fetching and storing clinical notes.",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "US",
-          "display" : "United States of America"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:0fece3c2-40f6-4eed-a15b-bf8c331962cb",
-        "timestamp" : "2018-06-19T18:45:12-07:00",
-        "total" : 2,
-        "parameter" : [{
-          "name" : "profile",
-          "valueUri" : "http://hl7.org/fhir/ExpansionProfile/dc8fd4bc-091a-424a-8a3b-6198ef146891"
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/dr-category|0.0.0"
-        }],
-        "contains" : [{
-          "system" : "http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/dr-category",
-          "code" : "cinical-note",
-          "display" : "Clinical Note"
-        },
-        {
-          "system" : "http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/dr-category",
-          "code" : "other",
-          "display" : "Other"
-        }]
-      }
-    }
-  }]
+  "type": "collection"
 }

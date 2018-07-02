@@ -1,23 +1,22 @@
 ﻿Argonaut Clinical Notes : Validation Results
 =========================================
 
-err = 4, warn = 8, info = 0
-Generated Tue Jun 19 18:45:39 PDT 2018. FHIR version 3.4.0 for 3.0.1
+err = 4, warn = 2, info = 0
+Generated Mon Jul 02 10:42:03 EDT 2018. FHIR version 3.3.0 for 3.0.1
 
- Build Errors : 33 / 0
- /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/CodeSystem-dr-category : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/StructureDefinition-us-core-diff-documentreference : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/ValueSet-dr-category : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/ValueSet-dr-type : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/capabilitystatement-client : 1 / 2
- /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/capabilitystatement-server : 1 / 2
- /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/ig : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/structuredefinition-argo-clinicalnotes : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/structuredefinition-example-dr : 0 / 0
+ Build Errors : 6 / 0
+ C:\clinicalnotes\source\resources\CodeSystem-documentreference-category : 0 / 1
+ C:\clinicalnotes\source\resources\StructureDefinition-us-core-diff-documentreference : 0 / 0
+ C:\clinicalnotes\source\resources\ValueSet-argonaut-clinical-note-type : 0 / 0
+ C:\clinicalnotes\source\resources\ValueSet-documentreference-category : 0 / 0
+ C:\clinicalnotes\source\resources\capabilitystatement-client : 1 / 0
+ C:\clinicalnotes\source\resources\capabilitystatement-server : 1 / 0
+ C:\clinicalnotes\source\resources\ig : 0 / 0
+ C:\clinicalnotes\source\resources\structuredefinition-argo-clinicalnotes : 0 / 0
+ C:\clinicalnotes\source\resources\structuredefinition-example-dr : 0 / 0
 </table>
 == n/a ==
-ERROR: DocumentReference.content.attachment.contentType: The reference http://hl7.org/fhir/ValueSet/mimetypes could not be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-argo-clinicalnotes.html: unable to parse character reference 'type=[type]`
+ERROR: C:\clinicalnotes\docs\StructureDefinition-argo-clinicalnotes.html: unable to parse character reference 'type=[type]`
 
 **Example:**
 
@@ -59,49 +58,61 @@ ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-a
 <script>
 try {
   var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index')'' (last text = ' for a complete list of supported RESTful interactions for this IG.' at line 674 column 75
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-cn-plus-uscore.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/table/tr/td/a at Line 488, column 2224: The link 'mimetypes.html' for "mimetypes" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-cn-plus-uscore.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/table/tr/td/a at Line 502, column 2090: The link 'http://hl7.org/fhir/STU3/v3/et/v3-ActCode/index.html' for "et/v3-ActCode" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-cn-plus-uscore.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 537, column 410: The link 'http://hl7.org/fhir/STU3/null.html' for "Language of the resource content" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-cn-plus-uscore.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 544, column 547: The link 'http://hl7.org/fhir/STU3/null.html' for "current | superseded | entered-in-error" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-cn-plus-uscore.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 545, column 399: The link 'http://hl7.org/fhir/STU3/null.html' for "preliminary | final | appended | amended | entered-in-error" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-cn-plus-uscore.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 546, column 662: The link 'http://hl7.org/fhir/STU3/null.html' for "Kind of document (LOINC if possible)" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-cn-plus-uscore.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 547, column 654: The link 'http://hl7.org/fhir/STU3/null.html' for "Categorization of document" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-cn-plus-uscore.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 557, column 509: The link 'http://hl7.org/fhir/STU3/null.html' for "replaces | transforms | signs | appends" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-cn-plus-uscore.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 561, column 709: The link 'http://hl7.org/fhir/STU3/null.html' for "Document security-tags" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-cn-plus-uscore.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 569, column 470: The link 'http://hl7.org/fhir/STU3/null.html' for "Human language of the content (BCP-47)" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-cn-plus-uscore.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 577, column 537: The link 'http://hl7.org/fhir/STU3/null.html' for "Format/content rules for the document" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-cn-plus-uscore.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 583, column 691: The link 'http://hl7.org/fhir/STU3/null.html' for "Main clinical acts documented" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-cn-plus-uscore.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 585, column 439: The link 'http://hl7.org/fhir/STU3/null.html' for "Kind of facility where patient was seen" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-cn-plus-uscore.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 586, column 530: The link 'http://hl7.org/fhir/STU3/null.html' for "Additional details about where the content was created (e.g. clinical specialty)" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-example-dr.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/table/tr/td/a at Line 484, column 2220: The link 'mimetypes.html' for "mimetypes" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-example-dr.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/table/tr/td/a at Line 498, column 2086: The link 'http://hl7.org/fhir/STU3/v3/et/v3-ActCode/index.html' for "et/v3-ActCode" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-example-dr.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 533, column 406: The link 'http://hl7.org/fhir/STU3/null.html' for "Language of the resource content" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-example-dr.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 540, column 543: The link 'http://hl7.org/fhir/STU3/null.html' for "current | superseded | entered-in-error" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-example-dr.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 541, column 395: The link 'http://hl7.org/fhir/STU3/null.html' for "preliminary | final | appended | amended | entered-in-error" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-example-dr.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 542, column 658: The link 'http://hl7.org/fhir/STU3/null.html' for "Kind of document (LOINC if possible)" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-example-dr.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 543, column 650: The link 'http://hl7.org/fhir/STU3/null.html' for "Categorization of document" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-example-dr.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 553, column 505: The link 'http://hl7.org/fhir/STU3/null.html' for "replaces | transforms | signs | appends" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-example-dr.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 557, column 705: The link 'http://hl7.org/fhir/STU3/null.html' for "Document security-tags" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-example-dr.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 565, column 466: The link 'http://hl7.org/fhir/STU3/null.html' for "Human language of the content (BCP-47)" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-example-dr.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 573, column 533: The link 'http://hl7.org/fhir/STU3/null.html' for "Format/content rules for the document" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-example-dr.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 579, column 687: The link 'http://hl7.org/fhir/STU3/null.html' for "Main clinical acts documented" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-example-dr.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 581, column 435: The link 'http://hl7.org/fhir/STU3/null.html' for "Kind of facility where patient was seen" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-example-dr.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 582, column 526: The link 'http://hl7.org/fhir/STU3/null.html' for "Additional details about where the content was created (e.g. clinical specialty)" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-cn-plus-uscore-definitions.html#/html/head/link/body/div/div/div/div/div/div/table/tr/td/p/a at Line 402, column 113: The link 'http://hl7.org/fhir/STU3/ValueSet-dr-type.html' for "6 concepts" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/downloads.html#/html/head/link/body/div/div/div/div/div/div/ul/li/a at Line 275, column 8: The link 'full-ig.zip' for "Downloadable Copy" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/downloads.html#/html/head/link/body/div/div/div/div/div/div/ul/li/a at Line 283, column 8: The link 'registry.fhir.org.zip' for "Registry Source file" cannot be resolved
-== /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/CodeSystem-dr-category.xml ==
-== /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/StructureDefinition-us-core-diff-documentreference.xml ==
-== /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/ValueSet-dr-category.xml ==
-== /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/ValueSet-dr-type.xml ==
-== /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/capabilitystatement-client.xml ==
-WARNING: CapabilityStatement/client: CapabilityStatement.format[1]: ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
-WARNING: CapabilityStatement/client: CapabilityStatement.format[2]: ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
+ERROR: C:\clinicalnotes\docs\index.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 271, column 9: The link 'capstmnts.html' for "Capability Statements Section" cannot be resolved
+ERROR: C:\clinicalnotes\docs\StructureDefinition-cn-plus-uscore-definitions.html#/html/head/link/body/div/div/div/div/div/div/table/tr/td/p/a at Line 402, column 112: The link 'http://hl7.org/fhir/STU3/ValueSet-dr-type.html' for "6 concepts" cannot be resolved
+ERROR: C:\clinicalnotes\docs\StructureDefinition-example-dr.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 333, column 111: The link 'ValueSet-dr-type.html' for "6 concepts" cannot be resolved
+ERROR: C:\clinicalnotes\docs\downloads.html#/html/head/link/body/div/div/div/div/div/div/ul/li/a at Line 275, column 8: The link 'full-ig.zip' for "Downloadable Copy" cannot be resolved
+ERROR: C:\clinicalnotes\docs\StructureDefinition-argo-clinicalnotes.html: unable to parse character reference 'type=[type]`
+
+**Example:**
+
+-  GET [base]/DocumentReference?patient=1234&type=http://loinc.org | 11488-4
+
+
+*Support:* Mandatory for server and client to support search by patient and note type....rest all TBD. Mandatory for client to support the _include parameter. Optional for server to support the _include parameter.
+
+*Implementation Notes:*   This query searches for all MedicationAdministration resources for a patient and returns a Bundle of all MedicationAdministration and resources for the specified patient. The server application represents the medication using either an inline code or a contained or external reference to the Medication resource. [(how to search by reference)], and [(how to search by _include)].
+
+-------
+
+  [(how to search by reference)]: http://hl7.org/fhir/STU3/search.html#reference
+  [(how to search by token)]: http://hl7.org/fhir/STU3/search.html#token
+  [Composite Search Parameters]: http://hl7.org/fhir/STU3/search.html#combining
+  [(how to search by date)]: http://hl7.org/fhir/STU3/search.html#date
+  [(how to search by _include)]: http://hl7.org/fhir/STU3/search.html#_include
+
+
+
+  <!-- ==============END CONTENT END CONTENT=================== -->
+
+
+
+  <!-- ==============END CONTENT END CONTENT=================== -->
+
+
+</div>  <!-- col -->
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /page content -->
+</div>  <!-- /page content wrapper -->
+
+
+
+  <script src="assets/js/jquery.js"> </script>
+<script src="assets/js/jquery-ui.min.js"> </script>
+<script>
+try {
+  var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index')'' (last text = ' for a complete list of supported RESTful interactions for this IG.' at line 673 column 75
+== C:\clinicalnotes\source\resources\CodeSystem-documentreference-category.xml ==
+WARNING: CodeSystem/documentreference-category: CodeSystem.jurisdiction: Error null validating CodeableConcept
+== C:\clinicalnotes\source\resources\StructureDefinition-us-core-diff-documentreference.xml ==
+== C:\clinicalnotes\source\resources\ValueSet-argonaut-clinical-note-type.xml ==
+== C:\clinicalnotes\source\resources\ValueSet-documentreference-category.xml ==
+== C:\clinicalnotes\source\resources\capabilitystatement-client.xml ==
 ERROR: CapabilityStatement/client: CapabilityStatement.profile: Unable to resolve resource 'http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/template-basic'
-== /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/capabilitystatement-server.xml ==
-WARNING: CapabilityStatement/server: CapabilityStatement.format[1]: ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
-WARNING: CapabilityStatement/server: CapabilityStatement.format[2]: ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
+== C:\clinicalnotes\source\resources\capabilitystatement-server.xml ==
 ERROR: CapabilityStatement/server: CapabilityStatement.profile: Unable to resolve resource 'http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/template-basic'
-== /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/ig.xml ==
-== /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/structuredefinition-argo-clinicalnotes.xml ==
-== /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/structuredefinition-example-dr.xml ==
+== C:\clinicalnotes\source\resources\ig.xml ==
+== C:\clinicalnotes\source\resources\structuredefinition-argo-clinicalnotes.xml ==
+== C:\clinicalnotes\source\resources\structuredefinition-example-dr.xml ==
