@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "documentreference-category"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Argonaut DocumentReference Category Codes</h2><div><p>The Argonaut DocumentReferences Type Value Set is a 'starter set' of categorie supported for fetching and storing clinical notes.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <code>http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/dr-category</code></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Argonaut DocumentReference Category Codes</h2><div><p>The Argonaut DocumentReferences Type Value Set is a 'starter set' of categorie supported for fetching and storing clinical notes.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-documentreference-category.html\"><code>http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category</code></a></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/documentreference-category"];
   fhir:ValueSet.version [ fhir:value "0.0.0"];
@@ -31,7 +31,7 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/dr-category" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category" ]
      ]
   ] .
 

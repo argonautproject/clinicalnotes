@@ -61,7 +61,7 @@
     </element>
     <element id="DocumentReference.custodian">
       <path value="DocumentReference.custodian" />
-      <min value="1" />
+      <min value="0" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" />
@@ -87,6 +87,11 @@
     </element>
     <element id="DocumentReference.content.format">
       <path value="DocumentReference.content.format" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DocumentReference.context">
+      <path value="DocumentReference.context" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="DocumentReference.context.encounter">

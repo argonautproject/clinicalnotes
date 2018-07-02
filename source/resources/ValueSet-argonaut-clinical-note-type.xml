@@ -20,7 +20,7 @@
 		<include>
 			<system value="http://loinc.org"/>
 			<concept>
-				<code value="8648-8"/>
+				<code value="18842-5"/>
 			</concept>
 			<concept>
 				<code value="11488-4"/>
@@ -33,9 +33,6 @@
 			</concept>
 			<concept>
 				<code value="28570-0"/>
-			</concept>
-			<concept>
-				<code value="18726-0"/>
 			</concept>
 		</include>
 	</compose>

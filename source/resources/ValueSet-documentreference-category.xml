@@ -17,7 +17,7 @@
 	</jurisdiction>
 	<compose>
 		<include>
-			<system value="http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/dr-category"/>
+			<system value="http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category"/>
 		</include>
 	</compose>
 </ValueSet>

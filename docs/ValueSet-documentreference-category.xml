@@ -4,7 +4,7 @@
   <id value="documentreference-category"/>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Argonaut DocumentReference Category Codes</h2><div><p>The Argonaut DocumentReferences Type Value Set is a 'starter set' of categorie supported for fetching and storing clinical notes.</p>
-</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <code>http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/dr-category</code></li></ul></div>
+</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href="CodeSystem-documentreference-category.html"><code>http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category</code></a></li></ul></div>
   </text>
   <url value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/documentreference-category"/>
   <version value="0.0.0"/>
@@ -22,7 +22,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/dr-category"/>
+      <system value="http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category"/>
     </include>
   </compose>
 </ValueSet>

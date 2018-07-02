@@ -45,7 +45,7 @@
 		<element id="DocumentReference">
 			<path value="DocumentReference"/>
 			<short value="US Core DocumentReference Profile"/>
-			<definition value="This is a basic constraint on DocumentRefernce for use in the US Core IG."/>
+			<definition value="This is a basic constraint on DocumentRefeernce for use in the US Core IG."/>
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
 		</element>
@@ -78,7 +78,7 @@
 			<isModifier value="false"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet">
-					<valueUri value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/dr-type"/>
+					<valueUri value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/argonaut-clinical-note-type"/>
 				</extension>
 				<strength value="required"/>
 				<description value="This is the code specifying the precise type of document"/>
@@ -93,7 +93,7 @@
 			<mustSupport value="true"/>
 			<binding>
 				<strength value="extensible"/>
-				<valueSetUri value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/dr-category"/>
+				<valueSetUri value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/documentreference-category"/>
 			</binding>
 		</element>
 		<element id="DocumentReference.author">
@@ -123,7 +123,7 @@
 		</element>
 		<element id="DocumentReference.custodian">
 			<path value="DocumentReference.custodian"/>
-			<min value="1"/>
+			<min value="0"/>
 			<max value="1"/>
 			<type>
 				<code value="Reference"/>
