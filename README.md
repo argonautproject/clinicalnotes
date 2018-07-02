@@ -11,7 +11,7 @@ FHIR SME and Facilitator: [Brett Marquard](brett@waveoneassociates.com)
 
 ## Scope of Work
 
-Support basic patient and provider access to Clinical Notes.
+Support basic patient and provider access to Clinical Notes. See [wiki](https://github.com/argonautproject/clinicalnotes/wiki) for timelines.
 
 ## Directory Tree
 
