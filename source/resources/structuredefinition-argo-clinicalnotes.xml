@@ -89,14 +89,16 @@
       <path value="DocumentReference.content.format" />
       <mustSupport value="true" />
     </element>
-    <element id="DocumentReference.context">
-      <path value="DocumentReference.context" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
     <element id="DocumentReference.context.encounter">
-      <path value="DocumentReference.context.encounter" />
-      <min value="1" />
+      <path value="DocumentReference.context.encounter"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
     </element>
   </differential>
 </StructureDefinition>
