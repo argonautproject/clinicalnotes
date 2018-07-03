@@ -1,4 +1,22 @@
 
+Typically, DocumentReference resources are used with document indexing systems, such as [IHE XDS]. However, document references may also may be created "on-the-fly" in response to a Document Query request.  In other words there MAY NOT be pre-existing index of references to a patient's documents at the FHIR endpoint. This results in an empty bundle being returned when searching using a normal FHIR Query.  Therefore, the [$docref operation] has been defined to both create and fetch patient DocumentReference Resources.
+
+The following search criteria describe fetching pre-indexed documents and those created "on-the-fly".
+
+**Searching pre-indexed documents:**
+
+----
+
+**`GET [base]/DocumentReference?patient=[id]`**
+
+Example: GET [base]/DocumentReference?patient=2169591
+
+
+*Support:* Mandatory to support search by patient.
+
+*Implementation Notes:* Search for all documents for a patient. Fetches a bundle of all DocumentReference resources for the specified patient [(how to search by reference)].
+
+------
 `GET [base]/DocumentReference?patient=[id]&type=[type]`
 
 **Example:**

@@ -9,7 +9,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="DocumentReference" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
+  <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"/>
   <derivation value="constraint" />
   <differential>
     <element id="DocumentReference">
@@ -17,22 +17,31 @@
       <mustSupport value="false" />
       <isModifier value="false" />
     </element>
-    <element id="DocumentReference.status">
-      <path value="DocumentReference.status" />
-      <mustSupport value="true" />
-    </element>
     <element id="DocumentReference.type">
-      <path value="DocumentReference.type" />
-      <mustSupport value="true" />
+      <path value="DocumentReference.type"/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet">
+          <valueUri value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/argonaut-clinical-note-type"/>
+        </extension>
+        <strength value="required"/>
+        <description value="This is the code specifying the precise type of document"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/c80-doc-typecodes"/>
+        </valueSetReference>
+      </binding>
     </element>
-    <element id="DocumentReference.subject">
-      <path value="DocumentReference.subject" />
-      <min value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" />
-      </type>
-      <mustSupport value="true" />
+    <element id="DocumentReference.class">
+      <path value="DocumentReference.class"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="extensible"/>
+        <valueSetUri value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/documentreference-category"/>
+      </binding>
     </element>
     <element id="DocumentReference.author">
       <path value="DocumentReference.author" />
@@ -68,42 +77,5 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="DocumentReference.content">
-      <path value="DocumentReference.content" />
-      <mustSupport value="true" />
-    </element>
-    <element id="DocumentReference.content.attachment">
-      <path value="DocumentReference.content.attachment" />
-      <mustSupport value="true" />
-    </element>
-    <element id="DocumentReference.content.attachment.contentType">
-      <path value="DocumentReference.content.attachment.contentType" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="DocumentReference.content.attachment.size">
-      <path value="DocumentReference.content.attachment.size" />
-      <mustSupport value="true" />
-    </element>
-    <element id="DocumentReference.content.format">
-      <path value="DocumentReference.content.format" />
-      <mustSupport value="true" />
-    </element>
-    <element id="DocumentReference.context">
-      <path value="DocumentReference.context" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="DocumentReference.context.encounter">
-      <path value="DocumentReference.context.encounter"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
-      </type>
-      <mustSupport value="true"/>
-      <isModifier value="false"/>
-    </element>
-  </differential>
+    </differential>
 </StructureDefinition>

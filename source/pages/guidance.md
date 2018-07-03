@@ -23,7 +23,7 @@ Specifically, this implementation guide requires systems support the following 5
 * Procedures Note (28570-0)
 * Progress Note (11506-3)
 
-These notes are defined in the **INSERT VALUE SET HERE**. These 5 note types represent the Common Clinicanl Notes and are the minimum set a system must support to claim conformance to this guide. Systems are encouraged to support many other common notes types, such as:
+These notes are defined in the [Argonaut Clinical Types Value Set]. These 5 note types represent the Common Clinicanl Notes and are the minimum set a system must support to claim conformance to this guide. Systems are encouraged to support many other common notes types, such as:
 
 * Imaging
 * Laboratory and pathology narrative
@@ -52,7 +52,7 @@ A record of a clinical assessment performed to determine what problem(s) may aff
 * Will use 7/18/2018 call to flesh out 
 
 
-New operation to retrieve value sets at a specific element
+##New operation to retrieve value sets at a specific element##
 
 
 ### Future Work
@@ -70,3 +70,4 @@ example how to use a button to expand an inline example....
 {% include link-list.md %}
 
 [ClinicalImpression]: {{site.data.fhir.path}}/clinicalimpression.html
+[Argonaut Clinical Types Value Set]: ValueSet-argonaut-clinical-note-type.html
