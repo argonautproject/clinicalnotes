@@ -10,12 +10,12 @@ The following Profiles have been defined for this implementation guide.
 <!-- {% raw %}{% include list-profiles.xhtml %}{% endraw %} -->
 <ol>
  <li><a href="StructureDefinition-argo-clinicalnotes.html">Argonaut Clinical Notes</a> Argonaut Clinical Notes</li>
- <li><a href="StructureDefinition-example-dr.html">Example DR to show how to base off of US Core DR</a> Example DR to show how to base off of US Core DR</li>
+ <! -- <li><a href="StructureDefinition-example-dr.html">Example DR to show how to base off of US Core DR</a> Example DR to show how to base off of US Core DR</li> -->
 </ol>
 
 <br />
 
-#### Extensions
+#### Extensions 
 
 These extensions have been defined for this implementation guide.
 

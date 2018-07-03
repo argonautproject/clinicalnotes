@@ -52,8 +52,16 @@ A record of a clinical assessment performed to determine what problem(s) may aff
 * Will use 7/18/2018 call to flesh out 
 
 
-##New operation to retrieve value sets at a specific element##
+### ValueSet Support on Read vs Write ($expand enhancement)
 
+During the May 2018 Cologne Connectathon the participants identified a requirement to support different value sets on read vs write. The participants considered a new extension for the CapabilityStatement to capture this requirement, or a new operation which would allow a client to ask which value sets are supporting at a specific resource element and a given direction. After discussion Argonaut discussion with the FHIR Core team they agreed to enhance [$expand]({{site.data.fhir.path}}/valueset-operations.html#expand) operation. See [gForge #17321](https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemEdit&tracker_item_id=17321&start=0) for latest details. 
+
+Example use location: DocumentReference.content.attachment.contentType
+
+* System A accepts contentType "text/plain" in a create and returns "text/html" in a read.
+* System B accepts contentType "text/xhtml" in a create and returns "application/pdf" in a read.
+
+**ADD specific details when posted to current build**
 
 ### Future Work
 

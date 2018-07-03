@@ -289,7 +289,18 @@
   <li>Will use 7/18/2018 call to flesh out</li>
 </ul>
 
-<p>##New operation to retrieve value sets at a specific element##</p>
+<h3 id="valueset-support-on-read-vs-write-expand-enhancement">ValueSet Support on Read vs Write ($expand enhancement)</h3>
+
+<p>During the May 2018 Cologne Connectathon the participants identified a requirement to support different value sets on read vs write. The participants considered a new extension for the CapabilityStatement to capture this requirement, or a new operation which would allow a client to ask which value sets are supporting at a specific resource element and a given direction. After discussion Argonaut discussion with the FHIR Core team they agreed to enhance <a href="http://hl7.org/fhir/STU3/valueset-operations.html#expand">$expand</a> operation. See <a href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemEdit&amp;tracker_item_id=17321&amp;start=0">gForge #17321</a> for latest details.</p>
+
+<p>Example use location: DocumentReference.content.attachment.contentType</p>
+
+<ul>
+  <li>System A accepts contentType “text/plain” in a create and returns “text/html” in a read.</li>
+  <li>System B accepts contentType “text/xhtml” in a create and returns “application/pdf” in a read.</li>
+</ul>
+
+<p><strong>ADD specific details when posted to current build</strong></p>
 
 <h3 id="future-work">Future Work</h3>
 
@@ -362,7 +373,7 @@ dfjkl
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            Argonaut Clinical Notes Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Tue, Jul 3, 2018 09:58-0400. |
+            Argonaut Clinical Notes Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Tue, Jul 3, 2018 11:08-0400. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>
