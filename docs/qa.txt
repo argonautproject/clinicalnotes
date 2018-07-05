@@ -2,9 +2,9 @@
 =========================================
 
 err = 4, warn = 2, info = 0
-Generated Tue Jul 03 11:08:58 EDT 2018. FHIR version 3.3.0 for 3.0.1
+Generated Thu Jul 05 12:07:25 EDT 2018. FHIR version 3.3.0 for 3.0.1
 
- Build Errors : 4 / 0
+ Build Errors : 5 / 0
  C:\clinicalnotes\source\resources\CodeSystem-documentreference-category : 0 / 1
  C:\clinicalnotes\source\resources\StructureDefinition-us-core-diff-documentreference : 0 / 0
  C:\clinicalnotes\source\resources\ValueSet-argonaut-clinical-note-type : 0 / 0
@@ -16,51 +16,11 @@ Generated Tue Jul 03 11:08:58 EDT 2018. FHIR version 3.3.0 for 3.0.1
  C:\clinicalnotes\source\resources\structuredefinition-example-dr : 0 / 0
 </table>
 == n/a ==
-ERROR: C:\clinicalnotes\docs\StructureDefinition-argo-clinicalnotes.html: unable to parse character reference 'type=[type]`
-
-**Example:**
-
--  GET [base]/DocumentReference?patient=1234&type=http://loinc.org | 11488-4
-
-
-*Support:* Mandatory for server and client to support search by patient and note type....rest all TBD. Mandatory for client to support the _include parameter. Optional for server to support the _include parameter.
-
-*Implementation Notes:*   This query searches for all MedicationAdministration resources for a patient and returns a Bundle of all MedicationAdministration and resources for the specified patient. The server application represents the medication using either an inline code or a contained or external reference to the Medication resource. [(how to search by reference)], and [(how to search by _include)].
-
--------
-
-  [(how to search by reference)]: http://hl7.org/fhir/STU3/search.html#reference
-  [(how to search by token)]: http://hl7.org/fhir/STU3/search.html#token
-  [Composite Search Parameters]: http://hl7.org/fhir/STU3/search.html#combining
-  [(how to search by date)]: http://hl7.org/fhir/STU3/search.html#date
-  [(how to search by _include)]: http://hl7.org/fhir/STU3/search.html#_include
-
-
-
-  <!-- ==============END CONTENT END CONTENT=================== -->
-
-
-
-  <!-- ==============END CONTENT END CONTENT=================== -->
-
-
-</div>  <!-- col -->
-</div>  <!-- /inner-wrapper -->
-</div>  <!-- /row -->
-</div>  <!-- /container -->
-</div>  <!-- /page content -->
-</div>  <!-- /page content wrapper -->
-
-
-
-  <script src="assets/js/jquery.js"> </script>
-<script src="assets/js/jquery-ui.min.js"> </script>
-<script>
-try {
-  var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index')'' (last text = ' for a complete list of supported RESTful interactions for this IG.' at line 697 column 75
 ERROR: C:\clinicalnotes\docs\StructureDefinition-cn-plus-uscore-definitions.html#/html/head/link/body/div/div/div/div/div/div/table/tr/td/p/a at Line 402, column 112: The link 'http://hl7.org/fhir/STU3/ValueSet-dr-type.html' for "6 concepts" cannot be resolved
 ERROR: C:\clinicalnotes\docs\StructureDefinition-example-dr.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 324, column 111: The link 'ValueSet-dr-type.html' for "5 concepts" cannot be resolved
 ERROR: C:\clinicalnotes\docs\downloads.html#/html/head/link/body/div/div/div/div/div/div/ul/li/a at Line 275, column 8: The link 'full-ig.zip' for "Downloadable Copy" cannot be resolved
+ERROR: C:\clinicalnotes\docs\StructureDefinition-argo-clinicalnotes.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 314, column 96: The link 'http://hl7.org/fhir/STU3/DocumentReference.html' for "DocumentReference" cannot be resolved
+ERROR: C:\clinicalnotes\docs\StructureDefinition-argo-clinicalnotes.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 363, column 111: The link 'ValueSet-dr-type.html' for "5 concepts" cannot be resolved
 == C:\clinicalnotes\source\resources\CodeSystem-documentreference-category.xml ==
 WARNING: CodeSystem/documentreference-category: CodeSystem.jurisdiction: Error null validating CodeableConcept
 == C:\clinicalnotes\source\resources\StructureDefinition-us-core-diff-documentreference.xml ==

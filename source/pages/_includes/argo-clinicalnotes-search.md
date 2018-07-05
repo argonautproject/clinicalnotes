@@ -1,32 +1,68 @@
-
-Typically, DocumentReference resources are used with document indexing systems, such as [IHE XDS]. However, document references may also may be created "on-the-fly" in response to a Document Query request.  In other words there MAY NOT be pre-existing index of references to a patient's documents at the FHIR endpoint. This results in an empty bundle being returned when searching using a normal FHIR Query.  Therefore, the [$docref operation] has been defined to both create and fetch patient DocumentReference Resources.
-
-The following search criteria describe fetching pre-indexed documents and those created "on-the-fly".
-
-**Searching pre-indexed documents:**
+Retrieve a Clinical Note with a given DocumentReference id:
 
 ----
 
-**`GET [base]/DocumentReference?patient=[id]`**
+**`GET [base]/DocumentReference/[id]`**
 
-Example: GET [base]/DocumentReference?patient=2169591
+Example: GET [base]/DocumentReference/2169591
+
+*Support:* Mandatory to support retrieve by a specific DocumentReference id. 
+
+*Implementation Notes:* This will return a pointer to the Binary resource which then can be retrieved using:
+
+**`GET [base]/Binary/[id]`**
+
+All other searches expect this two step process of locating the Clinical Note, and then retrieving the Binary. 
+
+Retrieve all Clinical Notes for a given Patient:
+
+----
+
+**`GET [base]/DocumentReference?patient=[id]&class=clinical-note`**
+
+Example: GET [base]/DocumentReference?patient=1235541&class=clinical-note
 
 
-*Support:* Mandatory to support search by patient.
+*Support:* Mandatory to support search by patient to locate all Clinical Notes.
 
-*Implementation Notes:* Search for all documents for a patient. Fetches a bundle of all DocumentReference resources for the specified patient [(how to search by reference)].
-
-------
-`GET [base]/DocumentReference?patient=[id]&type=[type]`
-
-**Example:**
-
--  GET [base]/DocumentReference?patient=1234&type=http://loinc.org | 11488-4
+*Implementation Notes:* Search for all Clinical Notes for a patient [(how to search by reference)] fetches a bundle of all DocumentReference resources for the specified patient. Retrieving specific Notes will require a secondary request on the Binary resource. 
 
 
-*Support:* Mandatory for server and client to support search by patient and note type....rest all TBD. Mandatory for client to support the _include parameter. Optional for server to support the _include parameter.
+Retrieve a Patient's Clinical Notes by Searching with a date range:
 
-*Implementation Notes:*   This query searches for all MedicationAdministration resources for a patient and returns a Bundle of all MedicationAdministration and resources for the specified patient. The server application represents the medication using either an inline code or a contained or external reference to the Medication resource. [(how to search by reference)], and [(how to search by _include)].
+----
+
+**`GET [base]/DocumentReference?patient=[id]&class=clinical-note&created=[date]`**
+
+Example: GET [base]/DocumentReference?patient=1316024&class=clinical-note&created=ge2018-04-11
+
+
+*Support:* Mandatory to support search by date range.
+
+*Implementation Notes:* Search for all Clinical Notes for a patient [(how to search by reference)] for a date range [(how to search by date)] fetches a bundle of all DocumentReference resources for the specified patient. Retrieving specific Notes will require a secondary request on the Binary resource. 
+
+Retrieve a specific Note type for a Patient:
+
+----
+
+**`GET [base]/DocumentReference?patient=[id]&type=[note type (LOINC)]`**
+
+Example: GET [base]/DocumentReference?patient=1316024&type=http://loinc.org|18842-5
+
+
+*Support:* Mandatory to support search by Note type.
+
+*Implementation Notes:* Search for a specific Note type [(how to search by token)] for a patient [(how to search by reference)] fetches a bundle of all DocumentReference resources for the specified patient. Retrieving specific Notes will require a secondary request on the Binary resource. 
+
+Write new note to a Patient's Chart:
+
+----
+
+**`POST [base]/DocumentReference`**
+
+{% include examplebutton.html example="clinical-note-post" %}
+
+*Support:* Mandatory to support write capability.
 
 -------
 
