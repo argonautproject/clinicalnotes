@@ -13,7 +13,7 @@
   <url value="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-clinicalnotes"/>
   <version value="0.0.0"/>
   <name value="Argonaut Clinical Notes"/>
-  <status value="draft"/>
+  <status value="active"/>
   <date value="2018-04-10T09:48:14-04:00"/>
   <fhirVersion value="3.0.1"/>
   <mapping>

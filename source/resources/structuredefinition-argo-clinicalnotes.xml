@@ -3,7 +3,7 @@
   <id value="argo-clinicalnotes" />
   <url value="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-clinicalnotes" />
   <name value="Argonaut Clinical Notes" />
-  <status value="draft" />
+  <status value="active"/>
   <date value="2018-04-10T09:48:14.298-04:00" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />

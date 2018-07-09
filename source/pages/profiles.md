@@ -8,10 +8,9 @@ active: profiles
 The following Profiles have been defined for this implementation guide.
 
 <!-- {% raw %}{% include list-profiles.xhtml %}{% endraw %} -->
-<ol>
- <li><a href="StructureDefinition-argo-clinicalnotes.html">Argonaut Clinical Notes</a> Argonaut Clinical Notes</li>
- <! -- <li><a href="StructureDefinition-example-dr.html">Example DR to show how to base off of US Core DR</a> Example DR to show how to base off of US Core DR</li> -->
-</ol>
+* <a href="StructureDefinition-argo-clinicalnotes.html">Argonaut Clinical Notes</a> Argonaut Clinical Notes
+ <!-- <li><a href="StructureDefinition-example-dr.html">Example DR to show how to base off of US Core DR</a> Example DR to show how to base off of US Core DR</li> -->
+
 
 <br />
 
@@ -19,10 +18,12 @@ The following Profiles have been defined for this implementation guide.
 
 These extensions have been defined for this implementation guide.
 
-<!-- remove this line to list profiles  -->{% raw %} *use this line to list the profiles*
+* None at this time.
+
+<!-- remove this line to list profiles  {% raw %} *use this line to list the profiles*
 
 {% include list-extensions.xhtml %}
 
-{% endraw %} <!-- remove this line to list profiles  -->
+{% endraw %} remove this line to list profiles  -->
 
 <br />

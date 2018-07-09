@@ -47,8 +47,7 @@ Retrieve a specific Note type for a Patient:
 
 **`GET [base]/DocumentReference?patient=[id]&type=[note type (LOINC)]`**
 
-Example: GET [base]/DocumentReference?patient=1316024&type=http://loinc.org|18842-5
-
+Example: GET [base]/DocumentReference?patient=1316024&type=http://loinc.org 18842-5
 
 *Support:* Mandatory to support search by Note type.
 
