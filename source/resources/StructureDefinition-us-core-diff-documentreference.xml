@@ -150,6 +150,14 @@
 			<mustSupport value="true"/>
 			<isModifier value="false"/>
 		</element>
+		<element id="DocumentReference.indexed">
+			<path value="DocumentReference.indexed"/>
+			<short value="When this document reference was created"/>
+			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+			<isModifier value="false"/>
+		</element>
 		<element id="DocumentReference.content">
 			<path value="DocumentReference.content"/>
 			<min value="1"/>

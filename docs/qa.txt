@@ -2,7 +2,7 @@
 =========================================
 
 err = 4, warn = 2, info = 0
-Generated Mon Jul 09 11:54:21 EDT 2018. FHIR version 3.3.0 for 3.0.1
+Generated Tue Jul 31 09:07:19 EDT 2018. FHIR version 3.4.0 for 3.0.1
 
  Build Errors : 5 / 0
  C:\clinicalnotes\source\resources\CodeSystem-documentreference-category : 0 / 1
@@ -20,7 +20,7 @@ ERROR: C:\clinicalnotes\docs\StructureDefinition-cn-plus-uscore-definitions.html
 ERROR: C:\clinicalnotes\docs\StructureDefinition-example-dr.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 324, column 111: The link 'ValueSet-dr-type.html' for "5 concepts" cannot be resolved
 ERROR: C:\clinicalnotes\docs\downloads.html#/html/head/link/body/div/div/div/div/div/div/ul/li/a at Line 275, column 8: The link 'full-ig.zip' for "Downloadable Copy" cannot be resolved
 ERROR: C:\clinicalnotes\docs\StructureDefinition-argo-clinicalnotes.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 314, column 96: The link 'http://hl7.org/fhir/STU3/DocumentReference.html' for "DocumentReference" cannot be resolved
-ERROR: C:\clinicalnotes\docs\StructureDefinition-argo-clinicalnotes.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 363, column 111: The link 'ValueSet-dr-type.html' for "5 concepts" cannot be resolved
+ERROR: C:\clinicalnotes\docs\StructureDefinition-argo-clinicalnotes.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 364, column 111: The link 'ValueSet-dr-type.html' for "5 concepts" cannot be resolved
 == C:\clinicalnotes\source\resources\CodeSystem-documentreference-category.xml ==
 WARNING: CodeSystem/documentreference-category: CodeSystem.jurisdiction: Error null validating CodeableConcept
 == C:\clinicalnotes\source\resources\StructureDefinition-us-core-diff-documentreference.xml ==
