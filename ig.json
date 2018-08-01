@@ -34,6 +34,11 @@
             "base": "StructureDefinition-argo-clinicalnotes.html",
             "defns": "StructureDefinition-argo-clinicalnotes-definitions.html"
         },
+        "StructureDefinition/argo-imaging-diagnosticreport": {
+            "source": "structuredefinition-argo-imaging-diagnosticreport.xml",
+            "base": "StructureDefinition-argo-imaging-diagnosticreport.html",
+            "defns": "StructureDefinition-argo-imaging-diagnosticreport-definitions.html"
+        },
         "CapabilityStatement/server": {
             "source": "capabilitystatement-server.xml",
             "base": "CapabilityStatement-server.html"

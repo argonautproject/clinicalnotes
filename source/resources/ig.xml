@@ -41,6 +41,12 @@
         <resource>
             <example value="false"/>
             <sourceReference>
+                <reference value="StructureDefinition/argo-imaging-diagnosticreport"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
                 <reference value="CodeSystem/documentreference-category"/>
             </sourceReference>
         </resource>

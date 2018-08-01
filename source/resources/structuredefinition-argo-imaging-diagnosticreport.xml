@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="argo-imaging-diagnosticreport" />
+  <url value="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-imaging-diagnosticreport" />
+  <name value="Argonaut Imaging Reports"/>
+  <status value="active"/>
+  <date value="2018-04-10T09:48:14.298-04:00" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="DiagnosticReport" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+  <derivation value="constraint" />    
+  <differential>
+    <element id="DiagnosticReport">
+      <path value="DiagnosticReport"/>
+      <short value="Argonaut Diagnostic Report Profile for Imaging"/>
+      <definition value="The US Core Diagnostic Report Profile is based upon the requirements of the Argonauts to exchang imaging reports."/>
+      <alias value="Imaging Report"/>
+      <alias value="Radiology Report"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="DiagnosticReport"/>
+      </mapping>
+    </element>
+    <element id="DiagnosticReport.status">
+      <path value="DiagnosticReport.status"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/diagnostic-report-status"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="DiagnosticReport.status"/>
+      </mapping>
+    </element>
+    <element id="DiagnosticReport.category">
+      <path value="DiagnosticReport.category"/>
+      <alias value="Department"/>
+      <alias value="Sub-department"/>
+      <alias value="service"/>
+      <alias value="discipline"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/v2/0074"/>
+          <code value="RAD"/>
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="DiagnosticReport.category"/>
+      </mapping>
+    </element>
+    <element id="DiagnosticReport.code">
+      <path value="DiagnosticReport.code"/>
+      <short value="US Core Laboratory Report Order Code"/>
+      <definition value="The test, panel or battery that was ordered."/>
+      <comment value="UsageNote= The typical patterns for codes are:  1)  a LOINC code either as a  translation from a &quot;local&quot; code or as a primary code, or 2)  a local code only if no suitable LOINC exists,  or 3)  both the local and the LOINC translation.   Systems SHALL be capable of sending the local code if one exists."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <binding>
+        <strength value="extensible"/>
+        <description value="LOINC codes"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/report-codes"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="DiagnosticReport.code"/>
+      </mapping>
+    </element>
+    <element id="DiagnosticReport.subject">
+      <path value="DiagnosticReport.subject"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="DiagnosticReport.subject"/>
+      </mapping>
+    </element>
+    <element id="DiagnosticReport.effective[x]">
+      <path value="DiagnosticReport.effective[x]"/>
+      <short value="Time of Radiology Procedure"/>
+      <definition value="This is the Datetime or Period when the radiology image was done."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <type>
+        <code value="Period"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="DiagnosticReport.effective[x]"/>
+      </mapping>
+    </element>
+    <element id="DiagnosticReport.issued">
+      <path value="DiagnosticReport.issued"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="instant"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="DiagnosticReport.issued"/>
+      </mapping>
+    </element>
+    <element id="DiagnosticReport.performer">
+      <path value="DiagnosticReport.performer"/>
+      <min value="0"/>
+      <max value="*"/>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="NA (new element in STU3)"/>
+      </mapping>
+    </element>
+    <element id="DiagnosticReport.performer.actor">
+      <path value="DiagnosticReport.performer.actor"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="DiagnosticReport.performer"/>
+      </mapping>
+    </element>
+    <element id="DiagnosticReport.result">
+      <path value="DiagnosticReport.result"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="DiagnosticReport.result"/>
+      </mapping>
+    </element>
+    <element id="DiagnosticReport.image">
+      <path value="DiagnosticReport.image"/>
+      <min value="0"/>
+      <max value="*"/>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="DiagnosticReport.image"/>
+      </mapping>
+    </element>
+    <element id="DiagnosticReport.presentedForm">
+      <path value="DiagnosticReport.presentedForm"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Attachment"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="DiagnosticReport.presentedForm"/>
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>
