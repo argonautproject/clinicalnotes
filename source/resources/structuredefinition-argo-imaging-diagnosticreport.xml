@@ -108,6 +108,17 @@
         <map value="DiagnosticReport.subject"/>
       </mapping>
     </element>
+    <element id="DiagnosticReport.context">
+      <path value="DiagnosticReport.context"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+    </element>
     <element id="DiagnosticReport.effective[x]">
       <path value="DiagnosticReport.effective[x]"/>
       <short value="Time of Radiology Procedure"/>
@@ -129,7 +140,7 @@
     </element>
     <element id="DiagnosticReport.issued">
       <path value="DiagnosticReport.issued"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="instant"/>
@@ -169,21 +180,6 @@
       <mapping>
         <identity value="argonaut-dq-dstu2"/>
         <map value="DiagnosticReport.performer"/>
-      </mapping>
-    </element>
-    <element id="DiagnosticReport.result">
-      <path value="DiagnosticReport.result"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"/>
-      </type>
-      <mustSupport value="true"/>
-      <isModifier value="false"/>
-      <mapping>
-        <identity value="argonaut-dq-dstu2"/>
-        <map value="DiagnosticReport.result"/>
       </mapping>
     </element>
     <element id="DiagnosticReport.image">
