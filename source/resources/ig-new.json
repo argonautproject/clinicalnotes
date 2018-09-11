@@ -1,0 +1,134 @@
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "ig",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\clinicalnotes\\source\\resources"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\clinicalnotes\\source\\examples"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\clinicalnotes\\framework"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\clinicalnotes\\source\\pages"
+  }],
+  "url" : "http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig",
+  "version" : "0.0.0",
+  "name" : "Argonaut Clinical Notes",
+  "status" : "draft",
+  "experimental" : true,
+  "publisher" : "Argonaut Project",
+  "packageId" : "healthedatainc.igtemplate",
+  "license" : "CC0-1.0",
+  "fhirVersion" : "3.0.1",
+  "dependsOn" : [{
+    "id" : "uscore",
+    "uri" : "http://hl7.org/fhir/us/core",
+    "packageId" : "hl7.fhir.us.core",
+    "version" : "current"
+  }],
+  "definition" : {
+    "package" : [{
+      "id" : "p1",
+      "name" : "base"
+    }],
+    "resource" : [{
+      "reference" : {
+        "reference" : "ValueSet/argonaut-clinical-note-type"
+      },
+      "exampleBoolean" : false,
+      "package" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/documentreference-category"
+      },
+      "exampleBoolean" : false,
+      "package" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/cn-plus-uscore"
+      },
+      "exampleBoolean" : false,
+      "package" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/example-dr"
+      },
+      "exampleBoolean" : false,
+      "package" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/argo-clinicalnotes"
+      },
+      "exampleBoolean" : false,
+      "package" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/argo-imaging-diagnosticreport"
+      },
+      "exampleBoolean" : false,
+      "package" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/documentreference-category"
+      },
+      "exampleBoolean" : false,
+      "package" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CapabilityStatement/server"
+      },
+      "exampleBoolean" : false,
+      "package" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CapabilityStatement/client"
+      },
+      "exampleBoolean" : false,
+      "package" : "p1"
+    }],
+    "page" : {
+      "nameUrl" : "index.md",
+      "title" : "Argonaut Clinical Notes Homepage",
+      "generation" : "html",
+      "page" : [{
+        "nameUrl" : "_includes/toc.md",
+        "title" : "Argonaut Clinical Notes Table of Contents",
+        "generation" : "html"
+      }]
+    },
+    "parameter" : [{
+      "code" : "apply-business-version",
+      "value" : "0.0.0"
+    },
+    {
+      "code" : "html-template",
+      "value" : "html-template.html"
+    },
+    {
+      "code" : "generate-json",
+      "value" : "true"
+    },
+    {
+      "code" : "generate-xml",
+      "value" : "true"
+    },
+    {
+      "code" : "generate-turtle",
+      "value" : "true"
+    }]
+  }
+}

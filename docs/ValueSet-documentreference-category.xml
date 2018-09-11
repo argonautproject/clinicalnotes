@@ -3,7 +3,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="documentreference-category"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Argonaut DocumentReference Category Codes</h2><div><p>The Argonaut DocumentReferences Type Value Set is a 'starter set' of categorie supported for fetching and storing clinical notes.</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Argonaut DocumentReferences Category Value Set</h2><div><p>The Argonaut DocumentReferences Type Value Set is a 'starter set' of categorie supported for fetching and storing clinical notes.</p>
 </div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href="CodeSystem-documentreference-category.html"><code>http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category</code></a></li></ul></div>
   </text>
   <url value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/documentreference-category"/>

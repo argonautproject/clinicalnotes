@@ -1,11 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="eef9fcd3-d898-4837-864d-4bf2b53aa956"/>
+  <id value="209d0e69-f540-4bc7-a7ad-b3975f1fa72f"/>
   <meta>
-    <lastUpdated value="2018-08-14T09:25:54.809-04:00"/>
+    <lastUpdated value="2018-09-11T09:12:33.305-04:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p>All codes from system 
+              <code>http://loinc.org</code>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-18842-5"> </a>
+                  <a href="http://details.loinc.org/LOINC/18842-5.html">18842-5</a>
+                </td>
+                <td>Discharge summary</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-11488-4"> </a>
+                  <a href="http://details.loinc.org/LOINC/11488-4.html">11488-4</a>
+                </td>
+                <td>Consult note</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-34117-2"> </a>
+                  <a href="http://details.loinc.org/LOINC/34117-2.html">34117-2</a>
+                </td>
+                <td>History and physical note</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-11506-3"> </a>
+                  <a href="http://details.loinc.org/LOINC/11506-3.html">11506-3</a>
+                </td>
+                <td>Progress note</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-28570-0"> </a>
+                  <a href="http://details.loinc.org/LOINC/28570-0.html">28570-0</a>
+                </td>
+                <td>Procedure note</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <expansion>
+          <identifier value="urn:uuid:2e5910cd-ef39-4a5d-a54f-228c8a39676c"/>
+          <timestamp value="2018-09-11T13:02:29.021Z"/>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueString value="-1"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://loinc.org?version=2.64"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="18842-5"/>
+            <display value="Discharge summary"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="11488-4"/>
+            <display value="Consult note"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="34117-2"/>
+            <display value="History and physical note"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="11506-3"/>
+            <display value="Progress note"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="28570-0"/>
+            <display value="Procedure note"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/documentreference-category"/>
     <resource>
@@ -67,12 +164,12 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a4fcea90-8e44-4dd0-9a95-c0dde67153aa"/>
-          <timestamp value="2018-07-02T15:07:19-04:00"/>
+          <identifier value="urn:uuid:b74ba1f7-65c7-4050-9543-64506ea7d791"/>
+          <timestamp value="2018-09-11T09:12:37-04:00"/>
           <total value="2"/>
           <parameter>
-            <name value="profile"/>
-            <valueUri value="http://hl7.org/fhir/ExpansionProfile/dc8fd4bc-091a-424a-8a3b-6198ef146891"/>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="version"/>
