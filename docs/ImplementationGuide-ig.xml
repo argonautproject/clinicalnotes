@@ -34,6 +34,15 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-diagnosticreport-category.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/diagnosticreport-category"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-cn-plus-uscore.html"/>
       </extension>
       <example value="false"/>
@@ -61,11 +70,11 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-argo-imaging-diagnosticreport.html"/>
+        <valueUri value="StructureDefinition-argo-diagnosticreport.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/argo-imaging-diagnosticreport"/>
+        <reference value="StructureDefinition/argo-diagnosticreport"/>
       </sourceReference>
     </resource>
     <resource>

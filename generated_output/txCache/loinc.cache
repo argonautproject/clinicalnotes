@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------------
+
+
+
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -25620,8 +25623,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:d675cfb3-11f8-4aa2-8bea-a8f9b2c863f0",
-    "timestamp" : "2018-09-11T13:02:25.755Z",
+    "identifier" : "urn:uuid:f92ed70a-b25a-42ad-80a6-b4ad58d0e424",
+    "timestamp" : "2018-09-24T17:14:33.420Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -30639,6 +30642,9 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
+
+
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -30667,8 +30673,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:ef5cb815-6b29-403f-91e7-411d3dad1ac6",
-    "timestamp" : "2018-09-11T13:02:27.114Z",
+    "identifier" : "urn:uuid:0b611a79-a391-4a8f-b0eb-eb072e854a48",
+    "timestamp" : "2018-09-24T17:14:34.842Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -30711,6 +30717,9 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
+
+
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -30738,9 +30747,13 @@ e: {
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p>All codes from system <code>http://loinc.org</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-18842-5\"> </a><a href=\"http://details.loinc.org/LOINC/18842-5.html\">18842-5</a></td><td>Discharge summary</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-11488-4\"> </a><a href=\"http://details.loinc.org/LOINC/11488-4.html\">11488-4</a></td><td>Consult note</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-34117-2\"> </a><a href=\"http://details.loinc.org/LOINC/34117-2.html\">34117-2</a></td><td>History and physical note</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-11506-3\"> </a><a href=\"http://details.loinc.org/LOINC/11506-3.html\">11506-3</a></td><td>Progress note</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-28570-0\"> </a><a href=\"http://details.loinc.org/LOINC/28570-0.html\">28570-0</a></td><td>Procedure note</td></tr></table></div>"
+  },
   "expansion" : {
-    "identifier" : "urn:uuid:2e5910cd-ef39-4a5d-a54f-228c8a39676c",
-    "timestamp" : "2018-09-11T13:02:29.021Z",
+    "identifier" : "urn:uuid:8a60a86f-e767-4904-8c18-7bcde26eb70b",
+    "timestamp" : "2018-09-24T17:14:36.311Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -30773,6 +30786,228 @@ e: {
       "system" : "http://loinc.org",
       "code" : "28570-0",
       "display" : "Procedure note"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+
+
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LP29684-5"
+      },
+      {
+        "code" : "LP29708-2"
+      },
+      {
+        "code" : "LP7839-6"
+      },
+      {
+        "code" : "11506-3"
+      },
+      {
+        "code" : "28570-0"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "Error unmarshalling resource: unable to find LP29684-5 in http://loinc.org"
+}
+-------------------------------------------------------------------------------------
+
+
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LP29684-5"
+      },
+      {
+        "code" : "LP29708-2"
+      },
+      {
+        "code" : "LP7839-6"
+      },
+      {
+        "code" : "11506-3"
+      },
+      {
+        "code" : "28570-0"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "Error unmarshalling resource: unable to find LP29684-5 in http://loinc.org"
+}
+-------------------------------------------------------------------------------------
+
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LP29684-5",
+        "display" : "hooray"
+      },
+      {
+        "code" : "LP29708-2"
+      },
+      {
+        "code" : "LP7839-6"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "Error unmarshalling resource: unable to find LP29708-2 in http://loinc.org"
+}
+-------------------------------------------------------------------------------------
+
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LP29684-5",
+        "display" : "hooray"
+      },
+      {
+        "code" : "LP29708-2"
+      },
+      {
+        "code" : "LP7839-6"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "Error unmarshalling resource: unable to find LP29708-2 in http://loinc.org"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LP29684-5",
+        "display" : "Radiology"
+      },
+      {
+        "code" : "LP29708-2",
+        "display" : "Cardiology"
+      },
+      {
+        "code" : "LP7839-6",
+        "display" : "Pathology"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:5b137f77-e91d-4488-a5ba-a9f153958a53",
+    "timestamp" : "2018-09-24T17:49:49.106Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org?version=2.64"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "LP29684-5",
+      "display" : "Radiology"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LP29708-2",
+      "display" : "Cardiology"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LP7839-6",
+      "display" : "Pathology"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LP29684-5",
+        "display" : "Radiology"
+      },
+      {
+        "code" : "LP29708-2",
+        "display" : "Cardiology"
+      },
+      {
+        "code" : "LP7839-6",
+        "display" : "Pathology"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:c956be33-f9b8-460c-9ab2-b4206f2a7b02",
+    "timestamp" : "2018-09-24T17:49:50.778Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org?version=2.64"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "LP29684-5",
+      "display" : "Radiology"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LP29708-2",
+      "display" : "Cardiology"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LP7839-6",
+      "display" : "Pathology"
     }]
   }
 },

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="argo-imaging-diagnosticreport" />
-  <url value="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-imaging-diagnosticreport" />
+  <id value="argo-diagnosticreport" />
+  <url value="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-diagnosticreport" />
   <name value="Argonaut Imaging Reports"/>
   <status value="active"/>
   <date value="2018-04-10T09:48:14.298-04:00" />
@@ -56,13 +56,11 @@
       <type>
         <code value="CodeableConcept"/>
       </type>
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://hl7.org/fhir/v2/0074"/>
-          <code value="RAD"/>
-        </coding>
-      </patternCodeableConcept>
-      <mustSupport value="true"/>
+     <mustSupport value="true"/>
+      <binding>
+        <strength value="extensible"/>
+        <valueSetUri value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/diagnosticreport-category"/>
+      </binding>
       <isModifier value="false"/>
       <mapping>
         <identity value="argonaut-dq-dstu2"/>
@@ -71,8 +69,8 @@
     </element>
     <element id="DiagnosticReport.code">
       <path value="DiagnosticReport.code"/>
-      <short value="US Core Laboratory Report Order Code"/>
-      <definition value="The test, panel or battery that was ordered."/>
+      <short value="US Core Report Code"/>
+      <definition value="The test, panel, report, or note that was ordered."/>
       <comment value="UsageNote= The typical patterns for codes are:  1)  a LOINC code either as a  translation from a &quot;local&quot; code or as a primary code, or 2)  a local code only if no suitable LOINC exists,  or 3)  both the local and the LOINC translation.   Systems SHALL be capable of sending the local code if one exists."/>
       <min value="1"/>
       <max value="1"/>
@@ -121,8 +119,8 @@
     </element>
     <element id="DiagnosticReport.effective[x]">
       <path value="DiagnosticReport.effective[x]"/>
-      <short value="Time of Radiology Procedure"/>
-      <definition value="This is the Datetime or Period when the radiology image was done."/>
+      <short value="Time of the report or note"/>
+      <definition value="This is the Datetime or Period when the report or note was written."/>
       <min value="1"/>
       <max value="1"/>
       <type>

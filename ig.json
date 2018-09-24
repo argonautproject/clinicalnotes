@@ -24,6 +24,10 @@
             "source": "ValueSet-documentreference-category.xml",
             "base": "ValueSet-documentreference-category.html"
         },
+        "ValueSet/diagnosticreport-category": {
+            "source": "ValueSet-diagnosticreport-category.xml",
+            "base": "ValueSet-diagnosticreport-category.html"
+        },
         "StructureDefinition/cn-plus-uscore": {
             "source": "StructureDefinition-us-core-diff-documentreference.xml",
             "base": "StructureDefinition-cn-plus-uscore.html",
@@ -34,10 +38,10 @@
             "base": "StructureDefinition-argo-clinicalnotes.html",
             "defns": "StructureDefinition-argo-clinicalnotes-definitions.html"
         },
-        "StructureDefinition/argo-imaging-diagnosticreport": {
-            "source": "structuredefinition-argo-imaging-diagnosticreport.xml",
-            "base": "StructureDefinition-argo-imaging-diagnosticreport.html",
-            "defns": "StructureDefinition-argo-imaging-diagnosticreport-definitions.html"
+        "StructureDefinition/argo-diagnosticreport": {
+            "source": "structuredefinition-argo-diagnosticreport.xml",
+            "base": "StructureDefinition-argo-diagnosticreport.html",
+            "defns": "StructureDefinition-argo-diagnosticreport-definitions.html"
         },
         "CapabilityStatement/server": {
             "source": "capabilitystatement-server.xml",

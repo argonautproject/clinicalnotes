@@ -52,6 +52,18 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-diagnosticreport-category.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/diagnosticreport-category>;
+         fhir:Reference.reference [ fhir:value "ValueSet/diagnosticreport-category" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-cn-plus-uscore.html" ]
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
@@ -60,7 +72,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/cn-plus-uscore" ]
        ]
      ], [
-       fhir:index 3;
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -72,7 +84,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/example-dr" ]
        ]
      ], [
-       fhir:index 4;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -84,19 +96,19 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/argo-clinicalnotes" ]
        ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-argo-imaging-diagnosticreport.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-argo-diagnosticreport.html" ]
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-imaging-diagnosticreport>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/argo-imaging-diagnosticreport" ]
+         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-diagnosticreport>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/argo-diagnosticreport" ]
        ]
      ], [
-       fhir:index 6;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -108,7 +120,7 @@
          fhir:Reference.reference [ fhir:value "CodeSystem/documentreference-category" ]
        ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -120,7 +132,7 @@
          fhir:Reference.reference [ fhir:value "CapabilityStatement/server" ]
        ]
      ], [
-       fhir:index 8;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];

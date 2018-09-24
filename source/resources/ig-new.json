@@ -53,6 +53,13 @@
     },
     {
       "reference" : {
+        "reference" : "ValueSet/diagnosticreport-category"
+      },
+      "exampleBoolean" : false,
+      "package" : "p1"
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/cn-plus-uscore"
       },
       "exampleBoolean" : false,
@@ -74,7 +81,7 @@
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/argo-imaging-diagnosticreport"
+        "reference" : "StructureDefinition/argo-diagnosticreport"
       },
       "exampleBoolean" : false,
       "package" : "p1"

@@ -48,6 +48,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="ValueSet/diagnosticreport-category"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <package value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/cn-plus-uscore"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -69,7 +76,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/argo-imaging-diagnosticreport"/>
+        <reference value="StructureDefinition/argo-diagnosticreport"/>
       </reference>
       <exampleBoolean value="false"/>
       <package value="p1"/>

@@ -7,7 +7,7 @@
 	<title value="Argonaut DocumentReferences Category Value Set"/>
 	<status value="draft"/>
 	<date value="2018-05-02T08:16:34-07:00"/>
-	<description value="The Argonaut DocumentReferences Type Value Set is a 'starter set' of categorie supported for fetching and storing clinical notes."/>
+	<description value="The Argonaut DocumentReferences Type Value Set is a 'starter set' of categories supported for fetching and storing clinical notes."/>
 	<jurisdiction>
 		<coding>
 			<system value="urn:iso:std:iso:3166"/>

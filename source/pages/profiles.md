@@ -9,7 +9,7 @@ The following Profiles have been defined for this implementation guide.
 
 <!-- {% raw %}{% include list-profiles.xhtml %}{% endraw %} -->
 * <a href="StructureDefinition-argo-clinicalnotes.html">Argonaut Clinical Notes</a> Argonaut Clinical Notes
-* <a href="StructureDefinition-argo-imaging-diagnosticreport.html">Argonaut Radiology Notes</a> Argonaut Radiology Notes
+* <a href="StructureDefinition-argo-diagnosticreport.html">Argonaut DiagosticReport Notes</a> Argonaut DiagosticReport Notes and Reports
  <!-- <li><a href="StructureDefinition-example-dr.html">Example DR to show how to base off of US Core DR</a> Example DR to show how to base off of US Core DR</li> -->
 
 

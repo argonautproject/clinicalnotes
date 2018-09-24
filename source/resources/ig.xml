@@ -23,6 +23,11 @@
         <resource>
             <example value="false"/>
             <sourceReference>
+                <reference value="ValueSet/diagnosticreport-category"/>
+            </sourceReference>
+        </resource><resource>
+            <example value="false"/>
+            <sourceReference>
                 <reference value="StructureDefinition/cn-plus-uscore"/>
             </sourceReference>
         </resource>
@@ -41,7 +46,7 @@
         <resource>
             <example value="false"/>
             <sourceReference>
-                <reference value="StructureDefinition/argo-imaging-diagnosticreport"/>
+                <reference value="StructureDefinition/argo-diagnosticreport"/>
             </sourceReference>
         </resource>
         <resource>

@@ -45,6 +45,18 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-diagnosticreport-category.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/diagnosticreport-category"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-cn-plus-uscore.html"
             }
           ],
@@ -81,12 +93,12 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-argo-imaging-diagnosticreport.html"
+              "valueUri": "StructureDefinition-argo-diagnosticreport.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "StructureDefinition/argo-imaging-diagnosticreport"
+            "reference": "StructureDefinition/argo-diagnosticreport"
           }
         },
         {

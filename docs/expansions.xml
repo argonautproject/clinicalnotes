@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="209d0e69-f540-4bc7-a7ad-b3975f1fa72f"/>
+  <id value="a315a64c-3565-48e4-a953-e89c249fa326"/>
   <meta>
-    <lastUpdated value="2018-09-11T09:12:33.305-04:00"/>
+    <lastUpdated value="2018-09-24T13:56:50.680-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -64,8 +64,8 @@
           </div>
         </text>
         <expansion>
-          <identifier value="urn:uuid:2e5910cd-ef39-4a5d-a54f-228c8a39676c"/>
-          <timestamp value="2018-09-11T13:02:29.021Z"/>
+          <identifier value="urn:uuid:8a60a86f-e767-4904-8c18-7bcde26eb70b"/>
+          <timestamp value="2018-09-24T17:14:36.311Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueString value="-1"/>
@@ -155,7 +155,7 @@
         <title value="Argonaut DocumentReferences Category Value Set"/>
         <status value="draft"/>
         <date value="2018-05-02T11:16:34-04:00"/>
-        <description value="The Argonaut DocumentReferences Type Value Set is a &#39;starter set&#39; of categorie supported for fetching and storing clinical notes."/>
+        <description value="The Argonaut DocumentReferences Type Value Set is a &#39;starter set&#39; of categories supported for fetching and storing clinical notes."/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -164,8 +164,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b74ba1f7-65c7-4050-9543-64506ea7d791"/>
-          <timestamp value="2018-09-11T09:12:37-04:00"/>
+          <identifier value="urn:uuid:577143a6-6f12-4d3d-84e5-127155b8ea5b"/>
+          <timestamp value="2018-09-24T13:56:54-04:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -184,6 +184,79 @@
             <system value="http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category"/>
             <code value="other"/>
             <display value="Other"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p>All codes from system 
+              <code>http://loinc.org</code>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-LP29684-5"> </a>
+                  <a href="http://details.loinc.org/LOINC/LP29684-5.html">LP29684-5</a>
+                </td>
+                <td>Radiology</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-LP29708-2"> </a>
+                  <a href="http://details.loinc.org/LOINC/LP29708-2.html">LP29708-2</a>
+                </td>
+                <td>Cardiology</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-LP7839-6"> </a>
+                  <a href="http://details.loinc.org/LOINC/LP7839-6.html">LP7839-6</a>
+                </td>
+                <td>Pathology</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <expansion>
+          <identifier value="urn:uuid:c956be33-f9b8-460c-9ab2-b4206f2a7b02"/>
+          <timestamp value="2018-09-24T17:49:50.778Z"/>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueString value="-1"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://loinc.org?version=2.64"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LP29684-5"/>
+            <display value="Radiology"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LP29708-2"/>
+            <display value="Cardiology"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LP7839-6"/>
+            <display value="Pathology"/>
           </contains>
         </expansion>
       </ValueSet>
