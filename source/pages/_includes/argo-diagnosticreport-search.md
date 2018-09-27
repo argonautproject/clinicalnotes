@@ -13,7 +13,7 @@
 
 `GET [base]/DiagnosticReport?patient=[id]&code=[LOINC{,LOINC2,LOINC3,...}]`
 
-**Example:** GET [base]/DiagnosticReport?patient=1032702&code=18782-3  (LOINC = 18782-3  *X-ray*) 
+**Example:** GET [base]/DiagnosticReport?patient=1032702&code=84178-3  (LOINC =  84178-3 Interventional Radiology Note) 
 
 *Support:* Mandatory support search by a specific DiagnosticReport code. SHOULD support search by multiple report codes.
 
