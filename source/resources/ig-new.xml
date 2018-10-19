@@ -29,78 +29,78 @@
     <version value="current"/>
   </dependsOn>
   <definition>
-    <package id="p1">
+    <grouping id="p1">
       <name value="base"/>
-    </package>
+    </grouping>
     <resource>
       <reference>
         <reference value="ValueSet/argonaut-clinical-note-type"/>
       </reference>
       <exampleBoolean value="false"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="ValueSet/documentreference-category"/>
       </reference>
       <exampleBoolean value="false"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="ValueSet/diagnosticreport-category"/>
       </reference>
       <exampleBoolean value="false"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/cn-plus-uscore"/>
       </reference>
       <exampleBoolean value="false"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/example-dr"/>
       </reference>
       <exampleBoolean value="false"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/argo-clinicalnotes"/>
       </reference>
       <exampleBoolean value="false"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/argo-diagnosticreport"/>
       </reference>
       <exampleBoolean value="false"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="CodeSystem/documentreference-category"/>
       </reference>
       <exampleBoolean value="false"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="CapabilityStatement/server"/>
       </reference>
       <exampleBoolean value="false"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="CapabilityStatement/client"/>
       </reference>
       <exampleBoolean value="false"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <page>
       <nameUrl value="index.md"/>
@@ -113,8 +113,8 @@
       </page>
     </page>
     <parameter>
-      <code value="apply-business-version"/>
-      <value value="0.0.0"/>
+      <code value="apply"/>
+      <value value="version"/>
     </parameter>
     <parameter>
       <code value="html-template"/>

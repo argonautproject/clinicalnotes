@@ -84,7 +84,7 @@
       <!-- container -->
       <!-- HEADER CONTENT -->
     <nav class="navbar navbar-inverse">
-      <div class="container"><a name="f1678dbd-2f3a-411f-b1c5-6e8f05fb8623">​</a>
+      <div class="container"><a name="3f0043fb-2fb6-4416-8895-340c5b83c536">​</a>
         <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
           <span class="icon-bar">
           </span>
@@ -249,17 +249,73 @@
   <li>Progress Note (11506-3)</li>
 </ul>
 
-<p>These notes are defined in the <a href="ValueSet-argonaut-clinical-note-type.html">Argonaut Clinical Types Value Set</a>. These 5 note types represent the Common Clinicanl Notes and are the minimum set a system must support to claim conformance to this guide. Systems are encouraged to support many other common notes types, such as:</p>
+<p>These notes are defined in the <a href="ValueSet-argonaut-clinical-note-type.html">Argonaut Clinical Types Value Set</a>. These 5 note types represent the Common Clinical Notes and are the minimum set a system must support to claim conformance to this guide. Systems are encouraged to support many other common notes types, such as:</p>
 
 <ul>
   <li>Imaging</li>
-  <li>Laboratory and pathology narrative</li>
+  <li>Pathology narrative</li>
+  <li>Cardiology Reports</li>
   <li>Referral Note</li>
   <li>Surgical Operation Note</li>
   <li>Nurse Note</li>
 </ul>
 
-<p>The Argonaut project team developed the initial list of 5 through a survey of the participants in Arognaut and the VA.</p>
+<p>The Argonaut project team developed this initial list of 5 through a survey of the participants in Argonaut and the US Veterans Administration (VA).</p>
+
+<h3 id="documentreference-vs-diagnosticreport">DocumentReference vs DiagnosticReport</h3>
+
+<p>The FHIR specification supports sharing narrative-only reports, or notes, in the DocumentReference and DiagnosticReport Resources. When reviewing the minimal number of elements required for each Resource, it’s difficult to differentiate which is best. A few characteristics this guide considered to help systems differentiate:</p>
+
+<ul>
+  <li>Discrete result information</li>
+  <li>Note types</li>
+  <li>Consistent Client application access to scanned, or narrative-only, reports</li>
+</ul>
+
+<p>DiagnosticReport is the best choice when a system needs to share discrete information or coded interpretations. The DiagnosticReport Resource includes explicit structures (DiagnosticReport.result) to support this information and the entire narrative report (DiagnosticReport.presentedForm).</p>
+
+<p>DocumentReference is the best choice when the narrative is broader then a specific order or report, such as a Progress Note or Discharge Summary Note. The DocumentReference Resource can point to a short 2-3 sentence status of the patient, or reference a complex CDA or Composition document which can include narrative and discrete information.</p>
+
+<p>The best practice for consistent scanned, or narrative-only, report access for client applications is more challenging due to variability in system implementations.</p>
+
+<p>For example, some systems consider any scanned report, or note, a DocumentReference. Other systems allow users to categorize the scanned report as Lab and store to DiagnosticReport. With this variability reports may end up in either resource as demonstrated by the green area in Figure 1.</p>
+
+  <!-- all this Bootstrap html for getting an image to fit nicely in text - 640 pix wide -->
+
+  <!-- file:///assets/images/DiagnosticReport_DocumentReference_Resource_Overlap.png -->
+
+<div>
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 1: DiagnosticReport and DocumentReference Report Overlap.</strong></figcaption>
+  <img src="assets/images/DiagnosticReport_DocumentReference_Resource_Overlap.png" alt="DiagnosticReport_DocumentReference_Resource_Overlap.png" class="figure-img img-responsive img-rounded center-block"/>
+</figure>
+
+<p></p>
+</div>
+
+<p>Categorizing the scanned report as a DiagnosticReport enables clients to access the unstructured reports along with structured information. For example, a client can request all DiagnosticReport.category=”LAB” and receive reports with discrete information and any scanned reports. However, not all systems categorize scanned reports.</p>
+
+<p>In order to enable consistent access to scanned narrative-only reports the Argonaut servers agreed to expose these reports through both DiagnosticReport and DocumentReference.</p>
+
+<p>When DiagnosticReport.presentedForm (Attachment) references a Scan (PDF), then that Attachment <strong>SHALL</strong> also be accessible through DocumentReference.content.attachment.</p>
+
+<p>Exposing the content from both Resources guarantees a Client will receive the clinical information available for a patient. The DocumentReference and DiagnosticReport resources representing the same data will point to the same attachment, so a client can easily identify these duplicates.</p>
+
+<ul>
+  <li>DocumentReference.content.attachment.url</li>
+  <li>
+    <p>DiagnosticReport.presentedForm.url</p>
+
+    <p><strong>What else should be added?</strong>
+Should the guide include:</p>
+  </li>
+  <li>
+    <p>Systems SHOULD categorize scanned narrative-only reports to provide consistent access to client applications????</p>
+  </li>
+  <li>The designers of this guide considered an custom operation to allow a client to ask for all but decided against since a variety of resources would be returned AND clients might not find the operation and inappopriately ask for all of one resource and not get all the ifnormaiotn resulting in patient safety issue.</li>
+</ul>
+
+<p>DocumentReference.content.attachment (Attachment) and DiagnosticReport.presentedForm (Attachment)</p>
 
 <h3 id="selection-of-documentreference">Selection of DocumentReference</h3>
 
@@ -271,7 +327,7 @@
 
 <h3 id="clinical-notes-vs-clinicalimpression">Clinical Notes vs ClinicalImpression</h3>
 
-<p><a name="26d8ed7e-afcd-48b0-b4b8-d660c1eb5774">​</a>The <a href="http://hl7.org/fhir/STU3/">FHIR Version 3.0.1</a> includes the <a href="http://hl7.org/fhir/STU3//clinicalimpression.html">ClinicalImpression</a> resource to support the record of a clinical assessment.</p>
+<p><a name="0cbf6bff-a424-4188-911c-f77f784bd677">​</a>The <a href="http://hl7.org/fhir/STU3/">FHIR Version 3.0.1</a> includes the <a href="http://hl7.org/fhir/STU3//clinicalimpression.html">ClinicalImpression</a> resource to support the record of a clinical assessment.</p>
 
 <p>Taken from the Resource Definition:</p>
 
@@ -284,7 +340,7 @@
 
 <h3 id="valueset-support-on-read-vs-write-expand-enhancement">ValueSet Support on Read vs Write ($expand enhancement)</h3>
 
-<p><a name="199af578-307e-40f8-8f69-4b091ddd8a28">​</a>During the May 2018 Cologne Connectathon the participants identified a requirement to support different value sets on read vs write. The participants considered a new extension for the CapabilityStatement to capture this requirement, or a new operation which would allow a client to ask which value sets are supporting at a specific resource element and a given direction. After discussion Argonaut discussion with the FHIR Core team they agreed to enhance <a href="http://hl7.org/fhir/STU3//valueset-operations.html#expand">$expand</a> operation. See <a href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemEdit&amp;tracker_item_id=17321&amp;start=0">gForge #17321</a> for latest details.</p>
+<p><a name="e21aae5e-034f-40c4-813a-88f72775c99f">​</a>During the May 2018 Cologne Connectathon the participants identified a requirement to support different value sets on read vs write. The participants considered a new extension for the CapabilityStatement to capture this requirement, or a new operation which would allow a client to ask which value sets are supporting at a specific resource element and a given direction. After discussion Argonaut discussion with the FHIR Core team they agreed to enhance <a href="http://hl7.org/fhir/STU3//valueset-operations.html#expand">$expand</a> operation. See <a href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemEdit&amp;tracker_item_id=17321&amp;start=0">gForge #17321</a> for latest details.</p>
 
 <p>Example use location: DocumentReference.content.attachment.contentType</p>
 
@@ -365,8 +421,8 @@ dfjkl
 <div id="segment-footer" class="segment">    <!-- segment-footer -->
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
-    <p><a name="50cb967b-bda3-4234-aa0c-b76a79867505">​</a>
-            Argonaut Clinical Notes Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Thu, Sep 27, 2018 11:03-0400. |
+    <p><a name="66b0a7a6-b8fd-433d-b82c-8ef4026e5b31">​</a>
+            Argonaut Clinical Notes Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Oct 19, 2018 11:55-0400. |
                <!-- <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/STU3/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>
         

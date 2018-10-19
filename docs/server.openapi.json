@@ -25,7 +25,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/OperationOutcome"
+                  "$ref": "http://build.fhir.org/fhir.json.schema#/definitions/OperationOutcome"
                 }
               },
               "application/fhir+xml": {
@@ -45,7 +45,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/Bundle"
+                  "$ref": "http://build.fhir.org/fhir.json.schema#/definitions/Bundle"
                 }
               },
               "application/fhir+xml": {
@@ -70,7 +70,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/OperationOutcome"
+                  "$ref": "http://build.fhir.org/fhir.json.schema#/definitions/OperationOutcome"
                 }
               },
               "application/fhir+xml": {
@@ -90,7 +90,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/Basic"
+                  "$ref": "http://build.fhir.org/fhir.json.schema#/definitions/Basic"
                 }
               },
               "application/fhir+xml": {
@@ -115,7 +115,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/OperationOutcome"
+                  "$ref": "http://build.fhir.org/fhir.json.schema#/definitions/OperationOutcome"
                 }
               },
               "application/fhir+xml": {
@@ -135,7 +135,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/Basic"
+                  "$ref": "http://build.fhir.org/fhir.json.schema#/definitions/Basic"
                 }
               },
               "application/fhir+xml": {

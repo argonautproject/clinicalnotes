@@ -25,7 +25,7 @@
   "publisher" : "Argonaut Project",
   "packageId" : "healthedatainc.igtemplate",
   "license" : "CC0-1.0",
-  "fhirVersion" : "3.0.1",
+  "fhirVersion" : ["3.0.1"],
   "dependsOn" : [{
     "id" : "uscore",
     "uri" : "http://hl7.org/fhir/us/core",
@@ -33,7 +33,7 @@
     "version" : "current"
   }],
   "definition" : {
-    "package" : [{
+    "grouping" : [{
       "id" : "p1",
       "name" : "base"
     }],
@@ -42,70 +42,70 @@
         "reference" : "ValueSet/argonaut-clinical-note-type"
       },
       "exampleBoolean" : false,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "ValueSet/documentreference-category"
       },
       "exampleBoolean" : false,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "ValueSet/diagnosticreport-category"
       },
       "exampleBoolean" : false,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "StructureDefinition/cn-plus-uscore"
       },
       "exampleBoolean" : false,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "StructureDefinition/example-dr"
       },
       "exampleBoolean" : false,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "StructureDefinition/argo-clinicalnotes"
       },
       "exampleBoolean" : false,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "StructureDefinition/argo-diagnosticreport"
       },
       "exampleBoolean" : false,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "CodeSystem/documentreference-category"
       },
       "exampleBoolean" : false,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "CapabilityStatement/server"
       },
       "exampleBoolean" : false,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "CapabilityStatement/client"
       },
       "exampleBoolean" : false,
-      "package" : "p1"
+      "groupingId" : "p1"
     }],
     "page" : {
       "nameUrl" : "index.md",
@@ -118,8 +118,8 @@
       }]
     },
     "parameter" : [{
-      "code" : "apply-business-version",
-      "value" : "0.0.0"
+      "code" : "apply",
+      "value" : "version"
     },
     {
       "code" : "html-template",

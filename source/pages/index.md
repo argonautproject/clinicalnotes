@@ -37,6 +37,8 @@ This implementation guide includes a [Argonaut Clinical Notes] profile and a [Ar
 
 [Argonaut Diagnostic Reports]
 
+See [DocumentReference vs DiagnosticReport] for detailed guidance on when to use each profile.
+
 
 ## Argonaut Clinical Notes Conformance Requirements
 
@@ -46,6 +48,7 @@ The [Capability Statements Section](capstatements.html) outlines conformance req
 [US Core]: http://hl7.org/fhir/us/core/index.html
 [Argonaut Clinical Notes]: StructureDefinition-argo-clinicalnotes.html
 [Argonaut Diagnostic Reports]: StructureDefinition-argo-diagnosticreport.html
+[DocumentReference vs DiagnosticReport]: guidance.html
 [logical view]: {{site.data.fhir.path}}/formats.html#table
 [DocumentReference]: {{site.data.fhir.path}}/documentreference.html
 [CapabilityStatement]: {{site.data.fhir.path}}/capabilitystatement.html

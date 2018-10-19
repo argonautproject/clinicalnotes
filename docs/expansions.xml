@@ -1,108 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="d4eb6a86-1dfa-4481-ba35-b28dba68201e"/>
+  <id value="b8556f6d-8b01-4195-a3ee-c3693a6e4c39"/>
   <meta>
-    <lastUpdated value="2018-09-27T11:03:03.994-04:00"/>
+    <lastUpdated value="2018-10-19T11:55:40.627-04:00"/>
   </meta>
   <type value="collection"/>
-  <entry>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 5 concepts</p>
-            <p>All codes from system 
-              <code>http://loinc.org</code>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-18842-5"> </a>
-                  <a href="http://details.loinc.org/LOINC/18842-5.html">18842-5</a>
-                </td>
-                <td>Discharge summary</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-11488-4"> </a>
-                  <a href="http://details.loinc.org/LOINC/11488-4.html">11488-4</a>
-                </td>
-                <td>Consult note</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-34117-2"> </a>
-                  <a href="http://details.loinc.org/LOINC/34117-2.html">34117-2</a>
-                </td>
-                <td>History and physical note</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-11506-3"> </a>
-                  <a href="http://details.loinc.org/LOINC/11506-3.html">11506-3</a>
-                </td>
-                <td>Progress note</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-28570-0"> </a>
-                  <a href="http://details.loinc.org/LOINC/28570-0.html">28570-0</a>
-                </td>
-                <td>Procedure note</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <expansion>
-          <identifier value="urn:uuid:8a60a86f-e767-4904-8c18-7bcde26eb70b"/>
-          <timestamp value="2018-09-24T17:14:36.311Z"/>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueString value="-1"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueString value="http://loinc.org?version=2.64"/>
-          </parameter>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="18842-5"/>
-            <display value="Discharge summary"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="11488-4"/>
-            <display value="Consult note"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="34117-2"/>
-            <display value="History and physical note"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="11506-3"/>
-            <display value="Progress note"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="28570-0"/>
-            <display value="Procedure note"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
   <entry>
     <fullUrl value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/documentreference-category"/>
     <resource>
@@ -164,8 +67,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ddaee90f-a19e-4ec2-a16d-0900864f0497"/>
-          <timestamp value="2018-09-27T11:03:07-04:00"/>
+          <identifier value="urn:uuid:13cca860-5302-4443-a369-802fd320f03b"/>
+          <timestamp value="2018-10-19T11:55:45-04:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -184,79 +87,6 @@
             <system value="http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category"/>
             <code value="other"/>
             <display value="Other"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
-            <p>All codes from system 
-              <code>http://loinc.org</code>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-LP29684-5"> </a>
-                  <a href="http://details.loinc.org/LOINC/LP29684-5.html">LP29684-5</a>
-                </td>
-                <td>Radiology</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-LP29708-2"> </a>
-                  <a href="http://details.loinc.org/LOINC/LP29708-2.html">LP29708-2</a>
-                </td>
-                <td>Cardiology</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-LP7839-6"> </a>
-                  <a href="http://details.loinc.org/LOINC/LP7839-6.html">LP7839-6</a>
-                </td>
-                <td>Pathology</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <expansion>
-          <identifier value="urn:uuid:c956be33-f9b8-460c-9ab2-b4206f2a7b02"/>
-          <timestamp value="2018-09-24T17:49:50.778Z"/>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueString value="-1"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueString value="http://loinc.org?version=2.64"/>
-          </parameter>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="LP29684-5"/>
-            <display value="Radiology"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="LP29708-2"/>
-            <display value="Cardiology"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="LP7839-6"/>
-            <display value="Pathology"/>
           </contains>
         </expansion>
       </ValueSet>

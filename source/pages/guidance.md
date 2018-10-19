@@ -23,15 +23,57 @@ Specifically, this implementation guide requires systems support the following 5
 * Procedures Note (28570-0)
 * Progress Note (11506-3)
 
-These notes are defined in the [Argonaut Clinical Types Value Set]. These 5 note types represent the Common Clinicanl Notes and are the minimum set a system must support to claim conformance to this guide. Systems are encouraged to support many other common notes types, such as:
+These notes are defined in the [Argonaut Clinical Types Value Set]. These 5 note types represent the Common Clinical Notes and are the minimum set a system must support to claim conformance to this guide. Systems are encouraged to support many other common notes types, such as:
 
 * Imaging
-* Laboratory and pathology narrative
+* Pathology narrative
+* Cardiology Reports 
 * Referral Note
 * Surgical Operation Note
 * Nurse Note
 
-The Argonaut project team developed the initial list of 5 through a survey of the participants in Arognaut and the VA.
+The Argonaut project team developed this initial list of 5 through a survey of the participants in Argonaut and the US Veterans Administration (VA).
+
+### DocumentReference vs DiagnosticReport
+
+The FHIR specification supports sharing narrative-only reports, or notes, in the DocumentReference and DiagnosticReport Resources. When reviewing the minimal number of elements required for each Resource, it's difficult to differentiate which is best. A few characteristics this guide considered to help systems differentiate:
+
+* Discrete result information
+* Note types
+* Consistent Client application access to scanned, or narrative-only, reports
+
+DiagnosticReport is the best choice when a system needs to share discrete information or coded interpretations. The DiagnosticReport Resource includes explicit structures (DiagnosticReport.result) to support this information and the entire narrative report (DiagnosticReport.presentedForm). 
+
+DocumentReference is the best choice when the narrative is broader then a specific order or report, such as a Progress Note or Discharge Summary Note. The DocumentReference Resource can point to a short 2-3 sentence status of the patient, or reference a complex CDA or Composition document which can include narrative and discrete information. 
+
+The best practice for consistent scanned, or narrative-only, report access for client applications is more challenging due to variability in system implementations.  
+
+For example, some systems consider any scanned report, or note, a DocumentReference. Other systems allow users to categorize the scanned report as Lab and store to DiagnosticReport. With this variability reports may end up in either resource as demonstrated by the green area in Figure 1.
+
+{% include img.html img="DiagnosticReport_DocumentReference_Resource_Overlap.png" caption="Figure 1: DiagnosticReport and DocumentReference Report Overlap" %}
+	
+Categorizing the scanned report as a DiagnosticReport enables clients to access the unstructured reports along with structured information. For example, a client can request all DiagnosticReport.category="LAB" and receive reports with discrete information and any scanned reports. However, not all systems categorize scanned reports. 
+
+In order to enable consistent access to scanned narrative-only reports the Argonaut servers agreed to expose these reports through both DiagnosticReport and DocumentReference.
+
+  When DiagnosticReport.presentedForm (Attachment) references a Scan (PDF), then that Attachment **SHALL** also be accessible through DocumentReference.content.attachment.
+	
+Exposing the content from both Resources guarantees a Client will receive the clinical information available for a patient. The DocumentReference and DiagnosticReport resources representing the same data will point to the same attachment, so a client can easily identify these duplicates. 
+
+* DocumentReference.content.attachment.url
+* DiagnosticReport.presentedForm.url 
+ 
+ 
+ 
+	**What else should be added?**
+Should the guide include:
+
+* Systems SHOULD categorize scanned narrative-only reports to provide consistent access to client applications????
+
+* The designers of this guide considered an custom operation to allow a client to ask for all but decided against since a variety of resources would be returned AND clients might not find the operation and inappopriately ask for all of one resource and not get all the ifnormaiotn resulting in patient safety issue. 
+
+DocumentReference.content.attachment (Attachment) and DiagnosticReport.presentedForm (Attachment) 
+
 
 ### Selection of DocumentReference
 
