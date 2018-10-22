@@ -48,7 +48,7 @@ The [Capability Statements Section](capstatements.html) outlines conformance req
 [US Core]: http://hl7.org/fhir/us/core/index.html
 [Argonaut Clinical Notes]: StructureDefinition-argo-clinicalnotes.html
 [Argonaut Diagnostic Reports]: StructureDefinition-argo-diagnosticreport.html
-[DocumentReference vs DiagnosticReport]: guidance.html
+[DocumentReference vs DiagnosticReport]: guidance.html#documentreference-vs-diagnosticreport
 [logical view]: {{site.data.fhir.path}}/formats.html#table
 [DocumentReference]: {{site.data.fhir.path}}/documentreference.html
 [CapabilityStatement]: {{site.data.fhir.path}}/capabilitystatement.html

@@ -40,7 +40,7 @@ The FHIR specification supports sharing narrative-only reports, or notes, in the
 
 * Discrete result information
 * Note types
-* Consistent Client application access to scanned, or narrative-only, reports
+* Consistent Client access to scanned, or narrative-only, reports
 
 DiagnosticReport is the best choice when a system needs to share discrete information or coded interpretations. The DiagnosticReport Resource includes explicit structures (DiagnosticReport.result) to support this information and the entire narrative report (DiagnosticReport.presentedForm). 
 
@@ -52,19 +52,23 @@ For example, some systems consider any scanned report, or note, a DocumentRefere
 
 {% include img.html img="DiagnosticReport_DocumentReference_Resource_Overlap.png" caption="Figure 1: DiagnosticReport and DocumentReference Report Overlap" %}
 	
-Categorizing the scanned report as a DiagnosticReport enables clients to access the unstructured reports along with structured information. For example, a client can request all DiagnosticReport.category="LAB" and receive reports with discrete information and any scanned reports. However, not all systems categorize scanned reports. 
+Storing scanned reports as a DiagnosticReport, with appropriate categorization, enables clients to access the scanned reports along with any DiagnosticReports with discrete information. For example, a client can request all DiagnosticReport.category="LAB" and receive reports with discrete information and any scanned reports. However, not all systems store and categorize Lab reports with DiagnosticReport.
+
+The developers of this guide considered requiring Clients query both DocumentReference and DiagnosticReport to get all information for a patient. Querying both places would provide all the information for a patient. However, the requirement to query two places is potentially dangerous if a client doesn't understand this requirement and queries only one.
 
 In order to enable consistent access to scanned narrative-only reports the Argonaut servers agreed to expose these reports through both DiagnosticReport and DocumentReference.
 
   When DiagnosticReport.presentedForm (Attachment) references a Scan (PDF), then that Attachment **SHALL** also be accessible through DocumentReference.content.attachment.
 	
-Exposing the content from both Resources guarantees a Client will receive the clinical information available for a patient. The DocumentReference and DiagnosticReport resources representing the same data will point to the same attachment, so a client can easily identify these duplicates. 
+Exposing the content in this manner guarantees a Client will receive the clinical information available for a patient. The DocumentReference and DiagnosticReport resources representing the same data will point to the same attachment, so a client can easily identify these duplicates. 
 
 * DocumentReference.content.attachment.url
 * DiagnosticReport.presentedForm.url 
+
+Note, not all scanned information stored through DocumentReference will be exposed through DiagnosticReport since DocumentReference stores other non-clinical information (e.g. insurance card).
+
  
- 
- 
+  
 	**What else should be added?**
 Should the guide include:
 

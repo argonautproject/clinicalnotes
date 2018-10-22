@@ -2,7 +2,7 @@
 =========================================
 
 err = 10, warn = 8, info = 0
-Generated Fri Oct 19 11:56:25 EDT 2018. FHIR version 3.6.0 for 3.0.1
+Generated Mon Oct 22 10:57:57 EDT 2018. FHIR version 3.6.0 for 3.0.1
 
  Build Errors : 214 / 0
  C:\clinicalnotes\source\resources\CodeSystem-documentreference-category : 0 / 0
@@ -70,10 +70,10 @@ ERROR: C:\clinicalnotes\docs\StructureDefinition-cn-plus-uscore.html#/html/head/
 ERROR: C:\clinicalnotes\docs\StructureDefinition-cn-plus-uscore.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/pre/span/a at Line 587, column 529: The link 'http://hl7.org/fhir/STU3/null.html' for "Additional details about where the content was created (e.g. clinical specialty)" cannot be resolved
 ERROR: C:\clinicalnotes\docs\StructureDefinition-cn-plus-uscore.html#/html/head/link/body/div/div/div/div/div/div/hr/div/div/div/p/a at Line 697, column 66: The link 'http://hl7.org/fhir/STU3/' for "FHIR Version: 3.0.1" cannot be resolved
 ERROR: C:\clinicalnotes\docs\guidance.html#/html/head/link/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
-ERROR: C:\clinicalnotes\docs\guidance.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 337, column 9: The link 'http://hl7.org/fhir/STU3/' for "FHIR Version 3.0.1" cannot be resolved
-ERROR: C:\clinicalnotes\docs\guidance.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 337, column 81: The link 'http://hl7.org/fhir/STU3//clinicalimpression.html' for "ClinicalImpression" cannot be resolved
-ERROR: C:\clinicalnotes\docs\guidance.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 350, column 462: The link 'http://hl7.org/fhir/STU3//valueset-operations.html#expand' for "$expand" cannot be resolved
-ERROR: C:\clinicalnotes\docs\guidance.html#/html/head/link/body/div/div/div/p/a at Line 432, column 66: The link 'http://hl7.org/fhir/STU3/' for "FHIR Version: 3.0.1" cannot be resolved
+ERROR: C:\clinicalnotes\docs\guidance.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 345, column 9: The link 'http://hl7.org/fhir/STU3/' for "FHIR Version 3.0.1" cannot be resolved
+ERROR: C:\clinicalnotes\docs\guidance.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 345, column 81: The link 'http://hl7.org/fhir/STU3//clinicalimpression.html' for "ClinicalImpression" cannot be resolved
+ERROR: C:\clinicalnotes\docs\guidance.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 358, column 462: The link 'http://hl7.org/fhir/STU3//valueset-operations.html#expand' for "$expand" cannot be resolved
+ERROR: C:\clinicalnotes\docs\guidance.html#/html/head/link/body/div/div/div/p/a at Line 440, column 66: The link 'http://hl7.org/fhir/STU3/' for "FHIR Version: 3.0.1" cannot be resolved
 ERROR: C:\clinicalnotes\docs\ValueSet-documentreference-category.html#/html/head/link/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\ValueSet-documentreference-category.html#/html/head/link/body/div/div/div/p/a at Line 387, column 66: The link 'http://hl7.org/fhir/STU3/' for "FHIR Version: 3.0.1" cannot be resolved
 ERROR: C:\clinicalnotes\docs\ImplementationGuide-ig.ttl.html#/html/head/link/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
