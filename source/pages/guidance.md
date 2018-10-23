@@ -52,11 +52,11 @@ For example, some systems consider any scanned report, or note, a DocumentRefere
 
 {% include img.html img="DiagnosticReport_DocumentReference_Resource_Overlap.png" caption="Figure 1: DiagnosticReport and DocumentReference Report Overlap" %}
 	
-Storing scanned reports as a DiagnosticReport, with appropriate categorization, enables clients to access the scanned reports along with any DiagnosticReports with discrete information. For example, a client can request all DiagnosticReport.category="LAB" and receive reports with discrete information and any scanned reports. However, not all systems store and categorize Lab reports with DiagnosticReport.
+Storing scanned reports as a DiagnosticReport, with appropriate categorization, enables clients to access the scanned reports along with DiagnosticReports containing discrete information. For example, a client can request all DiagnosticReport.category="LAB" and receive reports with discrete information and any scanned reports. However, not all systems store and categorize Lab reports with DiagnosticReport.
 
 The developers of this guide considered requiring Clients query both DocumentReference and DiagnosticReport to get all information for a patient. Querying both places would provide all the information for a patient. However, the requirement to query two places is potentially dangerous if a client doesn't understand this requirement and queries only one.
 
-In order to enable consistent access to scanned narrative-only reports the Argonaut servers agreed to expose these reports through both DiagnosticReport and DocumentReference.
+In order to enable consistent access to scanned narrative-only clinical reports the Argonaut servers agreed to expose these reports through both DiagnosticReport and DocumentReference.
 
   When DiagnosticReport.presentedForm (Attachment) references a Scan (PDF), then that Attachment **SHALL** also be accessible through DocumentReference.content.attachment.
 	
@@ -67,26 +67,77 @@ Exposing the content in this manner guarantees a Client will receive the clinica
 
 Note, not all scanned information stored through DocumentReference will be exposed through DiagnosticReport since DocumentReference stores other non-clinical information (e.g. insurance card).
 
- 
-  
-	**What else should be added?**
-Should the guide include:
+#### Support Requirements
 
-* Systems SHOULD categorize scanned narrative-only reports to provide consistent access to client applications????
+This guide requires systems implement DocumentReference and at a minimum these [5 concepts](ValueSet-argonaut-clinical-note-type.html) and may extend to the full  [HITSP C80 Table 2-144 Document Class Value Set Definition](http://build.fhir.org/valueset-c80-doc-typecodes.html).
 
-* The designers of this guide considered an custom operation to allow a client to ask for all but decided against since a variety of resources would be returned AND clients might not find the operation and inappopriately ask for all of one resource and not get all the ifnormaiotn resulting in patient safety issue. 
+This guide requires systems implement DiagnosticReport and the `DiagnosticReport.category` element must support at a minimum the [3 concepts](ValueSet-diagnosticreport-category.html) of Cardiology, Radiology, and Pathology. Other categories may be supported. 
 
-DocumentReference.content.attachment (Attachment) and DiagnosticReport.presentedForm (Attachment) 
+Clients interested in determining what server supports may use the [$expand operation.](guidance.html#determining-server-note-and-report-type-support-expand)
 
+The contents of the notes or reports, even using standard LOINC concepts, may vary by health system or even location. For example, CT Spleen WO contrast (LOINC 30621-7) may include individual sections for history, impressions, conclusions, or just an impressions section. Discharge Summaries may have different facility or local regulatory content requirements.
 
-### Selection of DocumentReference
+This guide focuses on exposing existing information, and not dictating how systems allow their users to capture information.
+
+#### Example Query Scenarios
+
+A client interested in all Radiology reports can use the following query:
+
+	GET [base]/DiagnosticReport?patient=[id]&category=http://loinc.org|LP29684-5
+	
+A client interested in all Clinical Notes can use the following query:
+
+	GET [base]/DocumentReference?patient=[id]&class=clinical-note
+
+A client interested in all Discharge Summary Notes can use the following query:
+
+	GET [base]/DocumentReference?patient=[id]&type=http://loinc.org|18842-5
+
+### Determining Server Note and Report Type Support ($expand) 
+
+A client can determine the Note and Report type support of a server by invoking the $expand operation. The [$expand](http://build.fhir.org/valueset-operation-expand.html) operation in the base FHIR R4 specification provides many parameters and features. This guide highlights the use of the operation to discover what specific notes can be requested, and what write formats a server supports.
+
+#### Discover Read and Write Support Using $expand 
+
+Servers may support different read and write formats. For example,
+
+* System A accepts contentType "text/plain" in a create and returns "text/html" in a read.
+* System B accepts contentType "text/xhtml" in a create and returns "application/pdf" in a read.
+
+Invoking this will determine what a server supports on write (create):
+
+	GET [base]/ValueSet/$expand?context=DocumentReference.content.attachment.contentType&amp;contextDirection=incoming
+	
+Invoking this will determine what a server supports on read (access):
+
+	GET [base]/ValueSet/$expand?context=DocumentReference.content.attachment.contentType&amp;contextDirection=outgoing
+	
+#### Discover Note and Report Type Using $expand 
+	
+Servers will support different Note and Report types. 
+
+This allows a client to determine the types of Note or reports they can access through DiagnosticReport:
+
+	GET [base]/ValueSet/$expand?context=DiagnosticReport.type&amp;contextDirection=outgoing
+
+This allows a client to determine the types of Note or reports they can access through DocumentReference:
+
+	GET [base]/ValueSet/$expand?context=DocumentReference.type&amp;contextDirection=outgoing
+	
+If a client is only interested in retrieving notes by categories they may use the following:
+
+	GET [base]/ValueSet/$expand?context=DiagnosticReport.category&amp;contextDirection=outgoing
+	GET [base]/ValueSet/$expand?context=DocumentReference.class&amp;contextDirection=outgoing 
+
+Note, DocumentReference.class is updated DocumentReference.category in FHIR R4.
+	
+### Add section on how we selected of DocumentReference (KEEP OR REMOVE?)
 
 * Include history of resources considered, plus a new resource
-* Discussion on flipping to think about different formats rather than resources.
-*
+* Discussion on flipping to think about different formats rather than resources. *
 
 
-### Clinical Notes vs ClinicalImpression
+### Add section on Clinical Notes vs ClinicalImpression (KEEP OR REMOVE?)
 
 The [FHIR Version {{site.data.fhir.version}}]({{site.data.fhir.path}}) includes the [ClinicalImpression] resource to support the record of a clinical assessment. 
 
@@ -97,17 +148,6 @@ A record of a clinical assessment performed to determine what problem(s) may aff
 * How do systems expect to store and expose "Progress satisfactory, continue with treatment"?
 * Will use 7/18/2018 call to flesh out 
 
-
-### ValueSet Support on Read vs Write ($expand enhancement)
-
-During the May 2018 Cologne Connectathon the participants identified a requirement to support different value sets on read vs write. The participants considered a new extension for the CapabilityStatement to capture this requirement, or a new operation which would allow a client to ask which value sets are supporting at a specific resource element and a given direction. After discussion Argonaut discussion with the FHIR Core team they agreed to enhance [$expand]({{site.data.fhir.path}}/valueset-operations.html#expand) operation. See [gForge #17321](https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemEdit&tracker_item_id=17321&start=0) for latest details. 
-
-Example use location: DocumentReference.content.attachment.contentType
-
-* System A accepts contentType "text/plain" in a create and returns "text/html" in a read.
-* System B accepts contentType "text/xhtml" in a create and returns "application/pdf" in a read.
-
-**ADD specific details when posted to current build**
 
 ### Future Work
 
