@@ -69,13 +69,13 @@ Note, not all scanned information stored through DocumentReference will be expos
 
 #### Support Requirements
 
-This guide requires systems implement DocumentReference and at a minimum these [5 concepts](ValueSet-argonaut-clinical-note-type.html) and may extend to the full  [HITSP C80 Table 2-144 Document Class Value Set Definition](http://build.fhir.org/valueset-c80-doc-typecodes.html).
+This guide requires systems implement DocumentReference with a minimum of these [5 note types](ValueSet-argonaut-clinical-note-type.html) and may extend to the full  [HITSP C80 Table 2-144 Document Class Value Set Definition](http://build.fhir.org/valueset-c80-doc-typecodes.html).
 
 This guide requires systems implement DiagnosticReport and the `DiagnosticReport.category` element must support at a minimum the [3 concepts](ValueSet-diagnosticreport-category.html) of Cardiology, Radiology, and Pathology. Other categories may be supported. 
 
 Clients interested in determining what server supports may use the [$expand operation.](guidance.html#determining-server-note-and-report-type-support-expand)
 
-The contents of the notes or reports, even using standard LOINC concepts, may vary by health system or even location. For example, CT Spleen WO contrast (LOINC 30621-7) may include individual sections for history, impressions, conclusions, or just an impressions section. Discharge Summaries may have different facility or local regulatory content requirements.
+The contents of the notes or reports, even using standard LOINC concepts, may vary by health system or even location. For example, CT Spleen WO contrast (LOINC 30621-7) may include individual sections for history, impressions, conclusions, or just an impressions section. Discharge Summaries may have different facility or regulatory content requirements.
 
 This guide focuses on exposing existing information, and not dictating how systems allow their users to capture information.
 
@@ -129,7 +129,7 @@ If a client is only interested in retrieving notes by categories they may use th
 	GET [base]/ValueSet/$expand?context=DiagnosticReport.category&amp;contextDirection=outgoing
 	GET [base]/ValueSet/$expand?context=DocumentReference.class&amp;contextDirection=outgoing 
 
-Note, DocumentReference.class is updated DocumentReference.category in FHIR R4.
+Note, DocumentReference.class is updated to DocumentReference.category in FHIR R4.
 	
 ### Add section on how we selected of DocumentReference (KEEP OR REMOVE?)
 
