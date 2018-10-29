@@ -20,7 +20,7 @@
 	<content value="complete"></content>
 	<count value="2"></count>
 	<concept>
-		<code value="cinical-note"></code>
+		<code value="clinical-note"></code>
 		<display value="Clinical Note"></display>
 <definition value="Part of a medical record where healthcare professionals record details to document a patient's clinical status or achievements during the course of a hospitalization or over the course of outpatient care ( [Wikipedia](https://en.wikipedia.org/wiki/Progress_note))"></definition>
 	</concept>

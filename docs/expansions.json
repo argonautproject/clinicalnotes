@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "9f30211e-08ce-4888-95c8-1512d9579fc4",
+  "id" : "e75f997c-1f3b-4e74-a695-edbe245db24a",
   "meta" : {
-    "lastUpdated" : "2018-10-23T12:00:38.402-04:00"
+    "lastUpdated" : "2018-10-29T11:40:57.616-04:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -12,7 +12,7 @@
       "id" : "documentreference-category",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\">Expansion based on http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category version 0.0.0</p><p>All codes from system <a href=\"CodeSystem-documentreference-category.html\"><code>http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.org-guides-argonaut-clinicalnotes-CodeSystem-documentreference-category-cinical-note\"> </a><a href=\"CodeSystem-documentreference-category.html#documentreference-category-cinical-note\">cinical-note</a></td><td>Clinical Note</td><td>Part of a medical record where healthcare professionals record details to document a patient's clinical status or achievements during the course of a hospitalization or over the course of outpatient care ( [Wikipedia](https://en.wikipedia.org/wiki/Progress_note))</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.org-guides-argonaut-clinicalnotes-CodeSystem-documentreference-category-other\"> </a><a href=\"CodeSystem-documentreference-category.html#documentreference-category-other\">other</a></td><td>Other</td><td>Indicates that the category is not covered by one of the pre-defined codes.</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\">Expansion based on http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category version 0.0.0</p><p>All codes from system <a href=\"CodeSystem-documentreference-category.html\"><code>http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.org-guides-argonaut-clinicalnotes-CodeSystem-documentreference-category-clinical-note\"> </a><a href=\"CodeSystem-documentreference-category.html#documentreference-category-clinical-note\">clinical-note</a></td><td>Clinical Note</td><td>Part of a medical record where healthcare professionals record details to document a patient's clinical status or achievements during the course of a hospitalization or over the course of outpatient care ( [Wikipedia](https://en.wikipedia.org/wiki/Progress_note))</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.org-guides-argonaut-clinicalnotes-CodeSystem-documentreference-category-other\"> </a><a href=\"CodeSystem-documentreference-category.html#documentreference-category-other\">other</a></td><td>Other</td><td>Indicates that the category is not covered by one of the pre-defined codes.</td></tr></table></div>"
       },
       "url" : "http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/documentreference-category",
       "version" : "0.0.0",
@@ -29,8 +29,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:905e0858-c2cd-4364-8a9b-04b657281b7e",
-        "timestamp" : "2018-10-23T12:00:44-04:00",
+        "identifier" : "urn:uuid:e5b952d2-3050-4529-b090-b644bb999c7a",
+        "timestamp" : "2018-10-29T11:41:04-04:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -42,7 +42,7 @@
         }],
         "contains" : [{
           "system" : "http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category",
-          "code" : "cinical-note",
+          "code" : "clinical-note",
           "display" : "Clinical Note"
         },
         {
