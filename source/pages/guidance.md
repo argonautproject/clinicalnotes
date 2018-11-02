@@ -32,7 +32,7 @@ These notes are defined in the [Argonaut Clinical Types Value Set]. These 5 note
 * Surgical Operation Note
 * Nurse Note
 
-The Argonaut project team developed this initial list of 5 through a survey of the participants in Argonaut and the US Veterans Administration (VA).
+The Argonaut project team developed this initial list of 5 through a survey of the participants in Argonaut and the US Veterans Administration (VA). After prioritizing the Note types, the development team selected the DocumentReference and DiagnosticReport Resources to support exchange. See [Resources to Exchange Clinical Notes](guidance.html#resources-to-exchange-clinical-notes) for a full discussion on the decision to use these resources.
 
 ### DocumentReference vs DiagnosticReport
 
@@ -69,7 +69,7 @@ Note, not all scanned information stored through DocumentReference will be expos
 
 #### Support Requirements
 
-This guide requires systems implement DocumentReference with a minimum of these [5 note types](ValueSet-argonaut-clinical-note-type.html) and may extend to the full  [HITSP C80 Table 2-144 Document Class Value Set Definition](http://build.fhir.org/valueset-c80-doc-typecodes.html).
+This guide requires systems implement DocumentReference with a minimum of these [5 note types](ValueSet-argonaut-clinical-note-type.html) and may extend to the full  [LOINC document concepts](http://build.fhir.org/valueset-doc-typecodes.html).
 
 This guide requires systems implement DiagnosticReport and the `DiagnosticReport.category` element must support at a minimum the [3 concepts](ValueSet-diagnosticreport-category.html) of Cardiology, Radiology, and Pathology. Other categories may be supported. 
 
@@ -95,7 +95,7 @@ A client interested in all Discharge Summary Notes can use the following query:
 
 ### Determining Server Note and Report Type Support ($expand) 
 
-A client can determine the Note and Report type support of a server by invoking the $expand operation. The [$expand](http://build.fhir.org/valueset-operation-expand.html) operation in the base FHIR R4 specification provides many parameters and features. This guide highlights the use of the operation to discover what specific notes can be requested, and what write formats a server supports.
+A client can determine the Note and Report type support of a server by invoking the $expand operation. The [$expand](http://build.fhir.org/valueset-operation-expand.html) operation in the base FHIR R4 specification provides many parameters and features. This guide highlights the use of the operation to discover what specific notes can be requested, and what write formats a server supports. A FHIR server claiming support to this guide **SHOULD** support the $expand operation to discover a value set at a specific element.
 
 #### Discover Read and Write Support Using $expand 
 
@@ -131,23 +131,42 @@ If a client is only interested in retrieving notes by categories they may use th
 
 Note, DocumentReference.class is updated to DocumentReference.category in FHIR R4.
 	
-### Add section on how we selected of DocumentReference (KEEP OR REMOVE?)
+### Resources to Exchange Clinical Notes
 
-* Include history of resources considered, plus a new resource
-* Discussion on flipping to think about different formats rather than resources. *
+The [FHIR Version {{site.data.fhir.version}}]({{site.data.fhir.path}}) specification includes several appropriate places to include clinical notes: Composition, ClinicalImpression, DocumentReference, DiagnosticReport, etc.
 
+* The [Composition] resource provides the basic structure to exchange [FHIR Documents].
+* The [ClinicalImpression] resource records a clinical assessment. 
+* The [DiagnosticReport] resource records findings and interpretation of diagnostic tests.
+* The [DocumentReference] resource provides an index to clinical content.
 
-### Add section on Clinical Notes vs ClinicalImpression (KEEP OR REMOVE?)
+The developers of this guide also considered creating a new ClinicalNotes resource. 
+
+While each of these Resources work well for a specific use case, they don't solve the Client question of 'Which Resource do I query to find all Clinical Notes?'. 
+
+Rather then focus on the specific use cases, the designers considered the variability of Note format. For example systems use text, XHTML, PDF, CDA to capture clinical notes. This variability led the designers to select the [DocumentReference and DiagnosticReport](guidance.html#documentreference-vs-diagnosticreport) as an index mechanisms to the underlying content. 
+
+A Client can query one of these resources and it will return a pointer to specific Resource or the underlying Binary content. Consider the following situation for a Discharge Summary Note. 
+
+* System A supports the Discharge Summary as a Composition resource
+* System B supports the Discharge Summary as a CDA Document
+* System C supports the Discharge Summary as a PDF Document
+
+The following single query into DocumentReference supports all 3 scenarios:
+
+	GET [base]/DocumentReference?patient=[id]&type=http://loinc.org|18842-5
+	
+The server returns either a pointer to the Composition or the Binary resource. If other more specific resources are developed for Clinical Notes systems can update their pointers to the new resource.  
+
+#### Clinical Notes vs ClinicalImpression 
 
 The [FHIR Version {{site.data.fhir.version}}]({{site.data.fhir.path}}) includes the [ClinicalImpression] resource to support the record of a clinical assessment. 
 
 Taken from the Resource Definition:
 
-A record of a clinical assessment performed to determine what problem(s) may affect the patient and before planning the treatments or management strategies that are best to manage a patient's condition. Assessments are often 1:1 with a clinical consultation / encounter, but this varies greatly depending on the clinical workflow. This resource is called "ClinicalImpression" rather than "ClinicalAssessment" to avoid confusion with the recording of assessment tools such as Apgar score
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A record of a clinical assessment performed to determine what problem(s) may affect the patient and before planning the treatments or management strategies that are best to manage a patient's condition. Assessments are often 1:1 with a clinical consultation / encounter, but this varies greatly depending on the clinical workflow. This resource is called "ClinicalImpression" rather than "ClinicalAssessment" to avoid confusion with the recording of assessment tools such as Apgar score
 
-* How do systems expect to store and expose "Progress satisfactory, continue with treatment"?
-* Will use 7/18/2018 call to flesh out 
-
+In existing EHRs, the clinical impression is often contained with in a broader note. The Argonauts didn't find the boundary between a clinical note and ClinicalImpression clear enough to include in the initial design to share Clinical Notes. 
 
 ### Future Work
 
@@ -164,4 +183,8 @@ example how to use a button to expand an inline example....
 {% include link-list.md %}
 
 [ClinicalImpression]: {{site.data.fhir.path}}/clinicalimpression.html
+[Composition]: {{site.data.fhir.path}}/composition.html
+[FHIR Documents]: {{site.data.fhir.path}}/documents.html
+[DiagnosticReport]: {{site.data.fhir.path}}/diagnosticreport.html
+[DocumentReference]: {{site.data.fhir.path}}/documentreference.html
 [Argonaut Clinical Types Value Set]: ValueSet-argonaut-clinical-note-type.html

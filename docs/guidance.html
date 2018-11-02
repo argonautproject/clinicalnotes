@@ -84,7 +84,7 @@
       <!-- container -->
       <!-- HEADER CONTENT -->
     <nav class="navbar navbar-inverse">
-      <div class="container"><a name="9b6231dd-7329-46a3-8c2d-41becceb0a91">​</a>
+      <div class="container"><a name="43240a62-e4be-49cc-ad7d-b78283d19251">​</a>
         <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
           <span class="icon-bar">
           </span>
@@ -260,7 +260,7 @@
   <li>Nurse Note</li>
 </ul>
 
-<p>The Argonaut project team developed this initial list of 5 through a survey of the participants in Argonaut and the US Veterans Administration (VA).</p>
+<p>The Argonaut project team developed this initial list of 5 through a survey of the participants in Argonaut and the US Veterans Administration (VA). After prioritizing the Note types, the development team selected the DocumentReference and DiagnosticReport Resources to support exchange. See <a href="guidance.html#resources-to-exchange-clinical-notes">Resources to Exchange Clinical Notes</a> for a full discussion on the decision to use these resources.</p>
 
 <h3 id="documentreference-vs-diagnosticreport">DocumentReference vs DiagnosticReport</h3>
 
@@ -312,7 +312,7 @@
 
 <h4 id="support-requirements">Support Requirements</h4>
 
-<p>This guide requires systems implement DocumentReference with a minimum of these <a href="ValueSet-argonaut-clinical-note-type.html">5 note types</a> and may extend to the full  <a href="http://build.fhir.org/valueset-c80-doc-typecodes.html">HITSP C80 Table 2-144 Document Class Value Set Definition</a>.</p>
+<p>This guide requires systems implement DocumentReference with a minimum of these <a href="ValueSet-argonaut-clinical-note-type.html">5 note types</a> and may extend to the full  <a href="http://build.fhir.org/valueset-doc-typecodes.html">LOINC document concepts</a>.</p>
 
 <p>This guide requires systems implement DiagnosticReport and the <code class="highlighter-rouge">DiagnosticReport.category</code> element must support at a minimum the <a href="ValueSet-diagnosticreport-category.html">3 concepts</a> of Cardiology, Radiology, and Pathology. Other categories may be supported.</p>
 
@@ -344,7 +344,7 @@
 
 <h3 id="determining-server-note-and-report-type-support-expand">Determining Server Note and Report Type Support ($expand)</h3>
 
-<p>A client can determine the Note and Report type support of a server by invoking the $expand operation. The <a href="http://build.fhir.org/valueset-operation-expand.html">$expand</a> operation in the base FHIR R4 specification provides many parameters and features. This guide highlights the use of the operation to discover what specific notes can be requested, and what write formats a server supports.</p>
+<p>A client can determine the Note and Report type support of a server by invoking the $expand operation. The <a href="http://build.fhir.org/valueset-operation-expand.html">$expand</a> operation in the base FHIR R4 specification provides many parameters and features. This guide highlights the use of the operation to discover what specific notes can be requested, and what write formats a server supports. A FHIR server claiming support to this guide <strong>SHOULD</strong> support the $expand operation to discover a value set at a specific element.</p>
 
 <h4 id="discover-read-and-write-support-using-expand">Discover Read and Write Support Using $expand</h4>
 
@@ -392,25 +392,48 @@ GET [base]/ValueSet/$expand?context=DocumentReference.class&amp;amp;contextDirec
 
 <p>Note, DocumentReference.class is updated to DocumentReference.category in FHIR R4.</p>
 
-<h3 id="add-section-on-how-we-selected-of-documentreference-keep-or-remove">Add section on how we selected of DocumentReference (KEEP OR REMOVE?)</h3>
+<h3 id="resources-to-exchange-clinical-notes">Resources to Exchange Clinical Notes</h3>
+
+<p><a name="9b4fee3f-e92f-46fe-9c65-5a6b5b84f9ef">​</a>The <a href="http://hl7.org/fhir/STU3/">FHIR Version 3.0.1</a> specification includes several appropriate places to include clinical notes: Composition, ClinicalImpression, DocumentReference, DiagnosticReport, etc.</p>
 
 <ul>
-  <li>Include history of resources considered, plus a new resource</li>
-  <li>Discussion on flipping to think about different formats rather than resources. *</li>
+  <li><a name="5387ea34-fd4e-47ef-a5f8-03b2b26eeb67">​</a>The <a href="http://hl7.org/fhir/STU3//composition.html">Composition</a> resource provides the basic structure to exchange <a href="http://hl7.org/fhir/STU3//documents.html">FHIR Documents</a>.</li>
+  <li><a name="c097d60a-ca30-4fb9-bcb3-d3bdee584faf">​</a>The <a href="http://hl7.org/fhir/STU3//clinicalimpression.html">ClinicalImpression</a> resource records a clinical assessment.</li>
+  <li><a name="3b698899-ab82-471a-8e7d-e29ee9d426d4">​</a>The <a href="http://hl7.org/fhir/STU3//diagnosticreport.html">DiagnosticReport</a> resource records findings and interpretation of diagnostic tests.</li>
+  <li><a name="44aa22e5-ba18-4cf6-9caa-8a5d5c33aed6">​</a>The <a href="http://hl7.org/fhir/STU3//documentreference.html">DocumentReference</a> resource provides an index to clinical content.</li>
 </ul>
 
-<h3 id="add-section-on-clinical-notes-vs-clinicalimpression-keep-or-remove">Add section on Clinical Notes vs ClinicalImpression (KEEP OR REMOVE?)</h3>
+<p>The developers of this guide also considered creating a new ClinicalNotes resource.</p>
 
-<p><a name="ec7dbf24-126f-43b6-8be9-ceb339be1c56">​</a>The <a href="http://hl7.org/fhir/STU3/">FHIR Version 3.0.1</a> includes the <a href="http://hl7.org/fhir/STU3//clinicalimpression.html">ClinicalImpression</a> resource to support the record of a clinical assessment.</p>
+<p>While each of these Resources work well for a specific use case, they don’t solve the Client question of ‘Which Resource do I query to find all Clinical Notes?’.</p>
+
+<p>Rather then focus on the specific use cases, the designers considered the variability of Note format. For example systems use text, XHTML, PDF, CDA to capture clinical notes. This variability led the designers to select the <a href="guidance.html#documentreference-vs-diagnosticreport">DocumentReference and DiagnosticReport</a> as an index mechanisms to the underlying content.</p>
+
+<p>A Client can query one of these resources and it will return a pointer to specific Resource or the underlying Binary content. Consider the following situation for a Discharge Summary Note.</p>
+
+<ul>
+  <li>System A supports the Discharge Summary as a Composition resource</li>
+  <li>System B supports the Discharge Summary as a CDA Document</li>
+  <li>System C supports the Discharge Summary as a PDF Document</li>
+</ul>
+
+<p>The following single query into DocumentReference supports all 3 scenarios:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>GET [base]/DocumentReference?patient=[id]&amp;type=http://loinc.org|18842-5
+</code></pre>
+</div>
+
+<p>The server returns either a pointer to the Composition or the Binary resource. If other more specific resources are developed for Clinical Notes systems can update their pointers to the new resource.</p>
+
+<h4 id="clinical-notes-vs-clinicalimpression">Clinical Notes vs ClinicalImpression</h4>
+
+<p><a name="e91349cb-061c-490f-968e-13d25a23a8cd">​</a>The <a href="http://hl7.org/fhir/STU3/">FHIR Version 3.0.1</a> includes the <a href="http://hl7.org/fhir/STU3//clinicalimpression.html">ClinicalImpression</a> resource to support the record of a clinical assessment.</p>
 
 <p>Taken from the Resource Definition:</p>
 
-<p>A record of a clinical assessment performed to determine what problem(s) may affect the patient and before planning the treatments or management strategies that are best to manage a patient’s condition. Assessments are often 1:1 with a clinical consultation / encounter, but this varies greatly depending on the clinical workflow. This resource is called “ClinicalImpression” rather than “ClinicalAssessment” to avoid confusion with the recording of assessment tools such as Apgar score</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A record of a clinical assessment performed to determine what problem(s) may affect the patient and before planning the treatments or management strategies that are best to manage a patient’s condition. Assessments are often 1:1 with a clinical consultation / encounter, but this varies greatly depending on the clinical workflow. This resource is called “ClinicalImpression” rather than “ClinicalAssessment” to avoid confusion with the recording of assessment tools such as Apgar score</p>
 
-<ul>
-  <li>How do systems expect to store and expose “Progress satisfactory, continue with treatment”?</li>
-  <li>Will use 7/18/2018 call to flesh out</li>
-</ul>
+<p>In existing EHRs, the clinical impression is often contained with in a broader note. The Argonauts didn’t find the boundary between a clinical note and ClinicalImpression clear enough to include in the initial design to share Clinical Notes.</p>
 
 <h3 id="future-work">Future Work</h3>
 
@@ -482,8 +505,8 @@ dfjkl
 <div id="segment-footer" class="segment">    <!-- segment-footer -->
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
-    <p><a name="13c7f35b-b0d8-4e82-80f8-9247fde72c75">​</a>
-            Argonaut Clinical Notes Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Mon, Oct 29, 2018 11:40-0400. |
+    <p><a name="4f902621-3148-4149-ba72-36091754ee36">​</a>
+            Argonaut Clinical Notes Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Nov 2, 2018 10:41-0400. |
                <!-- <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/STU3/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>
         
