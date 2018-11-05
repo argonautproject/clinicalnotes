@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="argo-diagnosticreport" />
-  <url value="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-diagnosticreport" />
+  <id value="argo-diagnosticreport"/>
+  <url
+    value="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-diagnosticreport"/>
   <name value="Argonaut Imaging Reports"/>
   <status value="active"/>
-  <date value="2018-04-10T09:48:14.298-04:00" />
-  <fhirVersion value="3.0.1" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="DiagnosticReport" />
+  <date value="2018-04-10T09:48:14.298-04:00"/>
+  <fhirVersion value="3.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="DiagnosticReport"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
-  <derivation value="constraint" />    
+  <derivation value="constraint"/>
   <differential>
     <element id="DiagnosticReport">
       <path value="DiagnosticReport"/>
       <short value="Argonaut Diagnostic Report Profile for Imaging"/>
-      <definition value="The US Core Diagnostic Report Profile is based upon the requirements of the Argonauts to exchang imaging reports."/>
+      <definition
+        value="The US Core Diagnostic Report Profile is based upon the requirements of the Argonauts to exchang imaging reports."/>
       <alias value="Imaging Report"/>
       <alias value="Radiology Report"/>
       <mustSupport value="false"/>
@@ -32,6 +34,15 @@
       <type>
         <code value="code"/>
       </type>
+      <constraint>
+        <key value="DiagnosticReport-1"/>
+        <severity value="error"/>
+        <human
+          value="When DiagnosticReport.status is final/amended/corrected/appended, the presentedForm, conclusion or codedDiagnosis must be present"/>
+        <expression
+          value="(DiagnosticReport.status = 'final' or DiagnosticReport.status = 'amended' or DiagnosticReport.status = 'corrected' or DiagnosticReport.status = 'appended') implies (presentedForm.exists() or conclusion.exists() or codedDiagnosis.exists())"
+        />
+      </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
       <binding>
@@ -44,6 +55,7 @@
         <identity value="argonaut-dq-dstu2"/>
         <map value="DiagnosticReport.status"/>
       </mapping>
+
     </element>
     <element id="DiagnosticReport.category">
       <path value="DiagnosticReport.category"/>
@@ -56,10 +68,11 @@
       <type>
         <code value="CodeableConcept"/>
       </type>
-     <mustSupport value="true"/>
+      <mustSupport value="true"/>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/diagnosticreport-category"/>
+        <valueSetUri
+          value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/diagnosticreport-category"/>
       </binding>
       <isModifier value="false"/>
       <mapping>
@@ -71,7 +84,8 @@
       <path value="DiagnosticReport.code"/>
       <short value="US Core Report Code"/>
       <definition value="The test, panel, report, or note that was ordered."/>
-      <comment value="UsageNote= The typical patterns for codes are:  1)  a LOINC code either as a  translation from a &quot;local&quot; code or as a primary code, or 2)  a local code only if no suitable LOINC exists,  or 3)  both the local and the LOINC translation.   Systems SHALL be capable of sending the local code if one exists."/>
+      <comment
+        value="UsageNote= The typical patterns for codes are:  1)  a LOINC code either as a  translation from a &quot;local&quot; code or as a primary code, or 2)  a local code only if no suitable LOINC exists,  or 3)  both the local and the LOINC translation.   Systems SHALL be capable of sending the local code if one exists."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -167,11 +181,13 @@
       <max value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+        />
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+        />
       </type>
       <mustSupport value="true"/>
       <isModifier value="false"/>
