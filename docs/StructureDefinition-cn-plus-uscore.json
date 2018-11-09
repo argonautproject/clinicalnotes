@@ -9,7 +9,7 @@
   "version": "0.0.0",
   "name": "Clinical Notes Plus US Core DocumentReference Differential Profile",
   "status": "draft",
-  "date": "2018-04-22T20:00:00-04:00",
+  "date": "2018-04-22T17:00:00-07:00",
   "publisher": "ArgonautProject",
   "description": "The DocumentReference profile used in show differentialof the Clinical Notes +  US Core Profile.",
   "jurisdiction": [

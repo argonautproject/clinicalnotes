@@ -17,12 +17,15 @@
 
   <link href="assets/css/bootstrap.css" rel="stylesheet"/>
   <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
-  <link href="assets/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-glyphicons.css" rel="stylesheet"/>
 
   <!-- Project extras -->
   <link href="assets/css/project.css" rel="stylesheet"/>
   <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
 	<link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+{% if page.sectionnumbering %}
+<link href="assets/css/section-numbering.css" rel="stylesheet"/>
+{% endif %}
 {% if page.mycss %}
 <link href="assets/css/{{page.mycss}}" rel="stylesheet"/>
 {% endif %}

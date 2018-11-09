@@ -51,10 +51,10 @@ The views provided on this page are of just the Clinical Notes Profile, and the 
 - TBD
 
 [US Core DocumentReference]: http://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-documentreference.html
-[MedicationStatement]:{{ site.data.fhir.path }}/medicationstatement.html
-[DocumentReference]:{{ site.data.fhir.path }}/DocumentReference.html
+[MedicationStatement]:{{ site.data.fhir.path }}medicationstatement.html
+[DocumentReference]:{{ site.data.fhir.path }}DocumentReference.html
  [Conformance]: daf-core-DocumentReference-conformance.html
- [boundaries section]: {{ site.data.fhir.path }}/DocumentReference.html#bnr
+ [boundaries section]: {{ site.data.fhir.path }}DocumentReference.html#bnr
  [IHE MHD]: http://ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_MHD.pdf
 
  

@@ -16,7 +16,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.0.0"];
   fhir:StructureDefinition.name [ fhir:value "Clinical Notes Plus US Core DocumentReference Differential Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-04-22T20:00:00-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2018-04-22T17:00:00-07:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "ArgonautProject"];
   fhir:StructureDefinition.description [ fhir:value "The DocumentReference profile used in show differentialof the Clinical Notes +  US Core Profile."];
   fhir:StructureDefinition.jurisdiction [

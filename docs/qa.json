@@ -3,10 +3,10 @@
   "name": "Argonaut Clinical Notes",
   "package-id": "healthedatainc.igtemplate",
   "ig-ver": "0.0.0",
-  "date": "Mon, 05 Nov, 2018 12:51:56 -0500",
+  "date": "Fri, 09 Nov, 2018 07:07:43 -0800",
   "errs": 10,
   "warnings": 8,
   "hints": 0,
   "version": "3.0.1",
-  "tool": "3.6.0 (2)"
+  "tool": "3.6.0 (3)"
 }

@@ -17,7 +17,7 @@ topofpage: true
 
 ## Introduction 
 
-This implementation guide provides implementers with FHIR profiles and guidance to create, use, and share Clinical Notes. The requirements were developed by the Argonaut Clinical Notes project team and tested through pilot implementations, and HL7 sponsored Connectathons. The implementation guide is based on [FHIR Version {{site.data.fhir.version}}]({{site.data.fhir.path}}) with profiles on [DocumentReference] and [CapabilityStatement].
+This implementation guide provides implementers with FHIR profiles and guidance to create, use, and share Clinical Notes. The requirements were developed by the Argonaut Clinical Notes project team and tested through pilot implementations, and HL7 sponsored Connectathons. The implementation guide is based on [FHIR Version {{site.data.fhir.version}}]({{site.data.fhir.path}}) with profiles on [DocumentReference] and [DiagnosticReport].
 
 This profiles included here will be submitted to the HL7 US Realm Steering Committee for consideration in a future ballot of [US Core].
 
@@ -37,20 +37,12 @@ This implementation guide includes a [Argonaut Clinical Notes] profile and a [Ar
 
 [Argonaut Diagnostic Reports]
 
-See [DocumentReference vs DiagnosticReport] for detailed guidance on when to use each profile.
-
+See the [DocumentReference vs DiagnosticReport] section for detailed guidance on when to use each profile.
 
 ## Argonaut Clinical Notes Conformance Requirements
 
 The [Capability Statements Section](capstatements.html) outlines conformance requirements for the US Core Servers and Client applications, identifying the specific profiles that need to be supported, the specific RESTful operations that need to be supported, and the search parameters that need to be supported. Note: The individual US Core profiles identify the structural constraints, terminology bindings and invariants, however, implementers must refer to the conformance requirements for details on the RESTful operations, specific profiles and the search parameters applicable to each of the US Core actors.
 
-
-[US Core]: http://hl7.org/fhir/us/core/index.html
-[Argonaut Clinical Notes]: StructureDefinition-argo-clinicalnotes.html
-[Argonaut Diagnostic Reports]: StructureDefinition-argo-diagnosticreport.html
-[DocumentReference vs DiagnosticReport]: guidance.html#documentreference-vs-diagnosticreport
-[logical view]: {{site.data.fhir.path}}/formats.html#table
-[DocumentReference]: {{site.data.fhir.path}}/documentreference.html
-[CapabilityStatement]: {{site.data.fhir.path}}/capabilitystatement.html
+<br/>
 
 {% include link-list.md %}

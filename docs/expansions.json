@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "4f9242b5-d645-4aac-97cb-2f297c4257c1",
+  "id" : "9ab1ca74-c0b4-4764-9c49-7b35b9bab8e2",
   "meta" : {
-    "lastUpdated" : "2018-11-05T12:51:56.090-05:00"
+    "lastUpdated" : "2018-11-09T07:07:43.749-08:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "Argonaut DocumentReference Category Codes",
       "title" : "Argonaut DocumentReferences Category Value Set",
       "status" : "draft",
-      "date" : "2018-05-02T11:16:34-04:00",
+      "date" : "2018-05-02T08:16:34-07:00",
       "description" : "The Argonaut DocumentReferences Type Value Set is a 'starter set' of categories supported for fetching and storing clinical notes.",
       "jurisdiction" : [{
         "coding" : [{
@@ -29,8 +29,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:76d81a46-920d-4257-9063-e423157c3fb2",
-        "timestamp" : "2018-11-05T12:52:01-05:00",
+        "identifier" : "urn:uuid:412f10ac-49a3-4c4a-be44-6557fa3820c8",
+        "timestamp" : "2018-11-09T05:57:45-08:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",

@@ -26,7 +26,7 @@
   <version value="0.0.0"/>
   <name value="Clinical Notes Plus US Core DocumentReference Differential Profile"/>
   <status value="draft"/>
-  <date value="2018-04-22T20:00:00-04:00"/>
+  <date value="2018-04-22T17:00:00-07:00"/>
   <publisher value="ArgonautProject"/>
   <description value="The DocumentReference profile used in show differentialof the Clinical Notes +  US Core Profile."/>
   <jurisdiction>

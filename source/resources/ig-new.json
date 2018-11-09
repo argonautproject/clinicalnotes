@@ -3,19 +3,19 @@
   "id" : "ig",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\clinicalnotes\\source\\resources"
+    "valueString" : "/Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\clinicalnotes\\source\\examples"
+    "valueString" : "/Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/examples"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "C:\\clinicalnotes\\framework"
+    "valueString" : "/Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/framework"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "C:\\clinicalnotes\\source\\pages"
+    "valueString" : "/Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/pages"
   }],
   "url" : "http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig",
   "version" : "0.0.0",
