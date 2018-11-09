@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "DocumentReference Category"];
   fhir:CodeSystem.title [ fhir:value "Argonaut DocumentReferences Category Code System"];
   fhir:CodeSystem.status [ fhir:value "draft"];
-  fhir:CodeSystem.date [ fhir:value "2018-05-02T11:16:34-04:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2018-05-02T08:16:34-07:00"^^xsd:dateTime];
   fhir:CodeSystem.description [ fhir:value "The Argonaut DocumentReferences Type Code System is a 'starter set' of categories supported for fetching and storing DocumentReference Resources."];
   fhir:CodeSystem.jurisdiction [
      fhir:index 0;

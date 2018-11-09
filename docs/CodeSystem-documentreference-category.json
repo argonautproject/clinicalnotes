@@ -10,7 +10,7 @@
   "name": "DocumentReference Category",
   "title": "Argonaut DocumentReferences Category Code System",
   "status": "draft",
-  "date": "2018-05-02T11:16:34-04:00",
+  "date": "2018-05-02T08:16:34-07:00",
   "description": "The Argonaut DocumentReferences Type Code System is a 'starter set' of categories supported for fetching and storing DocumentReference Resources.",
   "jurisdiction": [
     {

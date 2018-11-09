@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "Argonaut Clinical Notes"];
   fhir:ValueSet.title [ fhir:value "Argonaut DocumentReferences Type Value Set"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2018-05-02T11:16:34-04:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2018-05-02T08:16:34-07:00"^^xsd:dateTime];
   fhir:ValueSet.description [ fhir:value "The Argonaut DocumentReferences Type Value Set is a 'starter set' of types supported for fetching and storing clinical notes. This value set is a subset of LOINC values listed in [HITSP C80 Table 2-144 Document Class Value Set Definition](http://build.fhir.org/valueset-c80-doc-typecodes.html)"];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;

@@ -10,7 +10,7 @@
   "name": "Argonaut Clinical Notes",
   "title": "Argonaut DocumentReferences Type Value Set",
   "status": "draft",
-  "date": "2018-05-02T11:16:34-04:00",
+  "date": "2018-05-02T08:16:34-07:00",
   "description": "The Argonaut DocumentReferences Type Value Set is a 'starter set' of types supported for fetching and storing clinical notes. This value set is a subset of LOINC values listed in [HITSP C80 Table 2-144 Document Class Value Set Definition](http://build.fhir.org/valueset-c80-doc-typecodes.html)",
   "jurisdiction": [
     {
