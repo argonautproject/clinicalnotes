@@ -39,9 +39,9 @@
     }],
     "resource" : [{
       "reference" : {
-        "reference" : "ValueSet/argonaut-clinical-note-type"
+        "reference" : "Encounter/example-1"
       },
-      "exampleBoolean" : false,
+      "exampleBoolean" : true,
       "groupingId" : "p1"
     },
     {
@@ -60,21 +60,7 @@
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/cn-plus-uscore"
-      },
-      "exampleBoolean" : false,
-      "groupingId" : "p1"
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/example-dr"
-      },
-      "exampleBoolean" : false,
-      "groupingId" : "p1"
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/argo-clinicalnotes"
+        "reference" : "ValueSet/argonaut-clinical-note-type"
       },
       "exampleBoolean" : false,
       "groupingId" : "p1"
@@ -88,6 +74,13 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/argo-clinicalnotes"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
         "reference" : "CodeSystem/documentreference-category"
       },
       "exampleBoolean" : false,
@@ -95,35 +88,116 @@
     },
     {
       "reference" : {
-        "reference" : "CapabilityStatement/server"
+        "reference" : "CapabilityStatement/argonaut-clinical-notes-server"
       },
       "exampleBoolean" : false,
       "groupingId" : "p1"
     },
     {
       "reference" : {
-        "reference" : "CapabilityStatement/client"
+        "reference" : "CapabilityStatement/argonaut-clinical-notes-client"
       },
       "exampleBoolean" : false,
       "groupingId" : "p1"
     }],
     "page" : {
-      "nameUrl" : "index.md",
-      "title" : "Argonaut Clinical Notes Homepage",
+      "nameUrl" : "index.html",
+      "title" : "Home",
       "generation" : "html",
       "page" : [{
-        "nameUrl" : "_includes/toc.md",
-        "title" : "Argonaut Clinical Notes Table of Contents",
+        "nameUrl" : "guidance.html",
+        "title" : "General Guidance",
         "generation" : "html"
+      },
+      {
+        "nameUrl" : "profiles.html",
+        "title" : "Profiles and Extensions",
+        "generation" : "html",
+        "page" : [{
+          "nameUrl" : "StructureDefinition-argo-diagnosticreport.html",
+          "title" : "StructureDefinition Argo DiagnosticReport",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "StructureDefinition-argo-clinicalnotes.html",
+          "title" : "StructureDefinition Argo Clinicalnotes",
+          "generation" : "generated"
+        }]
+      },
+      {
+        "nameUrl" : "operations.html",
+        "title" : "Operations",
+        "generation" : "html"
+      },
+      {
+        "nameUrl" : "terminology.html",
+        "title" : "Terminology",
+        "generation" : "html",
+        "page" : [{
+          "nameUrl" : "ValueSet-documentreference-category.html",
+          "title" : "ValueSet DocumentReference Category",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "ValueSet-diagnosticreport-category.html",
+          "title" : "ValueSet DiagnosticReport Category",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "ValueSet-argonaut-clinical-note-type.html",
+          "title" : "ValueSet Argonaut Clinical Note Type",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "CodeSystem-documentreference-category.html",
+          "title" : "CodeSystem DocumentReference Category",
+          "generation" : "generated"
+        }]
+      },
+      {
+        "nameUrl" : "searchparameters.html",
+        "title" : "Search Parameters",
+        "generation" : "html"
+      },
+      {
+        "nameUrl" : "capstatements.html",
+        "title" : "Capability Statements",
+        "generation" : "html",
+        "page" : [{
+          "nameUrl" : "CapabilityStatement-argonaut-clinical-notes-server.html",
+          "title" : "CapabilityStatement Argonaut Clinical Notes Server",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "CapabilityStatement-argonaut-clinical-notes-client.html",
+          "title" : "CapabilityStatement Argonaut Clinical Notes Client",
+          "generation" : "generated"
+        }]
+      },
+      {
+        "nameUrl" : "security.html",
+        "title" : "Security",
+        "generation" : "html"
+      },
+      {
+        "nameUrl" : "downloads.html",
+        "title" : "Downloads",
+        "generation" : "html"
+      },
+      {
+        "nameUrl" : "all-examples.html",
+        "title" : "All Examples",
+        "generation" : "html"
+      },
+      {
+        "nameUrl" : "toc.html",
+        "title" : "Table of Contents",
+        "generation" : "generated"
       }]
     },
     "parameter" : [{
       "code" : "apply",
       "value" : "version"
-    },
-    {
-      "code" : "html-template",
-      "value" : "html-template.html"
     },
     {
       "code" : "generate-json",

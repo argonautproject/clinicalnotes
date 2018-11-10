@@ -38,10 +38,10 @@
 </a>
 <ul class="dropdown-menu">
   <li>
-    <a href="CapabilityStatement-server.html">Conformance requirements for Server</a>
+    <a href="CapabilityStatement-argonaut-clinical-notes-server.html">Conformance requirements for Argonaut Clinical Notes Server</a>
   </li>
   <li>
-    <a href="CapabilityStatement-client.html">Conformance requirements for Client</a>
+    <a href="CapabilityStatement-argonaut-clinical-notes-client.html">Conformance requirements for Argonaut Clinical Notes Client</a>
   </li>
 </ul>
 </li>

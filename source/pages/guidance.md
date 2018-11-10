@@ -2,6 +2,7 @@
 title: General Guidance and Definitions
 layout: default
 active: guidance
+topofpage: true
 ---
 
 {:.no_toc}
@@ -13,18 +14,19 @@ active: guidance
 
 ### Clinical Notes
 
-The term "clinical notes" is ambiguous and could refer to almost any information generated in a healthcare setting.  Notes support transitions of care, care planning, quality reporting, billing and many other care activities.  They are key component to communicate the current status of a patient.  This implementation guide does not define new note types or set content requirements per note type. Instead, this implementation guide focuses on the exchange of clinical notes between systems. 
+Clinical notes are key component to communicate the current status of a patient.  In the context of this implementation guide, the term "clinical notes" refers to the wide variety of documents generated on behalf of a patient in many care activities. They include notes support transitions of care, care planning, quality reporting, billing and even handwritten notes by a providers.  This implementation guide does not define new note types or set content requirements per note type. Instead, this implementation guide focuses on the exchange of clinical notes between systems. 
 
-Specifically, this implementation guide defines the exchange of the following 5 common types of clinical notes:
+Specifically, this implementation guide defines the exchange of the following five "Common Clinical Notes" *TODO - link or citation if is defined externally:*
 
-* Consultation Note (11488-4)
-* Discharge Summary (18842-5)
-* History & Physical Note (34117-2)
-* Procedures Note (28570-0)
-* Progress Note (11506-3)
+* [Consultation Note (11488-4)]
+* [Discharge Summary (18842-5)]
+* [History & Physical Note (34117-2)]
+* [Procedures Note (28570-0)]
+* [Progress Note (11506-3)]
 
-The Argonaut project team developed this initial list of 5 through a survey of the participants in Argonaut and the US Veterans Administration (VA).  These notes types represent the "Common Clinical Notes" (link or citation if is defined externally) and are enumerated in the [Argonaut Clinical Types Value Set]. They represent the *minimum* set a system must support to claim conformance to this guide. In addition to these 5 types, systems are encouraged to support other common notes types such as:
+The Argonaut project team developed this initial list after surveying the participants in Argonaut and the US Veterans Administration (VA).  They represent the *minimum* set a system must support to claim conformance to this guide. In addition, systems are encouraged to support other common notes types such as:
 
+*TODO - link these to LOINC too*
 * Imaging
 * Pathology narrative
 * Cardiology Reports 
@@ -32,39 +34,37 @@ The Argonaut project team developed this initial list of 5 through a survey of t
 * Surgical Operation Note
 * Nurse Note
 
-
 ### FHIR Resources to Exchange Clinical Notes
 
-Both [DocumentReference] and [DiagnosticReport] resources support the exchange of clinical notes. (See this [section](#justification-for-resources-choices) for a full discussion on the decision to use these resources.)
+Both [DocumentReference] and [DiagnosticReport] resources have been [profiled] to support the exchange of clinical notes. (See this [section](#justification-for-resources-choices) for a full discussion on the decision to use these resources.)
 
-DiagnosticReport is the best choice when a system needs to share discrete information or coded interpretations. The DiagnosticReport Resource includes explicit structures (DiagnosticReport.result) to support this information and the entire narrative report (DiagnosticReport.presentedForm). 
+DocumentReference is the best choice when the narrative is broader then a specific order or report, such as a Progress Note or Discharge Summary Note. The DocumentReference Resource can point to a short 2-3 sentence status of the patient, or reference a complex CDA or Composition document which can include *both* a narrative and a discrete information.
 
-DocumentReference is the best choice when the narrative is broader then a specific order or report, such as a Progress Note or Discharge Summary Note. The DocumentReference Resource can point to a short 2-3 sentence status of the patient, or reference a complex CDA or Composition document which can include narrative and discrete information. 
+DiagnosticReport is the best choice when a system needs to share discrete information or coded interpretations. The `DiagnosticReport.result` element supports the discrete information and the entire narrative report can be represented by the `DiagnosticReport.presentedForm` element.
 
-The best practice for consistent scanned, or narrative-only, report access for client applications is more challenging due to variability in system implementations. For example, some systems consider any scanned report, or note, a DocumentReference. Other systems allow users to categorize the scanned report as Lab and store to DiagnosticReport. With this variability reports may end up in either resource as demonstrated by the green area in Figure 1.
+Because of the overlapping scope of the underlying resources and variability in system implementation, there is no single best practice for representing a scanned, or narrative-only report. Reports may be represented by either a DocumentReference or a DiagnosticReport as demonstrated by the green area in Figure 1. For example, some systems consider any scanned report, or note, a DocumentReference. Other systems allow users to categorize the scanned report as Lab and store to DiagnosticReport.[^1]
 
 {% include img.html img="DiagnosticReport_DocumentReference_Resource_Overlap.png" caption="Figure 1: DiagnosticReport and DocumentReference Report Overlap" %}
-	
-Storing scanned reports as a DiagnosticReport, with appropriate categorization, enables clients to access the scanned reports along with DiagnosticReports containing discrete information. For example, a client can request all DiagnosticReport.category="LAB" and receive reports with discrete information and any scanned reports. However, not all systems store and categorize Lab reports with DiagnosticReport.
 
-The developers of this guide considered requiring Clients query both DocumentReference and DiagnosticReport to get all information for a patient. Querying both places would provide all the information for a patient. However, the requirement to query two places is potentially dangerous if a client doesn't understand this requirement and queries only one.
-
-In order to enable consistent access to scanned narrative-only clinical reports the Argonaut servers agreed to expose these reports through *both* DiagnosticReport and DocumentReference.
-
-  When DiagnosticReport.presentedForm (Attachment) references a Scan (PDF), then that Attachment **SHALL** also be accessible through DocumentReference.content.attachment.
-	
-Exposing the content in this manner guarantees a Client will receive the clinical information available for a patient. The DocumentReference and DiagnosticReport resources representing the same data will point to the same attachment url using the elements listed below, so a client can easily identify these duplicates. 
+In order to enable consistent access to scanned narrative-only clinical reports the Argonaut Clinical Note Server **SHALL** expose these reports through *both* DiagnosticReport and DocumentReference by representing the same attachment url using the corresponding elements listed below.[^2]  Exposing the content in this manner guarantees the client will receive all the clinical information available for a patient and can easily identify the duplicate data.
 
 * DocumentReference.content.attachment.url
-* DiagnosticReport.presentedForm.url 
+* DiagnosticReport.presentedForm.url
 
-Note, not all scanned information stored through DocumentReference will be exposed through DiagnosticReport since DocumentReference stores other non-clinical information (e.g. insurance card).
+For example, when `DiagnosticReport.presentedForm.url` references a Scan (PDF), that Attachment shall also be accessible through `DocumentReference.content.attachment.url`.(See Figure 2)
+
+{% include img.html img="both-url.jpg" caption="Figure 2: Expose a PDF Report Through Both DiagnosticReport and DocumentReference" %}
+
+Note that not all scanned information stored through DocumentReference will be exposed through DiagnosticReport since DocumentReference stores other non-clinical information (for example, an insurance card).
 
 #### Support Requirements
 
-This guide requires systems to implement the Argonaut Clinical Notes DocumentReference profile with a minimum of all [5 note types](ValueSet-argonaut-clinical-note-type.html) and may extend to the full  [LOINC document concepts](http://build.fhir.org/valueset-doc-typecodes.html).
 
-This guide requires systems implement the Argonaut Clinical Notes DiagnosticReport profile and the `DiagnosticReport.category` element must support at a minimum the [3 concepts](ValueSet-diagnosticreport-category.html) of Cardiology, Radiology, and Pathology. Other categories may be supported.  The [section below](#determining-server-note-and-report-type-support-expand), describes how to discover the Note and Report types a server supports.
+This guide requires systems to implement the Argonaut Clinical Notes DocumentReference profile and to support a *minimum* of all five Common Clinical Notes listed above.  Systems and may extend there capabilities to other [Document types] as well.
+
+This guide requires systems to implement the Argonaut Clinical Notes DiagnosticReport profile and to support a *minimum* of Cardiology, Radiology, and Pathology report categories. Other categories may be supported as well.  
+
+The [section below](#determining-server-note-and-report-type-support-expand), describes how to discover the Note and Report types a server supports.
 
 Note that this guide focuses on exposing existing information, and not dictating how systems allow their users to capture information.  The contents of the notes or reports, even using standard LOINC concepts, may vary widely by health system or even location. For example, CT Spleen WO contrast (LOINC 30621-7) may include individual sections for history, impressions, conclusions, or just an impressions section. Discharge Summaries may have different facility or regulatory content requirements.
 
@@ -169,5 +169,11 @@ In existing EHRs, the clinical impression is often contained with in a broader n
 ### Future Work
 
 Expand the number of notes systems must support.
+
+---
+
+[^1]: Storing scanned reports as a DiagnosticReport, with appropriate categorization, enables clients to access the scanned reports along with DiagnosticReports containing discrete information. For example, a client can request all DiagnosticReport.category="LAB" and receive reports with discrete information and any scanned reports. However, not all systems store and categorize Lab reports with DiagnosticReport.
+
+[^2]: The developers of this guide considered requiring Clients query *both* DocumentReference and DiagnosticReport to get all the information for a patient. However, the requirement to query two places is potentially dangerous if a client doesn't understand or follow this requirement and queries only one resource type thereby potentially missing important information from the other type.
 
 {% include link-list.md %}

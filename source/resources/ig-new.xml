@@ -34,9 +34,9 @@
     </grouping>
     <resource>
       <reference>
-        <reference value="ValueSet/argonaut-clinical-note-type"/>
+        <reference value="Encounter/example-1"/>
       </reference>
-      <exampleBoolean value="false"/>
+      <exampleBoolean value="true"/>
       <groupingId value="p1"/>
     </resource>
     <resource>
@@ -55,21 +55,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/cn-plus-uscore"/>
-      </reference>
-      <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/example-dr"/>
-      </reference>
-      <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/argo-clinicalnotes"/>
+        <reference value="ValueSet/argonaut-clinical-note-type"/>
       </reference>
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>
@@ -83,6 +69,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/argo-clinicalnotes"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/documentreference-category"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -90,35 +83,116 @@
     </resource>
     <resource>
       <reference>
-        <reference value="CapabilityStatement/server"/>
+        <reference value="CapabilityStatement/argonaut-clinical-notes-server"/>
       </reference>
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
-        <reference value="CapabilityStatement/client"/>
+        <reference value="CapabilityStatement/argonaut-clinical-notes-client"/>
       </reference>
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>
     </resource>
     <page>
-      <nameUrl value="index.md"/>
-      <title value="Argonaut Clinical Notes Homepage"/>
+      <nameUrl value="index.html"/>
+      <title value="Home"/>
       <generation value="html"/>
       <page>
-        <nameUrl value="_includes/toc.md"/>
-        <title value="Argonaut Clinical Notes Table of Contents"/>
+        <nameUrl value="guidance.html"/>
+        <title value="General Guidance"/>
         <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="profiles.html"/>
+        <title value="Profiles and Extensions"/>
+        <generation value="html"/>
+        <page>
+          <nameUrl value="StructureDefinition-argo-diagnosticreport.html"/>
+          <title value="StructureDefinition Argo DiagnosticReport"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="StructureDefinition-argo-clinicalnotes.html"/>
+          <title value="StructureDefinition Argo Clinicalnotes"/>
+          <generation value="generated"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="operations.html"/>
+        <title value="Operations"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="terminology.html"/>
+        <title value="Terminology"/>
+        <generation value="html"/>
+        <page>
+          <nameUrl value="ValueSet-documentreference-category.html"/>
+          <title value="ValueSet DocumentReference Category"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="ValueSet-diagnosticreport-category.html"/>
+          <title value="ValueSet DiagnosticReport Category"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="ValueSet-argonaut-clinical-note-type.html"/>
+          <title value="ValueSet Argonaut Clinical Note Type"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="CodeSystem-documentreference-category.html"/>
+          <title value="CodeSystem DocumentReference Category"/>
+          <generation value="generated"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="searchparameters.html"/>
+        <title value="Search Parameters"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="capstatements.html"/>
+        <title value="Capability Statements"/>
+        <generation value="html"/>
+        <page>
+          <nameUrl value="CapabilityStatement-argonaut-clinical-notes-server.html"/>
+          <title value="CapabilityStatement Argonaut Clinical Notes Server"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="CapabilityStatement-argonaut-clinical-notes-client.html"/>
+          <title value="CapabilityStatement Argonaut Clinical Notes Client"/>
+          <generation value="generated"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="security.html"/>
+        <title value="Security"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="all-examples.html"/>
+        <title value="All Examples"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="toc.html"/>
+        <title value="Table of Contents"/>
+        <generation value="generated"/>
       </page>
     </page>
     <parameter>
       <code value="apply"/>
       <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="html-template"/>
-      <value value="html-template.html"/>
     </parameter>
     <parameter>
       <code value="generate-json"/>

@@ -1,0 +1,3627 @@
+﻿<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+   <meta charset="UTF-8"/>
+  <title>Argonaut Clinical Notes</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Argonaut Clinical Notes Implemenation Guide"/>
+<meta name="author" content="Argonaut Project"/>
+  <link rel="stylesheet" href="fhir.css"/>
+
+
+     <!-- Bootstrap core CSS -->
+
+     <!-- Latest compiled and minified CSS -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+  <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+  <link rel="stylesheet" href="assets/css/bootstrap-glyphicons.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="assets/css/project.css"/>
+  <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+
+
+
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+
+
+<body markdown="1">
+  <!-- ?xml version="1.0" encoding="UTF-8"? -->
+<div id="segment-header" class="segment">
+    <!-- segment-header -->
+  <div class="container">  <!-- container -->
+
+  <!-- hl7 logo -->
+    <a no-external="true" href="http://hl7.org/fhir">
+      <img src="assets/images/fhir-logo-www.png" alt="FHIR Homepage" class="img-responsive logo"/>
+    </a>
+  <!-- end hl7 logo -->
+
+
+   <!-- org logo -->
+               <!-- <a id="your-logo" no-external="true" href="http://www.hl7.org">
+<img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
+</a>
+
+================THIS IS FOR THE PROJECT LOGO AND URL =============== -->
+
+<a no-external="true" href="http://argonautwiki.hl7.org">
+<img src="assets/images/ArgonautProject_logo_black.png" alt="visit our website" class="img-responsive project-logo"/>
+</a>
+
+    <!-- end org logo -->
+
+
+      <div id="project-status" class="project-status">   <!-- ig title text -->
+
+      
+      <strong>Argonaut Clinical Notes Implementation Guide CI Build</strong>
+      
+
+    </div>  <!-- end ig title text -->
+
+  </div>  <!-- end container -->
+  <div class="container">
+      <!-- container -->
+  </div>
+</div>
+  <!-- /segment-header -->
+
+
+
+    <!-- /container -->
+    <!-- /segment-breadcrumb -->
+
+
+<div id="page-content-wrapper">    <!-- page content wrapper -->
+  <div class="page-content">    <!-- page content -->
+    <div class="container">    <!-- container -->
+      <div class="row">    <!-- row -->
+       <div class="inner-wrapper">   <!-- inner-wrapper -->
+         <div class="col-12"><a name="45f4b893-9676-4e31-9072-9aec0f412361">​</a>    <!-- col -->
+              <!-- content of page -->
+
+
+
+    <!-- ============CONTENT CONTENT=============== -->
+  
+<h3>list of pages</h3>
+
+
+CapabilityStatement-argonaut-clinical-notes-client.html,CapabilityStatement-argonaut-clinical-notes-client.html
+<br/>
+
+CapabilityStatement-argonaut-clinical-notes-client.json.html,CapabilityStatement-argonaut-clinical-notes-client.json.html
+<br/>
+
+CapabilityStatement-argonaut-clinical-notes-client.ttl.html,CapabilityStatement-argonaut-clinical-notes-client.ttl.html
+<br/>
+
+CapabilityStatement-argonaut-clinical-notes-client.xml.html,CapabilityStatement-argonaut-clinical-notes-client.xml.html
+<br/>
+
+CapabilityStatement-argonaut-clinical-notes-server.html,CapabilityStatement-argonaut-clinical-notes-server.html
+<br/>
+
+CapabilityStatement-argonaut-clinical-notes-server.json.html,CapabilityStatement-argonaut-clinical-notes-server.json.html
+<br/>
+
+CapabilityStatement-argonaut-clinical-notes-server.ttl.html,CapabilityStatement-argonaut-clinical-notes-server.ttl.html
+<br/>
+
+CapabilityStatement-argonaut-clinical-notes-server.xml.html,CapabilityStatement-argonaut-clinical-notes-server.xml.html
+<br/>
+
+CodeSystem-documentreference-category.html,CodeSystem-documentreference-category.html
+<br/>
+
+CodeSystem-documentreference-category.json.html,CodeSystem-documentreference-category.json.html
+<br/>
+
+CodeSystem-documentreference-category.ttl.html,CodeSystem-documentreference-category.ttl.html
+<br/>
+
+CodeSystem-documentreference-category.xml.html,CodeSystem-documentreference-category.xml.html
+<br/>
+
+Encounter-example-1.html,Encounter-example-1.html
+<br/>
+
+Encounter-example-1.json.html,Encounter-example-1.json.html
+<br/>
+
+Encounter-example-1.ttl.html,Encounter-example-1.ttl.html
+<br/>
+
+Encounter-example-1.xml.html,Encounter-example-1.xml.html
+<br/>
+
+ImplementationGuide-ig.html,ImplementationGuide-ig.html
+<br/>
+
+ImplementationGuide-ig.json.html,ImplementationGuide-ig.json.html
+<br/>
+
+ImplementationGuide-ig.ttl.html,ImplementationGuide-ig.ttl.html
+<br/>
+
+ImplementationGuide-ig.xml.html,ImplementationGuide-ig.xml.html
+<br/>
+
+StructureDefinition-argo-clinicalnotes-definitions.html,StructureDefinition-argo-clinicalnotes-definitions.html
+<br/>
+
+StructureDefinition-argo-clinicalnotes-mappings.html,StructureDefinition-argo-clinicalnotes-mappings.html
+<br/>
+
+StructureDefinition-argo-clinicalnotes.html,StructureDefinition-argo-clinicalnotes.html
+<br/>
+
+StructureDefinition-argo-clinicalnotes.json.html,StructureDefinition-argo-clinicalnotes.json.html
+<br/>
+
+StructureDefinition-argo-clinicalnotes.ttl.html,StructureDefinition-argo-clinicalnotes.ttl.html
+<br/>
+
+StructureDefinition-argo-clinicalnotes.xml.html,StructureDefinition-argo-clinicalnotes.xml.html
+<br/>
+
+StructureDefinition-argo-diagnosticreport-definitions.html,StructureDefinition-argo-diagnosticreport-definitions.html
+<br/>
+
+StructureDefinition-argo-diagnosticreport-mappings.html,StructureDefinition-argo-diagnosticreport-mappings.html
+<br/>
+
+StructureDefinition-argo-diagnosticreport.html,StructureDefinition-argo-diagnosticreport.html
+<br/>
+
+StructureDefinition-argo-diagnosticreport.json.html,StructureDefinition-argo-diagnosticreport.json.html
+<br/>
+
+StructureDefinition-argo-diagnosticreport.ttl.html,StructureDefinition-argo-diagnosticreport.ttl.html
+<br/>
+
+StructureDefinition-argo-diagnosticreport.xml.html,StructureDefinition-argo-diagnosticreport.xml.html
+<br/>
+
+ValueSet-argonaut-clinical-note-type.html,ValueSet-argonaut-clinical-note-type.html
+<br/>
+
+ValueSet-argonaut-clinical-note-type.json.html,ValueSet-argonaut-clinical-note-type.json.html
+<br/>
+
+ValueSet-argonaut-clinical-note-type.ttl.html,ValueSet-argonaut-clinical-note-type.ttl.html
+<br/>
+
+ValueSet-argonaut-clinical-note-type.xml.html,ValueSet-argonaut-clinical-note-type.xml.html
+<br/>
+
+ValueSet-diagnosticreport-category.html,ValueSet-diagnosticreport-category.html
+<br/>
+
+ValueSet-diagnosticreport-category.json.html,ValueSet-diagnosticreport-category.json.html
+<br/>
+
+ValueSet-diagnosticreport-category.ttl.html,ValueSet-diagnosticreport-category.ttl.html
+<br/>
+
+ValueSet-diagnosticreport-category.xml.html,ValueSet-diagnosticreport-category.xml.html
+<br/>
+
+ValueSet-documentreference-category.html,ValueSet-documentreference-category.html
+<br/>
+
+ValueSet-documentreference-category.json.html,ValueSet-documentreference-category.json.html
+<br/>
+
+ValueSet-documentreference-category.ttl.html,ValueSet-documentreference-category.ttl.html
+<br/>
+
+ValueSet-documentreference-category.xml.html,ValueSet-documentreference-category.xml.html
+<br/>
+
+all-examples.md,all-examples.md
+<br/>
+
+capstatements.md,capstatements.md
+<br/>
+
+downloads.md,downloads.md
+<br/>
+
+guidance.md,guidance.md
+<br/>
+
+history.md,history.md
+<br/>
+
+html_pages.html,html_pages.html
+<br/>
+
+index.md,index.md
+<br/>
+
+profiles.md,profiles.md
+<br/>
+
+structuremaps.md,structuremaps.md
+<br/>
+
+terminology.md,terminology.md
+<br/>
+
+toc.md,toc.md
+<br/>
+
+todo.md,todo.md
+<br/>
+
+
+<h3>list of static pages</h3>
+
+
+ArgonautClinicalNotes.java,/ArgonautClinicalNotes.java
+<br/>
+
+ArgonautImagingReports.java,/ArgonautImagingReports.java
+<br/>
+
+CapabilityStatement-argonaut-clinical-notes-client.json,/CapabilityStatement-argonaut-clinical-notes-client.json
+<br/>
+
+CapabilityStatement-argonaut-clinical-notes-client.ttl,/CapabilityStatement-argonaut-clinical-notes-client.ttl
+<br/>
+
+CapabilityStatement-argonaut-clinical-notes-client.xml,/CapabilityStatement-argonaut-clinical-notes-client.xml
+<br/>
+
+CapabilityStatement-argonaut-clinical-notes-server.json,/CapabilityStatement-argonaut-clinical-notes-server.json
+<br/>
+
+CapabilityStatement-argonaut-clinical-notes-server.ttl,/CapabilityStatement-argonaut-clinical-notes-server.ttl
+<br/>
+
+CapabilityStatement-argonaut-clinical-notes-server.xml,/CapabilityStatement-argonaut-clinical-notes-server.xml
+<br/>
+
+CodeSystem-documentreference-category.json,/CodeSystem-documentreference-category.json
+<br/>
+
+CodeSystem-documentreference-category.ttl,/CodeSystem-documentreference-category.ttl
+<br/>
+
+CodeSystem-documentreference-category.xml,/CodeSystem-documentreference-category.xml
+<br/>
+
+Encounter-example-1.json,/Encounter-example-1.json
+<br/>
+
+Encounter-example-1.ttl,/Encounter-example-1.ttl
+<br/>
+
+Encounter-example-1.xml,/Encounter-example-1.xml
+<br/>
+
+ImplementationGuide-ig.json,/ImplementationGuide-ig.json
+<br/>
+
+ImplementationGuide-ig.ttl,/ImplementationGuide-ig.ttl
+<br/>
+
+ImplementationGuide-ig.xml,/ImplementationGuide-ig.xml
+<br/>
+
+StructureDefinition-argo-clinicalnotes.json,/StructureDefinition-argo-clinicalnotes.json
+<br/>
+
+StructureDefinition-argo-clinicalnotes.ttl,/StructureDefinition-argo-clinicalnotes.ttl
+<br/>
+
+StructureDefinition-argo-clinicalnotes.xml,/StructureDefinition-argo-clinicalnotes.xml
+<br/>
+
+StructureDefinition-argo-diagnosticreport.json,/StructureDefinition-argo-diagnosticreport.json
+<br/>
+
+StructureDefinition-argo-diagnosticreport.ttl,/StructureDefinition-argo-diagnosticreport.ttl
+<br/>
+
+StructureDefinition-argo-diagnosticreport.xml,/StructureDefinition-argo-diagnosticreport.xml
+<br/>
+
+ValueSet-argonaut-clinical-note-type.json,/ValueSet-argonaut-clinical-note-type.json
+<br/>
+
+ValueSet-argonaut-clinical-note-type.ttl,/ValueSet-argonaut-clinical-note-type.ttl
+<br/>
+
+ValueSet-argonaut-clinical-note-type.xml,/ValueSet-argonaut-clinical-note-type.xml
+<br/>
+
+ValueSet-diagnosticreport-category.json,/ValueSet-diagnosticreport-category.json
+<br/>
+
+ValueSet-diagnosticreport-category.ttl,/ValueSet-diagnosticreport-category.ttl
+<br/>
+
+ValueSet-diagnosticreport-category.xml,/ValueSet-diagnosticreport-category.xml
+<br/>
+
+ValueSet-documentreference-category.json,/ValueSet-documentreference-category.json
+<br/>
+
+ValueSet-documentreference-category.ttl,/ValueSet-documentreference-category.ttl
+<br/>
+
+ValueSet-documentreference-category.xml,/ValueSet-documentreference-category.xml
+<br/>
+
+argo-clinicalnotes.csv,/argo-clinicalnotes.csv
+<br/>
+
+argo-clinicalnotes.sch,/argo-clinicalnotes.sch
+<br/>
+
+argo-clinicalnotes.xlsx,/argo-clinicalnotes.xlsx
+<br/>
+
+argo-diagnosticreport.csv,/argo-diagnosticreport.csv
+<br/>
+
+argo-diagnosticreport.sch,/argo-diagnosticreport.sch
+<br/>
+
+argo-diagnosticreport.xlsx,/argo-diagnosticreport.xlsx
+<br/>
+
+argonaut-clinical-notes-client.openapi.json,/argonaut-clinical-notes-client.openapi.json
+<br/>
+
+argonaut-clinical-notes-server.openapi.json,/argonaut-clinical-notes-server.openapi.json
+<br/>
+
+bootstrap-fhir.css,/assets/css/bootstrap-fhir.css
+<br/>
+
+bootstrap-glyphicons.css,/assets/css/bootstrap-glyphicons.css
+<br/>
+
+bootstrap.css,/assets/css/bootstrap.css
+<br/>
+
+jquery-ui.css,/assets/css/jquery-ui.css
+<br/>
+
+jquery-ui.min.css,/assets/css/jquery-ui.min.css
+<br/>
+
+jquery-ui.structure.css,/assets/css/jquery-ui.structure.css
+<br/>
+
+jquery-ui.structure.min.css,/assets/css/jquery-ui.structure.min.css
+<br/>
+
+jquery-ui.theme.css,/assets/css/jquery-ui.theme.css
+<br/>
+
+jquery-ui.theme.min.css,/assets/css/jquery-ui.theme.min.css
+<br/>
+
+project.css,/assets/css/project.css
+<br/>
+
+pygments-manni.css,/assets/css/pygments-manni.css
+<br/>
+
+xml.css,/assets/css/xml.css
+<br/>
+
+glyphiconshalflings-regular.eot,/assets/fonts/glyphiconshalflings-regular.eot
+<br/>
+
+glyphiconshalflings-regular.otf,/assets/fonts/glyphiconshalflings-regular.otf
+<br/>
+
+glyphiconshalflings-regular.svg,/assets/fonts/glyphiconshalflings-regular.svg
+<br/>
+
+glyphiconshalflings-regular.ttf,/assets/fonts/glyphiconshalflings-regular.ttf
+<br/>
+
+glyphiconshalflings-regular.woff,/assets/fonts/glyphiconshalflings-regular.woff
+<br/>
+
+apple-touch-icon-114-precomposed.png,/assets/ico/apple-touch-icon-114-precomposed.png
+<br/>
+
+apple-touch-icon-144-precomposed.png,/assets/ico/apple-touch-icon-144-precomposed.png
+<br/>
+
+apple-touch-icon-57-precomposed.png,/assets/ico/apple-touch-icon-57-precomposed.png
+<br/>
+
+apple-touch-icon-72-precomposed.png,/assets/ico/apple-touch-icon-72-precomposed.png
+<br/>
+
+favicon.ico,/assets/ico/favicon.ico
+<br/>
+
+favicon.png,/assets/ico/favicon.png
+<br/>
+
+ArgonautProject_logo_black.png,/assets/images/ArgonautProject_logo_black.png
+<br/>
+
+DiagnosticReport_DocumentReference_Resource_Overlap.png,/assets/images/DiagnosticReport_DocumentReference_Resource_Overlap.png
+<br/>
+
+both-url.jpg,/assets/images/both-url.jpg
+<br/>
+
+cat.jpg,/assets/images/cat.jpg
+<br/>
+
+fhir-logo-www.png,/assets/images/fhir-logo-www.png
+<br/>
+
+fhir-logo.png,/assets/images/fhir-logo.png
+<br/>
+
+hl7-logo.png,/assets/images/hl7-logo.png
+<br/>
+
+logo_ansinew.jpg,/assets/images/logo_ansinew.jpg
+<br/>
+
+org_logo.jpg,/assets/images/org_logo.jpg
+<br/>
+
+search.png,/assets/images/search.png
+<br/>
+
+stripe.png,/assets/images/stripe.png
+<br/>
+
+target.png,/assets/images/target.png
+<br/>
+
+anchor.min.js,/assets/js/anchor.min.js
+<br/>
+
+bootstrap.min.js,/assets/js/bootstrap.min.js
+<br/>
+
+fhir.js,/assets/js/fhir.js
+<br/>
+
+html5shiv.js,/assets/js/html5shiv.js
+<br/>
+
+jquery-1.11.1.js,/assets/js/jquery-1.11.1.js
+<br/>
+
+jquery-1.11.1.min.js,/assets/js/jquery-1.11.1.min.js
+<br/>
+
+jquery-1.11.1.min.map,/assets/js/jquery-1.11.1.min.map
+<br/>
+
+jquery-ui.js,/assets/js/jquery-ui.js
+<br/>
+
+jquery-ui.min.js,/assets/js/jquery-ui.min.js
+<br/>
+
+jquery.js,/assets/js/jquery.js
+<br/>
+
+Steps for moving from Spreadsheets to Forge.md,/assets/js/my_notes/Steps for moving from Spreadsheets to Forge.md
+<br/>
+
+dir_tree.txt,/assets/js/my_notes/dir_tree.txt
+<br/>
+
+full_tree.txt,/assets/js/my_notes/full_tree.txt
+<br/>
+
+local_workflow.md,/assets/js/my_notes/local_workflow.md
+<br/>
+
+tree.txt,/assets/js/my_notes/tree.txt
+<br/>
+
+respond.min.js,/assets/js/respond.min.js
+<br/>
+
+topofpage.js,/assets/js/topofpage.js
+<br/>
+
+xml.js,/assets/js/xml.js
+<br/>
+
+cc0.png,/cc0.png
+<br/>
+
+external.png,/external.png
+<br/>
+
+fhir.css,/fhir.css
+<br/>
+
+icon-administration.png,/icon-administration.png
+<br/>
+
+icon-clinical.png,/icon-clinical.png
+<br/>
+
+icon-dictionary.png,/icon-dictionary.png
+<br/>
+
+icon-directory.gif,/icon-directory.gif
+<br/>
+
+icon-documentation.png,/icon-documentation.png
+<br/>
+
+icon-example.png,/icon-example.png
+<br/>
+
+icon-fhir-16.png,/icon-fhir-16.png
+<br/>
+
+icon-implementation.png,/icon-implementation.png
+<br/>
+
+icon-include.png,/icon-include.png
+<br/>
+
+icon-infrastructure.png,/icon-infrastructure.png
+<br/>
+
+icon-list.gif,/icon-list.gif
+<br/>
+
+icon-page.png,/icon-page.png
+<br/>
+
+icon-resource.png,/icon-resource.png
+<br/>
+
+icon-toc.png,/icon-toc.png
+<br/>
+
+icon_bundle.png,/icon_bundle.png
+<br/>
+
+icon_choice.gif,/icon_choice.gif
+<br/>
+
+icon_datatype.gif,/icon_datatype.gif
+<br/>
+
+icon_element.gif,/icon_element.gif
+<br/>
+
+icon_extension.png,/icon_extension.png
+<br/>
+
+icon_extension_complex.png,/icon_extension_complex.png
+<br/>
+
+icon_extension_simple.png,/icon_extension_simple.png
+<br/>
+
+icon_modifier_extension_complex.png,/icon_modifier_extension_complex.png
+<br/>
+
+icon_modifier_extension_simple.png,/icon_modifier_extension_simple.png
+<br/>
+
+icon_page.gif,/icon_page.gif
+<br/>
+
+icon_primitive.png,/icon_primitive.png
+<br/>
+
+icon_profile.png,/icon_profile.png
+<br/>
+
+icon_reference.png,/icon_reference.png
+<br/>
+
+icon_resource.png,/icon_resource.png
+<br/>
+
+icon_reuse.png,/icon_reuse.png
+<br/>
+
+icon_slice.png,/icon_slice.png
+<br/>
+
+icon_text.png,/icon_text.png
+<br/>
+
+lock.png,/lock.png
+<br/>
+
+modifier.png,/modifier.png
+<br/>
+
+mustsupport.png,/mustsupport.png
+<br/>
+
+page_template_library.zip,/page_template_library.zip
+<br/>
+
+summary.png,/summary.png
+<br/>
+
+target.png,/target.png
+<br/>
+
+tbl_bck0.png,/tbl_bck0.png
+<br/>
+
+tbl_bck00.png,/tbl_bck00.png
+<br/>
+
+tbl_bck000.png,/tbl_bck000.png
+<br/>
+
+tbl_bck0000.png,/tbl_bck0000.png
+<br/>
+
+tbl_bck00000.png,/tbl_bck00000.png
+<br/>
+
+tbl_bck0001.png,/tbl_bck0001.png
+<br/>
+
+tbl_bck00010.png,/tbl_bck00010.png
+<br/>
+
+tbl_bck001.png,/tbl_bck001.png
+<br/>
+
+tbl_bck0010.png,/tbl_bck0010.png
+<br/>
+
+tbl_bck00100.png,/tbl_bck00100.png
+<br/>
+
+tbl_bck0010000.png,/tbl_bck0010000.png
+<br/>
+
+tbl_bck001001.png,/tbl_bck001001.png
+<br/>
+
+tbl_bck0010010.png,/tbl_bck0010010.png
+<br/>
+
+tbl_bck00101.png,/tbl_bck00101.png
+<br/>
+
+tbl_bck0011.png,/tbl_bck0011.png
+<br/>
+
+tbl_bck00110.png,/tbl_bck00110.png
+<br/>
+
+tbl_bck01.png,/tbl_bck01.png
+<br/>
+
+tbl_bck010.png,/tbl_bck010.png
+<br/>
+
+tbl_bck0100.png,/tbl_bck0100.png
+<br/>
+
+tbl_bck01000.png,/tbl_bck01000.png
+<br/>
+
+tbl_bck0101.png,/tbl_bck0101.png
+<br/>
+
+tbl_bck01010.png,/tbl_bck01010.png
+<br/>
+
+tbl_bck010100.png,/tbl_bck010100.png
+<br/>
+
+tbl_bck01011.png,/tbl_bck01011.png
+<br/>
+
+tbl_bck010110.png,/tbl_bck010110.png
+<br/>
+
+tbl_bck011.png,/tbl_bck011.png
+<br/>
+
+tbl_bck0110.png,/tbl_bck0110.png
+<br/>
+
+tbl_bck01100.png,/tbl_bck01100.png
+<br/>
+
+tbl_bck0111.png,/tbl_bck0111.png
+<br/>
+
+tbl_bck01110.png,/tbl_bck01110.png
+<br/>
+
+tbl_bck1.png,/tbl_bck1.png
+<br/>
+
+tbl_bck10.png,/tbl_bck10.png
+<br/>
+
+tbl_bck100.png,/tbl_bck100.png
+<br/>
+
+tbl_bck1000.png,/tbl_bck1000.png
+<br/>
+
+tbl_bck10000.png,/tbl_bck10000.png
+<br/>
+
+tbl_bck100000.png,/tbl_bck100000.png
+<br/>
+
+tbl_bck10001.png,/tbl_bck10001.png
+<br/>
+
+tbl_bck100010.png,/tbl_bck100010.png
+<br/>
+
+tbl_bck1001.png,/tbl_bck1001.png
+<br/>
+
+tbl_bck10010.png,/tbl_bck10010.png
+<br/>
+
+tbl_bck100100.png,/tbl_bck100100.png
+<br/>
+
+tbl_bck1001000.png,/tbl_bck1001000.png
+<br/>
+
+tbl_bck10010000.png,/tbl_bck10010000.png
+<br/>
+
+tbl_bck1001001.png,/tbl_bck1001001.png
+<br/>
+
+tbl_bck10010010.png,/tbl_bck10010010.png
+<br/>
+
+tbl_bck100101.png,/tbl_bck100101.png
+<br/>
+
+tbl_bck1001010.png,/tbl_bck1001010.png
+<br/>
+
+tbl_bck10011.png,/tbl_bck10011.png
+<br/>
+
+tbl_bck100110.png,/tbl_bck100110.png
+<br/>
+
+tbl_bck101.png,/tbl_bck101.png
+<br/>
+
+tbl_bck1010.png,/tbl_bck1010.png
+<br/>
+
+tbl_bck10100.png,/tbl_bck10100.png
+<br/>
+
+tbl_bck1011.png,/tbl_bck1011.png
+<br/>
+
+tbl_bck10110.png,/tbl_bck10110.png
+<br/>
+
+tbl_bck101100.png,/tbl_bck101100.png
+<br/>
+
+tbl_bck10111.png,/tbl_bck10111.png
+<br/>
+
+tbl_bck101110.png,/tbl_bck101110.png
+<br/>
+
+tbl_bck11.png,/tbl_bck11.png
+<br/>
+
+tbl_bck110.png,/tbl_bck110.png
+<br/>
+
+tbl_bck1100.png,/tbl_bck1100.png
+<br/>
+
+tbl_bck11000.png,/tbl_bck11000.png
+<br/>
+
+tbl_bck1101.png,/tbl_bck1101.png
+<br/>
+
+tbl_bck11010.png,/tbl_bck11010.png
+<br/>
+
+tbl_bck111.png,/tbl_bck111.png
+<br/>
+
+tbl_bck1110.png,/tbl_bck1110.png
+<br/>
+
+tbl_bck11100.png,/tbl_bck11100.png
+<br/>
+
+tbl_bck111000.png,/tbl_bck111000.png
+<br/>
+
+tbl_bck11101.png,/tbl_bck11101.png
+<br/>
+
+tbl_bck111010.png,/tbl_bck111010.png
+<br/>
+
+tbl_bck1111.png,/tbl_bck1111.png
+<br/>
+
+tbl_bck11110.png,/tbl_bck11110.png
+<br/>
+
+tbl_bck1112.png,/tbl_bck1112.png
+<br/>
+
+tbl_blank.png,/tbl_blank.png
+<br/>
+
+tbl_spacer.png,/tbl_spacer.png
+<br/>
+
+tbl_vjoin.png,/tbl_vjoin.png
+<br/>
+
+tbl_vjoin_end.png,/tbl_vjoin_end.png
+<br/>
+
+tbl_vjoin_end_slice.png,/tbl_vjoin_end_slice.png
+<br/>
+
+tbl_vjoin_end_slicer.png,/tbl_vjoin_end_slicer.png
+<br/>
+
+tbl_vjoin_slice.png,/tbl_vjoin_slice.png
+<br/>
+
+tbl_vjoin_slicer.png,/tbl_vjoin_slicer.png
+<br/>
+
+tbl_vline.png,/tbl_vline.png
+<br/>
+
+tbl_vline_slice.png,/tbl_vline_slice.png
+<br/>
+
+tbl_vline_slicer.png,/tbl_vline_slicer.png
+<br/>
+
+
+
+pagepath = html_pages.html
+<br/>
+
+
+
+<pre>
+#### Table of Contents
+{: nocount="true"}
+
+&nbsp;&nbsp;- 1 - [Home](index.html)
+&nbsp;&nbsp;- 2 - [General Guidance](guidance.html)
+&nbsp;&nbsp;- 3 - [Profiles and Extensions](profiles.html)
+&nbsp;&nbsp;&nbsp;&nbsp;- 3.1 - [StructureDefinition Argo DiagnosticReport](StructureDefinition-argo-diagnosticreport.html)
+&nbsp;&nbsp;&nbsp;&nbsp;- 3.2 - [StructureDefinition Argo Clinicalnotes](StructureDefinition-argo-clinicalnotes.html)
+&nbsp;&nbsp;- 4 - [Operations](operations.html)
+&nbsp;&nbsp;- 5 - [Terminology](terminology.html)
+&nbsp;&nbsp;&nbsp;&nbsp;- 5.1 - [ValueSet DocumentReference Category](ValueSet-documentreference-category.html)
+&nbsp;&nbsp;&nbsp;&nbsp;- 5.2 - [ValueSet DiagnosticReport Category](ValueSet-diagnosticreport-category.html)
+&nbsp;&nbsp;&nbsp;&nbsp;- 5.3 - [ValueSet Argonaut Clinical Note Type](ValueSet-argonaut-clinical-note-type.html)
+&nbsp;&nbsp;&nbsp;&nbsp;- 5.4 - [CodeSystem DocumentReference Category](CodeSystem-documentreference-category.html)
+&nbsp;&nbsp;- 6 - [Search Parameters](searchparameters.html)
+&nbsp;&nbsp;- 7 - [Capability Statements](capstatements.html)
+&nbsp;&nbsp;&nbsp;&nbsp;- 7.1 - [CapabilityStatement Argonaut Clinical Notes Server](CapabilityStatement-argonaut-clinical-notes-server.html)
+&nbsp;&nbsp;&nbsp;&nbsp;- 7.2 - [CapabilityStatement Argonaut Clinical Notes Client](CapabilityStatement-argonaut-clinical-notes-client.html)
+&nbsp;&nbsp;- 8 - [Security](security.html)
+&nbsp;&nbsp;- 9 - [Downloads](downloads.html)
+&nbsp;&nbsp;- 10 - [All Examples](all-examples.html)
+&nbsp;&nbsp;- 11 - [Table of Contents](toc.html)
+</pre>
+
+
+p = index.html{"title"=&gt;"Home", "label"=&gt;"0.0", "breadcrumb"=&gt;"<li><b>Home</b></li>"}
+<br/>
+
+pagepath = index.html
+<br/>
+p.title = Home
+<br/>
+p.label = 1
+<br/>
+p.breadcrumb = <pre><li><b>Home</b></li></pre>
+
+
+
+p = guidance.html{"title"=&gt;"General Guidance", "label"=&gt;"1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><b>General Guidance</b></li>"}
+<br/>
+
+pagepath = guidance.html
+<br/>
+p.title = General Guidance
+<br/>
+p.label = 2
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><b>General Guidance</b></li></pre>
+
+
+
+p = profiles.html{"title"=&gt;"Profiles and Extensions", "label"=&gt;"2.0", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><b>Profiles and Extensions</b></li>"}
+<br/>
+
+pagepath = profiles.html
+<br/>
+p.title = Profiles and Extensions
+<br/>
+p.label = 3
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><b>Profiles and Extensions</b></li></pre>
+
+
+
+p = StructureDefinition-argo-diagnosticreport.html{"title"=&gt;"StructureDefinition Argo DiagnosticReport", "label"=&gt;"2.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Argo DiagnosticReport</b></li>", "examples"=&gt;[]}
+<br/>
+
+pagepath = StructureDefinition-argo-diagnosticreport.html
+<br/>
+p.title = StructureDefinition Argo DiagnosticReport
+<br/>
+p.label = 3.1
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Argo DiagnosticReport</b></li></pre>
+
+
+
+p = StructureDefinition-argo-diagnosticreport.xml.html{"title"=&gt;"StructureDefinition Argo DiagnosticReport - XML Representation", "label"=&gt;"2.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Argo DiagnosticReport</b></li>"}
+<br/>
+
+pagepath = StructureDefinition-argo-diagnosticreport.xml.html
+<br/>
+p.title = StructureDefinition Argo DiagnosticReport - XML Representation
+<br/>
+p.label = 3.1
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Argo DiagnosticReport</b></li></pre>
+
+
+
+p = StructureDefinition-argo-diagnosticreport.json.html{"title"=&gt;"StructureDefinition Argo DiagnosticReport - JSON Representation", "label"=&gt;"2.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Argo DiagnosticReport</b></li>"}
+<br/>
+
+pagepath = StructureDefinition-argo-diagnosticreport.json.html
+<br/>
+p.title = StructureDefinition Argo DiagnosticReport - JSON Representation
+<br/>
+p.label = 3.1
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Argo DiagnosticReport</b></li></pre>
+
+
+
+p = StructureDefinition-argo-diagnosticreport.ttl.html{"title"=&gt;"StructureDefinition Argo DiagnosticReport - TTL Representation", "label"=&gt;"2.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Argo DiagnosticReport</b></li>"}
+<br/>
+
+pagepath = StructureDefinition-argo-diagnosticreport.ttl.html
+<br/>
+p.title = StructureDefinition Argo DiagnosticReport - TTL Representation
+<br/>
+p.label = 3.1
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Argo DiagnosticReport</b></li></pre>
+
+
+
+p = StructureDefinition-argo-diagnosticreport-definitions.html{"title"=&gt;"StructureDefinition Argo DiagnosticReport - Definitions", "label"=&gt;"2.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Argo DiagnosticReport</b></li>"}
+<br/>
+
+pagepath = StructureDefinition-argo-diagnosticreport-definitions.html
+<br/>
+p.title = StructureDefinition Argo DiagnosticReport - Definitions
+<br/>
+p.label = 3.1
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Argo DiagnosticReport</b></li></pre>
+
+
+
+p = StructureDefinition-argo-diagnosticreport-mappings.html{"title"=&gt;"StructureDefinition Argo DiagnosticReport - mappings", "label"=&gt;"2.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Argo DiagnosticReport</b></li>"}
+<br/>
+
+pagepath = StructureDefinition-argo-diagnosticreport-mappings.html
+<br/>
+p.title = StructureDefinition Argo DiagnosticReport - mappings
+<br/>
+p.label = 3.1
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Argo DiagnosticReport</b></li></pre>
+
+
+
+p = StructureDefinition-argo-clinicalnotes.html{"title"=&gt;"StructureDefinition Argo Clinicalnotes", "label"=&gt;"2.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Argo Clinicalnotes</b></li>", "examples"=&gt;[]}
+<br/>
+
+pagepath = StructureDefinition-argo-clinicalnotes.html
+<br/>
+p.title = StructureDefinition Argo Clinicalnotes
+<br/>
+p.label = 3.2
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Argo Clinicalnotes</b></li></pre>
+
+
+
+p = StructureDefinition-argo-clinicalnotes.xml.html{"title"=&gt;"StructureDefinition Argo Clinicalnotes - XML Representation", "label"=&gt;"2.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Argo Clinicalnotes</b></li>"}
+<br/>
+
+pagepath = StructureDefinition-argo-clinicalnotes.xml.html
+<br/>
+p.title = StructureDefinition Argo Clinicalnotes - XML Representation
+<br/>
+p.label = 3.2
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Argo Clinicalnotes</b></li></pre>
+
+
+
+p = StructureDefinition-argo-clinicalnotes.json.html{"title"=&gt;"StructureDefinition Argo Clinicalnotes - JSON Representation", "label"=&gt;"2.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Argo Clinicalnotes</b></li>"}
+<br/>
+
+pagepath = StructureDefinition-argo-clinicalnotes.json.html
+<br/>
+p.title = StructureDefinition Argo Clinicalnotes - JSON Representation
+<br/>
+p.label = 3.2
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Argo Clinicalnotes</b></li></pre>
+
+
+
+p = StructureDefinition-argo-clinicalnotes.ttl.html{"title"=&gt;"StructureDefinition Argo Clinicalnotes - TTL Representation", "label"=&gt;"2.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Argo Clinicalnotes</b></li>"}
+<br/>
+
+pagepath = StructureDefinition-argo-clinicalnotes.ttl.html
+<br/>
+p.title = StructureDefinition Argo Clinicalnotes - TTL Representation
+<br/>
+p.label = 3.2
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Argo Clinicalnotes</b></li></pre>
+
+
+
+p = StructureDefinition-argo-clinicalnotes-definitions.html{"title"=&gt;"StructureDefinition Argo Clinicalnotes - Definitions", "label"=&gt;"2.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Argo Clinicalnotes</b></li>"}
+<br/>
+
+pagepath = StructureDefinition-argo-clinicalnotes-definitions.html
+<br/>
+p.title = StructureDefinition Argo Clinicalnotes - Definitions
+<br/>
+p.label = 3.2
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Argo Clinicalnotes</b></li></pre>
+
+
+
+p = StructureDefinition-argo-clinicalnotes-mappings.html{"title"=&gt;"StructureDefinition Argo Clinicalnotes - mappings", "label"=&gt;"2.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Argo Clinicalnotes</b></li>"}
+<br/>
+
+pagepath = StructureDefinition-argo-clinicalnotes-mappings.html
+<br/>
+p.title = StructureDefinition Argo Clinicalnotes - mappings
+<br/>
+p.label = 3.2
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Argo Clinicalnotes</b></li></pre>
+
+
+
+p = operations.html{"title"=&gt;"Operations", "label"=&gt;"3", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><b>Operations</b></li>"}
+<br/>
+
+pagepath = operations.html
+<br/>
+p.title = Operations
+<br/>
+p.label = 4
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><b>Operations</b></li></pre>
+
+
+
+p = terminology.html{"title"=&gt;"Terminology", "label"=&gt;"4.0", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><b>Terminology</b></li>"}
+<br/>
+
+pagepath = terminology.html
+<br/>
+p.title = Terminology
+<br/>
+p.label = 5
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><b>Terminology</b></li></pre>
+
+
+
+p = ValueSet-documentreference-category.html{"title"=&gt;"ValueSet DocumentReference Category", "label"=&gt;"4.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet DocumentReference Category</b></li>", "examples"=&gt;[]}
+<br/>
+
+pagepath = ValueSet-documentreference-category.html
+<br/>
+p.title = ValueSet DocumentReference Category
+<br/>
+p.label = 5.1
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet DocumentReference Category</b></li></pre>
+
+
+
+p = ValueSet-documentreference-category.xml.html{"title"=&gt;"ValueSet DocumentReference Category - XML Representation", "label"=&gt;"4.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet DocumentReference Category</b></li>"}
+<br/>
+
+pagepath = ValueSet-documentreference-category.xml.html
+<br/>
+p.title = ValueSet DocumentReference Category - XML Representation
+<br/>
+p.label = 5.1
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet DocumentReference Category</b></li></pre>
+
+
+
+p = ValueSet-documentreference-category.json.html{"title"=&gt;"ValueSet DocumentReference Category - JSON Representation", "label"=&gt;"4.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet DocumentReference Category</b></li>"}
+<br/>
+
+pagepath = ValueSet-documentreference-category.json.html
+<br/>
+p.title = ValueSet DocumentReference Category - JSON Representation
+<br/>
+p.label = 5.1
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet DocumentReference Category</b></li></pre>
+
+
+
+p = ValueSet-documentreference-category.ttl.html{"title"=&gt;"ValueSet DocumentReference Category - TTL Representation", "label"=&gt;"4.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet DocumentReference Category</b></li>"}
+<br/>
+
+pagepath = ValueSet-documentreference-category.ttl.html
+<br/>
+p.title = ValueSet DocumentReference Category - TTL Representation
+<br/>
+p.label = 5.1
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet DocumentReference Category</b></li></pre>
+
+
+
+p = ValueSet-documentreference-category-definitions.html{"title"=&gt;"ValueSet DocumentReference Category - Definitions", "label"=&gt;"4.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet DocumentReference Category</b></li>"}
+<br/>
+
+pagepath = ValueSet-documentreference-category-definitions.html
+<br/>
+p.title = ValueSet DocumentReference Category - Definitions
+<br/>
+p.label = 5.1
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet DocumentReference Category</b></li></pre>
+
+
+
+p = ValueSet-documentreference-category-mappings.html{"title"=&gt;"ValueSet DocumentReference Category - mappings", "label"=&gt;"4.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet DocumentReference Category</b></li>"}
+<br/>
+
+pagepath = ValueSet-documentreference-category-mappings.html
+<br/>
+p.title = ValueSet DocumentReference Category - mappings
+<br/>
+p.label = 5.1
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet DocumentReference Category</b></li></pre>
+
+
+
+p = ValueSet-diagnosticreport-category.html{"title"=&gt;"ValueSet DiagnosticReport Category", "label"=&gt;"4.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet DiagnosticReport Category</b></li>", "examples"=&gt;[]}
+<br/>
+
+pagepath = ValueSet-diagnosticreport-category.html
+<br/>
+p.title = ValueSet DiagnosticReport Category
+<br/>
+p.label = 5.2
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet DiagnosticReport Category</b></li></pre>
+
+
+
+p = ValueSet-diagnosticreport-category.xml.html{"title"=&gt;"ValueSet DiagnosticReport Category - XML Representation", "label"=&gt;"4.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet DiagnosticReport Category</b></li>"}
+<br/>
+
+pagepath = ValueSet-diagnosticreport-category.xml.html
+<br/>
+p.title = ValueSet DiagnosticReport Category - XML Representation
+<br/>
+p.label = 5.2
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet DiagnosticReport Category</b></li></pre>
+
+
+
+p = ValueSet-diagnosticreport-category.json.html{"title"=&gt;"ValueSet DiagnosticReport Category - JSON Representation", "label"=&gt;"4.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet DiagnosticReport Category</b></li>"}
+<br/>
+
+pagepath = ValueSet-diagnosticreport-category.json.html
+<br/>
+p.title = ValueSet DiagnosticReport Category - JSON Representation
+<br/>
+p.label = 5.2
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet DiagnosticReport Category</b></li></pre>
+
+
+
+p = ValueSet-diagnosticreport-category.ttl.html{"title"=&gt;"ValueSet DiagnosticReport Category - TTL Representation", "label"=&gt;"4.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet DiagnosticReport Category</b></li>"}
+<br/>
+
+pagepath = ValueSet-diagnosticreport-category.ttl.html
+<br/>
+p.title = ValueSet DiagnosticReport Category - TTL Representation
+<br/>
+p.label = 5.2
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet DiagnosticReport Category</b></li></pre>
+
+
+
+p = ValueSet-diagnosticreport-category-definitions.html{"title"=&gt;"ValueSet DiagnosticReport Category - Definitions", "label"=&gt;"4.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet DiagnosticReport Category</b></li>"}
+<br/>
+
+pagepath = ValueSet-diagnosticreport-category-definitions.html
+<br/>
+p.title = ValueSet DiagnosticReport Category - Definitions
+<br/>
+p.label = 5.2
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet DiagnosticReport Category</b></li></pre>
+
+
+
+p = ValueSet-diagnosticreport-category-mappings.html{"title"=&gt;"ValueSet DiagnosticReport Category - mappings", "label"=&gt;"4.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet DiagnosticReport Category</b></li>"}
+<br/>
+
+pagepath = ValueSet-diagnosticreport-category-mappings.html
+<br/>
+p.title = ValueSet DiagnosticReport Category - mappings
+<br/>
+p.label = 5.2
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet DiagnosticReport Category</b></li></pre>
+
+
+
+p = ValueSet-argonaut-clinical-note-type.html{"title"=&gt;"ValueSet Argonaut Clinical Note Type", "label"=&gt;"4.3", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet Argonaut Clinical Note Type</b></li>", "examples"=&gt;[]}
+<br/>
+
+pagepath = ValueSet-argonaut-clinical-note-type.html
+<br/>
+p.title = ValueSet Argonaut Clinical Note Type
+<br/>
+p.label = 5.3
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet Argonaut Clinical Note Type</b></li></pre>
+
+
+
+p = ValueSet-argonaut-clinical-note-type.xml.html{"title"=&gt;"ValueSet Argonaut Clinical Note Type - XML Representation", "label"=&gt;"4.3", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet Argonaut Clinical Note Type</b></li>"}
+<br/>
+
+pagepath = ValueSet-argonaut-clinical-note-type.xml.html
+<br/>
+p.title = ValueSet Argonaut Clinical Note Type - XML Representation
+<br/>
+p.label = 5.3
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet Argonaut Clinical Note Type</b></li></pre>
+
+
+
+p = ValueSet-argonaut-clinical-note-type.json.html{"title"=&gt;"ValueSet Argonaut Clinical Note Type - JSON Representation", "label"=&gt;"4.3", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet Argonaut Clinical Note Type</b></li>"}
+<br/>
+
+pagepath = ValueSet-argonaut-clinical-note-type.json.html
+<br/>
+p.title = ValueSet Argonaut Clinical Note Type - JSON Representation
+<br/>
+p.label = 5.3
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet Argonaut Clinical Note Type</b></li></pre>
+
+
+
+p = ValueSet-argonaut-clinical-note-type.ttl.html{"title"=&gt;"ValueSet Argonaut Clinical Note Type - TTL Representation", "label"=&gt;"4.3", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet Argonaut Clinical Note Type</b></li>"}
+<br/>
+
+pagepath = ValueSet-argonaut-clinical-note-type.ttl.html
+<br/>
+p.title = ValueSet Argonaut Clinical Note Type - TTL Representation
+<br/>
+p.label = 5.3
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet Argonaut Clinical Note Type</b></li></pre>
+
+
+
+p = ValueSet-argonaut-clinical-note-type-definitions.html{"title"=&gt;"ValueSet Argonaut Clinical Note Type - Definitions", "label"=&gt;"4.3", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet Argonaut Clinical Note Type</b></li>"}
+<br/>
+
+pagepath = ValueSet-argonaut-clinical-note-type-definitions.html
+<br/>
+p.title = ValueSet Argonaut Clinical Note Type - Definitions
+<br/>
+p.label = 5.3
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet Argonaut Clinical Note Type</b></li></pre>
+
+
+
+p = ValueSet-argonaut-clinical-note-type-mappings.html{"title"=&gt;"ValueSet Argonaut Clinical Note Type - mappings", "label"=&gt;"4.3", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet Argonaut Clinical Note Type</b></li>"}
+<br/>
+
+pagepath = ValueSet-argonaut-clinical-note-type-mappings.html
+<br/>
+p.title = ValueSet Argonaut Clinical Note Type - mappings
+<br/>
+p.label = 5.3
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet Argonaut Clinical Note Type</b></li></pre>
+
+
+
+p = CodeSystem-documentreference-category.html{"title"=&gt;"CodeSystem DocumentReference Category", "label"=&gt;"4.4", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>CodeSystem DocumentReference Category</b></li>", "examples"=&gt;[]}
+<br/>
+
+pagepath = CodeSystem-documentreference-category.html
+<br/>
+p.title = CodeSystem DocumentReference Category
+<br/>
+p.label = 5.4
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>CodeSystem DocumentReference Category</b></li></pre>
+
+
+
+p = CodeSystem-documentreference-category.xml.html{"title"=&gt;"CodeSystem DocumentReference Category - XML Representation", "label"=&gt;"4.4", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>CodeSystem DocumentReference Category</b></li>"}
+<br/>
+
+pagepath = CodeSystem-documentreference-category.xml.html
+<br/>
+p.title = CodeSystem DocumentReference Category - XML Representation
+<br/>
+p.label = 5.4
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>CodeSystem DocumentReference Category</b></li></pre>
+
+
+
+p = CodeSystem-documentreference-category.json.html{"title"=&gt;"CodeSystem DocumentReference Category - JSON Representation", "label"=&gt;"4.4", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>CodeSystem DocumentReference Category</b></li>"}
+<br/>
+
+pagepath = CodeSystem-documentreference-category.json.html
+<br/>
+p.title = CodeSystem DocumentReference Category - JSON Representation
+<br/>
+p.label = 5.4
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>CodeSystem DocumentReference Category</b></li></pre>
+
+
+
+p = CodeSystem-documentreference-category.ttl.html{"title"=&gt;"CodeSystem DocumentReference Category - TTL Representation", "label"=&gt;"4.4", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>CodeSystem DocumentReference Category</b></li>"}
+<br/>
+
+pagepath = CodeSystem-documentreference-category.ttl.html
+<br/>
+p.title = CodeSystem DocumentReference Category - TTL Representation
+<br/>
+p.label = 5.4
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>CodeSystem DocumentReference Category</b></li></pre>
+
+
+
+p = CodeSystem-documentreference-category-definitions.html{"title"=&gt;"CodeSystem DocumentReference Category - Definitions", "label"=&gt;"4.4", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>CodeSystem DocumentReference Category</b></li>"}
+<br/>
+
+pagepath = CodeSystem-documentreference-category-definitions.html
+<br/>
+p.title = CodeSystem DocumentReference Category - Definitions
+<br/>
+p.label = 5.4
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>CodeSystem DocumentReference Category</b></li></pre>
+
+
+
+p = CodeSystem-documentreference-category-mappings.html{"title"=&gt;"CodeSystem DocumentReference Category - mappings", "label"=&gt;"4.4", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>CodeSystem DocumentReference Category</b></li>"}
+<br/>
+
+pagepath = CodeSystem-documentreference-category-mappings.html
+<br/>
+p.title = CodeSystem DocumentReference Category - mappings
+<br/>
+p.label = 5.4
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>CodeSystem DocumentReference Category</b></li></pre>
+
+
+
+p = searchparameters.html{"title"=&gt;"Search Parameters", "label"=&gt;"5", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><b>Search Parameters</b></li>"}
+<br/>
+
+pagepath = searchparameters.html
+<br/>
+p.title = Search Parameters
+<br/>
+p.label = 6
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><b>Search Parameters</b></li></pre>
+
+
+
+p = capstatements.html{"title"=&gt;"Capability Statements", "label"=&gt;"6.0", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><b>Capability Statements</b></li>"}
+<br/>
+
+pagepath = capstatements.html
+<br/>
+p.title = Capability Statements
+<br/>
+p.label = 7
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><b>Capability Statements</b></li></pre>
+
+
+
+p = CapabilityStatement-argonaut-clinical-notes-server.html{"title"=&gt;"CapabilityStatement Argonaut Clinical Notes Server", "label"=&gt;"6.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="capstatements.html"><b>Capability Statements</b></a></li><li><b>CapabilityStatement Argonaut Clinical Notes Server</b></li>", "examples"=&gt;[]}
+<br/>
+
+pagepath = CapabilityStatement-argonaut-clinical-notes-server.html
+<br/>
+p.title = CapabilityStatement Argonaut Clinical Notes Server
+<br/>
+p.label = 7.1
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="capstatements.html"><b>Capability Statements</b></a></li><li><b>CapabilityStatement Argonaut Clinical Notes Server</b></li></pre>
+
+
+
+p = CapabilityStatement-argonaut-clinical-notes-server.xml.html{"title"=&gt;"CapabilityStatement Argonaut Clinical Notes Server - XML Representation", "label"=&gt;"6.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="capstatements.html"><b>Capability Statements</b></a></li><li><b>CapabilityStatement Argonaut Clinical Notes Server</b></li>"}
+<br/>
+
+pagepath = CapabilityStatement-argonaut-clinical-notes-server.xml.html
+<br/>
+p.title = CapabilityStatement Argonaut Clinical Notes Server - XML Representation
+<br/>
+p.label = 7.1
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="capstatements.html"><b>Capability Statements</b></a></li><li><b>CapabilityStatement Argonaut Clinical Notes Server</b></li></pre>
+
+
+
+p = CapabilityStatement-argonaut-clinical-notes-server.json.html{"title"=&gt;"CapabilityStatement Argonaut Clinical Notes Server - JSON Representation", "label"=&gt;"6.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="capstatements.html"><b>Capability Statements</b></a></li><li><b>CapabilityStatement Argonaut Clinical Notes Server</b></li>"}
+<br/>
+
+pagepath = CapabilityStatement-argonaut-clinical-notes-server.json.html
+<br/>
+p.title = CapabilityStatement Argonaut Clinical Notes Server - JSON Representation
+<br/>
+p.label = 7.1
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="capstatements.html"><b>Capability Statements</b></a></li><li><b>CapabilityStatement Argonaut Clinical Notes Server</b></li></pre>
+
+
+
+p = CapabilityStatement-argonaut-clinical-notes-server.ttl.html{"title"=&gt;"CapabilityStatement Argonaut Clinical Notes Server - TTL Representation", "label"=&gt;"6.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="capstatements.html"><b>Capability Statements</b></a></li><li><b>CapabilityStatement Argonaut Clinical Notes Server</b></li>"}
+<br/>
+
+pagepath = CapabilityStatement-argonaut-clinical-notes-server.ttl.html
+<br/>
+p.title = CapabilityStatement Argonaut Clinical Notes Server - TTL Representation
+<br/>
+p.label = 7.1
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="capstatements.html"><b>Capability Statements</b></a></li><li><b>CapabilityStatement Argonaut Clinical Notes Server</b></li></pre>
+
+
+
+p = CapabilityStatement-argonaut-clinical-notes-server-definitions.html{"title"=&gt;"CapabilityStatement Argonaut Clinical Notes Server - Definitions", "label"=&gt;"6.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="capstatements.html"><b>Capability Statements</b></a></li><li><b>CapabilityStatement Argonaut Clinical Notes Server</b></li>"}
+<br/>
+
+pagepath = CapabilityStatement-argonaut-clinical-notes-server-definitions.html
+<br/>
+p.title = CapabilityStatement Argonaut Clinical Notes Server - Definitions
+<br/>
+p.label = 7.1
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="capstatements.html"><b>Capability Statements</b></a></li><li><b>CapabilityStatement Argonaut Clinical Notes Server</b></li></pre>
+
+
+
+p = CapabilityStatement-argonaut-clinical-notes-server-mappings.html{"title"=&gt;"CapabilityStatement Argonaut Clinical Notes Server - mappings", "label"=&gt;"6.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="capstatements.html"><b>Capability Statements</b></a></li><li><b>CapabilityStatement Argonaut Clinical Notes Server</b></li>"}
+<br/>
+
+pagepath = CapabilityStatement-argonaut-clinical-notes-server-mappings.html
+<br/>
+p.title = CapabilityStatement Argonaut Clinical Notes Server - mappings
+<br/>
+p.label = 7.1
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="capstatements.html"><b>Capability Statements</b></a></li><li><b>CapabilityStatement Argonaut Clinical Notes Server</b></li></pre>
+
+
+
+p = CapabilityStatement-argonaut-clinical-notes-client.html{"title"=&gt;"CapabilityStatement Argonaut Clinical Notes Client", "label"=&gt;"6.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="capstatements.html"><b>Capability Statements</b></a></li><li><b>CapabilityStatement Argonaut Clinical Notes Client</b></li>", "examples"=&gt;[]}
+<br/>
+
+pagepath = CapabilityStatement-argonaut-clinical-notes-client.html
+<br/>
+p.title = CapabilityStatement Argonaut Clinical Notes Client
+<br/>
+p.label = 7.2
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="capstatements.html"><b>Capability Statements</b></a></li><li><b>CapabilityStatement Argonaut Clinical Notes Client</b></li></pre>
+
+
+
+p = CapabilityStatement-argonaut-clinical-notes-client.xml.html{"title"=&gt;"CapabilityStatement Argonaut Clinical Notes Client - XML Representation", "label"=&gt;"6.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="capstatements.html"><b>Capability Statements</b></a></li><li><b>CapabilityStatement Argonaut Clinical Notes Client</b></li>"}
+<br/>
+
+pagepath = CapabilityStatement-argonaut-clinical-notes-client.xml.html
+<br/>
+p.title = CapabilityStatement Argonaut Clinical Notes Client - XML Representation
+<br/>
+p.label = 7.2
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="capstatements.html"><b>Capability Statements</b></a></li><li><b>CapabilityStatement Argonaut Clinical Notes Client</b></li></pre>
+
+
+
+p = CapabilityStatement-argonaut-clinical-notes-client.json.html{"title"=&gt;"CapabilityStatement Argonaut Clinical Notes Client - JSON Representation", "label"=&gt;"6.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="capstatements.html"><b>Capability Statements</b></a></li><li><b>CapabilityStatement Argonaut Clinical Notes Client</b></li>"}
+<br/>
+
+pagepath = CapabilityStatement-argonaut-clinical-notes-client.json.html
+<br/>
+p.title = CapabilityStatement Argonaut Clinical Notes Client - JSON Representation
+<br/>
+p.label = 7.2
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="capstatements.html"><b>Capability Statements</b></a></li><li><b>CapabilityStatement Argonaut Clinical Notes Client</b></li></pre>
+
+
+
+p = CapabilityStatement-argonaut-clinical-notes-client.ttl.html{"title"=&gt;"CapabilityStatement Argonaut Clinical Notes Client - TTL Representation", "label"=&gt;"6.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="capstatements.html"><b>Capability Statements</b></a></li><li><b>CapabilityStatement Argonaut Clinical Notes Client</b></li>"}
+<br/>
+
+pagepath = CapabilityStatement-argonaut-clinical-notes-client.ttl.html
+<br/>
+p.title = CapabilityStatement Argonaut Clinical Notes Client - TTL Representation
+<br/>
+p.label = 7.2
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="capstatements.html"><b>Capability Statements</b></a></li><li><b>CapabilityStatement Argonaut Clinical Notes Client</b></li></pre>
+
+
+
+p = CapabilityStatement-argonaut-clinical-notes-client-definitions.html{"title"=&gt;"CapabilityStatement Argonaut Clinical Notes Client - Definitions", "label"=&gt;"6.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="capstatements.html"><b>Capability Statements</b></a></li><li><b>CapabilityStatement Argonaut Clinical Notes Client</b></li>"}
+<br/>
+
+pagepath = CapabilityStatement-argonaut-clinical-notes-client-definitions.html
+<br/>
+p.title = CapabilityStatement Argonaut Clinical Notes Client - Definitions
+<br/>
+p.label = 7.2
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="capstatements.html"><b>Capability Statements</b></a></li><li><b>CapabilityStatement Argonaut Clinical Notes Client</b></li></pre>
+
+
+
+p = CapabilityStatement-argonaut-clinical-notes-client-mappings.html{"title"=&gt;"CapabilityStatement Argonaut Clinical Notes Client - mappings", "label"=&gt;"6.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="capstatements.html"><b>Capability Statements</b></a></li><li><b>CapabilityStatement Argonaut Clinical Notes Client</b></li>"}
+<br/>
+
+pagepath = CapabilityStatement-argonaut-clinical-notes-client-mappings.html
+<br/>
+p.title = CapabilityStatement Argonaut Clinical Notes Client - mappings
+<br/>
+p.label = 7.2
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="capstatements.html"><b>Capability Statements</b></a></li><li><b>CapabilityStatement Argonaut Clinical Notes Client</b></li></pre>
+
+
+
+p = security.html{"title"=&gt;"Security", "label"=&gt;"7", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><b>Security</b></li>"}
+<br/>
+
+pagepath = security.html
+<br/>
+p.title = Security
+<br/>
+p.label = 8
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><b>Security</b></li></pre>
+
+
+
+p = downloads.html{"title"=&gt;"Downloads", "label"=&gt;"8", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><b>Downloads</b></li>"}
+<br/>
+
+pagepath = downloads.html
+<br/>
+p.title = Downloads
+<br/>
+p.label = 9
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><b>Downloads</b></li></pre>
+
+
+
+p = all-examples.html{"title"=&gt;"All Examples", "label"=&gt;"9", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><b>All Examples</b></li>"}
+<br/>
+
+pagepath = all-examples.html
+<br/>
+p.title = All Examples
+<br/>
+p.label = 10
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><b>All Examples</b></li></pre>
+
+
+
+p = toc.html{"title"=&gt;"Table of Contents", "label"=&gt;"10", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><b>Table of Contents</b></li>"}
+<br/>
+
+pagepath = toc.html
+<br/>
+p.title = Table of Contents
+<br/>
+p.label = 11
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><b>Table of Contents</b></li></pre>
+
+
+
+
+
+site.historypath = history.html
+<br/>
+
+
+
+
+
+0,
+
+
+<em>title</em> = Capabilitystatement Argonaut Clinical Notes Client 
+<em>path</em> = CapabilityStatement-argonaut-clinical-notes-client.html,
+<em>url</em> = /CapabilityStatement-argonaut-clinical-notes-client.html,
+<em>link</em> = <a href="null">Capabilitystatement Argonaut Clinical Notes Client </a>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1,
+
+
+<em>title</em> = Capabilitystatement Argonaut Clinical Notes Server 
+<em>path</em> = CapabilityStatement-argonaut-clinical-notes-server.html,
+<em>url</em> = /CapabilityStatement-argonaut-clinical-notes-server.html,
+<em>link</em> = <a href="null">Capabilitystatement Argonaut Clinical Notes Server </a>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2,
+
+
+<em>title</em> = Codesystem Documentreference Category 
+<em>path</em> = CodeSystem-documentreference-category.html,
+<em>url</em> = /CodeSystem-documentreference-category.html,
+<em>link</em> = <a href="null">Codesystem Documentreference Category </a>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3,
+
+
+<em>title</em> = Encounter Example 1 
+<em>path</em> = Encounter-example-1.html,
+<em>url</em> = /Encounter-example-1.html,
+<em>link</em> = <a href="null">Encounter Example 1 </a>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4,
+
+
+<em>title</em> = Implementationguide Ig 
+<em>path</em> = ImplementationGuide-ig.html,
+<em>url</em> = /ImplementationGuide-ig.html,
+<em>link</em> = <a href="null">Implementationguide Ig </a>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5,
+
+
+<em>title</em> = Structuredefinition Argo Clinicalnotes 
+<em>path</em> = StructureDefinition-argo-clinicalnotes.html,
+<em>url</em> = /StructureDefinition-argo-clinicalnotes.html,
+<em>link</em> = <a href="null">Structuredefinition Argo Clinicalnotes </a>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6,
+
+
+<em>title</em> = Structuredefinition Argo Diagnosticreport 
+<em>path</em> = StructureDefinition-argo-diagnosticreport.html,
+<em>url</em> = /StructureDefinition-argo-diagnosticreport.html,
+<em>link</em> = <a href="null">Structuredefinition Argo Diagnosticreport </a>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7,
+
+
+<em>title</em> = Valueset Argonaut Clinical Note Type 
+<em>path</em> = ValueSet-argonaut-clinical-note-type.html,
+<em>url</em> = /ValueSet-argonaut-clinical-note-type.html,
+<em>link</em> = <a href="null">Valueset Argonaut Clinical Note Type </a>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8,
+
+
+<em>title</em> = Valueset Diagnosticreport Category 
+<em>path</em> = ValueSet-diagnosticreport-category.html,
+<em>url</em> = /ValueSet-diagnosticreport-category.html,
+<em>link</em> = <a href="null">Valueset Diagnosticreport Category </a>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9,
+
+
+<em>title</em> = Valueset Documentreference Category 
+<em>path</em> = ValueSet-documentreference-category.html,
+<em>url</em> = /ValueSet-documentreference-category.html,
+<em>link</em> = <a href="null">Valueset Documentreference Category </a>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10,
+
+
+<em>title</em> = All Examples 
+<em>path</em> = all-examples.md,
+<em>url</em> = /all-examples.html,
+<em>link</em> = <a href="null">All Examples </a>
+<br/>
+
+
+
+
+
+
+
+
+
+
+11,
+
+
+<em>title</em> = Capstatements 
+<em>path</em> = capstatements.md,
+<em>url</em> = /capstatements.html,
+<em>link</em> = <a href="null">Capstatements </a>
+<br/>
+
+
+
+
+
+
+
+
+
+
+12,
+
+
+<em>title</em> = Downloads 
+<em>path</em> = downloads.md,
+<em>url</em> = /downloads.html,
+<em>link</em> = <a href="null">Downloads </a>
+<br/>
+
+
+
+
+
+
+
+
+
+
+13,
+
+
+<em>title</em> = Guidance 
+<em>path</em> = guidance.md,
+<em>url</em> = /guidance.html,
+<em>link</em> = <a href="null">Guidance </a>
+<br/>
+
+
+
+
+
+
+
+
+
+
+14,
+
+
+<em>title</em> = History 
+<em>path</em> = history.md,
+<em>url</em> = /history.html,
+<em>link</em> = <a href="null">History </a>
+<br/>
+
+
+
+
+
+
+
+
+
+
+15,
+
+
+<em>title</em> = Html_pages 
+<em>path</em> = html_pages.html,
+<em>url</em> = /html_pages.html,
+<em>link</em> = <a href="null">Html_pages </a>
+<br/>
+
+
+
+
+
+
+
+
+
+
+16,
+
+
+<em>title</em> = Index 
+<em>path</em> = index.md,
+<em>url</em> = /,
+<em>link</em> = <a href="null">Index </a>
+<br/>
+
+
+
+
+
+
+
+
+
+
+17,
+
+
+<em>title</em> = Profiles 
+<em>path</em> = profiles.md,
+<em>url</em> = /profiles.html,
+<em>link</em> = <a href="null">Profiles </a>
+<br/>
+
+
+
+
+
+
+
+
+
+
+18,
+
+
+<em>title</em> = Structuremaps 
+<em>path</em> = structuremaps.md,
+<em>url</em> = /structuremaps.html,
+<em>link</em> = <a href="null">Structuremaps </a>
+<br/>
+
+
+
+
+
+
+
+
+
+
+19,
+
+
+<em>title</em> = Terminology 
+<em>path</em> = terminology.md,
+<em>url</em> = /terminology.html,
+<em>link</em> = <a href="null">Terminology </a>
+<br/>
+
+
+
+
+
+
+
+
+
+
+20,
+
+
+<em>title</em> = Toc 
+<em>path</em> = toc.md,
+<em>url</em> = /toc.html,
+<em>link</em> = <a href="null">Toc </a>
+<br/>
+
+
+
+
+
+
+
+
+
+
+21,
+
+
+<em>title</em> = Todo 
+<em>path</em> = todo.md,
+<em>url</em> = /todo.html,
+<em>link</em> = <a href="null">Todo </a>
+<br/>
+
+
+
+
+
+
+
+
+<br/><br/>
+<hr/>
+
+<h3>R3 IG pages</h3>
+
+
+
+
+
+
+
+&lt;page&gt;&lt;source
+value="CapabilityStatement-argonaut-clinical-notes-client.html"/&gt;&lt;title
+value="Capabilitystatement Argonaut Clinical Notes Client "/&gt;&lt;kind
+
+
+
+
+
+
+
+value="resource"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;source
+value="CapabilityStatement-argonaut-clinical-notes-server.html"/&gt;&lt;title
+value="Capabilitystatement Argonaut Clinical Notes Server "/&gt;&lt;kind
+
+
+
+
+
+
+
+value="resource"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;source
+value="CodeSystem-documentreference-category.html"/&gt;&lt;title
+value="Codesystem Documentreference Category "/&gt;&lt;kind
+
+
+
+
+
+
+
+value="resource"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;source
+value="Encounter-example-1.html"/&gt;&lt;title
+value="Encounter Example 1 "/&gt;&lt;kind
+
+
+
+
+
+
+
+value="example"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;source
+value="ImplementationGuide-ig.html"/&gt;&lt;title
+value="Implementationguide Ig "/&gt;&lt;kind
+
+
+
+
+
+
+
+value="resource"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;source
+value="StructureDefinition-argo-clinicalnotes.html"/&gt;&lt;title
+value="Structuredefinition Argo Clinicalnotes "/&gt;&lt;kind
+
+
+
+
+
+
+
+value="resource"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;source
+value="StructureDefinition-argo-diagnosticreport.html"/&gt;&lt;title
+value="Structuredefinition Argo Diagnosticreport "/&gt;&lt;kind
+
+
+
+
+
+
+
+value="resource"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;source
+value="ValueSet-argonaut-clinical-note-type.html"/&gt;&lt;title
+value="Valueset Argonaut Clinical Note Type "/&gt;&lt;kind
+
+
+
+
+
+
+
+value="resource"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;source
+value="ValueSet-diagnosticreport-category.html"/&gt;&lt;title
+value="Valueset Diagnosticreport Category "/&gt;&lt;kind
+
+
+
+
+
+
+
+value="resource"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;source
+value="ValueSet-documentreference-category.html"/&gt;&lt;title
+value="Valueset Documentreference Category "/&gt;&lt;kind
+
+
+
+
+
+
+
+value="resource"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;source
+value="all-examples.html"/&gt;&lt;title
+value="All Examples "/&gt;&lt;kind
+
+
+
+
+
+
+
+value="page"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;source
+value="capstatements.html"/&gt;&lt;title
+value="Capstatements "/&gt;&lt;kind
+
+
+
+
+
+
+
+value="page"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;source
+value="downloads.html"/&gt;&lt;title
+value="Downloads "/&gt;&lt;kind
+
+
+
+
+
+
+
+value="page"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;source
+value="guidance.html"/&gt;&lt;title
+value="Guidance "/&gt;&lt;kind
+
+
+
+
+
+
+
+value="page"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;source
+value="history.html"/&gt;&lt;title
+value="History "/&gt;&lt;kind
+
+
+
+
+
+
+
+value="page"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;source
+value="html_pages.html"/&gt;&lt;title
+value="Html_pages "/&gt;&lt;kind
+
+
+
+
+
+
+
+value="page"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;source
+value="index.html"/&gt;&lt;title
+value="Index "/&gt;&lt;kind
+
+
+
+
+
+
+
+value="page"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;source
+value="profiles.html"/&gt;&lt;title
+value="Profiles "/&gt;&lt;kind
+
+
+
+
+
+
+
+value="page"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;source
+value="structuremaps.html"/&gt;&lt;title
+value="Structuremaps "/&gt;&lt;kind
+
+
+
+
+
+
+
+value="page"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;source
+value="terminology.html"/&gt;&lt;title
+value="Terminology "/&gt;&lt;kind
+
+
+
+
+
+
+
+value="page"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;source
+value="toc.html"/&gt;&lt;title
+value="Toc "/&gt;&lt;kind
+
+
+
+
+
+
+
+value="page"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;source
+value="todo.html"/&gt;&lt;title
+value="Todo "/&gt;&lt;kind
+
+
+
+
+
+
+
+value="page"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+<br/><br/>
+<hr/>
+
+<h3>R4 IG pages</h3>
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;nameUrl
+value="CapabilityStatement-argonaut-clinical-notes-client.html"/&gt;&lt;title
+value="Capabilitystatement Argonaut Clinical Notes Client "/&gt;&lt;generation
+
+
+
+
+value="generated"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;nameUrl
+value="CapabilityStatement-argonaut-clinical-notes-server.html"/&gt;&lt;title
+value="Capabilitystatement Argonaut Clinical Notes Server "/&gt;&lt;generation
+
+
+
+
+value="generated"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;nameUrl
+value="CodeSystem-documentreference-category.html"/&gt;&lt;title
+value="Codesystem Documentreference Category "/&gt;&lt;generation
+
+
+
+
+value="generated"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;nameUrl
+value="Encounter-example-1.html"/&gt;&lt;title
+value="Encounter Example 1 "/&gt;&lt;generation
+
+
+
+
+value="generated"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;nameUrl
+value="ImplementationGuide-ig.html"/&gt;&lt;title
+value="Implementationguide Ig "/&gt;&lt;generation
+
+
+
+
+value="generated"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;nameUrl
+value="StructureDefinition-argo-clinicalnotes.html"/&gt;&lt;title
+value="Structuredefinition Argo Clinicalnotes "/&gt;&lt;generation
+
+
+
+
+value="generated"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;nameUrl
+value="StructureDefinition-argo-diagnosticreport.html"/&gt;&lt;title
+value="Structuredefinition Argo Diagnosticreport "/&gt;&lt;generation
+
+
+
+
+value="generated"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;nameUrl
+value="ValueSet-argonaut-clinical-note-type.html"/&gt;&lt;title
+value="Valueset Argonaut Clinical Note Type "/&gt;&lt;generation
+
+
+
+
+value="generated"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;nameUrl
+value="ValueSet-diagnosticreport-category.html"/&gt;&lt;title
+value="Valueset Diagnosticreport Category "/&gt;&lt;generation
+
+
+
+
+value="generated"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;nameUrl
+value="ValueSet-documentreference-category.html"/&gt;&lt;title
+value="Valueset Documentreference Category "/&gt;&lt;generation
+
+
+
+
+value="generated"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;nameUrl
+value="all-examples.html"/&gt;&lt;title
+value="All Examples "/&gt;&lt;generation
+
+
+
+
+value="markdown"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;nameUrl
+value="capstatements.html"/&gt;&lt;title
+value="Capstatements "/&gt;&lt;generation
+
+
+
+
+value="markdown"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;nameUrl
+value="downloads.html"/&gt;&lt;title
+value="Downloads "/&gt;&lt;generation
+
+
+
+
+value="markdown"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;nameUrl
+value="guidance.html"/&gt;&lt;title
+value="Guidance "/&gt;&lt;generation
+
+
+
+
+value="markdown"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;nameUrl
+value="history.html"/&gt;&lt;title
+value="History "/&gt;&lt;generation
+
+
+
+
+value="markdown"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;nameUrl
+value="html_pages.html"/&gt;&lt;title
+value="Html_pages "/&gt;&lt;generation
+
+
+
+
+value="markdown"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;nameUrl
+value="index.html"/&gt;&lt;title
+value="Index "/&gt;&lt;generation
+
+
+
+
+value="markdown"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;nameUrl
+value="profiles.html"/&gt;&lt;title
+value="Profiles "/&gt;&lt;generation
+
+
+
+
+value="markdown"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;nameUrl
+value="structuremaps.html"/&gt;&lt;title
+value="Structuremaps "/&gt;&lt;generation
+
+
+
+
+value="markdown"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;nameUrl
+value="terminology.html"/&gt;&lt;title
+value="Terminology "/&gt;&lt;generation
+
+
+
+
+value="markdown"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;nameUrl
+value="toc.html"/&gt;&lt;title
+value="Toc "/&gt;&lt;generation
+
+
+
+
+value="markdown"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;nameUrl
+value="todo.html"/&gt;&lt;title
+value="Todo "/&gt;&lt;generation
+
+
+
+
+value="markdown"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+    <!-- ==============END CONTENT END CONTENT=================== -->
+
+</div>    <!-- col -->
+</div>    <!-- /inner-wrapper -->
+</div>    <!-- /row -->
+</div>    <!-- /container -->
+</div>    <!-- /page content -->
+</div>    <!-- /page content wrapper -->
+
+
+    
+
+
+        <!-- /inner-wrapper -->
+                <!-- /row -->
+            <!-- /container -->
+
+        <!-- /segment-content -->
+
+  <!-- back to top arrow -->
+
+
+  <!-- end back to top arrow -->
+
+<div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+  <div class="container">    <!-- container -->
+   <div class="inner-wrapper">
+    <p>
+      Argonaut Clinical Notes Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/index.html">FHIR Version: 3.0.1</a> generated on Fri, Nov 9, 2018 17:36-0800.
+      | <a style="color: #81BEF7" href="history.html">History</a>
+      | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
+        <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/STU3/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>
+        
+        </p>
+   </div>    <!-- /inner-wrapper -->
+  </div>    <!-- /container -->
+ </div>    <!-- /segment-footer -->
+    <!-- disqus thread -->
+    <!-- disqus -->
+    <!-- end disqus -->
+
+ <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+  <div class="container">    <!-- container -->
+  </div>    <!-- /container -->
+ </div>    <!-- /segment-post-footer -->
+
+   <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./assets/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+<script src="./assets/js/anchor.min.js"> </script>
+<script src="./assets/js/fhir.js"> </script>
+
+
+
+
+
+
+  <!-- Analytics Below
+================================================== -->
+
+  <!-- add anchors before the closing body tag. -->
+<script> anchors.add()</script>
+
+
+
+</body>
+
+
+</head></html>

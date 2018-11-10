@@ -1,81 +1,95 @@
-<?xml version="1.0" encoding="UTF-8"?><!--Hidden IG for de facto IG publishing-->
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Hidden IG for de facto IG publishing-->
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-    <id value="ig"/>
-    <url value="http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig"/>
-    <name value="Argonaut Clinical Notes"/>
-    <status value="draft"/>
-    <experimental value="true"/>
-    <publisher value="Argonaut Project"/>
-    <package>
-        <name value="base"/>
-        <resource>
-            <example value="false"/>
-            <sourceReference>
-                <reference value="ValueSet/argonaut-clinical-note-type"/>
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false"/>
-            <sourceReference>
-                <reference value="ValueSet/documentreference-category"/>
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false"/>
-            <sourceReference>
-                <reference value="ValueSet/diagnosticreport-category"/>
-            </sourceReference>
-        </resource><resource>
-            <example value="false"/>
-            <sourceReference>
-                <reference value="StructureDefinition/cn-plus-uscore"/>
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false"/>
-            <sourceReference>
-                <reference value="StructureDefinition/example-dr"/>
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false"/>
-            <sourceReference>
-                <reference value="StructureDefinition/argo-clinicalnotes"/>
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false"/>
-            <sourceReference>
-                <reference value="StructureDefinition/argo-diagnosticreport"/>
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false"/>
-            <sourceReference>
-                <reference value="CodeSystem/documentreference-category"/>
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false"/>
-            <sourceReference>
-                <reference value="CapabilityStatement/server"/>
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false"/>
-            <sourceReference>
-                <reference value="CapabilityStatement/client"/>
-            </sourceReference>
-        </resource>
-    </package>
-    <page>
-        <source value="index.md"/>
-        <title value="Argonaut Clinical Notes Homepage"/>
-        <kind value="page"/>
-        <page>
-            <source value="_includes/toc.md"/>
-            <title value="Argonaut Clinical Notes Table of Contents"/>
-            <kind value="page"/>
-        </page>
+  <id value="ig"/>
+  <url value="http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig"/>
+  <name value="Argonaut Clinical Notes"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <publisher value="Argonaut Project"/>
+  <package>
+    <name value="base"/>
+<!-- <resource>   1..* Resource in the implementation guide -->
+<!--   <example value="[boolean]"/> 1..1 If not an example, has its normal meaning -->
+<!--   <name value="[string]"/> 0..1 Human Name for the resource -->
+<!--   <description value="[string]"/> 0..1 Reason why included in guide -->
+<!--   <acronym value="[string]"/> 0..1 Short code to identify the resource -->
+<!--   <source[x]>1..1 uri|Reference(Any) Location of the resource </source[x]> -->
+<!--    <exampleFor> 0..1 Reference(StructureDefinition) Resource this is an example of (if applicable) </exampleFor> -->
+<!-- </resource> -->
+    <!-- insert resources --><resource><example value="true"/><sourceReference><reference value="Encounter/example-1"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="ValueSet/documentreference-category"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="ValueSet/diagnosticreport-category"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="ValueSet/argonaut-clinical-note-type"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="StructureDefinition/argo-diagnosticreport"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="StructureDefinition/argo-clinicalnotes"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="CodeSystem/documentreference-category"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="CapabilityStatement/argonaut-clinical-notes-server"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="CapabilityStatement/argonaut-clinical-notes-client"/></sourceReference></resource>
+  </package>
+  <!-- ============ Home Page =============== -->
+<page><source value="index.html"/><title value="Home"/><kind value="page"/>
+
+  <!-- ============ Guidance Page =============== -->
+  <page><source value="guidance.html"/><title value="General Guidance"/><kind value="page"/></page>
+
+  <!-- ============ Profiles Page =============== -->
+  <page><source value="profiles.html"/><title value="Profiles and Extensions"/><kind value="page"/>
+
+     <!-- ============ Profiles and examples=============== -->
+     <!-- insert profiles --><page><source value="StructureDefinition-argo-diagnosticreport.html"/><title value="StructureDefinition Argo DiagnosticReport"/><kind value="resource"/></page><page><source value="StructureDefinition-argo-clinicalnotes.html"/><title value="StructureDefinition Argo Clinicalnotes"/><kind value="resource"/></page>
+    <!-- ============ End Profiles and examples=============== -->
+
+    <!-- ============ Extensions and examples =============== -->
+    <!-- insert extensions -->
+    <!-- ============ End Extensions and examples =============== -->
+
     </page>
+  <!-- ============ Operations Page =============== -->
+  <page><source value="operations.html"/><title value="Operations"/><kind value="page"/>
+
+    <!-- ============ Operations and examples  =============== -->
+    <!-- insert operationdefinitions -->
+    <!-- ============ End Operations and examples  =============== -->
+
+  </page>
+  <!-- ============ Terminology Page =============== -->
+
+  <page><source value="terminology.html"/><title value="Terminology"/><kind value="page"/>
+     <!-- ============ ValueSet   =============== -->
+    <!-- insert valuesets --><page><source value="ValueSet-documentreference-category.html"/><title value="ValueSet DocumentReference Category"/><kind value="resource"/></page><page><source value="ValueSet-diagnosticreport-category.html"/><title value="ValueSet DiagnosticReport Category"/><kind value="resource"/></page><page><source value="ValueSet-argonaut-clinical-note-type.html"/><title value="ValueSet Argonaut Clinical Note Type"/><kind value="resource"/></page>
+    <!-- ============ End ValueSet   =============== -->
+
+    <!-- ============ CodeSystems  =============== -->
+    <!-- insert codesystems --><page><source value="CodeSystem-documentreference-category.html"/><title value="CodeSystem DocumentReference Category"/><kind value="resource"/></page>
+    <!-- ============ End CodeSystems  =============== -->
+
+    <!-- ============ ConceptMaps   =============== -->
+    <!-- insert conceptmaps -->
+    <!-- ============ End ConceptMaps   =============== -->
+
+  </page>
+
+  <!-- ============ SearchParameter Page =============== -->
+  <page><source value="searchparameters.html"/><title value="Search Parameters"/><kind value="page"/>
+
+  <!-- ============ SearchParameters =============== -->
+  <!-- insert searchparameters -->
+  <!-- ============ End SearchParameters  =============== -->
+  </page>
+
+  <!-- ============ CapabilityStatement Page =============== -->
+  <page><source value="capstatements.html"/><title value="Capability Statements"/><kind value="page"/>
+
+  <!-- ============ CapabilityStatements    =============== -->
+    <!-- insert capabilitystatements --><page><source value="CapabilityStatement-argonaut-clinical-notes-server.html"/><title value="CapabilityStatement Argonaut Clinical Notes Server"/><kind value="resource"/></page><page><source value="CapabilityStatement-argonaut-clinical-notes-client.html"/><title value="CapabilityStatement Argonaut Clinical Notes Client"/><kind value="resource"/></page>
+  <!-- ============ End CapabilityStatements    =============== -->
+
+  </page>
+
+  <!-- ============ Security Page =============== -->
+  <page><source value="security.html"/><title value="Security"/><kind value="page"/></page>
+
+  <!-- ============ Downloads Page =============== -->
+  <page><source value="downloads.html"/><title value="Downloads"/><kind value="page"/></page>
+
+  <!-- ============ Examples Page=============== -->
+  <page><source value="all-examples.html"/><title value="All Examples"/><kind value="page"/></page>
+
+  <!-- ============ Table of Contents =============== -->
+  <page><source value="toc.html"/><title value="Table of Contents"/><kind value="toc"/></page>
+
+</page>
 </ImplementationGuide>
