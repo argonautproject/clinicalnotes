@@ -9,7 +9,7 @@
     <valueString value="/Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/examples"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="/Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/framework"/>
+    <valueString value="/Users/ehaas/Documents/FHIR/IG-Template2/framework"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
     <valueString value="/Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/pages"/>
