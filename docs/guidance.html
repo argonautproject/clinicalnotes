@@ -84,7 +84,7 @@
       <!-- container -->
       <!-- HEADER CONTENT -->
     <nav class="navbar navbar-inverse">
-      <div class="container"><a name="0aef1807-d772-4c0c-9249-5d07d880a2af">​</a>
+      <div class="container"><a name="ee5b2c18-be6c-4835-a539-a9fe3f622e95">​</a>
         <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
           <span class="icon-bar">
           </span>
@@ -255,7 +255,7 @@ This is the
 
 <h3 id="clinical-notes">Clinical Notes</h3>
 
-<p>Clinical notes are key component to communicate the current status of a patient.  In the context of this implementation guide, the term “clinical notes” refers to the wide variety of documents generated on behalf of a patient in many care activities. They include notes support transitions of care, care planning, quality reporting, billing and even handwritten notes by a providers.  This implementation guide does not define new note types or set content requirements per note type. Instead, this implementation guide focuses on the exchange of clinical notes between systems.</p>
+<p>Clinical notes are a key component to communicate the current status of a patient. In the context of this implementation guide, the term “clinical notes” refers to the wide variety of documents generated on behalf of a patient in many care activities. They include notes to support transitions of care, care planning, quality reporting, billing and even handwritten notes by a providers. This implementation guide does not define new note types or set content requirements per note type. Instead, this implementation guide focuses on exposing clinical notes stored in existing systems.</p>
 
 <p>Specifically, this implementation guide defines the exchange of the following five “Common Clinical Notes”.</p>
 
@@ -267,7 +267,7 @@ This is the
   <li><a href="https://s.details.loinc.org/LOINC/11506-3.html?sections=Comprehensive&quot;">Progress Note (11506-3)</a></li>
 </ul>
 
-<p>The Argonaut project team developed this initial list after surveying the participants in Argonaut and the US Veterans Administration (VA).  They represent the <em>minimum</em> set a system must support to claim conformance to this guide. In addition, systems are encouraged to support other common notes types such as:</p>
+<p>The Argonaut project team developed this initial list after surveying the participants in Argonaut and the US Veterans Administration (VA). They represent the <em>minimum</em> set a system must support to claim conformance to this guide. In addition, systems are encouraged to support other common notes types such as:</p>
 
 <p><em>TODO - link these to LOINC too</em></p>
 <ul>
@@ -281,13 +281,13 @@ This is the
 
 <h3 id="fhir-resources-to-exchange-clinical-notes">FHIR Resources to Exchange Clinical Notes</h3>
 
-<p>Both <a href="http://hl7.org/fhir/STU3/documentreference.html">DocumentReference</a> and <a href="http://hl7.org/fhir/STU3/diagnosticreport.html">DiagnosticReport</a> resources have been <a href="http://hl7.org/fhir/STU3/profiling.html">profiled</a> to support the exchange of clinical notes. (See this <a href="#justification-for-resources-choices">section</a> for a full discussion on the decision to use these resources.)</p>
+<p>Both <a href="http://hl7.org/fhir/STU3/documentreference.html">DocumentReference</a> and <a href="http://hl7.org/fhir/STU3/diagnosticreport.html">DiagnosticReport</a> resources have been <a href="http://hl7.org/fhir/STU3/profiling.html">profiled</a> to support the exchange of clinical notes. (See  <a href="#resource-selection">Resource Selection</a> for a full discussion on the decision to use these resources.)</p>
 
 <p>DocumentReference is the best choice when the narrative is broader then a specific order or report, such as a Progress Note or Discharge Summary Note. The DocumentReference Resource can point to a short 2-3 sentence status of the patient, or reference a complex CDA or Composition document which can include <em>both</em> a narrative and a discrete information.</p>
 
 <p>DiagnosticReport is the best choice when a system needs to share discrete information or coded interpretations. The <code class="highlighter-rouge">DiagnosticReport.result</code> element supports the discrete information and the entire narrative report can be represented by the <code class="highlighter-rouge">DiagnosticReport.presentedForm</code> element.</p>
 
-<p>Because of the overlapping scope of the underlying resources and variability in system implementation, there is no single best practice for representing a scanned, or narrative-only report. Reports may be represented by either a DocumentReference or a DiagnosticReport as demonstrated by the green area in Figure 1. For example, some systems consider any scanned report, or note, a DocumentReference. Other systems allow users to categorize the scanned report as Lab and store to DiagnosticReport.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
+<p>There is no single best practice for representing a scanned, or narrative-only report due to the overlapping scope of the underlying resources and variability in system implementation. Reports may be represented by either a DocumentReference or a DiagnosticReport as demonstrated by the green area in Figure 1. For example, some systems consider any scanned report, or note, a DocumentReference. Other systems allow users to categorize the scanned report as Lab and store to DiagnosticReport.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
 
   <!-- all this Bootstrap html for getting an image to fit nicely in text - 640 pix wide -->
 
@@ -324,13 +324,13 @@ This is the
 <p></p>
 </div>
 
-<p>Note that not all scanned information stored through DocumentReference will be exposed through DiagnosticReport since DocumentReference stores other non-clinical information (for example, an insurance card).</p>
+<p>Note that not all scanned information stored through DocumentReference will be exposed through DiagnosticReport since DocumentReference stores other non-clinical information. For example, DocumentReference can point to an insurance card.</p>
 
 <h4 id="support-requirements">Support Requirements</h4>
 
-<p>This guide requires systems to implement the Argonaut Clinical Notes DocumentReference profile and to support a <em>minimum</em> of all five Common Clinical Notes listed above.  Systems and may extend there capabilities to other <a href="http://hl7.org/fhir/STU3/valueset-c80-doc-classcodes.html">Document types</a> as well.</p>
+<p>This guide requires systems implement the Argonaut Clinical Notes DocumentReference profile and to support a <em>minimum</em> of all five Common Clinical Notes listed above. Systems and may extend there capabilities to other <a href="http://hl7.org/fhir/STU3/valueset-c80-doc-classcodes.html">Document types</a> as well.</p>
 
-<p>This guide requires systems to implement the Argonaut Clinical Notes DiagnosticReport profile and to support a <em>minimum</em> of the three report categories:</p>
+<p>This guide requires systems implement the Argonaut Clinical Notes DiagnosticReport profile and to support a <em>minimum</em> of the three report categories:</p>
 
 <ul>
   <li>Cardiology (LP29684-5)</li>
@@ -340,13 +340,13 @@ This is the
 
 <p>Other categories may be supported as well.</p>
 
-<p><a name="25ae2a4a-9630-4147-b64c-64d00988518e">​</a>A method for discovery of the types of notes and reports that a server supports is described in the <a href="#determining-server-note-and-report-type-support-expand">section below</a>.</p>
+<p><a name="6f6ce3f8-fa64-44e1-8a18-b32e91d873b9">​</a>A method for discovery of the types of notes and reports that a server supports is described in the <a href="#determining-server-note-and-report-type-support-expand">section below</a>.</p>
 
-<p>Note that this guide focuses on exposing existing information, and not how systems allow their users to capture information.  The contents of the notes or reports, even using standard LOINC concepts, may vary widely by health system or even location. For example, CT Spleen WO contrast (LOINC 30621-7) may include individual sections for history, impressions, conclusions, or just an impressions section. Discharge Summaries may have different facility or regulatory content requirements.</p>
+<p>Note that this guide focuses on exposing existing information, and not how systems allow their users to capture information. The contents of the notes or reports, even using standard LOINC concepts, may vary widely by health system or even location. For example, CT Spleen WO contrast (LOINC 30621-7) may include individual sections for history, impressions, conclusions, or just an impressions section. Discharge Summaries may have different facility or regulatory content requirements.</p>
 
 <h4 id="search">Search</h4>
 
-<p>To retrieve clinical notes and reports, the standard FHIR <a href="http://hl7.org/fhir/search.html">search</a> API is used.  In this guide, the Argonaut Clinical Notes Server <a href="http://hl7.org/fhir/STU3/capabilitystatement.html">CapabilityStatement</a> and the <em>Quick Start</em> sections for the Argonaut Clinical Notes and Diagnostic Report profiles define the required search parameters and describe how they are used.</p>
+<p>To retrieve clinical notes and reports, the standard FHIR <a href="http://hl7.org/fhir/search.html">search</a> API is used. In this guide, the Argonaut Clinical Notes Server <a href="http://hl7.org/fhir/STU3/capabilitystatement.html">CapabilityStatement</a> and the <em>Quick Start</em> sections for the Argonaut Clinical Notes and Diagnostic Report profiles define the required search parameters and describe how they are used.</p>
 
 <p>Common client search scenarios include:</p>
 
@@ -370,9 +370,9 @@ This is the
 
 <p><br/></p>
 
-<h3 id="determining-server-capabilities-using-the-value-set-expansion-operation-expand">Determining Server Capabilities Using The Value Set Expansion Operation ($expand)</h3>
+<h3 id="determining-server-note-type-support-using-the-value-set-expansion-operation-expand">Determining Server Note Type Support Using The Value Set Expansion Operation ($expand)</h3>
 
-<p><a name="dc209e2b-a0d5-47f8-b63e-f15b479468bc">​</a>In addition to inspecting a server CapabilityStatement, a client can determine the note and report types support by a server by invoking the standard FHIR Value Set Expansion (<a href="(http://build.fhir.org/valueset-operation-expand.html)  An operation used to create a simple collection of codes suitable for use for data entry or validation&quot;">$expand</a>) operation defined in the <strong>FHIR R4 specification</strong>.  Because servers may support different read and write formats, it also is used to determine the formats (for example, text, pdf) the server supports read and write transactions.  A FHIR server claiming support to this guide <strong>SHOULD</strong> support the $expand operation.</p>
+<p><a name="8df109b0-d5a5-42e4-b076-326f041ce8b6">​</a>In addition to inspecting a server CapabilityStatement, a client can determine the note and report types support by a server by invoking the standard FHIR Value Set Expansion (<a href="(http://build.fhir.org/valueset-operation-expand.html)  An operation used to create a simple collection of codes suitable for use for data entry or validation&quot;">$expand</a>) operation defined in the <strong>FHIR R4 specification</strong>. Because servers may support different read and write formats, it also is used to determine the formats (for example, text, pdf) the server supports read and write transactions. A FHIR server claiming support to this guide <strong>SHOULD</strong> support the $expand operation.</p>
 
 <h4 id="discovering-note-and-report-types">Discovering Note and Report Types</h4>
 
@@ -522,7 +522,7 @@ This is the
 
 <p>A client is only interested in retrieving notes by class (Note, DocumentReference.class is updated to DocumentReference.category in FHIR R4).  The server responds with the single category of ‘Clinical Notes’:</p>
 
-<p><strong>3 Request for DocumentReference note categories</strong></p>
+<p><strong>Request for DocumentReference note categories</strong></p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/ValueSet/$expand?context=DocumentReference.class&amp;contextDirection=outgoing
 </code></pre></div></div>
@@ -627,7 +627,7 @@ This is the
 </code></pre></div></div>
 <p><br/></p>
 
-<h4 id="discovering-server-readwrite-formats">Discovering Server Read/Write Formats</h4>
+<h4 id="discovering-server-read-and-write-formats">Discovering Server Read and Write Formats</h4>
 
 <p>The read and write formats for a particular server are discovered by invoking the #expand operation as follows:</p>
 
@@ -829,9 +829,9 @@ This is the
 }
 </code></pre></div></div>
 
-<h3 id="justification-for-resources-choices">Justification for Resources Choices</h3>
+<h3 id="resource-selection">Resource Selection</h3>
 
-<p><a name="b3567e33-f582-4d63-b1cf-adb7444b5d3c">​</a>When reviewing the minimal number of elements required for each Resource, The <a href="http://hl7.org/fhir/STU3/">FHIR Version 3.0.1</a> specification includes several appropriate places to include clinical notes such as Composition, ClinicalImpression, DocumentReference, DiagnosticReport, etc.  The developers of this guide also considered creating a new ClinicalNotes resource. To differentiate which resource was most appropriate these characteristics were considered:</p>
+<p><a name="16d79027-c518-4360-b1a3-c6360290ac82">​</a>When reviewing the minimal number of elements required for each Resource, the <a href="http://hl7.org/fhir/STU3/">FHIR Version 3.0.1</a> specification includes several appropriate places to include clinical notes such as Composition, ClinicalImpression, DocumentReference, DiagnosticReport, etc.  The developers of this guide also considered creating a new ClinicalNotes resource. To differentiate which resource was most appropriate these characteristics were considered:</p>
 
 <ul>
   <li>Discrete result information</li>
@@ -839,7 +839,7 @@ This is the
   <li>Consistent Client access to scanned, or narrative-only, reports</li>
 </ul>
 
-<p><a name="30ed3ea4-f31d-4c5c-aef6-de5cfdc9c343">​</a>While several resources work well for a specific use case, they don’t solve the question “find all Clinical Notes for a patient?” expecially when considering the variability of Note formats. For example systems use text, XHTML, PDF, CDA to capture clinical notes. Thes considerations led the designers to select the <a href="guidance.html#documentreference-vs-diagnosticreport">DocumentReference and DiagnosticReport</a> as an index mechanisms to the underlying content. In other words, a client can query one of these resources and it will return a pointer to specific resource or the underlying binary content.</p>
+<p><a name="50021708-588b-4e51-b5ab-c2f07a388899">​</a>While several resources work well for a specific use case, they don’t solve the question “find all Clinical Notes for a patient?” expecially when considering the variability of Note formats. For example systems use text, XHTML, PDF, CDA to capture clinical notes. This variability led the designers to select the <a href="guidance.html#documentreference-vs-diagnosticreport">DocumentReference and DiagnosticReport</a> as an index mechanisms to the underlying content. In other words, a client can query one of these resources and it will return a pointer to specific resource or the underlying binary content.</p>
 
 <p>For example, consider the following situation for a Discharge Summary Note:</p>
 
@@ -873,6 +873,7 @@ This is the
 <p>Expand the number of notes systems must support.</p>
 
 <hr/>
+<p>footnotes:</p>
 
 <div class="footnotes">
   <ol>
@@ -916,7 +917,7 @@ This is the
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
     <p>
-      Argonaut Clinical Notes Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/index.html">FHIR Version: 3.0.1</a> generated on Mon, Nov 12, 2018 21:15-0800.
+      Argonaut Clinical Notes Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/index.html">FHIR Version: 3.0.1</a> generated on Tue, Nov 13, 2018 08:29-0800.
       | <a style="color: #81BEF7" href="history.html">History</a>
       | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
         <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/STU3/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>

@@ -609,6 +609,7 @@ However, in existing EHRs, the clinical impression is often contained with in a 
 Expand the number of notes systems must support.
 
 ---
+footnotes:
 
 [^1]: Storing scanned reports as a DiagnosticReport, with appropriate categorization, enables clients to access the scanned reports along with DiagnosticReports containing discrete information. For example, a client can request all DiagnosticReport.category="LAB" and receive reports with discrete information and any scanned reports. However, not all systems store and categorize Lab reports with DiagnosticReport.
 
