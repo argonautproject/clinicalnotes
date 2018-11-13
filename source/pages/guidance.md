@@ -148,7 +148,11 @@ Note, DocumentReference.class is updated to DocumentReference.category in FHIR R
 
 The read and write formats for a particular server are discovered by invoking the #expand operation as follows:
 
-`GET [base]/ValueSet/$expand?context=DocumentReference.content.attachment.contentType&amp;contextDirection=incoming
+`GET [base]/ValueSet/$expand?context=[context]&contextDirection=[contextDirection]`
+
+where:
+- contextDirection = 'incoming' for write operations and 'outgoing' for read operations.
+ - context = 'DocumentReference.content.attachment.contentType' for DocumentReference note content type discovery and 'DocumentReference.class' for DocumentReference note category discovery.
 
 Example 
 
