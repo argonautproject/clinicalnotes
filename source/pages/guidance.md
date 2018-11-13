@@ -14,7 +14,7 @@ topofpage: true
 
 ### Clinical Notes
 
-Clinical notes are key component to communicate the current status of a patient.  In the context of this implementation guide, the term "clinical notes" refers to the wide variety of documents generated on behalf of a patient in many care activities. They include notes support transitions of care, care planning, quality reporting, billing and even handwritten notes by a providers.  This implementation guide does not define new note types or set content requirements per note type. Instead, this implementation guide focuses on the exchange of clinical notes between systems. 
+Clinical notes are a key component to communicate the current status of a patient. In the context of this implementation guide, the term "clinical notes" refers to the wide variety of documents generated on behalf of a patient in many care activities. They include notes to support transitions of care, care planning, quality reporting, billing and even handwritten notes by a providers. This implementation guide does not define new note types or set content requirements per note type. Instead, this implementation guide focuses on exposing clinical notes stored in existing systems. 
 
 Specifically, this implementation guide defines the exchange of the following five "Common Clinical Notes".
 
@@ -24,7 +24,7 @@ Specifically, this implementation guide defines the exchange of the following fi
 * [Procedures Note (28570-0)]
 * [Progress Note (11506-3)]
 
-The Argonaut project team developed this initial list after surveying the participants in Argonaut and the US Veterans Administration (VA).  They represent the *minimum* set a system must support to claim conformance to this guide. In addition, systems are encouraged to support other common notes types such as:
+The Argonaut project team developed this initial list after surveying the participants in Argonaut and the US Veterans Administration (VA). They represent the *minimum* set a system must support to claim conformance to this guide. In addition, systems are encouraged to support other common notes types such as:
 
 *TODO - link these to LOINC too*
 * Imaging
@@ -36,13 +36,13 @@ The Argonaut project team developed this initial list after surveying the partic
 
 ### FHIR Resources to Exchange Clinical Notes
 
-Both [DocumentReference] and [DiagnosticReport] resources have been [profiled] to support the exchange of clinical notes. (See this [section](#justification-for-resources-choices) for a full discussion on the decision to use these resources.)
+Both [DocumentReference] and [DiagnosticReport] resources have been [profiled] to support the exchange of clinical notes. (See  [Resource Selection](#resource-selection) for a full discussion on the decision to use these resources.)
 
 DocumentReference is the best choice when the narrative is broader then a specific order or report, such as a Progress Note or Discharge Summary Note. The DocumentReference Resource can point to a short 2-3 sentence status of the patient, or reference a complex CDA or Composition document which can include *both* a narrative and a discrete information.
 
 DiagnosticReport is the best choice when a system needs to share discrete information or coded interpretations. The `DiagnosticReport.result` element supports the discrete information and the entire narrative report can be represented by the `DiagnosticReport.presentedForm` element.
 
-Because of the overlapping scope of the underlying resources and variability in system implementation, there is no single best practice for representing a scanned, or narrative-only report. Reports may be represented by either a DocumentReference or a DiagnosticReport as demonstrated by the green area in Figure 1. For example, some systems consider any scanned report, or note, a DocumentReference. Other systems allow users to categorize the scanned report as Lab and store to DiagnosticReport.[^1]
+There is no single best practice for representing a scanned, or narrative-only report due to the overlapping scope of the underlying resources and variability in system implementation. Reports may be represented by either a DocumentReference or a DiagnosticReport as demonstrated by the green area in Figure 1. For example, some systems consider any scanned report, or note, a DocumentReference. Other systems allow users to categorize the scanned report as Lab and store to DiagnosticReport.[^1]
 
 {% include img-portrait.html img="DiagnosticReport_DocumentReference_Resource_Overlap.png" caption="Figure 1: DiagnosticReport and DocumentReference Report Overlap" %}
 
@@ -55,13 +55,13 @@ For example, when `DiagnosticReport.presentedForm.url` references a Scan (PDF), 
 
 {% include img.html img="both-url.jpg" caption="Figure 2: Expose a PDF Report Through Both DiagnosticReport and DocumentReference" %}
 
-Note that not all scanned information stored through DocumentReference will be exposed through DiagnosticReport since DocumentReference stores other non-clinical information (for example, an insurance card).
+Note that not all scanned information stored through DocumentReference will be exposed through DiagnosticReport since DocumentReference stores other non-clinical information. For example, DocumentReference can point to an insurance card.
 
 #### Support Requirements
 
-This guide requires systems to implement the Argonaut Clinical Notes DocumentReference profile and to support a *minimum* of all five Common Clinical Notes listed above.  Systems and may extend there capabilities to other [Document types] as well.
+This guide requires systems implement the Argonaut Clinical Notes DocumentReference profile and to support a *minimum* of all five Common Clinical Notes listed above. Systems and may extend there capabilities to other [Document types] as well.
 
-This guide requires systems to implement the Argonaut Clinical Notes DiagnosticReport profile and to support a *minimum* of the three report categories:
+This guide requires systems implement the Argonaut Clinical Notes DiagnosticReport profile and to support a *minimum* of the three report categories:
 
 - Cardiology (LP29684-5)
 - Radiology (LP29708-2)
@@ -71,11 +71,11 @@ Other categories may be supported as well.
 
 A method for discovery of the types of notes and reports that a server supports is described in the [section below](#determining-server-note-and-report-type-support-expand).
 
-Note that this guide focuses on exposing existing information, and not how systems allow their users to capture information.  The contents of the notes or reports, even using standard LOINC concepts, may vary widely by health system or even location. For example, CT Spleen WO contrast (LOINC 30621-7) may include individual sections for history, impressions, conclusions, or just an impressions section. Discharge Summaries may have different facility or regulatory content requirements.
+Note that this guide focuses on exposing existing information, and not how systems allow their users to capture information. The contents of the notes or reports, even using standard LOINC concepts, may vary widely by health system or even location. For example, CT Spleen WO contrast (LOINC 30621-7) may include individual sections for history, impressions, conclusions, or just an impressions section. Discharge Summaries may have different facility or regulatory content requirements.
 
 #### Search
 
-To retrieve clinical notes and reports, the standard FHIR [search] API is used.  In this guide, the Argonaut Clinical Notes Server [CapabilityStatement] and the *Quick Start* sections for the Argonaut Clinical Notes and Diagnostic Report profiles define the required search parameters and describe how they are used.
+To retrieve clinical notes and reports, the standard FHIR [search] API is used. In this guide, the Argonaut Clinical Notes Server [CapabilityStatement] and the *Quick Start* sections for the Argonaut Clinical Notes and Diagnostic Report profiles define the required search parameters and describe how they are used.
 
 Common client search scenarios include:
 
@@ -93,9 +93,9 @@ Common client search scenarios include:
 	
 <br/>
 
-### Determining Server Capabilities Using The Value Set Expansion Operation ($expand)
+### Determining Server Note Type Support Using The Value Set Expansion Operation ($expand)
 
-In addition to inspecting a server CapabilityStatement, a client can determine the note and report types support by a server by invoking the standard FHIR Value Set Expansion ([$expand]) operation defined in the **FHIR R4 specification**.  Because servers may support different read and write formats, it also is used to determine the formats (for example, text, pdf) the server supports read and write transactions.  A FHIR server claiming support to this guide **SHOULD** support the $expand operation.
+In addition to inspecting a server CapabilityStatement, a client can determine the note and report types support by a server by invoking the standard FHIR Value Set Expansion ([$expand]) operation defined in the **FHIR R4 specification**. Because servers may support different read and write formats, it also is used to determine the formats (for example, text, pdf) the server supports read and write transactions. A FHIR server claiming support to this guide **SHOULD** support the $expand operation.
 
 #### Discovering Note and Report Types
 	
@@ -249,7 +249,7 @@ HTTP/1.1 200 OK
 
 A client is only interested in retrieving notes by class (Note, DocumentReference.class is updated to DocumentReference.category in FHIR R4).  The server responds with the single category of 'Clinical Notes':
 
-**3 Request for DocumentReference note categories**
+**Request for DocumentReference note categories**
 
 ~~~
 GET [base]/ValueSet/$expand?context=DocumentReference.class&contextDirection=outgoing
@@ -360,7 +360,7 @@ HTTP/1.1 200 OK
 ~~~
 <br/>
 
-#### Discovering Server Read/Write Formats
+#### Discovering Server Read and Write Formats
 
 The read and write formats for a particular server are discovered by invoking the #expand operation as follows:
 
@@ -572,15 +572,15 @@ HTTP/1.1 200 OK
 }
 ~~~
 
-### Justification for Resources Choices
+### Resource Selection
 
-When reviewing the minimal number of elements required for each Resource, The [FHIR Version {{site.data.fhir.version}}]({{site.data.fhir.path}}) specification includes several appropriate places to include clinical notes such as Composition, ClinicalImpression, DocumentReference, DiagnosticReport, etc.  The developers of this guide also considered creating a new ClinicalNotes resource. To differentiate which resource was most appropriate these characteristics were considered:
+When reviewing the minimal number of elements required for each Resource, the [FHIR Version {{site.data.fhir.version}}]({{site.data.fhir.path}}) specification includes several appropriate places to include clinical notes such as Composition, ClinicalImpression, DocumentReference, DiagnosticReport, etc.  The developers of this guide also considered creating a new ClinicalNotes resource. To differentiate which resource was most appropriate these characteristics were considered:
 
 * Discrete result information
 * Note types
 * Consistent Client access to scanned, or narrative-only, reports
 
-While several resources work well for a specific use case, they don't solve the question "find all Clinical Notes for a patient?" expecially when considering the variability of Note formats. For example systems use text, XHTML, PDF, CDA to capture clinical notes. Thes considerations led the designers to select the [DocumentReference and DiagnosticReport](guidance.html#documentreference-vs-diagnosticreport) as an index mechanisms to the underlying content. In other words, a client can query one of these resources and it will return a pointer to specific resource or the underlying binary content. 
+While several resources work well for a specific use case, they don't solve the question "find all Clinical Notes for a patient?" expecially when considering the variability of Note formats. For example systems use text, XHTML, PDF, CDA to capture clinical notes. This variability led the designers to select the [DocumentReference and DiagnosticReport](guidance.html#documentreference-vs-diagnosticreport) as an index mechanisms to the underlying content. In other words, a client can query one of these resources and it will return a pointer to specific resource or the underlying binary content. 
 
 For example, consider the following situation for a Discharge Summary Note:
 
