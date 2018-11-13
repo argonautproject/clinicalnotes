@@ -99,50 +99,266 @@ In addition to inspecting a server CapabilityStatement, a client can determine t
 
 #### Discovering Note and Report Types
 	
-The note and report Types for a particular server are discovered by invoking the #expand operation as follows: 
+The note and report types for a particular server are discovered by invoking the #expand operation as follows: 
 
 `GET [base]/ValueSet/$expand?context=[context]&contextDirection=[contextDirection]`
 
 where:
-- contextDirection = 'incoming' for write operations and 'outgoing' for read operations.
- - context = 'DiagnosticReport.type' for DiagnosticReport report type discovery, 'DocumentReference.type' for DocumentReference note type discovery and 'DocumentReference.class' for DocumentReference note category discovery.
+- [contextDirection] = `incoming` for write operations and `outgoing` for read operations.
+ - [context] = `DiagnosticReport.category` for DiagnosticReport report type discovery, `DocumentReference.type` for DocumentReference note type discovery and `DocumentReference.class` for DocumentReference note category discovery.
 
  Example 
 
  **Scenario 1**
 
-A client determines the types of note or reports they can access through DiagnosticReport:
+A client determines the types of reports they can access through DiagnosticReport. The server responds with 'foo','bar' ,and 'baz' report types:
 
- **Request for DiagnosticReport report type**
+**Request for DiagnosticReport report type**
  
 ~~~
-GET [base]/ValueSet/$expand?context=DiagnosticReport.type&amp;contextDirection=outgoing
+GET [base]/ValueSet/$expand?context=DiagnosticReport.codes&contextDirection=incoming
 ~~~
 
 **Response**
 
 ~~~
-....todo...
+HTTP/1.1 200 OK
+[other headers]
 ~~~
 
 **Response body**
 
 ~~~
-....todo...
+{
+  "resourceType": "ValueSet",
+  "id": "scenario1-server-diagnosticreport-codes",
+  "url": "http://acme.org/ValueSet/diagnosticreport-codes",
+  "version": "3.0.1",
+  "name": "acme-diagnosticreport-codes",
+  "title": "Acme DiagnosticReport Codes",
+  "status": "draft",
+  "date": "2018-11-08T20:29:00+00:00",
+  "expansion": {
+    "identifier": "urn:uuid:5fc51f5a-4dbc-44f8-8fe5-203d261222f0",
+    "timestamp": "2018-11-13T02:55:48.405Z",
+    "parameter": [
+      {
+        "name": "DiagnosticReport.codes",
+        "valueString": "DiagnosticReport.codes"
+      },
+      {
+        "name": "contextDirection",
+        "valueString": "outgoing"
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://acme.org",
+        "code": "foo",
+        "display": "Foo"
+      },
+      {
+        "system": "http://acme.org",
+        "code": "bar",
+        "display": "Bar"
+      },
+      {
+        "system": "http://acme.org",
+        "code": "baz",
+        "display": "baz"
+      }
+    ]
+  }
+}
 ~~~
 
-**Request for Write contentType**
+**Scenario 2**
 
-This allows a client to determine the types of Note or reports they can access through DocumentReference:
+A client determines the types of note or reports they can access through DocumentReference.  The server responds with the five "Common Clinical Notes" types:
 
-	GET [base]/ValueSet/$expand?context=DocumentReference.type&amp;contextDirection=outgoing
-	
-If a client is only interested in retrieving notes by categories they may use the following:
+**Request for DocumentReference note or report type**
 
-	GET [base]/ValueSet/$expand?context=DiagnosticReport.category&amp;contextDirection=outgoing
-	GET [base]/ValueSet/$expand?context=DocumentReference.class&amp;contextDirection=outgoing 
+~~~
+GET [base]/ValueSet/$expand?context=DocumentReference.type&contextDirection=outgoing
+~~~
 
-Note, DocumentReference.class is updated to DocumentReference.category in FHIR R4.
+**Response**
+
+~~~
+HTTP/1.1 200 OK
+[other headers]
+~~~
+
+**Response body**
+
+~~~
+{
+  "resourceType": "ValueSet",
+  "id": "scenario2-server-clinical-note-type",
+  "url": "http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/argonaut-clinical-note-type",
+  "version": "3.0.1",
+  "name": "ArgonautClinicalNotes",
+  "title": "Argonaut DocumentReferences Type Value Set",
+  "status": "draft",
+  "date": "2018-11-08T20:29:00+00:00",
+  "expansion": {
+    "identifier": "urn:uuid:5fc51f5a-4dbc-44f8-8fe5-203d261222f0",
+    "timestamp": "2018-11-13T02:55:48.405Z",
+    "parameter": [
+      {
+        "name": "DocumentReference.type",
+        "valueString": "DiagnosticReport.codes"
+      },
+      {
+        "name": "contextDirection",
+        "valueString": "outgoing"
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://loinc.org",
+        "code": "18842-5",
+        "display": "Discharge Summary"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "11488-4",
+        "display": "Consultation Note"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "34117-2",
+        "display": "History & Physical Note"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "11506-3",
+        "display": "Progress Note"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "28570-0",
+        "display": "Procedures Note"
+      }
+    ]
+  }
+}
+~~~
+
+**Scenario 3**
+
+A client is only interested in retrieving notes by class (Note, DocumentReference.class is updated to DocumentReference.category in FHIR R4).  The server responds with the single category of 'Clinical Notes':
+
+**3 Request for DocumentReference note categories**
+
+~~~
+GET [base]/ValueSet/$expand?context=DocumentReference.class&contextDirection=outgoing
+~~~
+
+**Response**
+
+~~~
+HTTP/1.1 200 OK
+[other headers]
+~~~
+
+**Response body**
+
+~~~
+{
+  "resourceType": "ValueSet",
+  "id": "scenario3-server-documentreference-category",
+  "url": "http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/documentreference-category",
+  "version": "3.0.1",
+  "name": "ArgonautDocumentReferenceCategoryCodes",
+  "title": "Argonaut DocumentReference Category Codes",
+  "status": "draft",
+  "date": "2018-11-08T20:29:00+00:00",
+  "expansion": {
+    "identifier": "urn:uuid:5fc51f5a-4dbc-44f8-8fe5-203d261222f0",
+    "timestamp": "2018-11-13T02:55:48.405Z",
+    "parameter": [{
+        "name": "context",
+        "valueString": "DocumentReference.class"
+      },
+      {
+        "name": "contextDirection",
+        "valueString": "outgoing"
+      }
+    ],
+    "contains": [{
+        "system": "http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category",
+        "code": "clinical-note",
+        "display": "Clinical Note"
+      }
+    ]
+  }
+}
+~~~
+
+**Scenario 4**
+
+A client determines the category of reports they can access through DiagnosticReport. The server responds with Radiology, Pathology ,and Cardiology report categories:
+
+**Request for DiagnosticReport report type**
+ 
+~~~
+GET [base]/ValueSet/$expand?context=DiagnosticReport.category&contextDirection=incoming
+~~~
+
+**Response**
+
+~~~
+HTTP/1.1 200 OK
+[other headers]
+~~~
+
+**Response body**
+
+~~~
+{
+  "resourceType": "ValueSet",
+  "id": "scenario4-server-diagnosticreport-category",
+  "url": "http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/diagnosticreport-category",
+  "version": "3.0.1",
+  "name": "ArgonautDiagnosticReportCategoryCodes",
+  "title": "Argonaut DiagnosticReport Category Value Set",
+  "status": "draft",
+  "date": "2018-11-08T20:29:00+00:00",
+  "expansion": {
+    "identifier": "urn:uuid:5fc51f5a-4dbc-44f8-8fe5-203d261222f0",
+    "timestamp": "2018-11-13T02:55:48.405Z",
+    "parameter": [
+      {
+        "name": "context",
+        "valueString": "DiagnosticReport.category"
+      },
+      {
+        "name": "contextDirection",
+        "valueString": "outgoing"
+      }
+    ],
+    "contains": [
+      {
+        "system": "http://loinc.org",
+        "code": "LP29684-5",
+        "display": "Radiology"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "LP29708-2",
+        "display": "Cardiology"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "LP7839-6",
+        "display": "Pathology"
+      }
+    ]
+  }
+}
+~~~
+<br/>
 
 #### Discovering Server Read/Write Formats
 
@@ -151,8 +367,8 @@ The read and write formats for a particular server are discovered by invoking th
 `GET [base]/ValueSet/$expand?context=[context]&contextDirection=[contextDirection]`
 
 where:
-- contextDirection = 'incoming' for write operations and 'outgoing' for read operations.
- - context = 'DocumentReference.content.attachment.contentType' for DocumentReference note content type discovery and 'DocumentReference.class' for DocumentReference note category discovery.
+- [contextDirection] = `incoming` for write operations and `outgoing` for read operations.
+ - [context] = `DocumentReference.content.attachment.contentType` for DocumentReference note content type discovery and `DiagnosticReport.presentedForm.contentType` for DiagnosticReport report content type discovery.
 
 Example 
 
@@ -160,93 +376,213 @@ Example
 
 System A accepts contentType `text/plain` in a create transaction and returns `text/html` in a read transaction.
 
+**Request for Write contentType**
+
+~~~
+GET [base]/ValueSet/$expand?context=DocumentReference.content.attachment.contentType&contextDirection=incoming
+~~~
+
+**Response**
+
+~~~
+HTTP/1.1 200 OK
+[other headers]
+~~~
+
+**Response body**
+
+~~~
+{
+  "resourceType": "ValueSet",
+  "id": "scenario1-server-write-contenttype",
+  "url": "http://acme.org/fhir/ValueSet/in-mimetypes-1",
+  "version": "3.0.1",
+  "name": "ArgonautServerWriteMimeTypes",
+  "title": "Argonaut Server Write Mime Types Value Set",
+  "status": "draft",
+  "date": "2018-11-08T20:29:00+00:00",
+  "expansion": {
+    "identifier": "urn:uuid:5fc51f5a-4dbc-44f8-8fe5-203d261222f0",
+    "timestamp": "2018-11-13T02:55:48.405Z",
+    "parameter": [
+      {
+        "name": "context",
+        "valueString": "DocumentReference.content.attachment.contentType"
+      },
+      {
+        "name": "contextDirection",
+        "valueString": "incoming"
+      }
+    ],
+    "contains": [
+      {
+        "system": "urn:ietf:bcp:13",
+        "code": "text/plain"
+      }
+    ]
+  }
+}
+~~~
+
 **Request for Read contentType**
 
-`GET [base]/ValueSet/$expand?context=DocumentReference.content.attachment.contentType&amp;contextDirection=incoming`
+~~~
+GET [base]/ValueSet/$expand?context=DocumentReference.content.attachment.contentType&contextDirection=outgoing
+~~~
 
 **Response**
 
 ~~~
-....todo...
+HTTP/1.1 200 OK
+[other headers]
 ~~~
 
 **Response body**
 
 ~~~
-....todo...
-~~~
-
-`GET [base]/ValueSet/$expand?context=DocumentReference.content.attachment.contentType&amp;contextDirection=outgoing`
-
-**Response**
-
-~~~
-....todo...
-~~~
-
-**Response body**
-
-~~~
-....todo...
+{
+  "resourceType": "ValueSet",
+  "id": "scenario1-server-read-contenttype",
+  "url": "http://acme.org/fhir/ValueSet/out-mimetypes-1",
+  "version": "3.0.1",
+  "name": "ArgonautServerReadMimeTypes",
+  "title": "Argonaut Server Read Mime Types Value Set",
+  "status": "draft",
+  "date": "2018-11-08T20:29:00+00:00",
+  "expansion": {
+    "identifier": "urn:uuid:5fc51f5a-4dbc-44f8-8fe5-203d261222f0",
+    "timestamp": "2018-11-13T02:55:48.405Z",
+    "parameter": [
+      {
+        "name": "context",
+        "valueString": "DocumentReference.content.attachment.contentType"
+      },
+      {
+        "name": "contextDirection",
+        "valueString": "outgoing"
+      }
+    ],
+    "contains": [
+      {
+        "system": "urn:ietf:bcp:13",
+        "code": "text/html"
+      }
+    ]
+  }
+}
 ~~~
 
 **Scenario 2**
 
-System A accepts contentType `text/plain` in a create transaction and returns `text/html` in a read transaction.
+System A accepts contentType `text/xhtml` in a create transaction and returns `application/pdf` in a read transaction.
 
-**Request for Read contentType`**
+**Request for Write contentType`**
 
-`GET [base]/ValueSet/$expand?context=DocumentReference.content.attachment.contentType&amp;contextDirection=incoming`
+~~~
+GET [base]/ValueSet/$expand?context=DocumentReference.content.attachment.contentType&amp;contextDirection=incoming
+~~~
 
 **Response**
 
 ~~~
-....todo...
+HTTP/1.1 200 OK
+[other headers]
 ~~~
 
 **Response body**
 
 ~~~
-....todo...
+{
+  "resourceType": "ValueSet",
+  "id": "scenario2-server-write-contenttype",
+  "url": "http://acme.org/fhir/ValueSet/in-mimetypes-2",
+  "version": "3.0.1",
+  "name": "ArgonautServerWriteMimeTypes",
+  "title": "Argonaut Server Write Mime Types Value Set",
+  "status": "draft",
+  "date": "2018-11-08T20:29:00+00:00",
+  "expansion": {
+    "identifier": "urn:uuid:5fc51f5a-4dbc-44f8-8fe5-203d261222f0",
+    "timestamp": "2018-11-13T02:55:48.405Z",
+    "parameter": [
+      {
+        "name": "context",
+        "valueString": "DocumentReference.content.attachment.contentType"
+      },
+      {
+        "name": "contextDirection",
+        "valueString": "incoming"
+      }
+    ],
+    "contains": [
+      {
+        "system": "urn:ietf:bcp:13",
+        "code": "text/xhtml"
+      }
+    ]
+  }
+}
 ~~~
 
 **Request for Write contentType**
 
-`GET [base]/ValueSet/$expand?context=DocumentReference.content.attachment.contentType&amp;contextDirection=outgoing`
+~~~
+GET [base]/ValueSet/$expand?context=DocumentReference.content.attachment.contentType&amp;contextDirection=outgoing
+~~~
 
 **Response**
 
 ~~~
-....todo...
+HTTP/1.1 200 OK
+[other headers]
 ~~~
 
 **Response body**
 
 ~~~
-....todo...
+{
+  "resourceType": "ValueSet",
+  "id": "scenario2-server-read-contenttype",
+  "url": "http://acme.org/fhir/ValueSet/out-mimetypes-2",
+  "version": "3.0.1",
+  "name": "ArgonautServerReadMimeTypes",
+  "title": "Argonaut Server Read Mime Types Value Set",
+  "status": "draft",
+  "date": "2018-11-08T20:29:00+00:00",
+  "expansion": {
+    "identifier": "urn:uuid:5fc51f5a-4dbc-44f8-8fe5-203d261222f0",
+    "timestamp": "2018-11-13T02:55:48.405Z",
+    "parameter": [
+      {
+        "name": "context",
+        "valueString": "DocumentReference.content.attachment.contentType"
+      },
+      {
+        "name": "contextDirection",
+        "valueString": "outgoing"
+      }
+    ],
+    "contains": [
+      {
+        "system": "urn:ietf:bcp:13",
+        "code": "application/pdf"
+      }
+    ]
+  }
+}
 ~~~
 
 ### Justification for Resources Choices
 
-The FHIR specification supports sharing narrative-only reports, or notes, in the DocumentReference and DiagnosticReport Resources. When reviewing the minimal number of elements required for each Resource, The [FHIR Version {{site.data.fhir.version}}]({{site.data.fhir.path}}) specification includes several appropriate places to include clinical notes: Composition, ClinicalImpression, DocumentReference, DiagnosticReport, etc.
-To differentiate which resource was most appropriate these characteristics were considered:
+When reviewing the minimal number of elements required for each Resource, The [FHIR Version {{site.data.fhir.version}}]({{site.data.fhir.path}}) specification includes several appropriate places to include clinical notes such as Composition, ClinicalImpression, DocumentReference, DiagnosticReport, etc.  The developers of this guide also considered creating a new ClinicalNotes resource. To differentiate which resource was most appropriate these characteristics were considered:
 
 * Discrete result information
 * Note types
 * Consistent Client access to scanned, or narrative-only, reports
 
-* The [Composition] resource provides the basic structure to exchange [FHIR Documents].
-* The [ClinicalImpression] resource records a clinical assessment. 
-* The [DiagnosticReport] resource records findings and interpretation of diagnostic tests.
-* The [DocumentReference] resource provides an index to clinical content.
+While several resources work well for a specific use case, they don't solve the question "find all Clinical Notes for a patient?" expecially when considering the variability of Note formats. For example systems use text, XHTML, PDF, CDA to capture clinical notes. Thes considerations led the designers to select the [DocumentReference and DiagnosticReport](guidance.html#documentreference-vs-diagnosticreport) as an index mechanisms to the underlying content. In other words, a client can query one of these resources and it will return a pointer to specific resource or the underlying binary content. 
 
-The developers of this guide also considered creating a new ClinicalNotes resource. 
-
-While each of these Resources work well for a specific use case, they don't solve the Client question of 'Which Resource do I query to find all Clinical Notes?'. 
-
-Rather then focus on the specific use cases, the designers considered the variability of Note format. For example systems use text, XHTML, PDF, CDA to capture clinical notes. This variability led the designers to select the [DocumentReference and DiagnosticReport](guidance.html#documentreference-vs-diagnosticreport) as an index mechanisms to the underlying content. 
-
-A Client can query one of these resources and it will return a pointer to specific Resource or the underlying Binary content. Consider the following situation for a Discharge Summary Note. 
+For example, consider the following situation for a Discharge Summary Note:
 
 * System A supports the Discharge Summary as a Composition resource
 * System B supports the Discharge Summary as a CDA Document
@@ -260,15 +596,13 @@ The server returns either a pointer to the Composition or the Binary resource. I
 
 #### Clinical Notes vs ClinicalImpression 
 
-The [FHIR Version {{site.data.fhir.version}}]({{site.data.fhir.path}}) includes the [ClinicalImpression] resource to support the record of a clinical assessment. 
-
-Taken from the Resource Definition:
+[ClinicalImpression] resource supports the record of a clinical assessment. 
 
 >
 A record of a clinical assessment performed to determine what problem(s) may affect the patient and before planning the treatments or management strategies that are best to manage a patient's condition. Assessments are often 1:1 with a clinical consultation / encounter, but this varies greatly depending on the clinical workflow. This resource is called "ClinicalImpression" rather than "ClinicalAssessment" to avoid confusion with the recording of assessment tools such as Apgar score
 >
 
-In existing EHRs, the clinical impression is often contained with in a broader note. The Argonauts didn't find the boundary between a clinical note and ClinicalImpression clear enough to include in the initial design to share Clinical Notes. 
+However, in existing EHRs, the clinical impression is often contained with in a broader note construct and the Argonauts didn't find the boundary between a clinical note and ClinicalImpression clear enough to leverage the resources to share clinical notes.
 
 ### Future Work
 
