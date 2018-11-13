@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="ig"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Argonaut Clinical Notes</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig</pre></div>
+  </text>
+  <url value="http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig"/>
+  <version value="0.0.0"/>
+  <name value="Argonaut Clinical Notes"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <publisher value="Argonaut Project"/>
+  <fhirVersion value="3.0.1"/>
+  <package id="p1">
+    <name value="base"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Encounter-example-1.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Encounter/example-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-documentreference-category.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/documentreference-category"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-diagnosticreport-category.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/diagnosticreport-category"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-argonaut-clinical-note-type.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/argonaut-clinical-note-type"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-argo-diagnosticreport.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/argo-diagnosticreport"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-argo-clinicalnotes.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/argo-clinicalnotes"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-documentreference-category.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CodeSystem/documentreference-category"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CapabilityStatement-argonaut-clinical-notes-server.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CapabilityStatement/argonaut-clinical-notes-server"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CapabilityStatement-argonaut-clinical-notes-client.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CapabilityStatement/argonaut-clinical-notes-client"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <page>
+    <source value="index.html"/>
+    <title value="Home"/>
+    <kind value="page"/>
+    <page>
+      <source value="guidance.html"/>
+      <title value="General Guidance"/>
+      <kind value="page"/>
+    </page>
+    <page>
+      <source value="profiles.html"/>
+      <title value="Profiles and Extensions"/>
+      <kind value="page"/>
+      <page>
+        <source value="StructureDefinition-argo-diagnosticreport.html"/>
+        <title value="StructureDefinition Argo DiagnosticReport"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-argo-clinicalnotes.html"/>
+        <title value="StructureDefinition Argo Clinicalnotes"/>
+        <kind value="resource"/>
+      </page>
+    </page>
+    <page>
+      <source value="operations.html"/>
+      <title value="Operations"/>
+      <kind value="page"/>
+    </page>
+    <page>
+      <source value="terminology.html"/>
+      <title value="Terminology"/>
+      <kind value="page"/>
+      <page>
+        <source value="ValueSet-documentreference-category.html"/>
+        <title value="ValueSet DocumentReference Category"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-diagnosticreport-category.html"/>
+        <title value="ValueSet DiagnosticReport Category"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-argonaut-clinical-note-type.html"/>
+        <title value="ValueSet Argonaut Clinical Note Type"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="CodeSystem-documentreference-category.html"/>
+        <title value="CodeSystem DocumentReference Category"/>
+        <kind value="resource"/>
+      </page>
+    </page>
+    <page>
+      <source value="searchparameters.html"/>
+      <title value="Search Parameters"/>
+      <kind value="page"/>
+    </page>
+    <page>
+      <source value="capstatements.html"/>
+      <title value="Capability Statements"/>
+      <kind value="page"/>
+      <page>
+        <source value="CapabilityStatement-argonaut-clinical-notes-server.html"/>
+        <title value="CapabilityStatement Argonaut Clinical Notes Server"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="CapabilityStatement-argonaut-clinical-notes-client.html"/>
+        <title value="CapabilityStatement Argonaut Clinical Notes Client"/>
+        <kind value="resource"/>
+      </page>
+    </page>
+    <page>
+      <source value="security.html"/>
+      <title value="Security"/>
+      <kind value="page"/>
+    </page>
+    <page>
+      <source value="downloads.html"/>
+      <title value="Downloads"/>
+      <kind value="page"/>
+    </page>
+    <page>
+      <source value="all-examples.html"/>
+      <title value="All Examples"/>
+      <kind value="page"/>
+    </page>
+    <page>
+      <source value="toc.html"/>
+      <title value="Table of Contents"/>
+      <kind value="resource"/>
+    </page>
+  </page>
+</ImplementationGuide>

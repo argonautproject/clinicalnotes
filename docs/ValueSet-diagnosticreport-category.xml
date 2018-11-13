@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="diagnosticreport-category"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Argonaut DiagnosticReport Category Value Set</h2><div><p>The Argonaut DiagnosticReport Type Value Set is a 'starter set' of categories supported for fetching and Diagnostic Reports and notes.</p>
+</div><p><b>Copyright Statement:</b>  This content LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://details.loinc.org/LOINC/LP29684-5.html">LP29684-5</a></td><td>Radiology</td><td/></tr><tr><td><a href="http://details.loinc.org/LOINC/LP29708-2.html">LP29708-2</a></td><td>Cardiology</td><td/></tr><tr><td><a href="http://details.loinc.org/LOINC/LP7839-6.html">LP7839-6</a></td><td>Pathology</td><td/></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/diagnosticreport-category"/>
+  <version value="0.0.0"/>
+  <name value="Argonaut DiagnosticReport Category Codes"/>
+  <title value="Argonaut DiagnosticReport Category Value Set"/>
+  <status value="draft"/>
+  <date value="2018-05-02T08:16:34-07:00"/>
+  <description value="The Argonaut DiagnosticReport Type Value Set is a &#39;starter set&#39; of categories supported for fetching and Diagnostic Reports and notes."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <copyright value=" This content LOINC&#xAE; is copyright &#xA9; 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LP29684-5"/>
+        <display value="Radiology"/>
+      </concept>
+      <concept>
+        <code value="LP29708-2"/>
+        <display value="Cardiology"/>
+      </concept>
+      <concept>
+        <code value="LP7839-6"/>
+        <display value="Pathology"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

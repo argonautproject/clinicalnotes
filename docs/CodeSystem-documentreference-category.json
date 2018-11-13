@@ -1,0 +1,42 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "documentreference-category",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Argonaut DocumentReferences Category Code System</h2><div><p>The Argonaut DocumentReferences Type Code System is a 'starter set' of categories supported for fetching and storing DocumentReference Resources.</p>\n</div><p>This code system http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">clinical-note<a name=\"documentreference-category-clinical-note\"> </a></td><td>Clinical Note</td><td>Part of a medical record where healthcare professionals record details to document a patient's clinical status or achievements during the course of a hospitalization or over the course of outpatient care ( [Wikipedia](https://en.wikipedia.org/wiki/Progress_note))</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"documentreference-category-other\"> </a></td><td>Other</td><td>Indicates that the category is not covered by one of the pre-defined codes.</td></tr></table></div>"
+  },
+  "url": "http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category",
+  "version": "0.0.0",
+  "name": "DocumentReference Category",
+  "title": "Argonaut DocumentReferences Category Code System",
+  "status": "draft",
+  "date": "2018-05-02T08:16:34-07:00",
+  "description": "The Argonaut DocumentReferences Type Code System is a 'starter set' of categories supported for fetching and storing DocumentReference Resources.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US",
+          "display": "United States of America"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "valueSet": "http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/documentreference-category",
+  "content": "complete",
+  "count": 2,
+  "concept": [
+    {
+      "code": "clinical-note",
+      "display": "Clinical Note",
+      "definition": "Part of a medical record where healthcare professionals record details to document a patient's clinical status or achievements during the course of a hospitalization or over the course of outpatient care ( [Wikipedia](https://en.wikipedia.org/wiki/Progress_note))"
+    },
+    {
+      "code": "other",
+      "display": "Other",
+      "definition": "Indicates that the category is not covered by one of the pre-defined codes."
+    }
+  ]
+}

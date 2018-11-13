@@ -1,0 +1,234 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "ig",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Argonaut Clinical Notes</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig</pre></div>"
+  },
+  "url": "http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig",
+  "version": "0.0.0",
+  "name": "Argonaut Clinical Notes",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Argonaut Project",
+  "fhirVersion": "3.0.1",
+  "package": [
+    {
+      "id": "p1",
+      "name": "base",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Encounter-example-1.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Encounter/example-1"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-documentreference-category.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/documentreference-category"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-diagnosticreport-category.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/diagnosticreport-category"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-argonaut-clinical-note-type.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/argonaut-clinical-note-type"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-argo-diagnosticreport.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/argo-diagnosticreport"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-argo-clinicalnotes.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/argo-clinicalnotes"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CodeSystem-documentreference-category.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CodeSystem/documentreference-category"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CapabilityStatement-argonaut-clinical-notes-server.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CapabilityStatement/argonaut-clinical-notes-server"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CapabilityStatement-argonaut-clinical-notes-client.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CapabilityStatement/argonaut-clinical-notes-client"
+          }
+        }
+      ]
+    }
+  ],
+  "page": {
+    "source": "index.html",
+    "title": "Home",
+    "kind": "page",
+    "page": [
+      {
+        "source": "guidance.html",
+        "title": "General Guidance",
+        "kind": "page"
+      },
+      {
+        "source": "profiles.html",
+        "title": "Profiles and Extensions",
+        "kind": "page",
+        "page": [
+          {
+            "source": "StructureDefinition-argo-diagnosticreport.html",
+            "title": "StructureDefinition Argo DiagnosticReport",
+            "kind": "resource"
+          },
+          {
+            "source": "StructureDefinition-argo-clinicalnotes.html",
+            "title": "StructureDefinition Argo Clinicalnotes",
+            "kind": "resource"
+          }
+        ]
+      },
+      {
+        "source": "operations.html",
+        "title": "Operations",
+        "kind": "page"
+      },
+      {
+        "source": "terminology.html",
+        "title": "Terminology",
+        "kind": "page",
+        "page": [
+          {
+            "source": "ValueSet-documentreference-category.html",
+            "title": "ValueSet DocumentReference Category",
+            "kind": "resource"
+          },
+          {
+            "source": "ValueSet-diagnosticreport-category.html",
+            "title": "ValueSet DiagnosticReport Category",
+            "kind": "resource"
+          },
+          {
+            "source": "ValueSet-argonaut-clinical-note-type.html",
+            "title": "ValueSet Argonaut Clinical Note Type",
+            "kind": "resource"
+          },
+          {
+            "source": "CodeSystem-documentreference-category.html",
+            "title": "CodeSystem DocumentReference Category",
+            "kind": "resource"
+          }
+        ]
+      },
+      {
+        "source": "searchparameters.html",
+        "title": "Search Parameters",
+        "kind": "page"
+      },
+      {
+        "source": "capstatements.html",
+        "title": "Capability Statements",
+        "kind": "page",
+        "page": [
+          {
+            "source": "CapabilityStatement-argonaut-clinical-notes-server.html",
+            "title": "CapabilityStatement Argonaut Clinical Notes Server",
+            "kind": "resource"
+          },
+          {
+            "source": "CapabilityStatement-argonaut-clinical-notes-client.html",
+            "title": "CapabilityStatement Argonaut Clinical Notes Client",
+            "kind": "resource"
+          }
+        ]
+      },
+      {
+        "source": "security.html",
+        "title": "Security",
+        "kind": "page"
+      },
+      {
+        "source": "downloads.html",
+        "title": "Downloads",
+        "kind": "page"
+      },
+      {
+        "source": "all-examples.html",
+        "title": "All Examples",
+        "kind": "page"
+      },
+      {
+        "source": "toc.html",
+        "title": "Table of Contents",
+        "kind": "resource"
+      }
+    ]
+  }
+}

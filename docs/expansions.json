@@ -1,0 +1,56 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "658f4892-c815-4f81-b4b2-33cfce3154d0",
+  "meta" : {
+    "lastUpdated" : "2018-11-13T12:42:52.510-08:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/documentreference-category",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "documentreference-category",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\">Expansion based on http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category version 0.0.0</p><p>All codes from system <a href=\"CodeSystem-documentreference-category.html\"><code>http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.org-guides-argonaut-clinicalnotes-CodeSystem-documentreference-category-clinical-note\"> </a><a href=\"CodeSystem-documentreference-category.html#documentreference-category-clinical-note\">clinical-note</a></td><td>Clinical Note</td><td>Part of a medical record where healthcare professionals record details to document a patient's clinical status or achievements during the course of a hospitalization or over the course of outpatient care ( [Wikipedia](https://en.wikipedia.org/wiki/Progress_note))</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.org-guides-argonaut-clinicalnotes-CodeSystem-documentreference-category-other\"> </a><a href=\"CodeSystem-documentreference-category.html#documentreference-category-other\">other</a></td><td>Other</td><td>Indicates that the category is not covered by one of the pre-defined codes.</td></tr></table></div>"
+      },
+      "url" : "http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/documentreference-category",
+      "version" : "0.0.0",
+      "name" : "Argonaut DocumentReference Category Codes",
+      "title" : "Argonaut DocumentReferences Category Value Set",
+      "status" : "draft",
+      "date" : "2018-05-02T08:16:34-07:00",
+      "description" : "The Argonaut DocumentReferences Type Value Set is a 'starter set' of categories supported for fetching and storing clinical notes.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US",
+          "display" : "United States of America"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:29a746ba-2a30-4b33-b99f-84d56c96dcce",
+        "timestamp" : "2018-11-13T12:39:10-08:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category|0.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category",
+          "code" : "clinical-note",
+          "display" : "Clinical Note"
+        },
+        {
+          "system" : "http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category",
+          "code" : "other",
+          "display" : "Other"
+        }]
+      }
+    }
+  }]
+}

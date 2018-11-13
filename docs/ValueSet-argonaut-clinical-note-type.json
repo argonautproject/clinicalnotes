@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "id": "argonaut-clinical-note-type",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Argonaut DocumentReferences Type Value Set</h2><div><p>The Argonaut DocumentReferences Type Value Set is a 'starter set' of types supported for fetching and storing clinical notes. This value set is a subset of LOINC values listed in <a href=\"http://build.fhir.org/valueset-c80-doc-typecodes.html\">HITSP C80 Table 2-144 Document Class Value Set Definition</a></p>\n</div><p><b>Copyright Statement:</b>  This content LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/18842-5.html\">18842-5</a></td><td/><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/11488-4.html\">11488-4</a></td><td/><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/34117-2.html\">34117-2</a></td><td/><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/11506-3.html\">11506-3</a></td><td/><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/28570-0.html\">28570-0</a></td><td/><td/></tr></table></li></ul></div>"
+  },
+  "url": "http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/argonaut-clinical-note-type",
+  "version": "0.0.0",
+  "name": "Argonaut Clinical Notes",
+  "title": "Argonaut DocumentReferences Type Value Set",
+  "status": "draft",
+  "date": "2018-05-02T08:16:34-07:00",
+  "description": "The Argonaut DocumentReferences Type Value Set is a 'starter set' of types supported for fetching and storing clinical notes. This value set is a subset of LOINC values listed in [HITSP C80 Table 2-144 Document Class Value Set Definition](http://build.fhir.org/valueset-c80-doc-typecodes.html)",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US",
+          "display": "United States of America"
+        }
+      ]
+    }
+  ],
+  "copyright": " This content LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "18842-5"
+          },
+          {
+            "code": "11488-4"
+          },
+          {
+            "code": "34117-2"
+          },
+          {
+            "code": "11506-3"
+          },
+          {
+            "code": "28570-0"
+          }
+        ]
+      }
+    ]
+  }
+}
