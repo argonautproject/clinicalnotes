@@ -16,7 +16,7 @@ topofpage: true
 
 Clinical notes are key component to communicate the current status of a patient.  In the context of this implementation guide, the term "clinical notes" refers to the wide variety of documents generated on behalf of a patient in many care activities. They include notes support transitions of care, care planning, quality reporting, billing and even handwritten notes by a providers.  This implementation guide does not define new note types or set content requirements per note type. Instead, this implementation guide focuses on the exchange of clinical notes between systems. 
 
-Specifically, this implementation guide defines the exchange of the following five "Common Clinical Notes" *TODO - link or citation if is defined externally:*
+Specifically, this implementation guide defines the exchange of the following five "Common Clinical Notes".
 
 * [Consultation Note (11488-4)]
 * [Discharge Summary (18842-5)]
@@ -44,7 +44,7 @@ DiagnosticReport is the best choice when a system needs to share discrete inform
 
 Because of the overlapping scope of the underlying resources and variability in system implementation, there is no single best practice for representing a scanned, or narrative-only report. Reports may be represented by either a DocumentReference or a DiagnosticReport as demonstrated by the green area in Figure 1. For example, some systems consider any scanned report, or note, a DocumentReference. Other systems allow users to categorize the scanned report as Lab and store to DiagnosticReport.[^1]
 
-{% include img.html img="DiagnosticReport_DocumentReference_Resource_Overlap.png" caption="Figure 1: DiagnosticReport and DocumentReference Report Overlap" %}
+{% include img-portrait.html img="DiagnosticReport_DocumentReference_Resource_Overlap.png" caption="Figure 1: DiagnosticReport and DocumentReference Report Overlap" %}
 
 In order to enable consistent access to scanned narrative-only clinical reports the Argonaut Clinical Note Server **SHALL** expose these reports through *both* DiagnosticReport and DocumentReference by representing the same attachment url using the corresponding elements listed below.[^2]  Exposing the content in this manner guarantees the client will receive all the clinical information available for a patient and can easily identify the duplicate data.
 
@@ -59,57 +59,79 @@ Note that not all scanned information stored through DocumentReference will be e
 
 #### Support Requirements
 
-
 This guide requires systems to implement the Argonaut Clinical Notes DocumentReference profile and to support a *minimum* of all five Common Clinical Notes listed above.  Systems and may extend there capabilities to other [Document types] as well.
 
-This guide requires systems to implement the Argonaut Clinical Notes DiagnosticReport profile and to support a *minimum* of Cardiology, Radiology, and Pathology report categories. Other categories may be supported as well.  
+This guide requires systems to implement the Argonaut Clinical Notes DiagnosticReport profile and to support a *minimum* of the three report categories:
 
-The [section below](#determining-server-note-and-report-type-support-expand), describes how to discover the Note and Report types a server supports.
+- Cardiology (LP29684-5)
+- Radiology (LP29708-2)
+- Pathology (LP7839-6)
+ 
+Other categories may be supported as well.  
 
-Note that this guide focuses on exposing existing information, and not dictating how systems allow their users to capture information.  The contents of the notes or reports, even using standard LOINC concepts, may vary widely by health system or even location. For example, CT Spleen WO contrast (LOINC 30621-7) may include individual sections for history, impressions, conclusions, or just an impressions section. Discharge Summaries may have different facility or regulatory content requirements.
+A method for discovery of the types of notes and reports that a server supports is described in the [section below](#determining-server-note-and-report-type-support-expand).
 
-#### Example Query Scenarios
+Note that this guide focuses on exposing existing information, and not how systems allow their users to capture information.  The contents of the notes or reports, even using standard LOINC concepts, may vary widely by health system or even location. For example, CT Spleen WO contrast (LOINC 30621-7) may include individual sections for history, impressions, conclusions, or just an impressions section. Discharge Summaries may have different facility or regulatory content requirements.
 
-The following section provides some example searches for common scenarios.
+#### Search
 
-A client interested in all Radiology reports can use the following query:
+To retrieve clinical notes and reports, the standard FHIR [search] API is used.  In this guide, the Argonaut Clinical Notes Server [CapabilityStatement] and the *Quick Start* sections for the Argonaut Clinical Notes and Diagnostic Report profiles define the required search parameters and describe how they are used.
 
-	GET [base]/DiagnosticReport?patient=[id]&category=http://loinc.org|LP29684-5
+Common client search scenarios include:
+
+1. A client interested in all Radiology reports can use the following query:
+   
+	 `GET [base]/DiagnosticReport?patient=[id]&category=http://loinc.org|LP29684-5`
+
+1. A client interested in all Clinical Notes can use the following query:
+   
+	 `GET [base]/DocumentReference?patient=[id]&class=clinical-note`
+
+1. A client interested in all Discharge Summary Notes can use the following query:
+  
+	`GET [base]/DocumentReference?patient=[id]&type=http://loinc.org|18842-5`
 	
-A client interested in all Clinical Notes can use the following query:
+<br/>
 
-	GET [base]/DocumentReference?patient=[id]&class=clinical-note
+### Determining Server Capabilities Using The Value Set Expansion Operation ($expand)
 
-A client interested in all Discharge Summary Notes can use the following query:
+In addition to inspecting a server CapabilityStatement, a client can determine the note and report types support by a server by invoking the standard FHIR Value Set Expansion ([$expand]) operation defined in the **FHIR R4 specification**.  Because servers may support different read and write formats, it also is used to determine the formats (for example, text, pdf) the server supports read and write transactions.  A FHIR server claiming support to this guide **SHOULD** support the $expand operation.
 
-	GET [base]/DocumentReference?patient=[id]&type=http://loinc.org|18842-5
-
-### Determining Server Note and Report Type Support ($expand) 
-
-A client can determine the Note and Report type support of a server by invoking the $expand operation. The [$expand](http://build.fhir.org/valueset-operation-expand.html) operation in the base FHIR R4 specification provides many parameters and features. This guide highlights the use of the operation to discover what specific notes can be requested, and what write formats a server supports. A FHIR server claiming support to this guide **SHOULD** support the $expand operation to discover a value set at a specific element.
-
-#### Discover Read and Write Support Using $expand 
-
-Servers may support different read and write formats. For example,
-
-* System A accepts contentType "text/plain" in a create and returns "text/html" in a read.
-* System B accepts contentType "text/xhtml" in a create and returns "application/pdf" in a read.
-
-Invoking this will determine what a server supports on write (create):
-
-	GET [base]/ValueSet/$expand?context=DocumentReference.content.attachment.contentType&amp;contextDirection=incoming
+#### Discovering Note and Report Types
 	
-Invoking this will determine what a server supports on read (access):
+The note and report Types for a particular server are discovered by invoking the #expand operation as follows: 
 
-	GET [base]/ValueSet/$expand?context=DocumentReference.content.attachment.contentType&amp;contextDirection=outgoing
-	
-#### Discover Note and Report Type Using $expand 
-	
-Servers will support different Note and Report types. 
+`GET [base]/ValueSet/$expand?context=[context]&contextDirection=[contextDirection]`
 
-This allows a client to determine the types of Note or reports they can access through DiagnosticReport:
+where:
+- contextDirection = 'incoming' for write operations and 'outgoing' for read operations.
+ - context = 'DiagnosticReport.type' for DiagnosticReport report type discovery, 'DocumentReference.type' for DocumentReference note type discovery and 'DocumentReference.class' for DocumentReference note category discovery.
 
-	GET [base]/ValueSet/$expand?context=DiagnosticReport.type&amp;contextDirection=outgoing
+ Example 
+
+ **Scenario 1**
+
+A client determines the types of note or reports they can access through DiagnosticReport:
+
+ **Request for DiagnosticReport report type**
+ 
+~~~
+GET [base]/ValueSet/$expand?context=DiagnosticReport.type&amp;contextDirection=outgoing
+~~~
+
+**Response**
+
+~~~
+....todo...
+~~~
+
+**Response body**
+
+~~~
+....todo...
+~~~
+
+**Request for Write contentType**
 
 This allows a client to determine the types of Note or reports they can access through DocumentReference:
 
@@ -121,7 +143,85 @@ If a client is only interested in retrieving notes by categories they may use th
 	GET [base]/ValueSet/$expand?context=DocumentReference.class&amp;contextDirection=outgoing 
 
 Note, DocumentReference.class is updated to DocumentReference.category in FHIR R4.
-	
+
+#### Discovering Server Read/Write Formats
+
+The read and write formats for a particular server are discovered by invoking the #expand operation as follows:
+
+`GET [base]/ValueSet/$expand?context=DocumentReference.content.attachment.contentType&amp;contextDirection=incoming
+
+Example 
+
+**Scenario 1**
+
+System A accepts contentType `text/plain` in a create transaction and returns `text/html` in a read transaction.
+
+**Request for Read contentType**
+
+`GET [base]/ValueSet/$expand?context=DocumentReference.content.attachment.contentType&amp;contextDirection=incoming`
+
+**Response**
+
+~~~
+....todo...
+~~~
+
+**Response body**
+
+~~~
+....todo...
+~~~
+
+`GET [base]/ValueSet/$expand?context=DocumentReference.content.attachment.contentType&amp;contextDirection=outgoing`
+
+**Response**
+
+~~~
+....todo...
+~~~
+
+**Response body**
+
+~~~
+....todo...
+~~~
+
+**Scenario 2**
+
+System A accepts contentType `text/plain` in a create transaction and returns `text/html` in a read transaction.
+
+**Request for Read contentType`**
+
+`GET [base]/ValueSet/$expand?context=DocumentReference.content.attachment.contentType&amp;contextDirection=incoming`
+
+**Response**
+
+~~~
+....todo...
+~~~
+
+**Response body**
+
+~~~
+....todo...
+~~~
+
+**Request for Write contentType**
+
+`GET [base]/ValueSet/$expand?context=DocumentReference.content.attachment.contentType&amp;contextDirection=outgoing`
+
+**Response**
+
+~~~
+....todo...
+~~~
+
+**Response body**
+
+~~~
+....todo...
+~~~
+
 ### Justification for Resources Choices
 
 The FHIR specification supports sharing narrative-only reports, or notes, in the DocumentReference and DiagnosticReport Resources. When reviewing the minimal number of elements required for each Resource, The [FHIR Version {{site.data.fhir.version}}]({{site.data.fhir.path}}) specification includes several appropriate places to include clinical notes: Composition, ClinicalImpression, DocumentReference, DiagnosticReport, etc.
