@@ -1,0 +1,16 @@
+﻿{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Argonaut Clinical Notes Client",
+    "description": "This resource defines the expected capabilities ",
+    "license": {
+      "name": "CC0-1.0"
+    },
+    "version": "0.0.0",
+    "contact": {}
+  },
+  "externalDocs": {
+    "url": "http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/argonaut-clinical-notes-client",
+    "description": "FHIR CapabilityStatement"
+  }
+}

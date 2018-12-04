@@ -2,9 +2,9 @@
 =========================================
 
 err = 14, warn = 8, info = 0
-Generated Tue Nov 13 12:43:01 PST 2018. FHIR version 3.6.0 for 3.0.1
+Generated Tue Dec 04 13:36:13 PST 2018. FHIR version 3.6.0 for 3.0.1
 
- Build Errors : 113 / 0
+ Build Errors : 90 / 0
  /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/examples/encounter-example-1 : 2 / 0
  /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/CodeSystem-documentreference-category : 0 / 0
  /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/ValueSet-argonaut-clinical-note-type : 1 / 0
@@ -24,7 +24,6 @@ ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/guidance.html#/html/h
 ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/guidance.html#/html/head/body/div/div/div/div/div/div/p/a at Line 913, column 318: The link 'guidance.html#documentreference-vs-diagnosticreport' for "DocumentReference and DiagnosticReport" cannot be resolved (valid targets: [page-content-wrapper, clinical-notes, discovering-server-read-and-write-formats, publish-box, segment-post-footer, fn:1, search, stripe, segment-footer, segment-header, fnref:1, resource-selection, fnref:2, support-requirements, discovering-note-and-report-types, fn:2, note-and-report-types-scenario4, fhir-resources-to-exchange-clinical-notes, future-work, back-to-top, note-and-report-types-scenario1, note-and-report-types-scenario2, segment-navbar, note-and-report-types-scenario3, clinical-notes-vs-clinicalimpression, determining-server-note-type-support-using-the-value-set-expansion-operation-expand, read-and-write-format-scenario1, read-and-write-format-scenario2, project-status])
 ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/index.html#/html/head/body/div/div/nav/div/a at Line 101, column 11: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/index.html#/html/head/body/div/div/div/div/div/div/p/a at Line 267, column 302: The link 'http://hl7.org/fhir/STU3/' for "FHIR Version 3.0.1" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/index.html#/html/head/body/div/div/div/div/div/div/p/a at Line 267, column 502: The link 'http://hl7.org/fhir/us/core/history.html' for "US Core" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/index.html#/html/head/body/div/div/div/div/div/div/p/a at Line 287, column 13: The link 'guidance.html#documentreference-vs-diagnosticreport' for "DocumentReference vs DiagnosticReport" cannot be resolved (valid targets: [page-content-wrapper, clinical-notes, discovering-server-read-and-write-formats, publish-box, segment-post-footer, fn:1, search, stripe, segment-footer, segment-header, fnref:1, resource-selection, fnref:2, support-requirements, discovering-note-and-report-types, fn:2, note-and-report-types-scenario4, fhir-resources-to-exchange-clinical-notes, future-work, back-to-top, note-and-report-types-scenario1, note-and-report-types-scenario2, segment-navbar, note-and-report-types-scenario3, clinical-notes-vs-clinicalimpression, determining-server-note-type-support-using-the-value-set-expansion-operation-expand, read-and-write-format-scenario1, read-and-write-format-scenario2, project-status])
 ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-argo-diagnosticreport.xml.html#/html/head/body/div/div/nav/div/a at Line 101, column 11: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/Encounter-example-1.ttl.html#/html/head/body/div/div/nav/div/a at Line 101, column 11: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
@@ -108,28 +107,6 @@ ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-a
 ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/all-examples.html#/html/head/body/div/div/nav/div/a at Line 101, column 11: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/downloads.html#/html/head/body/div/div/nav/div/a at Line 101, column 11: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/StructureDefinition-argo-diagnosticreport.json.html#/html/head/body/div/div/nav/div/a at Line 101, column 11: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1728, column 18: The link '' for "Capabilitystatement Argonaut Clinical Notes Client " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1758, column 18: The link '' for "Capabilitystatement Argonaut Clinical Notes Server " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1788, column 18: The link '' for "Codesystem Documentreference Category " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1818, column 18: The link '' for "Encounter Example 1 " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1848, column 18: The link '' for "Implementationguide Ig " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1886, column 18: The link '' for "Structuredefinition Argo Clinicalnotes " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1924, column 18: The link '' for "Structuredefinition Argo Diagnosticreport " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1954, column 18: The link '' for "Valueset Argonaut Clinical Note Type " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1984, column 18: The link '' for "Valueset Diagnosticreport Category " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2014, column 18: The link '' for "Valueset Documentreference Category " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2044, column 18: The link '' for "All Examples " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2062, column 18: The link '' for "Capstatements " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2080, column 18: The link '' for "Downloads " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2098, column 18: The link '' for "Guidance " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2116, column 18: The link '' for "History " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2134, column 18: The link '' for "Html_pages " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2152, column 18: The link '' for "Index " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2170, column 18: The link '' for "Profiles " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2188, column 18: The link '' for "Structuremaps " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2206, column 18: The link '' for "Terminology " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2224, column 18: The link '' for "Toc " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2242, column 18: The link '' for "Todo " cannot be resolved
 == /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/examples/encounter-example-1.xml ==
 ERROR: Encounter/example-1: Encounter.class: Error null validating Coding
 ERROR: Encounter/example-1: Encounter.subject: Unable to resolve resource 'Patient/example'
