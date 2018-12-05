@@ -10,7 +10,7 @@
   "name": "Argonaut DocumentReference Category Codes",
   "title": "Argonaut DocumentReferences Category Value Set",
   "status": "draft",
-  "date": "2018-05-02T08:16:34-07:00",
+  "date": "2018-05-02T11:16:34-04:00",
   "description": "The Argonaut DocumentReferences Type Value Set is a 'starter set' of categories supported for fetching and storing clinical notes.",
   "jurisdiction": [
     {

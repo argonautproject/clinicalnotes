@@ -10,7 +10,7 @@
   "name": "Argonaut DiagnosticReport Category Codes",
   "title": "Argonaut DiagnosticReport Category Value Set",
   "status": "draft",
-  "date": "2018-05-02T08:16:34-07:00",
+  "date": "2018-05-02T11:16:34-04:00",
   "description": "The Argonaut DiagnosticReport Type Value Set is a 'starter set' of categories supported for fetching and Diagnostic Reports and notes.",
   "jurisdiction": [
     {

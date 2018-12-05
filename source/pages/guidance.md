@@ -36,7 +36,7 @@ The Argonaut project team developed this initial list after surveying the partic
 
 ### FHIR Resources to Exchange Clinical Notes
 
-Both [DocumentReference] and [DiagnosticReport] resources have been [profiled] to support the exchange of clinical notes. (See  [Resource Selection](#resource-selection) for a full discussion on the decision to use these resources.)
+Both [DocumentReference] and [DiagnosticReport] resources have been profiled to support the exchange of clinical notes. (See  [Resource Selection](#resource-selection) for a full discussion on the decision to use these resources.)
 
 DocumentReference is the best choice when the narrative is broader then a specific order or report, such as a Progress Note or Discharge Summary Note. The DocumentReference Resource can point to a short 2-3 sentence status of the patient, or reference a complex CDA or Composition document which can include *both* a narrative and a discrete information.
 
@@ -121,7 +121,7 @@ The read and write formats for a particular server are discovered by invoking th
 `GET [base]/ValueSet/$expand?context=[context]&contextDirection=[contextDirection]`
 
 where:
-- [contextDirection] = `incoming` for write operations and `outgoing` for read operations.
+ - [contextDirection] = `incoming` for write operations and `outgoing` for read operations.
  - [context] = `DocumentReference.content.attachment.contentType` for DocumentReference note content type discovery and `DiagnosticReport.presentedForm.contentType` for DiagnosticReport report content type discovery.
 
  **Examples**
@@ -137,7 +137,7 @@ When reviewing the minimal number of elements required for each Resource, the [F
 * Note types
 * Consistent Client access to scanned, or narrative-only, reports
 
-While several resources work well for a specific use case, they don't solve the question "find all Clinical Notes for a patient?" expecially when considering the variability of Note formats. For example systems use text, XHTML, PDF, CDA to capture clinical notes. This variability led the designers to select the [DocumentReference and DiagnosticReport](guidance.html#documentreference-vs-diagnosticreport) as an index mechanisms to the underlying content. In other words, a client can query one of these resources and it will return a pointer to specific resource or the underlying binary content. 
+While several resources work well for a specific use case, they don't solve the question "find all Clinical Notes for a patient?" expecially when considering the variability of Note formats. For example systems use text, XHTML, PDF, CDA to capture clinical notes. This variability led the designers to select the DocumentReference and DiagnosticReport resources as an index mechanisms to the underlying content. In other words, a client can query one of these resources and it will return a pointer to specific resource or the underlying binary content. 
 
 For example, consider the following situation for a Discharge Summary Note:
 

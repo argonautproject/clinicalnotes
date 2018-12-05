@@ -33,7 +33,7 @@ This implementation guide includes two profiles for exchanging clinical notes:
 1. [Argonaut Clinical Notes Profile] which is based upon the  [DocumentReference] resource.
 1. [Argonaut Diagnostic Report Profile] which is based upon the  [DiagnosticReport] resource.
 
-See the [DocumentReference vs DiagnosticReport] section for detailed guidance on when to use each profile.  Each profile defines the minimum mandatory elements, extensions and terminology requirements that **MUST** be present. The profile requirements and guidance are given in a simple narrative summary and a formal [logical views] of the content with references to appropriate terminologies.  Examples and "Quick Start" sections are provided to help implementers with easy API onboarding.
+See the [FHIR Resources to Exchange Clinical Notes](guidance.html#fhir-resources-to-exchange-clinical-notes) section for detailed guidance on when to use each profile.  Each profile defines the minimum mandatory elements, extensions and terminology requirements that **MUST** be present. The profile requirements and guidance are given in a simple narrative summary and a formal [logical views] of the content with references to appropriate terminologies.  Examples and "Quick Start" sections are provided to help implementers with easy API onboarding.
 
 ## Argonaut Clinical Notes Conformance Requirements
 

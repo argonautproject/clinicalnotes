@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "Argonaut DiagnosticReport Category Codes"];
   fhir:ValueSet.title [ fhir:value "Argonaut DiagnosticReport Category Value Set"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2018-05-02T08:16:34-07:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2018-05-02T11:16:34-04:00"^^xsd:dateTime];
   fhir:ValueSet.description [ fhir:value "The Argonaut DiagnosticReport Type Value Set is a 'starter set' of categories supported for fetching and Diagnostic Reports and notes."];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
