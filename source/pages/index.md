@@ -16,7 +16,7 @@ topofpage: true
 
 ## Introduction 
 
-This implementation guide provides implementers with FHIR profiles and guidance to create, use, and share Clinical Notes. The requirements were developed by the Argonaut Clinical Notes project team and tested through pilot implementations, and HL7 sponsored Connectathons.  This guide is based on [FHIR Version {{site.data.fhir.version}}]({{site.data.fhir.path}}) The content and profiles used in this guide will be submitted to the HL7 US Realm Steering Committee for consideration in a future ballot of [US Core] for FHIR Version R4
+This implementation guide provides implementers with FHIR profiles and guidance to create, use, and share Clinical Notes. The requirements were developed by the Argonaut Clinical Notes project team and tested through pilot implementations, and HL7 sponsored Connectathons.  This guide is based on [FHIR Version {{site.data.fhir.version}}]({{site.data.fhir.path}}) The content and profiles used in this guide were submitted to the HL7 US Realm Steering Committee for consideration in the December 2018 ballot of [US Core](https://build.fhir.org/ig/HL7/US-Core-R4/) for FHIR Version R4. 
 
 ## Argonaut Actors
 
@@ -31,7 +31,7 @@ The following actors are part of the Clinical Notes IG:
 This implementation guide includes two profiles for exchanging clinical notes: 
 
 1. [Argonaut Clinical Notes Profile] which is based upon the  [DocumentReference] resource.
-1. [Argonaut Diagnostic Report Profile] which is based upon the  [DiagnosticReport] resource.
+1. [Argonaut Diagnostic Report Profile for Report and Note exchange] which is based upon the  [DiagnosticReport] resource.
 
 See the [FHIR Resources to Exchange Clinical Notes](guidance.html#fhir-resources-to-exchange-clinical-notes) section for detailed guidance on when to use each profile.  Each profile defines the minimum mandatory elements, extensions and terminology requirements that **MUST** be present. The profile requirements and guidance are given in a simple narrative summary and a formal [logical views] of the content with references to appropriate terminologies.  Examples and "Quick Start" sections are provided to help implementers with easy API onboarding.
 

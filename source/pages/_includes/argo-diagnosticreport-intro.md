@@ -32,7 +32,10 @@ In addition it should have (if available):
 
 **Profile specific implementation guidance:**
 
-The `DiagnosticReport.category` binding must support at a minimum the [3 concepts](ValueSet-diagnosticreport-category.html) of Cardiology, Radiology, and Pathology. Other categories may be supported.
+Servers must support the `DiagnosticReport.category` element and **SHOULD** support at a minimum the [3 concepts](ValueSet-diagnosticreport-category.html) of Cardiology, Radiology, and Pathology. Servers are encouraged to support additional categories. 
+
+When Clients search with `DiagnosticReport.category` element across different FHIR servers they may find inconsistent results. Servers that participated in the development of this guide allow their customers to categorize reports to their end-user requirements which vary. A customer may categorize an orthopedic note with the category.  Encouraging support for this element will help identify inconsistencies.
+
 
 
 ##### Examples

@@ -45,7 +45,7 @@
     </element>
     <element id="DocumentReference.author">
       <path value="DocumentReference.author" />
-      <min value="1" />
+      <min value="0" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" />
