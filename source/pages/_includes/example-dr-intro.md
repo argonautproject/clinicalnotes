@@ -7,4 +7,4 @@ This page includes two key views:
 
 Additional Profile specific implementation guidance:
 
-The `DocumentReference.type` binding must support at a minimum these [5 concepts](ValueSet-dr-type.html) and may extend to the full  [HITSP C80 Table 2-144 Document Class Value Set Definition](http://build.fhir.org/valueset-c80-doc-typecodes.html)
+The `DocumentReference.type` binding must support at a minimum these [5 concepts](ValueSet-dr-type.html) and may extend to the full  [HITSP C80 Table 2-144 Document Class Value Set Definition](http://hl7.org/fhir/STU3/valueset-doc-typecodes.html)

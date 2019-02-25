@@ -2,9 +2,9 @@
 =========================================
 
 err = 10, warn = 8, info = 0
-Generated Fri Feb 22 10:34:33 EST 2019. FHIR version 4.0.0 for 3.0.1
+Generated Mon Feb 25 10:37:23 EST 2019. FHIR version 4.0.0 for 3.0.1
 
- Build Errors : 88 / 0
+ Build Errors : 87 / 0
  C:\clinicalnotes\source\examples\encounter-example-1 : 2 / 0
  C:\clinicalnotes\source\resources\CodeSystem-documentreference-category : 0 / 0
  C:\clinicalnotes\source\resources\ValueSet-argonaut-clinical-note-type : 0 / 0
@@ -29,7 +29,6 @@ ERROR: C:\clinicalnotes\docs\StructureDefinition-argo-diagnosticreport.html#/htm
 ERROR: C:\clinicalnotes\docs\StructureDefinition-argo-diagnosticreport.html#/html/head/body/div/div/div/div/div/div/p/a at Line 319, column 110: The link 'http://hl7.org/fhir/STU3/DiagnosticReport.html' for "DiagnosticReport" cannot be resolved
 ERROR: C:\clinicalnotes\docs\guidance.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\guidance.html#/html/head/body/div/div/div/div/div/div/p/a at Line 350, column 105: The link '#determining-server-note-and-report-type-support-expand' for "section below" cannot be resolved (valid targets: [page-content-wrapper, clinical-notes, discovering-server-read-and-write-formats, publish-box, segment-post-footer, fn:1, search, stripe, segment-footer, segment-header, fnref:1, resource-selection, fnref:2, support-requirements, discovering-note-and-report-types, fn:2, note-and-report-types-scenario4, fhir-resources-to-exchange-clinical-notes, future-work, back-to-top, note-and-report-types-scenario1, note-and-report-types-scenario2, segment-navbar, note-and-report-types-scenario3, clinical-notes-vs-clinicalimpression, determining-server-note-type-support-using-the-value-set-expansion-operation-expand, read-and-write-format-scenario1, read-and-write-format-scenario2, project-status])
-ERROR: C:\clinicalnotes\docs\guidance.html#/html/head/body/div/div/div/div/div/div/p/a at Line 382, column 181: The link '(http://build.fhir.org/valueset-operation-expand.html)  An operation used to create a simple collection of codes suitable for use for data entry or validation"' for "$expand" cannot be resolved
 ERROR: C:\clinicalnotes\docs\guidance.html#/html/head/body/div/div/div/div/div/div/p/a at Line 905, column 83: The link 'http://hl7.org/fhir/STU3/' for "FHIR Version 3.0.1" cannot be resolved
 ERROR: C:\clinicalnotes\docs\CapabilityStatement-argonaut-clinical-notes-client.ttl.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\ValueSet-documentreference-category.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved

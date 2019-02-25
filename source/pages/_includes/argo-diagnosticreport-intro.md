@@ -37,12 +37,11 @@ Servers must support the `DiagnosticReport.category` element and **SHOULD** supp
 When Clients search with `DiagnosticReport.category` element across different FHIR servers they may find inconsistent results. Servers that participated in the development of this guide allow their customers to categorize reports to their end-user requirements which vary. A customer may categorize an orthopedic note with the category.  Encouraging support for this element will help identify inconsistencies.
 
 
-
 ##### Examples
 
 - TBD
 
-[US Core DiagnosticReport]: http://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-diagnosticreport.html
+[US Core DiagnosticReport]: http://hl7.org/fhir/us/core/StructureDefinition-us-core-diagnosticreport.html
 [DiagnosticReport]:{{ site.data.fhir.path }}DiagnosticReport.html
  [Conformance]: daf-core-DocumentReference-conformance.html
  [boundaries section]: {{ site.data.fhir.path }}DocumentReference.html#bnr

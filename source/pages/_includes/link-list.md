@@ -12,7 +12,7 @@
 [DocumentReference vs DiagnosticReport]: guidance.html#documentreference-vs-diagnosticreport
 [DocumentReference]: {{site.data.fhir.path}}documentreference.html
 [Downloads]: downloads.html "Downloads Page"
-[$expand]: (http://build.fhir.org/valueset-operation-expand.html)  An operation used to create a simple collection of codes suitable for use for data entry or validation"
+[$expand]: http://hl7.org/fhir/valueset-operation-expand.html "An operation used to create a simple collection of codes suitable for use for data entry or validation"
 [FHIR Documents]: {{site.data.fhir.path}}documents.html
 [FHIR Version 3.0.1]: {{site.data.fhir.path}} "FHIR Specification Home Page"
 [History & Physical Note (34117-2)]: https://s.details.loinc.org/LOINC/34117-2.html?sections=Comprehensive

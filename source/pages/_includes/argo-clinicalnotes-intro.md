@@ -41,7 +41,7 @@ Additional Inherited from [US Core DocumentReference]
 
 **Profile specific implementation guidance:**
 
-The `DocumentReference.type` binding must support at a minimum these [5 concepts](ValueSet-argonaut-clinical-note-type.html) and may extend to the any [LOINC document concepts](http://build.fhir.org/valueset-doc-typecodes.html).
+The `DocumentReference.type` binding must support at a minimum these [5 concepts](ValueSet-argonaut-clinical-note-type.html) and may extend to the any [LOINC document concepts](http://hl7.org/fhir/STU3/valueset-doc-typecodes.html).
 
 The views provided on this page are of just the Clinical Notes Profile, and the Clinical Notes Profile combined with US Core DocumentReference and FHIR core. See [merged profile view](StructureDefinition-example-dr.html) for the combination of Clinical Notes Profile and US Core DocumentReference without FHIR core.
 
@@ -50,7 +50,7 @@ The views provided on this page are of just the Clinical Notes Profile, and the 
 
 - TBD
 
-[US Core DocumentReference]: http://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-documentreference.html
+[US Core DocumentReference]: http://hl7.org/fhir/us/core/StructureDefinition-us-core-documentreference.html
 [MedicationStatement]:{{ site.data.fhir.path }}medicationstatement.html
 [DocumentReference]:{{ site.data.fhir.path }}DocumentReference.html
  [Conformance]: daf-core-DocumentReference-conformance.html
