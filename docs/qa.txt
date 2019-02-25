@@ -2,7 +2,7 @@
 =========================================
 
 err = 10, warn = 8, info = 0
-Generated Mon Feb 25 10:37:23 EST 2019. FHIR version 4.0.0 for 3.0.1
+Generated Mon Feb 25 14:40:04 EST 2019. FHIR version 4.0.0 for 3.0.1
 
  Build Errors : 87 / 0
  C:\clinicalnotes\source\examples\encounter-example-1 : 2 / 0
