@@ -67,7 +67,7 @@
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/argo-diagnosticreport"
+        "reference" : "StructureDefinition/argo-diagnosticreport-notes-and-reports"
       },
       "exampleBoolean" : false,
       "groupingId" : "p1"
@@ -114,7 +114,7 @@
         "title" : "Profiles and Extensions",
         "generation" : "html",
         "page" : [{
-          "nameUrl" : "StructureDefinition-argo-diagnosticreport.html",
+          "nameUrl" : "StructureDefinition-argo-diagnosticreport-notes-and-reports.html",
           "title" : "StructureDefinition Argo DiagnosticReport",
           "generation" : "generated"
         },

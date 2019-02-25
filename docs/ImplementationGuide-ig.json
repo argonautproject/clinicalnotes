@@ -69,12 +69,12 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-argo-diagnosticreport.html"
+              "valueUri": "StructureDefinition-argo-diagnosticreport-notes-and-reports.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "StructureDefinition/argo-diagnosticreport"
+            "reference": "StructureDefinition/argo-diagnosticreport-notes-and-reports"
           }
         },
         {
@@ -144,7 +144,7 @@
         "kind": "page",
         "page": [
           {
-            "source": "StructureDefinition-argo-diagnosticreport.html",
+            "source": "StructureDefinition-argo-diagnosticreport-notes-and-reports.html",
             "title": "StructureDefinition Argo DiagnosticReport",
             "kind": "resource"
           },

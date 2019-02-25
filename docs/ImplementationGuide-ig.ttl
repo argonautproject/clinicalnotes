@@ -76,12 +76,12 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-argo-diagnosticreport.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-argo-diagnosticreport-notes-and-reports.html" ]
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-diagnosticreport>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/argo-diagnosticreport" ]
+         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-diagnosticreport-notes-and-reports>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/argo-diagnosticreport-notes-and-reports" ]
        ]
      ], [
        fhir:index 5;
@@ -149,7 +149,7 @@
        fhir:ImplementationGuide.page.kind [ fhir:value "page" ];
        fhir:ImplementationGuide.page.page [
          fhir:index 0;
-         fhir:ImplementationGuide.page.source [ fhir:value "StructureDefinition-argo-diagnosticreport.html" ];
+         fhir:ImplementationGuide.page.source [ fhir:value "StructureDefinition-argo-diagnosticreport-notes-and-reports.html" ];
          fhir:ImplementationGuide.page.title [ fhir:value "StructureDefinition Argo DiagnosticReport" ];
          fhir:ImplementationGuide.page.kind [ fhir:value "resource" ]
        ], [

@@ -1,6 +1,6 @@
 [Argonaut Clinical Notes Profile]: StructureDefinition-argo-clinicalnotes.html
-[Argonaut Diagnostic Report Profile]: StructureDefinition-argo-diagnosticreport.html
-[Argonaut Diagnostic Report Profile for Report and Note exchange]: StructureDefinition-argo-diagnosticreport.html
+[Argonaut Diagnostic Report Profile]: StructureDefinition-argo-diagnosticreport-notes-and-reports.html
+[Argonaut Diagnostic Report Profile for Report and Note exchange]: StructureDefinition-argo-diagnosticreport-notes-and-reports.html
 [CapabilityStatement]: {{site.data.fhir.path}}capabilitystatement.html
 [Cardiology]: todo.html
 [ClinicalImpression]: {{site.data.fhir.path}}clinicalimpression.html

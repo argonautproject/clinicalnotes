@@ -52,11 +52,11 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-argo-diagnosticreport.html"/>
+        <valueUri value="StructureDefinition-argo-diagnosticreport-notes-and-reports.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/argo-diagnosticreport"/>
+        <reference value="StructureDefinition/argo-diagnosticreport-notes-and-reports"/>
       </sourceReference>
     </resource>
     <resource>
@@ -110,7 +110,7 @@
       <title value="Profiles and Extensions"/>
       <kind value="page"/>
       <page>
-        <source value="StructureDefinition-argo-diagnosticreport.html"/>
+        <source value="StructureDefinition-argo-diagnosticreport-notes-and-reports.html"/>
         <title value="StructureDefinition Argo DiagnosticReport"/>
         <kind value="resource"/>
       </page>

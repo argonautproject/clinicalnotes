@@ -62,7 +62,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/argo-diagnosticreport"/>
+        <reference value="StructureDefinition/argo-diagnosticreport-notes-and-reports"/>
       </reference>
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>
@@ -109,7 +109,7 @@
         <title value="Profiles and Extensions"/>
         <generation value="html"/>
         <page>
-          <nameUrl value="StructureDefinition-argo-diagnosticreport.html"/>
+          <nameUrl value="StructureDefinition-argo-diagnosticreport-notes-and-reports.html"/>
           <title value="StructureDefinition Argo DiagnosticReport"/>
           <generation value="generated"/>
         </page>
