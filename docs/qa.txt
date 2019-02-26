@@ -2,7 +2,7 @@
 =========================================
 
 err = 10, warn = 8, info = 0
-Generated Mon Feb 25 15:40:47 EST 2019. FHIR version 4.0.0 for 3.0.1
+Generated Tue Feb 26 15:22:55 EST 2019. FHIR version 4.0.0 for 3.0.1
 
  Build Errors : 89 / 0
  C:\clinicalnotes\source\examples\encounter-example-1 : 2 / 0
@@ -78,7 +78,7 @@ ERROR: C:\clinicalnotes\docs\ValueSet-documentreference-category.xml.html#/html/
 ERROR: C:\clinicalnotes\docs\ValueSet-documentreference-category.ttl.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\StructureDefinition-argo-diagnosticreport-notes-and-reports.ttl.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\index.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
-ERROR: C:\clinicalnotes\docs\index.html#/html/head/body/div/div/div/div/div/div/p/a at Line 267, column 302: The link 'http://hl7.org/fhir/STU3/' for "FHIR Version 3.0.1" cannot be resolved
+ERROR: C:\clinicalnotes\docs\index.html#/html/head/body/div/div/div/div/div/div/p/a at Line 271, column 302: The link 'http://hl7.org/fhir/STU3/' for "FHIR Version 3.0.1" cannot be resolved
 ERROR: C:\clinicalnotes\docs\capstatements.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\profiles.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\profiles.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 264, column 8: The link 'StructureDefinition-argo-diagnosticreport.html' for "Argonaut Diagnostic Report Profile for Report and Note exchange" cannot be resolved
