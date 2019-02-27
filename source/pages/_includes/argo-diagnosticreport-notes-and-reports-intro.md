@@ -41,7 +41,7 @@ When Clients search with `DiagnosticReport.category` element across different FH
 
 - TBD
 
-[US Core DiagnosticReport]: http://hl7.org/fhir/us/core/StructureDefinition-us-core-diagnosticreport.html
+[US Core DiagnosticReport]: {{site.data.fhir.uscore}}/StructureDefinition-us-core-diagnosticreport.html
 [DiagnosticReport]:{{ site.data.fhir.path }}DiagnosticReport.html
  [Conformance]: daf-core-DocumentReference-conformance.html
  [boundaries section]: {{ site.data.fhir.path }}DocumentReference.html#bnr

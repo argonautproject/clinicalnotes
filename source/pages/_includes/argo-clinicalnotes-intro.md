@@ -50,7 +50,7 @@ The views provided on this page are of just the Clinical Notes Profile, and the 
 
 - TBD
 
-[US Core DocumentReference]: http://hl7.org/fhir/us/core/StructureDefinition-us-core-documentreference.html
+[US Core DocumentReference]: {{site.data.fhir.uscore}}/StructureDefinition-us-core-documentreference.html
 [MedicationStatement]:{{ site.data.fhir.path }}medicationstatement.html
 [DocumentReference]:{{ site.data.fhir.path }}DocumentReference.html
  [Conformance]: daf-core-DocumentReference-conformance.html

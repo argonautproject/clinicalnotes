@@ -30,7 +30,7 @@
     "id" : "uscore",
     "uri" : "http://hl7.org/fhir/us/core",
     "packageId" : "hl7.fhir.us.core",
-    "version" : "current"
+    "version" : "2.0.0"
   }],
   "definition" : {
     "grouping" : [{
