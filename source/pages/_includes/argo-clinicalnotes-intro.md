@@ -48,7 +48,7 @@ The views provided on this page are of just the Clinical Notes Profile, and the 
 
 ##### Examples
 
-- TBD
+- [Discharge-Summary-Note](discharge-summary-note.html)
 
 [US Core DocumentReference]: {{site.data.fhir.uscore}}/StructureDefinition-us-core-documentreference.html
 [MedicationStatement]:{{ site.data.fhir.path }}medicationstatement.html

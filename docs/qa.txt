@@ -2,9 +2,9 @@
 =========================================
 
 err = 10, warn = 8, info = 0
-Generated Wed Feb 27 08:43:08 EST 2019. FHIR version 4.0.0 for 3.0.1
+Generated Wed Feb 27 10:23:27 EST 2019. FHIR version 4.0.0 for 3.0.1
 
- Build Errors : 88 / 0
+ Build Errors : 89 / 0
  C:\clinicalnotes\source\examples\encounter-example-1 : 2 / 0
  C:\clinicalnotes\source\resources\CodeSystem-documentreference-category : 0 / 0
  C:\clinicalnotes\source\resources\ValueSet-argonaut-clinical-note-type : 0 / 0
@@ -103,6 +103,7 @@ ERROR: C:\clinicalnotes\docs\terminology.html#/html/head/body/div/div/nav/div/a 
 ERROR: C:\clinicalnotes\docs\StructureDefinition-argo-clinicalnotes.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\StructureDefinition-argo-clinicalnotes.html#/html/head/body/div/div/div/div/div/div/p/a at Line 319, column 96: The link 'http://hl7.org/fhir/STU3/DocumentReference.html' for "DocumentReference" cannot be resolved
 ERROR: C:\clinicalnotes\docs\StructureDefinition-argo-clinicalnotes.html#/html/head/body/div/div/div/div/div/div/p/a at Line 371, column 167: The link 'StructureDefinition-example-dr.html' for "merged profile view" cannot be resolved
+ERROR: C:\clinicalnotes\docs\StructureDefinition-argo-clinicalnotes.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 376, column 8: The link 'discharge-summary-note.html' for "Discharge-Summary-Note" cannot be resolved
 ERROR: C:\clinicalnotes\docs\StructureDefinition-argo-clinicalnotes.ttl.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\todo.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 == C:\clinicalnotes\source\examples\encounter-example-1.xml ==
