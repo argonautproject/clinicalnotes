@@ -25,6 +25,24 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="DocumentReference-discharge-summary-note.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="DocumentReference/discharge-summary-note"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="DocumentReference-progress-note.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="DocumentReference/progress-note"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-documentreference-category.html"/>
       </extension>
       <example value="false"/>

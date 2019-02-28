@@ -48,7 +48,8 @@ The views provided on this page are of just the Clinical Notes Profile, and the 
 
 ##### Examples
 
-- [Discharge-Summary-Note](discharge-summary-note.html)
+- [Discharge Summary Note](DocumentReference-discharge-summary-note.html)
+- [Progress Note](DocumentReference-progress-note.html)
 
 [US Core DocumentReference]: {{site.data.fhir.uscore}}/StructureDefinition-us-core-documentreference.html
 [MedicationStatement]:{{ site.data.fhir.path }}medicationstatement.html

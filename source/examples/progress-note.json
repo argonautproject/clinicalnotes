@@ -1,5 +1,9 @@
 {
     "resourceType": "DocumentReference",
+    "id": "progress-note",
+    "meta": {
+    "profile": ["http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-clinicalnotes"]
+  },
     "type": {
         "coding": [{
             "system": "http://loinc.org",

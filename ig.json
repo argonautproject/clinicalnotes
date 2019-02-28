@@ -92,6 +92,10 @@
         "DocumentReference/discharge-summary-note": {
             "source": "discharge-summary-note.json",
             "base": "DocumentReference-discharge-summary-note.html"
+        },
+        "DocumentReference/progress-note": {
+            "source": "progress-note.json",
+            "base": "DocumentReference-progress-note.html"
         }
     },
     "license": "CC0-1.0",

@@ -33,6 +33,30 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "DocumentReference-discharge-summary-note.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "DocumentReference/discharge-summary-note"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "DocumentReference-progress-note.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "DocumentReference/progress-note"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "ValueSet-documentreference-category.html"
             }
           ],

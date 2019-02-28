@@ -41,6 +41,20 @@
     </resource>
     <resource>
       <reference>
+        <reference value="DocumentReference/discharge-summary-note"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="DocumentReference/progress-note"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="ValueSet/documentreference-category"/>
       </reference>
       <exampleBoolean value="false"/>

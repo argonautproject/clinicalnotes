@@ -46,6 +46,20 @@
     },
     {
       "reference" : {
+        "reference" : "DocumentReference/discharge-summary-note"
+      },
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "DocumentReference/progress-note"
+      },
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
         "reference" : "ValueSet/documentreference-category"
       },
       "exampleBoolean" : false,
