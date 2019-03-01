@@ -57,6 +57,18 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "DiagnosticReport-cardiology-report.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "DiagnosticReport/cardiology-report"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "ValueSet-documentreference-category.html"
             }
           ],

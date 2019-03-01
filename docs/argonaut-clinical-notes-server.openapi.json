@@ -1,70 +1,27 @@
 ﻿{
   "openapi": "3.0.1",
   "info": {
-    "title": "Argonaut Clinical Notes Server",
-    "description": "This resource defines the expected capabilities ",
+    "title": "Argonaut Clinical Notes CapabilityStatement",
+    "description": "This profile defines the expected capabilities of an Argonaut Data Query server when conforming to the Argonaut Data Query Clinical Notes IG. The CapabilityStatement resource includes the complete list of actual Clinical Notes profiles, RESTful operations, and search parameters supported by Argonaut Data Query Servers. Servers have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.",
     "license": {
       "name": "CC0-1.0"
     },
     "version": "0.0.0",
-    "contact": {}
+    "contact": {
+      "url": "https://github.com/argonautproject/questionnaire/issues"
+    }
   },
   "externalDocs": {
-    "url": "http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/argonaut-clinical-notes-server",
+    "url": "http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/ClinicalNotes",
     "description": "FHIR CapabilityStatement"
   },
   "paths": {
-    "/Basic": {
-      "summary": "manage the collection of resources of type Basic",
-      "description": "Access to services to manage the collection of all resources of type Basic",
-      "get": {
-        "summary": "Search all resources based on a set of criteria",
-        "operationId": "searchBasic",
-        "responses": {
-          "default": {
-            "description": "Error, with details",
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/OperationOutcome"
-                }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "http://hl7.org/fhir/STU3/OperationOutcome.xsd"
-                }
-              }
-            }
-          },
-          "200": {
-            "description": "the resource being returned",
-            "headers": {
-              "ETag": {
-                "description": "Version from Resource.meta.version as a weak ETag"
-              }
-            },
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/Bundle"
-                }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "http://hl7.org/fhir/STU3/Bundle.xsd"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/Basic/{rid}": {
-      "summary": "Read/Write/etc resource instance of type Basic",
-      "description": "Access to services to manage the state of a single resource of type Basic",
+    "/DocumentReference/{rid}": {
+      "summary": "Read/Write/etc resource instance of type DocumentReference",
+      "description": "Access to services to manage the state of a single resource of type DocumentReference",
       "get": {
         "summary": "Read the current state of the resource",
-        "operationId": "readBasic",
+        "operationId": "readDocumentReference",
         "responses": {
           "default": {
             "description": "Error, with details",
@@ -91,12 +48,12 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/Basic"
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/DocumentReference"
                 }
               },
               "application/fhir+xml": {
                 "schema": {
-                  "$ref": "http://hl7.org/fhir/STU3/Basic.xsd"
+                  "$ref": "http://hl7.org/fhir/STU3/DocumentReference.xsd"
                 }
               }
             }
@@ -104,12 +61,12 @@
         }
       }
     },
-    "/Basic/{rid}/_history/{hid}": {
-      "summary": "Read past versions of resource instance of type Basic",
-      "description": "Access to previous versions of a single resource of type Basic",
+    "/DiagnosticReport/{rid}": {
+      "summary": "Read/Write/etc resource instance of type DiagnosticReport",
+      "description": "Access to services to manage the state of a single resource of type DiagnosticReport",
       "get": {
-        "summary": "Read a past state of the resource",
-        "operationId": "vreadBasic",
+        "summary": "Read the current state of the resource",
+        "operationId": "readDiagnosticReport",
         "responses": {
           "default": {
             "description": "Error, with details",
@@ -130,18 +87,18 @@
             "description": "the resource being returned",
             "headers": {
               "ETag": {
-                "description": "Version from Resource.meta.version as a weak ETag for that version"
+                "description": "Version from Resource.meta.version as a weak ETag"
               }
             },
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/Basic"
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/DiagnosticReport"
                 }
               },
               "application/fhir+xml": {
                 "schema": {
-                  "$ref": "http://hl7.org/fhir/STU3/Basic.xsd"
+                  "$ref": "http://hl7.org/fhir/STU3/DiagnosticReport.xsd"
                 }
               }
             }

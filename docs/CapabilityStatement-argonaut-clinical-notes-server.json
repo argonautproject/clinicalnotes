@@ -3,53 +3,154 @@
   "id": "argonaut-clinical-notes-server",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<ul><li>FHIR Version: 3.0.0</li><li>Supported formats: xml, json</li><li>Published: 2017-03-08</li><li>Published by: Health eData Inc</li></ul><p>The Section describes the expected capabilities etc....</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2 id=\"title\">Argonaut Clinical Notes CapabilityStatement</h2><p>This profile defines the expected capabilities of an Argonaut Data Query server when conforming to the Argonaut Data Query Clinical Notes IG. The CapabilityStatement resource includes the complete list of actual Clinical Notes profiles, RESTful operations, and search parameters supported by Argonaut Data Query Servers. Servers have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.</p><ul><li>FHIR Version: 3.0.1</li><li>Supported formats: xml, json</li><li>Published: 2019-02-28</li><li>Published by: The Argonaut Project</li></ul><h3 id=\"behavior\">FHIR RESTful Capabilities</h3><p>The Argonaut Clinical Notes Data Query Server <strong>SHALL</strong>:</p><ol><li>Implement the RESTful behavior according to the FHIR specification including returning the appropriate response classes as described in the FHIR specification for <a href=\"http://hl7.org/fhir/STU3/http.html\">FHIR RESTful API</a>.</li><li>Support json resource formats for all Argonaut Clinical Notes interactions.</li><li>Declare a CapabilityStatement identifying the list of profiles, operations, search parameter supported.</li><li>Support xml resource formats for all Argonaut questionnaire interactions.</li></ol><p id=\"security\"><strong>Security:</strong></p><p>For general security consideration refer to the <a href=\"https://argonautproject.github.io/questionnaire/index.html#security-and-privacy-considerations\">Security and Privacy Considerations</a>.</p><h3 class=\"no_toc\" id=\"resource--details\">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Operations</strong></p><li><strong>SHOULD</strong> support the\t<a href=\"http://fhir.org/guides/argonaut-clinicalnotes/OperationDefinition/expand\"><code>$expand</code></a> operation.</li><p><strong>Summary of Search Criteria</strong></p><table class=\"grid\"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported Includes</th></tr></thead><tbody><tr><td><a href=\"#documentreference\">DocumentReference</a></td><td><p><a href=\"http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-clinicalnotes\">Argonaut Clinical Notes Profile </a></p></td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t_id, \n\t\t\t\t\t\t\tclass, \n\t\t\t\t\t\t\tcreated, \n\t\t\t\t\t\t\tpatient, \n\t\t\t\t\t\t\ttype, class+patient, created+patient, patient+type\n\t\t\t\t\t\t</td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td></tr><tr><td><a href=\"#diagnosticreport\">DiagnosticReport</a></td><td><p><a href=\"http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-diagnosticreport-notes-and-reports\">Argonaut Diagnostic Report Profile for Report and Note exchange </a></p></td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t_id, \n\t\t\t\t\t\t\tcategory, \n\t\t\t\t\t\t\tcode, \n\t\t\t\t\t\t\tpatient, \n\t\t\t\t\t\t\tdate, category+date, category+date+patient, category+patient, code+date, code+date+patient, code+patient, date+patient\n\t\t\t\t\t\t</td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td></tr></tbody></table><br></br><h4 class=\"no_toc\" id=\"documentreference\">DocumentReference</h4><p>Supported Profiles:\n\t\t\t<p><a href=\"http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-clinicalnotes\">Argonaut Clinical Notes Profile </a></p>\n\n\t\t\t\t</p><p>Reference Policy: <code>resolves</code></p><p>Versioning Policy: <code>versioned</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>create</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>read</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>delete</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>\n\t\t\t\t\tA server <strong>SHALL</strong> be capable of returning a DocumentReference resource using:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\t<code class=\"highlighter-rouge\">GET [base]/DocumentReference/[id]</code>\n\t\t\t\t</li><br></br></ul><p>Search Parameter Summary:</p><table class=\"grid\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href=\"http://hl7.org/fhir/SearchParameter/Resource-_id\">_id</a></td><td>\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/DocumentReference?_id=[id]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"http://hl7.org/fhir/SearchParameter/DocumentReference-class\">class</a></td><td>\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/DocumentReference?class=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"http://hl7.org/fhir/SearchParameter/DocumentReference-created\">created</a></td><td>\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/DocumentReference?created=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"http://hl7.org/fhir/SearchParameter/DocumentReference-patient\">patient</a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/DocumentReference?patient=[patient]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"http://hl7.org/fhir/SearchParameter/DocumentReference-type\">type</a></td><td>\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/DocumentReference?type=[system]|[code]</code></td></tr></tbody></table><p>Search Parameter Combination Summary:</p><table class=\"grid\"><thead><tr><th>Conformance</th><th>Parameter Combination</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td>class+patient\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/DocumentReference?class=[system]|[code]&amp;patient=[patient]</code></td></tr><tr><td><strong>SHALL</strong></td><td>created+patient\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/DocumentReference?created=[system]|[code]&amp;patient=[patient]</code></td></tr><tr><td><strong>SHALL</strong></td><td>patient+type\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/DocumentReference?patient=[patient]&amp;type=[system]|[code]</code></td></tr></tbody></table><h4 class=\"no_toc\" id=\"diagnosticreport\">DiagnosticReport</h4><p>Supported Profiles:\n\t\t\t<p><a href=\"http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-diagnosticreport-notes-and-reports\">Argonaut Diagnostic Report Profile for Report and Note exchange </a></p>\n\n\t\t\t\t</p><p>Reference Policy: <code>resolves</code></p><p>Versioning Policy: <code>versioned</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>create</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>read</code>, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<code>delete</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>\n\t\t\t\t\tA server <strong>SHALL</strong> be capable of returning a DiagnosticReport resource using:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\t<code class=\"highlighter-rouge\">GET [base]/DiagnosticReport/[id]</code>\n\t\t\t\t</li><br></br></ul><p>Search Parameter Summary:</p><table class=\"grid\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href=\"http://hl7.org/fhir/SearchParameter/Resource-_id\">_id</a></td><td>\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/DiagnosticReport?_id=[id]</code></td></tr><tr><td><strong>SHOULD</strong></td><td><a href=\"http://hl7.org/fhir/SearchParameter/DiagnosticReport-category\">category</a></td><td>\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/DiagnosticReport?category=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"http://hl7.org/fhir/SearchParameter/DiagnosticReport-code\">code</a></td><td>\n\t\t\t\t\t\t\ttoken\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/DiagnosticReport?code=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"http://hl7.org/fhir/SearchParameter/DiagnosticReport-patient\">patient</a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/DiagnosticReport?patient=[patient]</code></td></tr><tr><td><strong>SHOULD</strong></td><td><a href=\"http://hl7.org/fhir/SearchParameter/DiagnosticReport-date\">date</a></td><td>\n\t\t\t\t\t\t\tdate\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/DiagnosticReport?date=[date]</code></td></tr></tbody></table><p>Search Parameter Combination Summary:</p><table class=\"grid\"><thead><tr><th>Conformance</th><th>Parameter Combination</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHOULD</strong></td><td>category+date\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/DiagnosticReport?category=[system]|[code]&amp;date=[date]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>category+date+patient\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/DiagnosticReport?category=[system]|[code]&amp;date=[date]&amp;patient=[patient]</code></td></tr><tr><td><strong>SHALL</strong></td><td>category+patient\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/DiagnosticReport?category=[system]|[code]&amp;patient=[patient]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>code+date\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/DiagnosticReport?code=[system]|[code]&amp;date=[date]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>code+date+patient\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/DiagnosticReport?code=[system]|[code]&amp;date=[date]&amp;patient=[patient]</code></td></tr><tr><td><strong>SHALL</strong></td><td>code+patient\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/DiagnosticReport?code=[system]|[code]&amp;patient=[patient]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>date+patient\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/DiagnosticReport?date=[date]&amp;patient=[patient]</code></td></tr></tbody></table><br></br></div>"
   },
-  "url": "http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/argonaut-clinical-notes-server",
+  "url": "http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/ClinicalNotes",
   "version": "0.0.0",
-  "name": "ArgonautClinicalNotesServer",
-  "title": "Argonaut Clinical Notes Server",
-  "status": "draft",
-  "date": "2017-03-08T00:00:00-05:00",
-  "publisher": "Health eData Inc",
+  "name": "clinical_notes",
+  "title": "Argonaut Clinical Notes CapabilityStatement",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-02-28",
+  "publisher": "The Argonaut Project",
   "contact": [
     {
       "telecom": [
         {
-          "system": "other",
-          "value": "ehaas@healthedatainc.com"
+          "system": "url",
+          "value": "https://github.com/argonautproject/questionnaire/issues"
         }
       ]
     }
   ],
-  "description": "This resource defines the expected capabilities ",
+  "description": "This profile defines the expected capabilities of an Argonaut Data Query server when conforming to the Argonaut Data Query Clinical Notes IG. The CapabilityStatement resource includes the complete list of actual Clinical Notes profiles, RESTful operations, and search parameters supported by Argonaut Data Query Servers. Servers have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
   "kind": "requirements",
-  "fhirVersion": "3.0.0",
+  "fhirVersion": "3.0.1",
+  "acceptUnknown": "both",
   "format": [
     "xml",
     "json"
   ],
+  "patchFormat": [
+    "application/json-patch+json"
+  ],
+  "implementationGuide": [
+    "http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig"
+  ],
+  "profile": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "SHALL"
+        }
+      ],
+      "reference": "http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-clinicalnotes",
+      "display": "Argonaut Clinical Notes Profile "
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "SHALL"
+        }
+      ],
+      "reference": "http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-diagnosticreport-notes-and-reports",
+      "display": "Argonaut Diagnostic Report Profile for Report and Note exchange "
+    }
+  ],
   "rest": [
     {
       "mode": "server",
+      "documentation": "The Argonaut Clinical Notes Data Query Server **SHALL**:\n\n1. Implement the RESTful behavior according to the FHIR specification including returning the appropriate response classes as described in the FHIR specification for [FHIR RESTful API](http://hl7.org/fhir/STU3/http.html).\n1. Support json resource formats for all Argonaut Clinical Notes interactions.\n1. Declare a CapabilityStatement identifying the list of profiles, operations, search parameter supported.\n1. Support xml resource formats for all Argonaut questionnaire interactions.",
+      "security": {
+        "description": "For general security consideration refer to the [Security and Privacy Considerations](https://argonautproject.github.io/questionnaire/index.html#security-and-privacy-considerations)."
+      },
       "resource": [
         {
-          "type": "Basic",
-          "interaction": [
+          "extension": [
             {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHOULD"
-                }
-              ],
-              "code": "search-type"
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "SHALL"
             },
             {
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHOULD"
+                  "valueCode": "SHALL"
+                },
+                {
+                  "url": "required",
+                  "valueString": "class"
+                },
+                {
+                  "url": "required",
+                  "valueString": "patient"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                },
+                {
+                  "url": "required",
+                  "valueString": "created"
+                },
+                {
+                  "url": "required",
+                  "valueString": "patient"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                },
+                {
+                  "url": "required",
+                  "valueString": "patient"
+                },
+                {
+                  "url": "required",
+                  "valueString": "type"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+            }
+          ],
+          "type": "DocumentReference",
+          "interaction": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "create"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
                 }
               ],
               "code": "read"
@@ -58,10 +159,257 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHOULD"
+                  "valueCode": "SHALL"
                 }
               ],
-              "code": "history-instance"
+              "code": "delete"
+            }
+          ],
+          "versioning": "versioned",
+          "readHistory": false,
+          "updateCreate": false,
+          "referencePolicy": [
+            "resolves"
+          ],
+          "searchParam": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "_id",
+              "definition": "http://hl7.org/fhir/SearchParameter/Resource-_id",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "class",
+              "definition": "http://hl7.org/fhir/SearchParameter/DocumentReference-class",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "created",
+              "definition": "http://hl7.org/fhir/SearchParameter/DocumentReference-created",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "patient",
+              "definition": "http://hl7.org/fhir/SearchParameter/DocumentReference-patient",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "type",
+              "definition": "http://hl7.org/fhir/SearchParameter/DocumentReference-type",
+              "type": "token"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "SHALL"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                },
+                {
+                  "url": "required",
+                  "valueString": "category"
+                },
+                {
+                  "url": "required",
+                  "valueString": "date"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                },
+                {
+                  "url": "required",
+                  "valueString": "category"
+                },
+                {
+                  "url": "required",
+                  "valueString": "date"
+                },
+                {
+                  "url": "required",
+                  "valueString": "patient"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                },
+                {
+                  "url": "required",
+                  "valueString": "category"
+                },
+                {
+                  "url": "required",
+                  "valueString": "patient"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                },
+                {
+                  "url": "required",
+                  "valueString": "code"
+                },
+                {
+                  "url": "required",
+                  "valueString": "date"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                },
+                {
+                  "url": "required",
+                  "valueString": "code"
+                },
+                {
+                  "url": "required",
+                  "valueString": "date"
+                },
+                {
+                  "url": "required",
+                  "valueString": "patient"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                },
+                {
+                  "url": "required",
+                  "valueString": "code"
+                },
+                {
+                  "url": "required",
+                  "valueString": "patient"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                },
+                {
+                  "url": "required",
+                  "valueString": "date"
+                },
+                {
+                  "url": "required",
+                  "valueString": "patient"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+            }
+          ],
+          "type": "DiagnosticReport",
+          "interaction": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "create"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "read"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "delete"
+            }
+          ],
+          "versioning": "versioned",
+          "readHistory": false,
+          "updateCreate": false,
+          "referencePolicy": [
+            "resolves"
+          ],
+          "searchParam": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "_id",
+              "definition": "http://hl7.org/fhir/SearchParameter/Resource-_id",
+              "type": "token"
             },
             {
               "extension": [
@@ -70,9 +418,58 @@
                   "valueCode": "SHOULD"
                 }
               ],
-              "code": "vread"
+              "name": "category",
+              "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-category",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "code",
+              "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-code",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "patient",
+              "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-patient",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "date",
+              "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-date",
+              "type": "date"
             }
           ]
+        }
+      ],
+      "operation": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "SHOULD"
+            }
+          ],
+          "name": "expand",
+          "definition": {
+            "reference": "http://fhir.org/guides/argonaut-clinicalnotes/OperationDefinition/expand"
+          }
         }
       ]
     }

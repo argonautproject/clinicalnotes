@@ -37,6 +37,12 @@
       </sourceReference>
     </resource>
     <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="DiagnosticReport/cardiology-report"/>
+      </sourceReference>
+    </resource>
+    <resource>
       <example value="false"/>
       <sourceReference>
         <reference value="ValueSet/documentreference-category"/>

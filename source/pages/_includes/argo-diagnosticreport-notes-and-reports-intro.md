@@ -39,7 +39,7 @@ When Clients search with `DiagnosticReport.category` element across different FH
 
 ##### Examples
 
-- TBD
+- [Cardiology Report](DiagnosticReport-cardiology-report.html)
 
 [US Core DiagnosticReport]: {{site.data.fhir.uscore}}/StructureDefinition-us-core-diagnosticreport.html
 [DiagnosticReport]:{{ site.data.fhir.path }}DiagnosticReport.html

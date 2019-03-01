@@ -65,7 +65,7 @@
             "base": "ValueSet-diagnosticreport-category.html"
         },
         "CapabilityStatement/argonaut-clinical-notes-server": {
-            "source": "capabilitystatement-argonaut-clinical-notes-server.xml",
+            "source": "capabilitystatement-argonaut-clinical-notes-server.json",
             "base": "CapabilityStatement-argonaut-clinical-notes-server.html"
         },
         "CapabilityStatement/argonaut-clinical-notes-client": {
@@ -96,6 +96,10 @@
         "DocumentReference/progress-note": {
             "source": "progress-note.json",
             "base": "DocumentReference-progress-note.html"
+        },
+        "DiagnosticReport/cardiology-report": {
+            "source": "cardiology-report.json",
+            "base": "DiagnosticReport-cardiology-report.html"
         }
     },
     "license": "CC0-1.0",

@@ -60,6 +60,13 @@
     },
     {
       "reference" : {
+        "reference" : "DiagnosticReport/cardiology-report"
+      },
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
         "reference" : "ValueSet/documentreference-category"
       },
       "exampleBoolean" : false,

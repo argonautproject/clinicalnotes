@@ -43,6 +43,15 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="DiagnosticReport-cardiology-report.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="DiagnosticReport/cardiology-report"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-documentreference-category.html"/>
       </extension>
       <example value="false"/>
