@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: cardiology-report</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Radiology <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code 'LP29684-5' = 'LP29684-5', given as 'Radiology'})</span></p><p><b>code</b>: MR Abdomen W contrast IV <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '36134-5' = '36134-5', given as 'MR Abdomen W contrast IV'})</span></p><p><b>subject</b>: <a href=\"Patient/730210\">Patient/730210</a></p><p><b>effective</b>: Jan 1, 2011 9:39:30 PM</p><p><b>presentedForm</b>: </p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: cardiology-report</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Radiology <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code 'LP29684-5' = 'LP29684-5', given as 'Radiology'})</span></p><p><b>code</b>: MR Abdomen W contrast IV <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '36134-5' = 'MR Abdomen W contrast IV', given as 'MR Abdomen W contrast IV'})</span></p><p><b>subject</b>: <a href=\"Patient/730210\">Patient/730210</a></p><p><b>effective</b>: Jan 1, 2011 9:39:30 PM</p><p><b>presentedForm</b>: </p></div>"
   },
   "status": "final",
   "category": {

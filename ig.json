@@ -69,7 +69,7 @@
             "base": "CapabilityStatement-argonaut-clinical-notes-server.html"
         },
         "CapabilityStatement/argonaut-clinical-notes-client": {
-            "source": "capabilitystatement-argonaut-clinical-notes-client.xml",
+            "source": "capabilitystatement-argonaut-clinical-notes-client.json",
             "base": "CapabilityStatement-argonaut-clinical-notes-client.html"
         },
         "CodeSystem/documentreference-category": {

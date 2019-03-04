@@ -3,36 +3,212 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
   <id value="argonaut-clinical-notes-client"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
-<ul><li>FHIR Version: 3.0.0</li><li>Supported formats: xml, json</li><li>Published: 2017-03-08</li><li>Published by: Health eData Inc</li></ul><p>The Section describes the expected capabilities etc....</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2 id="title">Argonaut Clinical Notes Client CapabilityStatement</h2><p>This profile defines the expected capabilities of an Argonaut Data Query Client when conforming to the Argonaut Clinical Notes IG. The complete list of FHIR profiles, RESTful operations, and search parameters supported by Argonaut Servers are defined in the Capability Statements for Server. </p><ul><li>FHIR Version: 3.0.1</li><li>Supported formats: xml, json</li><li>Published: 2019-03-04</li><li>Published by: The Argonaut Project</li></ul><h3 id="behavior">FHIR RESTful Capabilities</h3><p>The Argonaut Clinical Notes Data Query Client <strong>SHALL</strong>:</p><ul><li>Support fetching and querying one or more Argonaut Clinical Notes profile(s), using the supported RESTful interactions and search parameters declared in the Argnaut Clinical Notes Server CapabilityStatement.</li></ul><p id="security"><strong>Security:</strong></p><p>For general security consideration refer to the <a href="https://argonautproject.github.io/questionnaire/index.html#security-and-privacy-considerations">Security and Privacy Considerations</a>.</p><h3 class="no_toc" id="resource--details">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Operations</strong></p><li><strong>SHOULD</strong> support the	<a href="http://fhir.org/guides/argonaut-clinicalnotes/OperationDefinition/expand"><code>$expand</code></a> operation.</li><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported Includes</th></tr></thead><tbody><tr><td><a href="#documentreference">DocumentReference</a></td><td><p><a href="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-clinicalnotes">Argonaut Clinical Notes Profile </a></p></td><td>
+							
+							_id, 
+							class, 
+							created, 
+							patient, 
+							type, class+created+patient, class+patient, created+patient, created+patient+type, patient+type
+						</td><td>
+							
+						</td></tr><tr><td><a href="#diagnosticreport">DiagnosticReport</a></td><td><p><a href="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-diagnosticreport-notes-and-reports">Argonaut Diagnostic Report Profile for Report and Note exchange </a></p></td><td>
+							
+							_id, 
+							category, 
+							code, 
+							patient, 
+							date, category+date+patient, category+patient, code+date+patient, code+patient, date+patient
+						</td><td>
+							
+						</td></tr><tr><td><a href="#binary">Binary</a></td><td>
+
+							
+
+						</td><td>
+							
+							_id
+						</td><td>
+							
+						</td></tr></tbody></table><br></br><h4 class="no_toc" id="documentreference">DocumentReference</h4><p>Supported Profiles:
+			<p><a href="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-clinicalnotes">Argonaut Clinical Notes Profile </a></p>
+
+				</p><ul><li>The search parameters <code>created</code>, <code>class</code>, and <code>type</code>  MAY NOT be available as a <em>single</em> search parameter but SHALL be available in the combinations listed below.</li></ul><p>Profile Interaction Summary:</p><ul><li><strong>SHOULD</strong> support 
+																							<code>create</code>, 
+																							<code>read</code>, 
+																							<code>delete</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
+					A Client <strong>SHOULD</strong> be capable of fetching a DocumentReference resource using:
+					<br></br>
+						<code class="highlighter-rouge">GET [base]/DocumentReference/[id]</code>
+				</li><br></br></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHOULD</strong></td><td><a href="http://hl7.org/fhir/SearchParameter/Resource-id">_id</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?_id=[id]</code></td></tr><tr><td><strong>SHOULD</strong></td><td><a href="http://hl7.org/fhir/SearchParameter/DocumentReference-class">class</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?class=[system]|[code]</code></td></tr><tr><td><strong>SHOULD</strong></td><td><a href="http://hl7.org/fhir/SearchParameter/DocumentReference-created">created</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?created=[system]|[code]</code></td></tr><tr><td><strong>SHOULD</strong></td><td><a href="http://hl7.org/fhir/SearchParameter/DocumentReference-patient">patient</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?patient=[patient]</code></td></tr><tr><td><strong>SHOULD</strong></td><td><a href="http://fhir.org/guides/argonaut-clinicalnotes/SearchParameter/DocumentReference-type">type</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?type=[system]|[code]</code></td></tr></tbody></table><p>Search Parameter Combination Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter Combination</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHOULD</strong></td><td>class+created+patient
+						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?class=[system]|[code]&amp;created=[system]|[code]&amp;patient=[patient]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>class+patient
+						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?class=[system]|[code]&amp;patient=[patient]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>created+patient
+						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?created=[system]|[code]&amp;patient=[patient]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>created+patient+type
+						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?created=[system]|[code]&amp;patient=[patient]&amp;type=[system]|[code]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+type
+						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?patient=[patient]&amp;type=[system]|[code]</code></td></tr></tbody></table><h4 class="no_toc" id="diagnosticreport">DiagnosticReport</h4><p>Supported Profiles:
+			<p><a href="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-diagnosticreport-notes-and-reports">Argonaut Diagnostic Report Profile for Report and Note exchange </a></p>
+
+				</p><ul><li>The search parameters <code>date</code>, <code>category</code>, and  <code>code</code>  MAY NOT be available as a <em>single</em> search parameter but SHALL be available in the combinations listed below.</li></ul><p>Profile Interaction Summary:</p><ul><li><strong>SHOULD</strong> support 
+																							<code>create</code>, 
+																							<code>read</code>, 
+																							<code>delete</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
+					A Client <strong>SHOULD</strong> be capable of fetching a DiagnosticReport resource using:
+					<br></br>
+						<code class="highlighter-rouge">GET [base]/DiagnosticReport/[id]</code>
+				</li><br></br></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHOULD</strong></td><td><a href="http://hl7.org/fhir/SearchParameter/Resource-id">_id</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?_id=[id]</code></td></tr><tr><td><strong>SHOULD</strong></td><td><a href="http://hl7.org/fhir/SearchParameter/DiagnosticReport-category">category</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?category=[system]|[code]</code></td></tr><tr><td><strong>SHOULD</strong></td><td><a href="http://hl7.org/fhir/SearchParameter/DiagnosticReport-code">code</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?code=[system]|[code]</code></td></tr><tr><td><strong>SHOULD</strong></td><td><a href="http://hl7.org/fhir/SearchParameter/DiagnosticReport-patient">patient</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?patient=[patient]</code></td></tr><tr><td><strong>SHOULD</strong></td><td><a href="http://hl7.org/fhir/SearchParameter/DiagnosticReport-date">date</a></td><td>
+							date
+						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?date=[date]</code></td></tr></tbody></table><p>Search Parameter Combination Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter Combination</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHOULD</strong></td><td>category+date+patient
+						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?category=[system]|[code]&amp;date=[date]&amp;patient=[patient]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>category+patient
+						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?category=[system]|[code]&amp;patient=[patient]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>code+date+patient
+						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?code=[system]|[code]&amp;date=[date]&amp;patient=[patient]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>code+patient
+						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?code=[system]|[code]&amp;patient=[patient]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>date+patient
+						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?date=[date]&amp;patient=[patient]</code></td></tr></tbody></table><h4 class="no_toc" id="binary">Binary</h4><p>Profile Interaction Summary:</p><ul><li><strong>SHOULD</strong> support 
+																							<code>read</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
+					A Client <strong>SHOULD</strong> be capable of fetching a Binary resource using:
+					<br></br>
+						<code class="highlighter-rouge">GET [base]/Binary/[id]</code>
+				</li><br></br></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHOULD</strong></td><td><a href="http://hl7.org/fhir/SearchParameter/Resource-id">_id</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/Binary?_id=[id]</code></td></tr></tbody></table><br></br></div>
   </text>
-  <url value="http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/argonaut-clinical-notes-client"/>
+  <url value="http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/clinical-notes-client"/>
   <version value="0.0.0"/>
-  <name value="ArgonautClinicalNotesClient"/>
-  <title value="Argonaut Clinical Notes Client"/>
-  <status value="draft"/>
-  <date value="2017-03-08T00:00:00-05:00"/>
-  <publisher value="Health eData Inc"/>
+  <name value="clinical_notes_client"/>
+  <title value="Argonaut Clinical Notes Client CapabilityStatement"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2019-03-04"/>
+  <publisher value="The Argonaut Project"/>
   <contact>
     <telecom>
-      <system value="other"/>
-      <value value="ehaas@healthedatainc.com"/>
+      <system value="url"/>
+      <value value="https://github.com/argonautproject/questionnaire/issues"/>
     </telecom>
   </contact>
-  <description value="This resource defines the expected capabilities "/>
+  <description value="This profile defines the expected capabilities of an Argonaut Data Query Client when conforming to the Argonaut Clinical Notes IG. The complete list of FHIR profiles, RESTful operations, and search parameters supported by Argonaut Servers are defined in the Capability Statements for Server. "/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
   <kind value="requirements"/>
-  <fhirVersion value="3.0.0"/>
+  <fhirVersion value="3.0.1"/>
+  <acceptUnknown value="both"/>
   <format value="xml"/>
   <format value="json"/>
+  <patchFormat value="application/json-patch+json"/>
+  <implementationGuide value="http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig"/>
+  <profile>
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <reference value="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-clinicalnotes"/>
+    <display value="Argonaut Clinical Notes Profile&#xA0;"/>
+  </profile>
+  <profile>
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <reference value="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-diagnosticreport-notes-and-reports"/>
+    <display value="Argonaut Diagnostic Report Profile for Report and Note exchange&#xA0;"/>
+  </profile>
   <rest>
     <mode value="client"/>
+    <documentation value="The Argonaut Clinical Notes Data Query Client **SHALL**:&#xA;&#xA;- Support fetching and querying one or more Argonaut Clinical Notes profile(s), using the supported RESTful interactions and search parameters declared in the Argnaut Clinical Notes Server CapabilityStatement."/>
+    <security>
+      <description value="For general security consideration refer to the [Security and Privacy Considerations](https://argonautproject.github.io/questionnaire/index.html#security-and-privacy-considerations)."/>
+    </security>
     <resource>
-      <type value="Basic"/>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <extension url="required">
+          <valueString value="class"/>
+        </extension>
+        <extension url="required">
+          <valueString value="created"/>
+        </extension>
+        <extension url="required">
+          <valueString value="patient"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <extension url="required">
+          <valueString value="class"/>
+        </extension>
+        <extension url="required">
+          <valueString value="patient"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <extension url="required">
+          <valueString value="created"/>
+        </extension>
+        <extension url="required">
+          <valueString value="patient"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <extension url="required">
+          <valueString value="created"/>
+        </extension>
+        <extension url="required">
+          <valueString value="patient"/>
+        </extension>
+        <extension url="required">
+          <valueString value="type"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <extension url="required">
+          <valueString value="patient"/>
+        </extension>
+        <extension url="required">
+          <valueString value="type"/>
+        </extension>
+      </extension>
+      <type value="DocumentReference"/>
+      <documentation value="- The search parameters `created`, `class`, and `type`  MAY NOT be available as a *single* search parameter but SHALL be available in the combinations listed below."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
         </extension>
-        <code value="search-type"/>
+        <code value="create"/>
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -44,14 +220,209 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
         </extension>
-        <code value="history-instance"/>
+        <code value="delete"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <name value="class"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/DocumentReference-class"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <name value="created"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/DocumentReference-created"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <name value="patient"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/DocumentReference-patient"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <name value="type"/>
+        <definition value="http://fhir.org/guides/argonaut-clinicalnotes/SearchParameter/DocumentReference-type"/>
+        <type value="token"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <extension url="required">
+          <valueString value="category"/>
+        </extension>
+        <extension url="required">
+          <valueString value="date"/>
+        </extension>
+        <extension url="required">
+          <valueString value="patient"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <extension url="required">
+          <valueString value="category"/>
+        </extension>
+        <extension url="required">
+          <valueString value="patient"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <extension url="required">
+          <valueString value="code"/>
+        </extension>
+        <extension url="required">
+          <valueString value="date"/>
+        </extension>
+        <extension url="required">
+          <valueString value="patient"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <extension url="required">
+          <valueString value="code"/>
+        </extension>
+        <extension url="required">
+          <valueString value="patient"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <extension url="required">
+          <valueString value="date"/>
+        </extension>
+        <extension url="required">
+          <valueString value="patient"/>
+        </extension>
+      </extension>
+      <type value="DiagnosticReport"/>
+      <documentation value="- The search parameters `date`, `category`, and  `code`  MAY NOT be available as a *single* search parameter but SHALL be available in the combinations listed below."/>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="create"/>
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
         </extension>
-        <code value="vread"/>
+        <code value="read"/>
       </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="delete"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <name value="category"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/DiagnosticReport-category"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <name value="code"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/DiagnosticReport-code"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <name value="patient"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/DiagnosticReport-patient"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <name value="date"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/DiagnosticReport-date"/>
+        <type value="date"/>
+      </searchParam>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL"/>
+      </extension>
+      <type value="Binary"/>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+      </searchParam>
+    </resource>
+    <operation>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD"/>
+      </extension>
+      <name value="expand"/>
+      <definition>
+        <reference value="http://fhir.org/guides/argonaut-clinicalnotes/OperationDefinition/expand"/>
+      </definition>
+    </operation>
   </rest>
 </CapabilityStatement>

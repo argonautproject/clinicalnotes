@@ -105,6 +105,51 @@
           }
         }
       }
+    },
+    "/Binary/{rid}": {
+      "summary": "Read/Write/etc resource instance of type Binary",
+      "description": "Access to services to manage the state of a single resource of type Binary",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readBinary",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/Binary"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/Binary.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

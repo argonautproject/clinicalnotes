@@ -1,19 +1,19 @@
 ﻿Argonaut Clinical Notes : Validation Results
 =========================================
 
-err = 26, warn = 24, info = 20
-Generated Fri Mar 01 10:57:59 EST 2019. FHIR version 4.0.0 for 3.0.1
+err = 32, warn = 28, info = 40
+Generated Mon Mar 04 15:55:31 EST 2019. FHIR version 4.0.0 for 3.0.1
 
- Build Errors : 107 / 0
- C:\clinicalnotes\source\examples\cardiology-report : 1 / 1
- C:\clinicalnotes\source\examples\discharge-summary-note : 3 / 3
+ Build Errors : 108 / 0
+ C:\clinicalnotes\source\examples\cardiology-report : 2 / 1
+ C:\clinicalnotes\source\examples\discharge-summary-note : 3 / 4
  C:\clinicalnotes\source\examples\encounter-example-1 : 2 / 0
  C:\clinicalnotes\source\examples\progress-note : 2 / 3
  C:\clinicalnotes\source\resources\CodeSystem-documentreference-category : 0 / 0
  C:\clinicalnotes\source\resources\ValueSet-argonaut-clinical-note-type : 0 / 0
  C:\clinicalnotes\source\resources\ValueSet-diagnosticreport-category : 0 / 0
  C:\clinicalnotes\source\resources\ValueSet-documentreference-category : 0 / 0
- C:\clinicalnotes\source\resources\capabilitystatement-argonaut-clinical-notes-client : 1 / 2
+ C:\clinicalnotes\source\resources\capabilitystatement-argonaut-clinical-notes-client : 3 / 13
  C:\clinicalnotes\source\resources\capabilitystatement-argonaut-clinical-notes-server : 3 / 13
  C:\clinicalnotes\source\resources\ig : 0 / 0
  C:\clinicalnotes\source\resources\structuredefinition-argo-clinicalnotes : 0 / 0
@@ -21,6 +21,7 @@ Generated Fri Mar 01 10:57:59 EST 2019. FHIR version 4.0.0 for 3.0.1
 </table>
 == n/a ==
 ERROR: C:\clinicalnotes\source\resources\capabilitystatement-argonaut-clinical-notes-server.json: Resource id/url mismatch: argonaut-clinical-notes-server/http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/ClinicalNotes
+ERROR: C:\clinicalnotes\source\resources\capabilitystatement-argonaut-clinical-notes-client.json: Resource id/url mismatch: argonaut-clinical-notes-client/http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/clinical-notes-client
 ERROR: C:\clinicalnotes\docs\StructureDefinition-argo-diagnosticreport-notes-and-reports-mappings.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\toc.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\toc.html#/html/head/body/div/div/div/div/div/div/p/a at Line 270, column 11: The link 'operations.html' for "Operations" cannot be resolved
@@ -30,7 +31,7 @@ ERROR: C:\clinicalnotes\docs\all-examples.html#/html/head/body/div/div/nav/div/a
 ERROR: C:\clinicalnotes\docs\ValueSet-argonaut-clinical-note-type.xml.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\CodeSystem-documentreference-category.ttl.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\DiagnosticReport-cardiology-report.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
-ERROR: C:\clinicalnotes\docs\DiagnosticReport-cardiology-report.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 295, column 535: The link 'Patient/730210' for "Patient/730210" cannot be resolved
+ERROR: C:\clinicalnotes\docs\DiagnosticReport-cardiology-report.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 295, column 552: The link 'Patient/730210' for "Patient/730210" cannot be resolved
 ERROR: C:\clinicalnotes\docs\StructureDefinition-argo-clinicalnotes-definitions.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\guidance.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\guidance.html#/html/head/body/div/div/div/div/div/div/p/a at Line 350, column 105: The link '#determining-server-note-and-report-type-support-expand' for "section below" cannot be resolved (valid targets: [page-content-wrapper, clinical-notes, discovering-server-read-and-write-formats, publish-box, segment-post-footer, fn:1, search, stripe, segment-footer, segment-header, fnref:1, resource-selection, fnref:2, support-requirements, discovering-note-and-report-types, fn:2, note-and-report-types-scenario4, fhir-resources-to-exchange-clinical-notes, future-work, back-to-top, note-and-report-types-scenario1, note-and-report-types-scenario2, segment-navbar, note-and-report-types-scenario3, clinical-notes-vs-clinicalimpression, determining-server-note-type-support-using-the-value-set-expansion-operation-expand, read-and-write-format-scenario1, read-and-write-format-scenario2, project-status])
@@ -128,10 +129,12 @@ ERROR: C:\clinicalnotes\docs\StructureDefinition-argo-clinicalnotes.ttl.html#/ht
 ERROR: C:\clinicalnotes\docs\DocumentReference-discharge-summary-note.ttl.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\todo.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 == C:\clinicalnotes\source\examples\cardiology-report.json ==
+ERROR: DiagnosticReport/cardiology-report: DiagnosticReport.category.coding: Error null validating Coding
 ERROR: DiagnosticReport/cardiology-report: DiagnosticReport.subject: Unable to resolve resource 'Patient/730210'
 WARNING: DiagnosticReport/cardiology-report: DiagnosticReport.presentedForm.contentType: ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
 == C:\clinicalnotes\source\examples\discharge-summary-note.json ==
 ERROR: DocumentReference/discharge-summary-note: DocumentReference.type: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/c80-doc-typecodes (http://hl7.org/fhir/ValueSet/c80-doc-typecodes, and a code from this value set is required) (codes = http://loinc.org#8648-8)
+WARNING: DocumentReference/discharge-summary-note: DocumentReference.type.coding: The display "Discharge Summary" is not a valid display for the code {http://loinc.org}8648-8 - should be one of ["Hospital course Narrative","Hospital course"]
 WARNING: DocumentReference/discharge-summary-note: DocumentReference.class: [Display Name for http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category#clinical-note must be one of 'Clinical Note']
 WARNING: DocumentReference/discharge-summary-note: DocumentReference.class.coding: Display Name for http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category#clinical-note must be one of 'Clinical Note'
 ERROR: DocumentReference/discharge-summary-note: DocumentReference.subject: Unable to resolve resource 'Patient/1316024'
@@ -150,10 +153,23 @@ ERROR: DocumentReference/progress-note: DocumentReference.content.attachment: Pr
 == C:\clinicalnotes\source\resources\ValueSet-argonaut-clinical-note-type.xml ==
 == C:\clinicalnotes\source\resources\ValueSet-diagnosticreport-category.xml ==
 == C:\clinicalnotes\source\resources\ValueSet-documentreference-category.xml ==
-== C:\clinicalnotes\source\resources\capabilitystatement-argonaut-clinical-notes-client.xml ==
+== C:\clinicalnotes\source\resources\capabilitystatement-argonaut-clinical-notes-client.json ==
 WARNING: CapabilityStatement/argonaut-clinical-notes-client: CapabilityStatement.format[1]: ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
 WARNING: CapabilityStatement/argonaut-clinical-notes-client: CapabilityStatement.format[2]: ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
-ERROR: CapabilityStatement/argonaut-clinical-notes-client: CapabilityStatement.profile: Unable to resolve resource 'http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/template-basic'
+WARNING: CapabilityStatement/argonaut-clinical-notes-client: CapabilityStatement.patchFormat: ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
+INFORMATION: CapabilityStatement/argonaut-clinical-notes-client: CapabilityStatement.rest.resource[1].extension[2].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/argonaut-clinical-notes-client: CapabilityStatement.rest.resource[1].extension[3].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/argonaut-clinical-notes-client: CapabilityStatement.rest.resource[1].extension[4].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/argonaut-clinical-notes-client: CapabilityStatement.rest.resource[1].extension[5].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/argonaut-clinical-notes-client: CapabilityStatement.rest.resource[1].extension[6].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/argonaut-clinical-notes-client: CapabilityStatement.rest.resource[2].extension[2].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/argonaut-clinical-notes-client: CapabilityStatement.rest.resource[2].extension[3].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/argonaut-clinical-notes-client: CapabilityStatement.rest.resource[2].extension[4].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/argonaut-clinical-notes-client: CapabilityStatement.rest.resource[2].extension[5].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/argonaut-clinical-notes-client: CapabilityStatement.rest.resource[2].extension[6].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+ERROR: CapabilityStatement/argonaut-clinical-notes-client: CapabilityStatement.rest.operation.definition: Unable to resolve resource 'http://fhir.org/guides/argonaut-clinicalnotes/OperationDefinition/expand'
+ERROR: http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/clinical-notes-client: conformance resource C:\clinicalnotes\source\resources\capabilitystatement-argonaut-clinical-notes-client.json canonical URL (http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/argonaut-clinical-notes-client) does not match the URL (http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/clinical-notes-client)
+ERROR: C:\clinicalnotes\source\resources\capabilitystatement-argonaut-clinical-notes-client: URL Mismatch http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/argonaut-clinical-notes-client vs http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/clinical-notes-client
 == C:\clinicalnotes\source\resources\capabilitystatement-argonaut-clinical-notes-server.json ==
 WARNING: CapabilityStatement/argonaut-clinical-notes-server: CapabilityStatement.format[1]: ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
 WARNING: CapabilityStatement/argonaut-clinical-notes-server: CapabilityStatement.format[2]: ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
@@ -161,13 +177,13 @@ WARNING: CapabilityStatement/argonaut-clinical-notes-server: CapabilityStatement
 INFORMATION: CapabilityStatement/argonaut-clinical-notes-server: CapabilityStatement.rest.resource[1].extension[2].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
 INFORMATION: CapabilityStatement/argonaut-clinical-notes-server: CapabilityStatement.rest.resource[1].extension[3].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
 INFORMATION: CapabilityStatement/argonaut-clinical-notes-server: CapabilityStatement.rest.resource[1].extension[4].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/argonaut-clinical-notes-server: CapabilityStatement.rest.resource[1].extension[5].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/argonaut-clinical-notes-server: CapabilityStatement.rest.resource[1].extension[6].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
 INFORMATION: CapabilityStatement/argonaut-clinical-notes-server: CapabilityStatement.rest.resource[2].extension[2].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
 INFORMATION: CapabilityStatement/argonaut-clinical-notes-server: CapabilityStatement.rest.resource[2].extension[3].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
 INFORMATION: CapabilityStatement/argonaut-clinical-notes-server: CapabilityStatement.rest.resource[2].extension[4].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
 INFORMATION: CapabilityStatement/argonaut-clinical-notes-server: CapabilityStatement.rest.resource[2].extension[5].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
 INFORMATION: CapabilityStatement/argonaut-clinical-notes-server: CapabilityStatement.rest.resource[2].extension[6].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/argonaut-clinical-notes-server: CapabilityStatement.rest.resource[2].extension[7].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/argonaut-clinical-notes-server: CapabilityStatement.rest.resource[2].extension[8].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
 ERROR: CapabilityStatement/argonaut-clinical-notes-server: CapabilityStatement.rest.operation.definition: Unable to resolve resource 'http://fhir.org/guides/argonaut-clinicalnotes/OperationDefinition/expand'
 ERROR: http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/ClinicalNotes: conformance resource C:\clinicalnotes\source\resources\capabilitystatement-argonaut-clinical-notes-server.json canonical URL (http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/argonaut-clinical-notes-server) does not match the URL (http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/ClinicalNotes)
 ERROR: C:\clinicalnotes\source\resources\capabilitystatement-argonaut-clinical-notes-server: URL Mismatch http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/argonaut-clinical-notes-server vs http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/ClinicalNotes
