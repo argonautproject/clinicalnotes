@@ -8,7 +8,7 @@
 [Consultation Note (11488-4)]: https://s.details.loinc.org/LOINC/11488-4.html?sections=Comprehensive
 [DiagnosticReport]: {{site.data.fhir.path}}diagnosticreport.html
 [Discharge Summary (18842-5)]: https://s.details.loinc.org/LOINC/18842-5.html?sections=Comprehensive
-[Document types]: {{site.data.fhir.path}}valueset-c80-doc-classcodes.html
+[Document types]: {{site.data.fhir.path}}valueset-c80-doc-typecodes.html
 [DocumentReference vs DiagnosticReport]: guidance.html#documentreference-vs-diagnosticreport
 [DocumentReference]: {{site.data.fhir.path}}documentreference.html
 [Downloads]: downloads.html "Downloads Page"

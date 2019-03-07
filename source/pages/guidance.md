@@ -24,15 +24,19 @@ Specifically, this implementation guide defines the exchange of the following fi
 * [Procedures Note (28570-0)]
 * [Progress Note (11506-3)]
 
-The Argonaut project team developed this initial list after surveying the participants in Argonaut and the US Veterans Administration (VA). They represent the *minimum* set a system must support to claim conformance to this guide. In addition, systems are encouraged to support other common notes types such as:
+and SHOULD support the DiagnosticReport categories:
 
-*TODO - link these to LOINC too*
-* Imaging
-* Pathology narrative
-* Cardiology Reports 
+* Cardiology (LP29684-5) 
+* Radiology (LP29708-2)
+* Pathology (LP7839-6)
+
+The Argonaut project team developed this initial list after surveying the participants in Argonaut and the US Veterans Administration (VA). They represent the *minimum* set a system must support to claim conformance to this guide. In addition, systems are encouraged to support other common notes types such as:
+ 
 * Referral Note
 * Surgical Operation Note
 * Nurse Note
+
+The full list of note (document) types is available in the [Document Types] value set.
 
 ### FHIR Resources to Exchange Clinical Notes
 
@@ -55,13 +59,42 @@ For example, when `DiagnosticReport.presentedForm.url` references a Scan (PDF), 
 
 {% include img.html img="both-url.jpg" caption="Figure 2: Expose a PDF Report Through Both DiagnosticReport and DocumentReference" %}
 
+
+```
+{
+  ...DoucmentReference snip...
+    "content": [
+        {
+            "attachment": {
+                "contentType": "application/xhtml",
+                "url": "http://localhost:9556/svc/fhir/Binary/1e404af3-077f-4bee-b7a6-a9be97e1ce32",
+                "creation": "2005-12-24"
+            }
+        }
+    ]
+}
+```
+```
+{
+  ...DiagnosticReport snip...
+   "presentedForm": [
+        {
+            "contentType": "application/xhtml",
+            "url": "http://localhost:9556/svc/fhir/Binary/1e404af3-077f-4bee-b7a6-a9be97e1ce32",
+            "creation": "2005-12-24"
+        }
+    ]
+}
+```
+
+
 Note that not all scanned information stored through DocumentReference will be exposed through DiagnosticReport since DocumentReference stores other non-clinical information. For example, DocumentReference can point to an insurance card.
 
 #### Support Requirements
 
 This guide requires systems implement the Argonaut Clinical Notes DocumentReference profile and to support a *minimum* of all five Common Clinical Notes listed above. Systems and may extend there capabilities to other [Document types] as well.
 
-This guide requires systems implement the Argonaut Clinical Notes DiagnosticReport profile and to support a *minimum* of the three report categories:
+This guide requires systems implement the Argonaut Clinical Notes DiagnosticReport profile and to SHOULD support a *minimum* of the three report categories:
 
 - Cardiology (LP29684-5)
 - Radiology (LP29708-2)
