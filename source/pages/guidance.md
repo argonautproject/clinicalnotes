@@ -55,11 +55,11 @@ In order to enable consistent access to scanned narrative-only clinical reports 
 * DocumentReference.content.attachment.url
 * DiagnosticReport.presentedForm.url
 
-For example, when `DiagnosticReport.presentedForm.url` references a Scan (PDF), that Attachment shall also be accessible through `DocumentReference.content.attachment.url`.(See Figure 2)
+For example, when `DiagnosticReport.presentedForm.url` references a Scan (PDF), that Attachment **SHALL** also be accessible through `DocumentReference.content.attachment.url`.(See Figure 2) This guide requires servers implement the duplicate reference to allow a client to find a Pathology report, or other Diagnostic Reports, in either Resource. If servers properly categorized scanned reports and used the correct resource per report type (e.g. Pathology scan in DiagnosticReport) this wouldn't be required.
 
 {% include img.html img="both-url.jpg" caption="Figure 2: Expose a PDF Report Through Both DiagnosticReport and DocumentReference" %}
 
-
+**DocumentReference and DiagnosticReport Snippets Referencing Common Binary**
 ```
 {
   ...DoucmentReference snip...
@@ -67,7 +67,7 @@ For example, when `DiagnosticReport.presentedForm.url` references a Scan (PDF), 
         {
             "attachment": {
                 "contentType": "application/xhtml",
-                "url": "http://localhost:9556/svc/fhir/Binary/1e404af3-077f-4bee-b7a6-a9be97e1ce32",
+                "url": "http://example.org/fhir/Binary/1e404af3-077f-4bee-b7a6-a9be97e1ce32",
                 "creation": "2005-12-24"
             }
         }
@@ -80,7 +80,7 @@ For example, when `DiagnosticReport.presentedForm.url` references a Scan (PDF), 
    "presentedForm": [
         {
             "contentType": "application/xhtml",
-            "url": "http://localhost:9556/svc/fhir/Binary/1e404af3-077f-4bee-b7a6-a9be97e1ce32",
+            "url": "http://example.org/fhir/Binary/1e404af3-077f-4bee-b7a6-a9be97e1ce32",
             "creation": "2005-12-24"
         }
     ]
@@ -196,7 +196,29 @@ However, in existing EHRs, the clinical impression is often contained with in a 
 
 ### Future Work
 
-Expand the number of notes systems must support.
+* Expand the number of notes systems must support.
+* Implementers developing on [FHIR R4](http://hl7.org/fhir/) should follow the updated Clinical Notes design in [US Core](https://build.fhir.org/ig/HL7/US-Core-R4/). 
+
+#### ONC 2019 NPRM
+ The Office of the National Coordinator (ONC) published a new [Notice of Proposed Rulemaking](https://www.healthit.gov/topic/laws-regulation-and-policy/notice-proposed-rulemaking-improve-interoperability-health) on March 4, 2019 which required these Clinical Notes:
+* Consultation Note
+* Discharge Summary Note
+* History & Physical
+* Imaging Narrative
+* Laboratory Report Narrative
+* Pathology Report Narrative
+* Procedure Note
+* Progress Note
+
+All of these clinical notes **SHALL** be exposed via DocumentReference. This requirement is necessary becasue some systems scan lab reports and don't store them in the DiagnosticReport resource. See [FHIR Resources to Exchange Clinical Notes](#fhir-resources-to-exchange-clinical-notes) for more detail.
+
+The following **SHOULD** be exposed via DiagnosticReport
+* Imaging Narrative
+* Laboratory Report Narrative
+* Pathology Report Narrative
+* Procedure Note
+
+The servers that participated in the development of this guide didn't differentiate between the Diagnostic Report categories of Imaging and Radiology. Client applications that query with category code of Radiology (LP29708-2) will receive Radiology and other imaging reports.     
 
 ---
 footnotes:
