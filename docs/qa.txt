@@ -1,11 +1,12 @@
 ﻿Argonaut Clinical Notes : Validation Results
 =========================================
 
-err = 32, warn = 28, info = 40
-Generated Fri Mar 08 09:48:53 EST 2019. FHIR version 4.0.0 for 3.0.1
+err = 36, warn = 30, info = 40
+Generated Fri Mar 08 10:24:51 EST 2019. FHIR version 4.0.0 for 3.0.1
 
- Build Errors : 108 / 0
+ Build Errors : 114 / 0
  C:\clinicalnotes\source\examples\cardiology-report : 2 / 1
+ C:\clinicalnotes\source\examples\chest-xray-report : 2 / 1
  C:\clinicalnotes\source\examples\discharge-summary-note : 3 / 4
  C:\clinicalnotes\source\examples\encounter-example-1 : 2 / 0
  C:\clinicalnotes\source\examples\progress-note : 2 / 3
@@ -46,6 +47,7 @@ ERROR: C:\clinicalnotes\docs\ImplementationGuide-ig.xml.html#/html/head/body/div
 ERROR: C:\clinicalnotes\docs\Encounter-example-1.json.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\StructureDefinition-argo-clinicalnotes-mappings.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\history.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
+ERROR: C:\clinicalnotes\docs\DiagnosticReport-chest-xray-report.json.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\CapabilityStatement-argonaut-clinical-notes-server.ttl.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\StructureDefinition-argo-clinicalnotes.json.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\CapabilityStatement-argonaut-clinical-notes-client.xml.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
@@ -62,31 +64,34 @@ ERROR: C:\clinicalnotes\docs\Encounter-example-1.html#/html/head/body/div/div/na
 ERROR: C:\clinicalnotes\docs\Encounter-example-1.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 295, column 466: The link 'Patient-example.html' for "Patient/example" cannot be resolved
 ERROR: C:\clinicalnotes\docs\CapabilityStatement-argonaut-clinical-notes-server.json.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\DiagnosticReport-cardiology-report.json.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
-ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1800, column 18: The link '' for "Capabilitystatement Argonaut Clinical Notes Client " cannot be resolved
-ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1830, column 18: The link '' for "Capabilitystatement Argonaut Clinical Notes Server " cannot be resolved
-ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1860, column 18: The link '' for "Codesystem Documentreference Category " cannot be resolved
-ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1890, column 18: The link '' for "Diagnosticreport Cardiology Report " cannot be resolved
-ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1920, column 18: The link '' for "Documentreference Discharge Summary Note " cannot be resolved
-ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1950, column 18: The link '' for "Documentreference Progress Note " cannot be resolved
-ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1980, column 18: The link '' for "Encounter Example 1 " cannot be resolved
-ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2010, column 18: The link '' for "Implementationguide Ig " cannot be resolved
-ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2048, column 18: The link '' for "Structuredefinition Argo Clinicalnotes " cannot be resolved
-ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2086, column 18: The link '' for "Structuredefinition Argo Diagnosticreport Notes And Reports " cannot be resolved
-ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2116, column 18: The link '' for "Valueset Argonaut Clinical Note Type " cannot be resolved
-ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2146, column 18: The link '' for "Valueset Diagnosticreport Category " cannot be resolved
-ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2176, column 18: The link '' for "Valueset Documentreference Category " cannot be resolved
-ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2206, column 18: The link '' for "All Examples " cannot be resolved
-ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2224, column 18: The link '' for "Capstatements " cannot be resolved
-ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2242, column 18: The link '' for "Downloads " cannot be resolved
-ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2260, column 18: The link '' for "Guidance " cannot be resolved
-ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2278, column 18: The link '' for "History " cannot be resolved
-ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2296, column 18: The link '' for "Html_pages " cannot be resolved
-ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2314, column 18: The link '' for "Index " cannot be resolved
-ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2332, column 18: The link '' for "Profiles " cannot be resolved
-ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2350, column 18: The link '' for "Structuremaps " cannot be resolved
-ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2368, column 18: The link '' for "Terminology " cannot be resolved
-ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2386, column 18: The link '' for "Toc " cannot be resolved
-ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2404, column 18: The link '' for "Todo " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1821, column 18: The link '' for "Capabilitystatement Argonaut Clinical Notes Client " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1851, column 18: The link '' for "Capabilitystatement Argonaut Clinical Notes Server " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1881, column 18: The link '' for "Codesystem Documentreference Category " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1911, column 18: The link '' for "Diagnosticreport Cardiology Report " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1941, column 18: The link '' for "Diagnosticreport Chest Xray Report " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1971, column 18: The link '' for "Documentreference Discharge Summary Note " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2001, column 18: The link '' for "Documentreference Progress Note " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2031, column 18: The link '' for "Encounter Example 1 " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2061, column 18: The link '' for "Implementationguide Ig " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2099, column 18: The link '' for "Structuredefinition Argo Clinicalnotes " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2137, column 18: The link '' for "Structuredefinition Argo Diagnosticreport Notes And Reports " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2167, column 18: The link '' for "Valueset Argonaut Clinical Note Type " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2197, column 18: The link '' for "Valueset Diagnosticreport Category " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2227, column 18: The link '' for "Valueset Documentreference Category " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2257, column 18: The link '' for "All Examples " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2275, column 18: The link '' for "Capstatements " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2293, column 18: The link '' for "Downloads " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2311, column 18: The link '' for "Guidance " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2329, column 18: The link '' for "History " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2347, column 18: The link '' for "Html_pages " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2365, column 18: The link '' for "Index " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2383, column 18: The link '' for "Profiles " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2401, column 18: The link '' for "Structuremaps " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2419, column 18: The link '' for "Terminology " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2437, column 18: The link '' for "Toc " cannot be resolved
+ERROR: C:\clinicalnotes\docs\html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2455, column 18: The link '' for "Todo " cannot be resolved
+ERROR: C:\clinicalnotes\docs\DiagnosticReport-chest-xray-report.ttl.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
+ERROR: C:\clinicalnotes\docs\DiagnosticReport-chest-xray-report.xml.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\ValueSet-documentreference-category.json.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\ValueSet-documentreference-category.xml.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\ValueSet-documentreference-category.ttl.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
@@ -97,6 +102,8 @@ ERROR: C:\clinicalnotes\docs\capstatements.html#/html/head/body/div/div/nav/div/
 ERROR: C:\clinicalnotes\docs\profiles.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\DocumentReference-progress-note.xml.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\CapabilityStatement-argonaut-clinical-notes-client.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
+ERROR: C:\clinicalnotes\docs\DiagnosticReport-chest-xray-report.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
+ERROR: C:\clinicalnotes\docs\DiagnosticReport-chest-xray-report.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 295, column 549: The link 'Patient/730210' for "Patient/730210" cannot be resolved
 ERROR: C:\clinicalnotes\docs\ValueSet-argonaut-clinical-note-type.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\ValueSet-diagnosticreport-category.html#/html/head/body/div/div/nav/div/a at Line 101, column 10: The link 'http://hl7.org/fhir/STU3//index.html' for "FHIR" cannot be resolved
 ERROR: C:\clinicalnotes\docs\ValueSet-diagnosticreport-category.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 309, column 7: The link 'StructureDefinition/argo-diagnosticreport-notes-and-reports.html' for "Argonaut Imaging Reports" cannot be resolved
@@ -132,6 +139,10 @@ ERROR: C:\clinicalnotes\docs\todo.html#/html/head/body/div/div/nav/div/a at Line
 ERROR: DiagnosticReport/cardiology-report: DiagnosticReport.category.coding: Error null validating Coding
 ERROR: DiagnosticReport/cardiology-report: DiagnosticReport.subject: Unable to resolve resource 'Patient/730210'
 WARNING: DiagnosticReport/cardiology-report: DiagnosticReport.presentedForm.contentType: ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
+== C:\clinicalnotes\source\examples\chest-xray-report.json ==
+ERROR: DiagnosticReport/chest-xray-report: DiagnosticReport.category.coding: Error null validating Coding
+ERROR: DiagnosticReport/chest-xray-report: DiagnosticReport.subject: Unable to resolve resource 'Patient/730210'
+WARNING: DiagnosticReport/chest-xray-report: DiagnosticReport.presentedForm.contentType: ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
 == C:\clinicalnotes\source\examples\discharge-summary-note.json ==
 ERROR: DocumentReference/discharge-summary-note: DocumentReference.type: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/c80-doc-typecodes (http://hl7.org/fhir/ValueSet/c80-doc-typecodes, and a code from this value set is required) (codes = http://loinc.org#8648-8)
 WARNING: DocumentReference/discharge-summary-note: DocumentReference.type.coding: The display "Discharge Summary" is not a valid display for the code {http://loinc.org}8648-8 - should be one of ["Hospital course Narrative","Hospital course"]

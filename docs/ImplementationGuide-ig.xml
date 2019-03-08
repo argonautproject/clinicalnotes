@@ -52,6 +52,15 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="DiagnosticReport-chest-xray-report.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="DiagnosticReport/chest-xray-report"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-documentreference-category.html"/>
       </extension>
       <example value="false"/>

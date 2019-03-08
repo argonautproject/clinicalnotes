@@ -62,6 +62,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="DiagnosticReport/chest-xray-report"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="ValueSet/documentreference-category"/>
       </reference>
       <exampleBoolean value="false"/>

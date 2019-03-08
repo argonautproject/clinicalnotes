@@ -100,6 +100,10 @@
         "DiagnosticReport/cardiology-report": {
             "source": "cardiology-report.json",
             "base": "DiagnosticReport-cardiology-report.html"
+        },
+        "DiagnosticReport/chest-xray-report": {
+            "source": "chest-xray-report.json",
+            "base": "DiagnosticReport-chest-xray-report.html"
         }
     },
     "license": "CC0-1.0",

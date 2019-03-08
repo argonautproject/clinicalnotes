@@ -67,6 +67,13 @@
     },
     {
       "reference" : {
+        "reference" : "DiagnosticReport/chest-xray-report"
+      },
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
         "reference" : "ValueSet/documentreference-category"
       },
       "exampleBoolean" : false,

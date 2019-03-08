@@ -3,9 +3,9 @@
   "name": "Argonaut Clinical Notes",
   "package-id": "healthedatainc.igtemplate",
   "ig-ver": "0.0.0",
-  "date": "Fri, 08 Mar, 2019 09:48:11 -0500",
-  "errs": 32,
-  "warnings": 28,
+  "date": "Fri, 08 Mar, 2019 10:24:04 -0500",
+  "errs": 36,
+  "warnings": 30,
   "hints": 40,
   "version": "3.0.1",
   "tool": "4.0.0 (3)"
