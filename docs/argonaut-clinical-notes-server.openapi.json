@@ -1,0 +1,155 @@
+﻿{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Argonaut Clinical Notes CapabilityStatement",
+    "description": "This profile defines the expected capabilities of an Argonaut Data Query server when conforming to the Argonaut Data Query Clinical Notes IG. The CapabilityStatement resource includes the complete list of actual Clinical Notes profiles, RESTful operations, and search parameters supported by Argonaut Data Query Servers. Servers have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.",
+    "license": {
+      "name": "CC0-1.0"
+    },
+    "version": "1.0.0",
+    "contact": {
+      "url": "https://github.com/argonautproject/questionnaire/issues"
+    }
+  },
+  "externalDocs": {
+    "url": "http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/argonaut-clinical-notes-server",
+    "description": "FHIR CapabilityStatement"
+  },
+  "paths": {
+    "/DocumentReference/{rid}": {
+      "summary": "Read/Write/etc resource instance of type DocumentReference",
+      "description": "Access to services to manage the state of a single resource of type DocumentReference",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readDocumentReference",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/DocumentReference"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/DocumentReference.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/DiagnosticReport/{rid}": {
+      "summary": "Read/Write/etc resource instance of type DiagnosticReport",
+      "description": "Access to services to manage the state of a single resource of type DiagnosticReport",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readDiagnosticReport",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/DiagnosticReport"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/DiagnosticReport.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Binary/{rid}": {
+      "summary": "Read/Write/etc resource instance of type Binary",
+      "description": "Access to services to manage the state of a single resource of type Binary",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readBinary",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/Binary"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/Binary.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

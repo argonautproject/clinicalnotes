@@ -1,0 +1,18 @@
+﻿{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Argonaut Clinical Notes Client CapabilityStatement",
+    "description": "This profile defines the expected capabilities of an Argonaut Data Query Client when conforming to the Argonaut Clinical Notes IG. The complete list of FHIR profiles, RESTful operations, and search parameters supported by Argonaut Servers are defined in the Capability Statements for Server. ",
+    "license": {
+      "name": "CC0-1.0"
+    },
+    "version": "1.0.0",
+    "contact": {
+      "url": "https://github.com/argonautproject/questionnaire/issues"
+    }
+  },
+  "externalDocs": {
+    "url": "http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/argonaut-clinical-notes-client",
+    "description": "FHIR CapabilityStatement"
+  }
+}
