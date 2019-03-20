@@ -14,7 +14,7 @@ topofpage: true
 
 ### Clinical Notes
 
-Clinical notes are a key component to communicate the current status of a patient. In the context of this implementation guide, the term "clinical notes" refers to the wide variety of documents generated on behalf of a patient in many care activities. They include notes to support transitions of care, care planning, quality reporting, billing and even handwritten notes by a providers. This implementation guide does not define new note types or set content requirements per note type. Instead, this implementation guide focuses on exposing clinical notes stored in existing systems. 
+Clinical notes are a key component to communicate the current status of a patient. In the context of this implementation guide, the term "clinical notes" refers to the wide variety of documents generated on behalf of a patient in many care activities. They include notes to support transitions of care, care planning, quality reporting, billing and even handwritten notes by a providers. This implementation guide does not define new note types or set content requirements per note type. Instead, this implementation guide focuses on exposing clinical notes stored in existing systems.
 
 Specifically, this implementation guide defines the exchange of the following five "Common Clinical Notes".
 
@@ -26,12 +26,12 @@ Specifically, this implementation guide defines the exchange of the following fi
 
 and SHOULD support the DiagnosticReport categories:
 
-* Cardiology (LP29684-5) 
+* Cardiology (LP29684-5)
 * Radiology (LP29708-2)
 * Pathology (LP7839-6)
 
 The Argonaut project team developed this initial list after surveying the participants in Argonaut and the US Veterans Administration (VA). They represent the *minimum* set a system must support to claim conformance to this guide. In addition, systems are encouraged to support other common notes types such as:
- 
+
 * Referral Note
 * Surgical Operation Note
 * Nurse Note
@@ -99,10 +99,10 @@ This guide requires systems implement the Argonaut Clinical Notes DiagnosticRepo
 - Cardiology (LP29684-5)
 - Radiology (LP29708-2)
 - Pathology (LP7839-6)
- 
+
 Other categories may be supported as well.  
 
-A method for discovery of the types of notes and reports that a server supports is described in the [section below](#determining-server-note-and-report-type-support-expand).
+A method for discovery of the types of notes and reports that a server supports is described in the [section below](#using-expand).
 
 Note that this guide focuses on exposing existing information, and not how systems allow their users to capture information. The contents of the notes or reports, even using standard LOINC concepts, may vary widely by health system or even location. For example, CT Spleen WO contrast (LOINC 30621-7) may include individual sections for history, impressions, conclusions, or just an impressions section. Discharge Summaries may have different facility or regulatory content requirements.
 
@@ -113,26 +113,27 @@ To retrieve clinical notes and reports, the standard FHIR [search] API is used. 
 Common client search scenarios include:
 
 1. A client interested in all Radiology reports can use the following query:
-   
+
 	 `GET [base]/DiagnosticReport?patient=[id]&category=http://loinc.org|LP29684-5`
 
 1. A client interested in all Clinical Notes can use the following query:
-   
+
 	 `GET [base]/DocumentReference?patient=[id]&class=clinical-note`
 
 1. A client interested in all Discharge Summary Notes can use the following query:
-  
+
 	`GET [base]/DocumentReference?patient=[id]&type=http://loinc.org|18842-5`
-	
+
 <br/>
 
 ### Determining Server Note Type Support Using The Value Set Expansion Operation ($expand)
+{: #using-expand}
 
 In addition to inspecting a server CapabilityStatement, a client can determine the note and report types support by a server by invoking the standard FHIR Value Set Expansion ([$expand]) operation defined in the **FHIR R4 specification**. Because servers may support different read and write formats, it also is used to determine the formats (for example, text, pdf) the server supports read and write transactions. A FHIR server claiming support to this guide **SHOULD** support the $expand operation.
 
 #### Discovering Note and Report Types
-	
-The note and report types for a particular server are discovered by invoking the #expand operation as follows: 
+
+The note and report types for a particular server are discovered by invoking the #expand operation as follows:
 
 `GET [base]/ValueSet/$expand?context=[context]&contextDirection=[contextDirection]`
 
@@ -142,10 +143,10 @@ where:
 
 **Examples**
 
-{% include examplebutton.html example="note-and-report-types-scenario1" b_title = "Scenario 1" %} 
-{% include examplebutton.html example="note-and-report-types-scenario2" b_title = "Scenario 2" %} 
-{% include examplebutton.html example="note-and-report-types-scenario3" b_title = "Scenario 3" %} 
-{% include examplebutton.html example="note-and-report-types-scenario4" b_title = "Scenario 4" %} 
+{% include examplebutton.html example="note-and-report-types-scenario1" b_title = "Click on Here To See Scenario 1 Example" %}
+{% include examplebutton.html example="note-and-report-types-scenario2" b_title = "Click on Here To See Scenario 2 Example" %}
+{% include examplebutton.html example="note-and-report-types-scenario3" b_title = "Click on Here To See Scenario 3 Example" %}
+{% include examplebutton.html example="note-and-report-types-scenario4" b_title = "Click on Here To See Scenario 4 Example" %}
 
 #### Discovering Server Read and Write Formats
 
@@ -159,8 +160,8 @@ where:
 
  **Examples**
 
- {% include examplebutton.html example="read-and-write-format-scenario1" b_title = "Scenario 1" %} 
- {% include examplebutton.html example="read-and-write-format-scenario2" b_title = "Scenario 2" %} 
+ {% include examplebutton.html example="read-and-write-format-scenario1" b_title = "Scenario 1" %}
+ {% include examplebutton.html example="read-and-write-format-scenario2" b_title = "Scenario 2" %}
 
 ### Resource Selection
 
@@ -170,7 +171,7 @@ When reviewing the minimal number of elements required for each Resource, the [F
 * Note types
 * Consistent Client access to scanned, or narrative-only, reports
 
-While several resources work well for a specific use case, they don't solve the question "find all Clinical Notes for a patient?" expecially when considering the variability of Note formats. For example systems use text, XHTML, PDF, CDA to capture clinical notes. This variability led the designers to select the DocumentReference and DiagnosticReport resources as an index mechanisms to the underlying content. In other words, a client can query one of these resources and it will return a pointer to specific resource or the underlying binary content. 
+While several resources work well for a specific use case, they don't solve the question "find all Clinical Notes for a patient?" expecially when considering the variability of Note formats. For example systems use text, XHTML, PDF, CDA to capture clinical notes. This variability led the designers to select the DocumentReference and DiagnosticReport resources as an index mechanisms to the underlying content. In other words, a client can query one of these resources and it will return a pointer to specific resource or the underlying binary content.
 
 For example, consider the following situation for a Discharge Summary Note:
 
@@ -181,12 +182,12 @@ For example, consider the following situation for a Discharge Summary Note:
 The following single query into DocumentReference supports all 3 scenarios:
 
 	GET [base]/DocumentReference?patient=[id]&type=http://loinc.org|18842-5
-	
+
 The server returns either a pointer to the Composition or the Binary resource. If other more specific resources are developed for Clinical Notes systems can update their pointers to the new resource.  
 
-#### Clinical Notes vs ClinicalImpression 
+#### Clinical Notes vs ClinicalImpression
 
-[ClinicalImpression] resource supports the record of a clinical assessment. 
+[ClinicalImpression] resource supports the record of a clinical assessment.
 
 >
 A record of a clinical assessment performed to determine what problem(s) may affect the patient and before planning the treatments or management strategies that are best to manage a patient's condition. Assessments are often 1:1 with a clinical consultation / encounter, but this varies greatly depending on the clinical workflow. This resource is called "ClinicalImpression" rather than "ClinicalAssessment" to avoid confusion with the recording of assessment tools such as Apgar score
@@ -197,7 +198,7 @@ However, in existing EHRs, the clinical impression is often contained with in a 
 ### Future Work
 
 * Expand the number of notes systems must support.
-* Implementers developing on [FHIR R4](http://hl7.org/fhir/) should follow the updated Clinical Notes design in [US Core](https://build.fhir.org/ig/HL7/US-Core-R4/). 
+* Implementers developing on [FHIR R4](http://hl7.org/fhir/) should follow the updated Clinical Notes design in [US Core](https://build.fhir.org/ig/HL7/US-Core-R4/).
 
 #### ONC 2019 NPRM
  The Office of the National Coordinator (ONC) published a new [Notice of Proposed Rulemaking](https://www.healthit.gov/topic/laws-regulation-and-policy/notice-proposed-rulemaking-improve-interoperability-health) on March 4, 2019 which required these Clinical Notes:

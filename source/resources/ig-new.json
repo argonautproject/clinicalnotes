@@ -1,29 +1,41 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "ig",
+  "id" : "argonaut.us.clinicalnotes-1.0.0",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\clinicalnotes\\source\\resources"
+    "valueString" : "/Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\clinicalnotes\\source\\examples"
+    "valueString" : "/Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/examples"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "C:\\clinicalnotes\\framework"
+    "valueString" : "/Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/framework"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "C:\\clinicalnotes\\source\\pages"
+    "valueString" : "/Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/pages"
   }],
-  "url" : "http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig",
-  "version" : "0.0.0",
+  "url" : "http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/argonaut.us.clinicalnotes-1.0.0",
+  "version" : "1.0.0",
   "name" : "Argonaut Clinical Notes",
   "status" : "draft",
   "experimental" : true,
   "publisher" : "Argonaut Project",
-  "packageId" : "healthedatainc.igtemplate",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://argonautwiki.hl7.org"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "packageId" : "argonaut.us.clinicalnotes",
   "license" : "CC0-1.0",
   "fhirVersion" : ["3.0.1"],
   "dependsOn" : [{
@@ -39,21 +51,14 @@
     }],
     "resource" : [{
       "reference" : {
-        "reference" : "Encounter/example-1"
-      },
-      "exampleBoolean" : true,
-      "groupingId" : "p1"
-    },
-    {
-      "reference" : {
-        "reference" : "DocumentReference/discharge-summary-note"
-      },
-      "exampleBoolean" : true,
-      "groupingId" : "p1"
-    },
-    {
-      "reference" : {
         "reference" : "DocumentReference/progress-note"
+      },
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "Encounter/example-1"
       },
       "exampleBoolean" : true,
       "groupingId" : "p1"
@@ -74,7 +79,14 @@
     },
     {
       "reference" : {
-        "reference" : "ValueSet/documentreference-category"
+        "reference" : "DocumentReference/discharge-summary-note"
+      },
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/argonaut-clinical-note-type"
       },
       "exampleBoolean" : false,
       "groupingId" : "p1"
@@ -88,21 +100,14 @@
     },
     {
       "reference" : {
-        "reference" : "ValueSet/argonaut-clinical-note-type"
+        "reference" : "ValueSet/documentreference-category"
       },
       "exampleBoolean" : false,
       "groupingId" : "p1"
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/argo-diagnosticreport-notes-and-reports"
-      },
-      "exampleBoolean" : false,
-      "groupingId" : "p1"
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/argo-clinicalnotes"
+        "reference" : "CapabilityStatement/argonaut-clinical-notes-client"
       },
       "exampleBoolean" : false,
       "groupingId" : "p1"
@@ -123,7 +128,14 @@
     },
     {
       "reference" : {
-        "reference" : "CapabilityStatement/argonaut-clinical-notes-client"
+        "reference" : "StructureDefinition/argo-clinicalnotes"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/argo-diagnosticreport-notes-and-reports"
       },
       "exampleBoolean" : false,
       "groupingId" : "p1"
@@ -142,28 +154,23 @@
         "title" : "Profiles and Extensions",
         "generation" : "html",
         "page" : [{
-          "nameUrl" : "StructureDefinition-argo-diagnosticreport-notes-and-reports.html",
-          "title" : "StructureDefinition Argo DiagnosticReport",
-          "generation" : "generated"
-        },
-        {
           "nameUrl" : "StructureDefinition-argo-clinicalnotes.html",
           "title" : "StructureDefinition Argo Clinicalnotes",
           "generation" : "generated"
+        },
+        {
+          "nameUrl" : "StructureDefinition-argo-diagnosticreport-notes-and-reports.html",
+          "title" : "StructureDefinition Argo DiagnosticReport Notes And Reports",
+          "generation" : "generated"
         }]
-      },
-      {
-        "nameUrl" : "operations.html",
-        "title" : "Operations",
-        "generation" : "html"
       },
       {
         "nameUrl" : "terminology.html",
         "title" : "Terminology",
         "generation" : "html",
         "page" : [{
-          "nameUrl" : "ValueSet-documentreference-category.html",
-          "title" : "ValueSet DocumentReference Category",
+          "nameUrl" : "ValueSet-argonaut-clinical-note-type.html",
+          "title" : "ValueSet Argonaut Clinical Note Type",
           "generation" : "generated"
         },
         {
@@ -172,8 +179,8 @@
           "generation" : "generated"
         },
         {
-          "nameUrl" : "ValueSet-argonaut-clinical-note-type.html",
-          "title" : "ValueSet Argonaut Clinical Note Type",
+          "nameUrl" : "ValueSet-documentreference-category.html",
+          "title" : "ValueSet DocumentReference Category",
           "generation" : "generated"
         },
         {
@@ -183,29 +190,19 @@
         }]
       },
       {
-        "nameUrl" : "searchparameters.html",
-        "title" : "Search Parameters",
-        "generation" : "html"
-      },
-      {
         "nameUrl" : "capstatements.html",
         "title" : "Capability Statements",
         "generation" : "html",
         "page" : [{
-          "nameUrl" : "CapabilityStatement-argonaut-clinical-notes-server.html",
-          "title" : "CapabilityStatement Argonaut Clinical Notes Server",
-          "generation" : "generated"
-        },
-        {
           "nameUrl" : "CapabilityStatement-argonaut-clinical-notes-client.html",
           "title" : "CapabilityStatement Argonaut Clinical Notes Client",
           "generation" : "generated"
+        },
+        {
+          "nameUrl" : "CapabilityStatement-argonaut-clinical-notes-server.html",
+          "title" : "CapabilityStatement Argonaut Clinical Notes Server",
+          "generation" : "generated"
         }]
-      },
-      {
-        "nameUrl" : "security.html",
-        "title" : "Security",
-        "generation" : "html"
       },
       {
         "nameUrl" : "downloads.html",
@@ -225,7 +222,7 @@
     },
     "parameter" : [{
       "code" : "apply",
-      "value" : "version"
+      "value" : "jurisdiction"
     },
     {
       "code" : "generate-json",

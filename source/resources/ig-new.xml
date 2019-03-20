@@ -1,26 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="ig"/>
+  <id value="argonaut.us.clinicalnotes-1.0.0"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\clinicalnotes\source\resources"/>
+    <valueString value="/Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\clinicalnotes\source\examples"/>
+    <valueString value="/Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/examples"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="C:\clinicalnotes\framework"/>
+    <valueString value="/Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/framework"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="C:\clinicalnotes\source\pages"/>
+    <valueString value="/Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/pages"/>
   </extension>
-  <url value="http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig"/>
-  <version value="0.0.0"/>
+  <url value="http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/argonaut.us.clinicalnotes-1.0.0"/>
+  <version value="1.0.0"/>
   <name value="Argonaut Clinical Notes"/>
   <status value="draft"/>
   <experimental value="true"/>
   <publisher value="Argonaut Project"/>
-  <packageId value="healthedatainc.igtemplate"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://argonautwiki.hl7.org"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="argonaut.us.clinicalnotes"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="3.0.1"/>
   <dependsOn id="uscore">
@@ -34,21 +46,14 @@
     </grouping>
     <resource>
       <reference>
-        <reference value="Encounter/example-1"/>
-      </reference>
-      <exampleBoolean value="true"/>
-      <groupingId value="p1"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="DocumentReference/discharge-summary-note"/>
-      </reference>
-      <exampleBoolean value="true"/>
-      <groupingId value="p1"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="DocumentReference/progress-note"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/example-1"/>
       </reference>
       <exampleBoolean value="true"/>
       <groupingId value="p1"/>
@@ -69,7 +74,14 @@
     </resource>
     <resource>
       <reference>
-        <reference value="ValueSet/documentreference-category"/>
+        <reference value="DocumentReference/discharge-summary-note"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/argonaut-clinical-note-type"/>
       </reference>
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>
@@ -83,21 +95,14 @@
     </resource>
     <resource>
       <reference>
-        <reference value="ValueSet/argonaut-clinical-note-type"/>
+        <reference value="ValueSet/documentreference-category"/>
       </reference>
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/argo-diagnosticreport-notes-and-reports"/>
-      </reference>
-      <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/argo-clinicalnotes"/>
+        <reference value="CapabilityStatement/argonaut-clinical-notes-client"/>
       </reference>
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>
@@ -118,7 +123,14 @@
     </resource>
     <resource>
       <reference>
-        <reference value="CapabilityStatement/argonaut-clinical-notes-client"/>
+        <reference value="StructureDefinition/argo-clinicalnotes"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/argo-diagnosticreport-notes-and-reports"/>
       </reference>
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>
@@ -137,28 +149,23 @@
         <title value="Profiles and Extensions"/>
         <generation value="html"/>
         <page>
-          <nameUrl value="StructureDefinition-argo-diagnosticreport-notes-and-reports.html"/>
-          <title value="StructureDefinition Argo DiagnosticReport"/>
-          <generation value="generated"/>
-        </page>
-        <page>
           <nameUrl value="StructureDefinition-argo-clinicalnotes.html"/>
           <title value="StructureDefinition Argo Clinicalnotes"/>
           <generation value="generated"/>
         </page>
-      </page>
-      <page>
-        <nameUrl value="operations.html"/>
-        <title value="Operations"/>
-        <generation value="html"/>
+        <page>
+          <nameUrl value="StructureDefinition-argo-diagnosticreport-notes-and-reports.html"/>
+          <title value="StructureDefinition Argo DiagnosticReport Notes And Reports"/>
+          <generation value="generated"/>
+        </page>
       </page>
       <page>
         <nameUrl value="terminology.html"/>
         <title value="Terminology"/>
         <generation value="html"/>
         <page>
-          <nameUrl value="ValueSet-documentreference-category.html"/>
-          <title value="ValueSet DocumentReference Category"/>
+          <nameUrl value="ValueSet-argonaut-clinical-note-type.html"/>
+          <title value="ValueSet Argonaut Clinical Note Type"/>
           <generation value="generated"/>
         </page>
         <page>
@@ -167,8 +174,8 @@
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="ValueSet-argonaut-clinical-note-type.html"/>
-          <title value="ValueSet Argonaut Clinical Note Type"/>
+          <nameUrl value="ValueSet-documentreference-category.html"/>
+          <title value="ValueSet DocumentReference Category"/>
           <generation value="generated"/>
         </page>
         <page>
@@ -178,29 +185,19 @@
         </page>
       </page>
       <page>
-        <nameUrl value="searchparameters.html"/>
-        <title value="Search Parameters"/>
-        <generation value="html"/>
-      </page>
-      <page>
         <nameUrl value="capstatements.html"/>
         <title value="Capability Statements"/>
         <generation value="html"/>
-        <page>
-          <nameUrl value="CapabilityStatement-argonaut-clinical-notes-server.html"/>
-          <title value="CapabilityStatement Argonaut Clinical Notes Server"/>
-          <generation value="generated"/>
-        </page>
         <page>
           <nameUrl value="CapabilityStatement-argonaut-clinical-notes-client.html"/>
           <title value="CapabilityStatement Argonaut Clinical Notes Client"/>
           <generation value="generated"/>
         </page>
-      </page>
-      <page>
-        <nameUrl value="security.html"/>
-        <title value="Security"/>
-        <generation value="html"/>
+        <page>
+          <nameUrl value="CapabilityStatement-argonaut-clinical-notes-server.html"/>
+          <title value="CapabilityStatement Argonaut Clinical Notes Server"/>
+          <generation value="generated"/>
+        </page>
       </page>
       <page>
         <nameUrl value="downloads.html"/>
@@ -220,7 +217,7 @@
     </page>
     <parameter>
       <code value="apply"/>
-      <value value="version"/>
+      <value value="jurisdiction"/>
     </parameter>
     <parameter>
       <code value="generate-json"/>

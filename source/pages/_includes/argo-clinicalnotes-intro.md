@@ -29,7 +29,7 @@ Additional mandatory elements inherited from [US Core DocumentReference]
 
 In addition it should have (if available):
 
-1.  the organization responsible for the document, referred to as custodian. 
+1.  the organization responsible for the document, referred to as custodian.
 
 Additional Inherited from [US Core DocumentReference]
 
@@ -43,7 +43,8 @@ Additional Inherited from [US Core DocumentReference]
 
 The `DocumentReference.type` binding must support at a minimum these [5 concepts](ValueSet-argonaut-clinical-note-type.html) and may extend to the any [LOINC document concepts](http://hl7.org/fhir/STU3/valueset-doc-typecodes.html).
 
-The views provided on this page are of just the Clinical Notes Profile, and the Clinical Notes Profile combined with US Core DocumentReference and FHIR core. See [merged profile view](StructureDefinition-example-dr.html) for the combination of Clinical Notes Profile and US Core DocumentReference without FHIR core.
+The views provided on this page are of just the Clinical Notes Profile, and the Clinical Notes Profile combined with US Core DocumentReference and FHIR core.
+<!-- See [merged profile view](StructureDefinition-example-dr.html) for the combination of Clinical Notes Profile and US Core DocumentReference without FHIR core. -->
 
 
 ##### Examples
@@ -51,11 +52,4 @@ The views provided on this page are of just the Clinical Notes Profile, and the 
 - [Discharge Summary Note](DocumentReference-discharge-summary-note.html)
 - [Progress Note](DocumentReference-progress-note.html)
 
-[US Core DocumentReference]: {{site.data.fhir.uscore}}/StructureDefinition-us-core-documentreference.html
-[MedicationStatement]:{{ site.data.fhir.path }}medicationstatement.html
-[DocumentReference]:{{ site.data.fhir.path }}DocumentReference.html
- [Conformance]: daf-core-DocumentReference-conformance.html
- [boundaries section]: {{ site.data.fhir.path }}DocumentReference.html#bnr
- [IHE MHD]: http://ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_MHD.pdf
-
- 
+{% include link-list.md %}

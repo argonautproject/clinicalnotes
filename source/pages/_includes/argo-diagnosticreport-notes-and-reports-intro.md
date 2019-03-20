@@ -32,7 +32,7 @@ In addition it should have (if available):
 
 **Profile specific implementation guidance:**
 
-Servers must support the `DiagnosticReport.category` element and **SHOULD** support at a minimum the [3 concepts](ValueSet-diagnosticreport-category.html) of Cardiology, Radiology, and Pathology. Servers are encouraged to support additional categories. 
+Servers must support the `DiagnosticReport.category` element and **SHOULD** support at a minimum the [3 concepts](ValueSet-diagnosticreport-category.html) of Cardiology, Radiology, and Pathology. Servers are encouraged to support additional categories.
 
 When Clients search with `DiagnosticReport.category` element across different FHIR servers they may find inconsistent results. Servers that participated in the development of this guide allow their customers to categorize reports to their end-user requirements which vary. A customer may categorize an orthopedic note with the category.  Encouraging support for this element will help identify inconsistencies.
 
@@ -42,10 +42,4 @@ When Clients search with `DiagnosticReport.category` element across different FH
 - [Cardiology Report](DiagnosticReport-cardiology-report.html)
 - [Chest XR Report](DiagnosticReport-chest-xray-report.html)
 
-[US Core DiagnosticReport]: {{site.data.fhir.uscore}}/StructureDefinition-us-core-diagnosticreport.html
-[DiagnosticReport]:{{ site.data.fhir.path }}DiagnosticReport.html
- [Conformance]: daf-core-DocumentReference-conformance.html
- [boundaries section]: {{ site.data.fhir.path }}DocumentReference.html#bnr
- [IHE MHD]: http://ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_MHD.pdf
-
- 
+{% include link-list.md %}

@@ -4,6 +4,8 @@ working-dir,/Users/ehaas/Documents/FHIR/Argonaut-ClinicalNotes/
 title,Argonaut Clinical Notes
 status,draft
 publisher,Argonaut Project
+contact_system,url
+contact_value,http://argonautwiki.hl7.org
 extensions,
 searches,
 codesystems,
@@ -11,7 +13,7 @@ valuesets,
 structuremaps,
 source,ig.xml
 version,3.0.1
-fixed-business-version,0.0.0
+fixed-business-version,1.0.0
 paths.pages,framework|source/pages
 paths.resources,source/resources|source/examples
 paths.temp,generated_output/temp
@@ -19,17 +21,18 @@ paths.output,docs
 paths.txCache,generated_output/txCache
 paths.qa,generated_output/qa
 paths.specification,http://hl7.org/fhir/STU3
-jurisdiction,
+jurisdiction,US
 sct-edition,
 no-inactive-codes,FALSE
 broken-links,warning
 gen-examples,FALSE
 do-transforms,FALSE
 canonicalBase,http://fhir.org/guides/argonaut-clinicalnotes
-dependencyList.location,http://hl7.org/fhir/us/core
 dependencyList.name,uscore
-dependencyList.source,dependencies/uscore-vp
-dependencyList.version,current
+dependencyList.package,hl7.fhir.us.core
+dependencyList.location,http://hl7.org/fhir/us/core
+dependencyList.version,2.0.0
 special-urls,
 tool,jekyll
 logging,progress
+npm-name,argonaut.us.clinicalnotes

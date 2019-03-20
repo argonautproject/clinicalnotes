@@ -9,7 +9,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example-1</p><p><b>meta</b>: </p><p><b>status</b>: finished</p><p><b>class</b>: outpatient (Details: http://hl7.org/fhir/v3/ActCode code outpatient = 'outpatient', stated as 'outpatient')</p><p><b>type</b>: Office Visit <span style=\"background: LightGoldenRodYellow\">(Details : {http://www.ama-assn.org/go/cpt code '99201' = '99201)</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Patient/example</a></p><p><b>period</b>: Nov 1, 2015 5:00:14 PM --&gt; Nov 1, 2015 6:00:14 PM</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example-1</p><p><b>meta</b>: </p><p><b>status</b>: finished</p><p><b>class</b>: outpatient (Details: http://hl7.org/fhir/v3/ActCode code outpatient = 'outpatient', stated as 'outpatient')</p><p><b>type</b>: Office Visit <span style=\"background: LightGoldenRodYellow\">(Details : {http://www.ama-assn.org/go/cpt code '99201' = '99201)</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Patient/example</a></p><p><b>period</b>: Nov 1, 2015, 2:00:14 PM --&gt; Nov 1, 2015, 3:00:14 PM</p></div>"
   },
   "status": "finished",
   "class": {

@@ -69,12 +69,13 @@
         <code value="CodeableConcept"/>
       </type>
       <mustSupport value="true"/>
+       <isModifier value="false"/>
       <binding>
         <strength value="extensible"/>
         <valueSetUri
           value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/diagnosticreport-category"/>
       </binding>
-      <isModifier value="false"/>
+   
       <mapping>
         <identity value="argonaut-dq-dstu2"/>
         <map value="DiagnosticReport.category"/>

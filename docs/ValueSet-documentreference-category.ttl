@@ -13,11 +13,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Argonaut DocumentReferences Category Value Set</h2><div><p>The Argonaut DocumentReferences Type Value Set is a 'starter set' of categories supported for fetching and storing clinical notes.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-documentreference-category.html\"><code>http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category</code></a></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/documentreference-category"];
-  fhir:ValueSet.version [ fhir:value "0.0.0"];
+  fhir:ValueSet.version [ fhir:value "1.0.0"];
   fhir:ValueSet.name [ fhir:value "Argonaut DocumentReference Category Codes"];
   fhir:ValueSet.title [ fhir:value "Argonaut DocumentReferences Category Value Set"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2018-05-02T11:16:34-04:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2018-05-02T08:16:34-07:00"^^xsd:dateTime];
   fhir:ValueSet.description [ fhir:value "The Argonaut DocumentReferences Type Value Set is a 'starter set' of categories supported for fetching and storing clinical notes."];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
