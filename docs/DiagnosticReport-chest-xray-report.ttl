@@ -6,12 +6,12 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.org/guides/argonaut-clinicalnotes/DiagnosticReport/chest-xray-report> a fhir:DiagnosticReport;
+<http://fhir.org/guides/argonaut/clinicalnotes/DiagnosticReport/chest-xray-report> a fhir:DiagnosticReport;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "chest-xray-report"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-diagnosticreport-notes-and-reports";
+       fhir:value "http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/argo-diagnosticreport-notes-and-reports";
        fhir:index 0
      ]
   ];
@@ -41,7 +41,7 @@
      fhir:CodeableConcept.text [ fhir:value "Portable XR Chest Views" ]
   ];
   fhir:DiagnosticReport.subject [
-     fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/Patient/730210>;
+     fhir:link <http://fhir.org/guides/argonaut/clinicalnotes/Patient/730210>;
      fhir:Reference.reference [ fhir:value "Patient/730210" ]
   ];
   fhir:DiagnosticReport.effectiveDateTime [ fhir:value "2019-02-03T19:43:30.000Z"^^xsd:dateTime];
@@ -53,7 +53,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://fhir.org/guides/argonaut-clinicalnotes/DiagnosticReport/chest-xray-report.ttl> a owl:Ontology;
+<http://fhir.org/guides/argonaut/clinicalnotes/DiagnosticReport/chest-xray-report.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

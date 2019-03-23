@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="argo-diagnosticreport-notes-and-reports"/>
   <url
-    value="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-diagnosticreport-notes-and-reports"/>
+    value="http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/argo-diagnosticreport-notes-and-reports"/>
   <name value="Argonaut Imaging Reports"/>
   <status value="active"/>
   <date value="2018-04-10T09:48:14.298-04:00"/>
@@ -73,7 +73,7 @@
       <binding>
         <strength value="extensible"/>
         <valueSetUri
-          value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/diagnosticreport-category"/>
+          value="http://fhir.org/guides/argonaut/clinicalnotes/ValueSet/diagnosticreport-category"/>
       </binding>
    
       <mapping>

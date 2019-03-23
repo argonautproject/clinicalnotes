@@ -3,7 +3,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
   <id value="argonaut-clinical-notes-client"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2 id="title">Argonaut Clinical Notes Client CapabilityStatement</h2><p>This profile defines the expected capabilities of an Argonaut Data Query Client when conforming to the Argonaut Clinical Notes IG. The complete list of FHIR profiles, RESTful operations, and search parameters supported by Argonaut Servers are defined in the Capability Statements for Server. </p><ul><li>FHIR Version: 3.0.1</li><li>Supported formats: xml, json</li><li>Published: 2019-03-04</li><li>Published by: The Argonaut Project</li></ul><h3 id="behavior">FHIR RESTful Capabilities</h3><p>The Argonaut Clinical Notes Data Query Client <strong>SHALL</strong>:</p><ul><li>Support fetching and querying one or more Argonaut Clinical Notes profile(s), using the supported RESTful interactions and search parameters declared in the Argnaut Clinical Notes Server CapabilityStatement.</li></ul><p id="security"><strong>Security:</strong></p><p>For general security consideration refer to the <a href="https://argonautproject.github.io/questionnaire/index.html#security-and-privacy-considerations">Security and Privacy Considerations</a>.</p><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Operations</strong></p><li><strong>SHOULD</strong> support the	<a href="http://hl7.org/fhir/R4/valueset-operation-expand.html"><code>$expand</code></a> operation.</li><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported Includes</th></tr></thead><tbody><tr><td><a href="#documentreference">DocumentReference</a></td><td><p><a href="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-clinicalnotes">Argonaut Clinical Notes Profile </a></p></td><td>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2 id="title">Argonaut Clinical Notes Client CapabilityStatement</h2><p>This profile defines the expected capabilities of an Argonaut Data Query Client when conforming to the Argonaut Clinical Notes IG. The complete list of FHIR profiles, RESTful operations, and search parameters supported by Argonaut Servers are defined in the Capability Statements for Server. </p><ul><li>FHIR Version: 3.0.1</li><li>Supported formats: xml, json</li><li>Published: 2019-03-04</li><li>Published by: The Argonaut Project</li></ul><h3 id="behavior">FHIR RESTful Capabilities</h3><p>The Argonaut Clinical Notes Data Query Client <strong>SHALL</strong>:</p><ul><li>Support fetching and querying one or more Argonaut Clinical Notes profile(s), using the supported RESTful interactions and search parameters declared in the Argnaut Clinical Notes Server CapabilityStatement.</li></ul><p id="security"><strong>Security:</strong></p><p>For general security consideration refer to the <a href="https://argonautproject.github.io/questionnaire/index.html#security-and-privacy-considerations">Security and Privacy Considerations</a>.</p><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Operations</strong></p><li><strong>SHOULD</strong> support the	<a href="http://hl7.org/fhir/R4/valueset-operation-expand.html"><code>$expand</code></a> operation.</li><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported Includes</th></tr></thead><tbody><tr><td><a href="#documentreference">DocumentReference</a></td><td><p><a href="http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/argo-clinicalnotes">Argonaut Clinical Notes Profile </a></p></td><td>
 							
 							_id, 
 							class, 
@@ -12,7 +12,7 @@
 							type, class+created+patient, class+patient, created+patient, created+patient+type, patient+type
 						</td><td>
 							
-						</td></tr><tr><td><a href="#diagnosticreport">DiagnosticReport</a></td><td><p><a href="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-diagnosticreport-notes-and-reports">Argonaut Diagnostic Report Profile for Report and Note exchange </a></p></td><td>
+						</td></tr><tr><td><a href="#diagnosticreport">DiagnosticReport</a></td><td><p><a href="http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/argo-diagnosticreport-notes-and-reports">Argonaut Diagnostic Report Profile for Report and Note exchange </a></p></td><td>
 							
 							_id, 
 							category, 
@@ -31,7 +31,7 @@
 						</td><td>
 							
 						</td></tr></tbody></table><br/><h4 id="documentreference" class="no_toc">DocumentReference</h4><p>Supported Profiles:
-			<p><a href="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-clinicalnotes">Argonaut Clinical Notes Profile </a></p>
+			<p><a href="http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/argo-clinicalnotes">Argonaut Clinical Notes Profile </a></p>
 
 				</p><ul><li>The search parameters <code>created</code>, <code>class</code>, and <code>type</code>  MAY NOT be available as a <em>single</em> search parameter but SHALL be available in the combinations listed below.</li></ul><p>Profile Interaction Summary:</p><ul><li><strong>SHOULD</strong> support 
 																							<code>create</code>, 
@@ -48,7 +48,7 @@
 							token
 						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?created=[system]|[code]</code></td></tr><tr><td><strong>SHOULD</strong></td><td><a href="http://hl7.org/fhir/SearchParameter/DocumentReference-patient">patient</a></td><td>
 							reference
-						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?patient=[patient]</code></td></tr><tr><td><strong>SHOULD</strong></td><td><a href="http://fhir.org/guides/argonaut-clinicalnotes/SearchParameter/DocumentReference-type">type</a></td><td>
+						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?patient=[patient]</code></td></tr><tr><td><strong>SHOULD</strong></td><td><a href="http://fhir.org/guides/argonaut/clinicalnotes/SearchParameter/DocumentReference-type">type</a></td><td>
 							token
 						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?type=[system]|[code]</code></td></tr></tbody></table><p>Search Parameter Combination Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter Combination</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHOULD</strong></td><td>class+created+patient
 						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?class=[system]|[code]&amp;created=[system]|[code]&amp;patient=[patient]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>class+patient
@@ -56,7 +56,7 @@
 						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?created=[system]|[code]&amp;patient=[patient]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>created+patient+type
 						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?created=[system]|[code]&amp;patient=[patient]&amp;type=[system]|[code]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+type
 						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?patient=[patient]&amp;type=[system]|[code]</code></td></tr></tbody></table><h4 id="diagnosticreport" class="no_toc">DiagnosticReport</h4><p>Supported Profiles:
-			<p><a href="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-diagnosticreport-notes-and-reports">Argonaut Diagnostic Report Profile for Report and Note exchange </a></p>
+			<p><a href="http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/argo-diagnosticreport-notes-and-reports">Argonaut Diagnostic Report Profile for Report and Note exchange </a></p>
 
 				</p><ul><li>The search parameters <code>date</code>, <code>category</code>, and  <code>code</code>  MAY NOT be available as a <em>single</em> search parameter but SHALL be available in the combinations listed below.</li></ul><p>Profile Interaction Summary:</p><ul><li><strong>SHOULD</strong> support 
 																							<code>create</code>, 
@@ -89,7 +89,7 @@
 							token
 						</td><td><code class="highlighter-rouge">GET [base]/Binary?_id=[id]</code></td></tr></tbody></table><br/></div>
   </text>
-  <url value="http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/argonaut-clinical-notes-client"/>
+  <url value="http://fhir.org/guides/argonaut/clinicalnotes/CapabilityStatement/argonaut-clinical-notes-client"/>
   <version value="1.0.0"/>
   <name value="clinical_notes_client"/>
   <title value="Argonaut Clinical Notes Client CapabilityStatement"/>
@@ -116,7 +116,7 @@
   <format value="xml"/>
   <format value="json"/>
   <patchFormat value="application/json-patch+json"/>
-  <implementationGuide value="http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/argonaut.us.clinicalnotes-1.0.0"/>
+  <implementationGuide value="http://fhir.org/guides/argonaut/clinicalnotes/ImplementationGuide/argonaut.us.clinicalnotes-1.0.0"/>
   <rest>
     <mode value="client"/>
     <documentation value="The Argonaut Clinical Notes Data Query Client **SHALL**:&#xA;&#xA;- Support fetching and querying one or more Argonaut Clinical Notes profile(s), using the supported RESTful interactions and search parameters declared in the Argnaut Clinical Notes Server CapabilityStatement."/>
@@ -247,7 +247,7 @@
           <valueCode value="SHOULD"/>
         </extension>
         <name value="type"/>
-        <definition value="http://fhir.org/guides/argonaut-clinicalnotes/SearchParameter/DocumentReference-type"/>
+        <definition value="http://fhir.org/guides/argonaut/clinicalnotes/SearchParameter/DocumentReference-type"/>
         <type value="token"/>
       </searchParam>
     </resource>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="extension-complex" />
-  <url value="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/extension-complex" />
+  <url value="http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/extension-complex" />
   <version value="0.0.0" />
   <name value="Complex Extension" />
   <title value="Complex Extension" />
@@ -63,7 +63,7 @@
         <strength value="required" />
         <description value="A bunch of example codes" />
         <valueSetReference>
-          <reference value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/blah-codes" />
+          <reference value="http://fhir.org/guides/argonaut/clinicalnotes/ValueSet/blah-codes" />
         </valueSetReference>
       </binding>
     </element>
@@ -87,7 +87,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/extension-complex" />
+      <fixedUri value="http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/extension-complex" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

@@ -3,12 +3,12 @@
   "id": "discharge-summary-note",
   "meta": {
     "profile": [
-      "http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-clinicalnotes"
+      "http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/argo-clinicalnotes"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: discharge-summary-note</p><p><b>meta</b>: </p><p><b>status</b>: current</p><p><b>type</b>: Discharge Summary <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '8648-8' = 'Hospital course Narrative', given as 'Discharge Summary'})</span></p><p><b>class</b>: Discharge Summary <span style=\"background: LightGoldenRodYellow\">(Details : {http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category code 'clinical-note' = 'Clinical Note', given as 'Clinical Notes'})</span></p><p><b>subject</b>: <a href=\"Patient/1316024\">Patient/1316024</a></p><p><b>created</b>: May 10, 2018, 9:39:30 PM</p><p><b>indexed</b>: May 10, 2018, 9:39:30 PM</p><h3>Contents</h3><table class=\"grid\"><tr><td>-</td><td><b>Attachment</b></td></tr><tr><td>*</td><td/></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: discharge-summary-note</p><p><b>meta</b>: </p><p><b>status</b>: current</p><p><b>type</b>: Discharge Summary <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '8648-8' = 'Hospital course Narrative', given as 'Discharge Summary'})</span></p><p><b>class</b>: Discharge Summary <span style=\"background: LightGoldenRodYellow\">(Details : {http://fhir.org/guides/argonaut/clinicalnotes/CodeSystem/documentreference-category code 'clinical-note' = 'Clinical Note', given as 'Clinical Notes'})</span></p><p><b>subject</b>: <a href=\"Patient/1316024\">Patient/1316024</a></p><p><b>created</b>: May 10, 2018, 9:39:30 PM</p><p><b>indexed</b>: May 10, 2018, 9:39:30 PM</p><h3>Contents</h3><table class=\"grid\"><tr><td>-</td><td><b>Attachment</b></td></tr><tr><td>*</td><td/></tr></table></div>"
   },
   "status": "current",
   "type": {
@@ -24,7 +24,7 @@
   "class": {
     "coding": [
       {
-        "system": "http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category",
+        "system": "http://fhir.org/guides/argonaut/clinicalnotes/CodeSystem/documentreference-category",
         "code": "clinical-note",
         "display": "Clinical Notes"
       }

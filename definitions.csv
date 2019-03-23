@@ -27,7 +27,7 @@ no-inactive-codes,FALSE
 broken-links,warning
 gen-examples,FALSE
 do-transforms,FALSE
-canonicalBase,http://fhir.org/guides/argonaut-clinicalnotes
+canonicalBase,http://fhir.org/guides/argonaut/clinicalnotes
 dependencyList.name,uscore
 dependencyList.package,hl7.fhir.us.core
 dependencyList.location,http://hl7.org/fhir/us/core

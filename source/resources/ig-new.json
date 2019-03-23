@@ -17,7 +17,7 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
     "valueString" : "/Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/pages"
   }],
-  "url" : "http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/argonaut.us.clinicalnotes-1.0.0",
+  "url" : "http://fhir.org/guides/argonaut/clinicalnotes/ImplementationGuide/argonaut.us.clinicalnotes-1.0.0",
   "version" : "1.0.0",
   "name" : "Argonaut Clinical Notes",
   "status" : "draft",

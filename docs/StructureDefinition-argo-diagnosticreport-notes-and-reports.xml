@@ -17,7 +17,7 @@
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-argo-diagnosticreport-notes-and-reports-definitions.html#DiagnosticReport.presentedForm" title="null">presentedForm</a><a name="DiagnosticReport.presentedForm"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.4">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.4">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/datatypes.html#Attachment">Attachment</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/STU3/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/STU3/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
-  <url value="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-diagnosticreport-notes-and-reports"/>
+  <url value="http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/argo-diagnosticreport-notes-and-reports"/>
   <version value="1.0.0"/>
   <name value="Argonaut Imaging Reports"/>
   <status value="active"/>
@@ -478,7 +478,7 @@
       <binding>
         <strength value="extensible"/>
         <valueSetReference>
-          <reference value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/diagnosticreport-category"/>
+          <reference value="http://fhir.org/guides/argonaut/clinicalnotes/ValueSet/diagnosticreport-category"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1279,7 +1279,7 @@
       <binding>
         <strength value="extensible"/>
         <valueSetReference>
-          <reference value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/diagnosticreport-category"/>
+          <reference value="http://fhir.org/guides/argonaut/clinicalnotes/ValueSet/diagnosticreport-category"/>
         </valueSetReference>
       </binding>
       <mapping>

@@ -196,7 +196,7 @@ This is the
     Continuous Integration Build
    
   
-  of the Argonaut Clinical Notes Implementation Guide,  based on <a href="http://hl7.org/fhir/STU3/index.html">FHIR Version 3.0.1</a>.  See the <a href="#">Directory of published versions.</a>
+  of the Argonaut Clinical Notes Implementation Guide,  based on <a href="http://hl7.org/fhir/STU3/index.html">FHIR Version 3.0.1</a>.  See the <a href="http://www.fhir.org/guides/argonaut/clinicalnotes/history.cfml">Directory of published versions.</a>
 </p>
 
 
@@ -262,7 +262,7 @@ This is the
 
   <h2>CapabilityStatement: argonaut-clinical-notes-server</h2>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><h2 id="title">Argonaut Clinical Notes CapabilityStatement</h2><p>This profile defines the expected capabilities of an Argonaut Data Query server when conforming to the Argonaut Data Query Clinical Notes IG. The CapabilityStatement resource includes the complete list of actual Clinical Notes profiles, RESTful operations, and search parameters supported by Argonaut Data Query Servers. Servers have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.</p><ul><li>FHIR Version: 3.0.1</li><li>Supported formats: xml, json</li><li>Published: 2019-03-04</li><li>Published by: The Argonaut Project</li></ul><h3 id="behavior">FHIR RESTful Capabilities</h3><p>The Argonaut Clinical Notes Data Query Server <strong>SHALL</strong>:</p><ol><li>Implement the RESTful behavior according to the FHIR specification including returning the appropriate response classes as described in the FHIR specification for <a href="http://hl7.org/fhir/STU3/http.html">FHIR RESTful API</a>.</li><li>Support json resource formats for all Argonaut Clinical Notes interactions.</li><li>Declare a CapabilityStatement identifying the list of profiles, operations, search parameter supported.</li><li>Support xml resource formats for all Argonaut questionnaire interactions.</li></ol><p id="security"><strong>Security:</strong></p><p>For general security consideration refer to the <a href="https://argonautproject.github.io/questionnaire/index.html#security-and-privacy-considerations">Security and Privacy Considerations</a>.</p><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Operations</strong></p><li><strong>SHOULD</strong> support the	<a href="http://hl7.org/fhir/R4/valueset-operation-expand.html"><code>$expand</code></a> operation.</li><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported Includes</th></tr></thead><tbody><tr><td><a href="#documentreference">DocumentReference</a></td><td><p><a href="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-clinicalnotes">Argonaut Clinical Notes Profile </a></p></td><td>
+  <div xmlns="http://www.w3.org/1999/xhtml"><h2 id="title">Argonaut Clinical Notes CapabilityStatement</h2><p>This profile defines the expected capabilities of an Argonaut Data Query server when conforming to the Argonaut Data Query Clinical Notes IG. The CapabilityStatement resource includes the complete list of actual Clinical Notes profiles, RESTful operations, and search parameters supported by Argonaut Data Query Servers. Servers have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.</p><ul><li>FHIR Version: 3.0.1</li><li>Supported formats: xml, json</li><li>Published: 2019-03-04</li><li>Published by: The Argonaut Project</li></ul><h3 id="behavior">FHIR RESTful Capabilities</h3><p>The Argonaut Clinical Notes Data Query Server <strong>SHALL</strong>:</p><ol><li>Implement the RESTful behavior according to the FHIR specification including returning the appropriate response classes as described in the FHIR specification for <a href="http://hl7.org/fhir/STU3/http.html">FHIR RESTful API</a>.</li><li>Support json resource formats for all Argonaut Clinical Notes interactions.</li><li>Declare a CapabilityStatement identifying the list of profiles, operations, search parameter supported.</li><li>Support xml resource formats for all Argonaut questionnaire interactions.</li></ol><p id="security"><strong>Security:</strong></p><p>For general security consideration refer to the <a href="https://argonautproject.github.io/questionnaire/index.html#security-and-privacy-considerations">Security and Privacy Considerations</a>.</p><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Operations</strong></p><li><strong>SHOULD</strong> support the	<a href="http://hl7.org/fhir/R4/valueset-operation-expand.html"><code>$expand</code></a> operation.</li><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported Includes</th></tr></thead><tbody><tr><td><a href="#documentreference">DocumentReference</a></td><td><p><a href="http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/argo-clinicalnotes">Argonaut Clinical Notes Profile </a></p></td><td>
 							
 							_id, 
 							class, 
@@ -271,7 +271,7 @@ This is the
 							type, class+created+patient, class+patient, created+patient, created+patient+type, patient+type
 						</td><td>
 							
-						</td></tr><tr><td><a href="#diagnosticreport">DiagnosticReport</a></td><td><p><a href="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-diagnosticreport-notes-and-reports">Argonaut Diagnostic Report Profile for Report and Note exchange </a></p></td><td>
+						</td></tr><tr><td><a href="#diagnosticreport">DiagnosticReport</a></td><td><p><a href="http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/argo-diagnosticreport-notes-and-reports">Argonaut Diagnostic Report Profile for Report and Note exchange </a></p></td><td>
 							
 							_id, 
 							category, 
@@ -290,7 +290,7 @@ This is the
 						</td><td>
 							
 						</td></tr></tbody></table><br/><h4 id="documentreference" class="no_toc">DocumentReference</h4><p>Supported Profiles:
-			<p><a href="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-clinicalnotes">Argonaut Clinical Notes Profile </a></p>
+			<p><a href="http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/argo-clinicalnotes">Argonaut Clinical Notes Profile </a></p>
 
 				</p><ul><li>The search parameters <code>created</code>, <code>class</code>, and <code>type</code>  MAY NOT be available as a <em>single</em> search parameter but SHALL be available in the combinations listed below.</li></ul><p>Reference Policy: <code>resolves</code></p><p>Versioning Policy: <code>versioned</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>create</code>, 
@@ -315,7 +315,7 @@ This is the
 						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?created=[created]&amp;patient=[patient]</code></td></tr><tr><td><strong>SHALL</strong></td><td>created+patient+type
 						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?created=[created]&amp;patient=[patient]&amp;type=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td>patient+type
 						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?patient=[patient]&amp;type=[system]|[code]</code></td></tr></tbody></table><h4 id="diagnosticreport" class="no_toc">DiagnosticReport</h4><p>Supported Profiles:
-			<p><a href="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-diagnosticreport-notes-and-reports">Argonaut Diagnostic Report Profile for Report and Note exchange </a></p>
+			<p><a href="http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/argo-diagnosticreport-notes-and-reports">Argonaut Diagnostic Report Profile for Report and Note exchange </a></p>
 
 				</p><ul><li>The search parameters <code>date</code>, <code>category</code>, and  <code>code</code>  MAY NOT be available as a <em>single</em> search parameter but SHALL be available in the combinations listed below.</li></ul><p>Reference Policy: <code>resolves</code></p><p>Versioning Policy: <code>versioned</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>create</code>, 
@@ -396,12 +396,12 @@ Formats: <a href="CapabilityStatement-argonaut-clinical-notes-server.html">Narra
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="http://argonautwiki.hl7.org">Argonaut Project </a> argonaut.us.clinicalnotes#1.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/index.html">FHIR v3.0.1</a> generated <span href="#" data-toggle="tooltip" data-placement="top" title="Wed, Mar 20, 2019 16:57-0700">2019-03-20</span>. <br/>
+     <a href="http://argonautwiki.hl7.org">Argonaut Project </a> argonaut.us.clinicalnotes#1.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/index.html">FHIR v3.0.1</a> generated <span href="#" data-toggle="tooltip" data-placement="top" title="Fri, Mar 22, 2019 20:58-0700">2019-03-22</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
-      | <a style="color: #81BEF7" href="#">Version History</a>
+      | <a style="color: #81BEF7" href="http://www.fhir.org/guides/argonaut/clinicalnotes/history.cfml">Version History</a>
       | <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
-      | <a style="color: #81BEF7" href="https://github.com/Healthedata1/IG-Template2/issues" target="_blank">Propose a change</a>
+      | <a style="color: #81BEF7" href="https://github.com/argonautproject/clinicalnotes/issues" target="_blank">Propose a change</a>
         </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->

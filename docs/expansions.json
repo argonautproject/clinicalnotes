@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "d504f6cc-a162-44f8-9dfb-4ad8e87418b4",
+  "id" : "fcf847b9-2bc7-4e68-9b31-7984c18a5156",
   "meta" : {
-    "lastUpdated" : "2019-03-20T16:57:28.858-07:00"
+    "lastUpdated" : "2019-03-22T20:58:53.617-07:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -88,15 +88,15 @@
     }
   },
   {
-    "fullUrl" : "http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/documentreference-category",
+    "fullUrl" : "http://fhir.org/guides/argonaut/clinicalnotes/ValueSet/documentreference-category",
     "resource" : {
       "resourceType" : "ValueSet",
       "id" : "documentreference-category",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\">Expansion based on http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category version 1.0.0</p><p>All codes from system <a href=\"CodeSystem-documentreference-category.html\"><code>http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.org-guides-argonaut-clinicalnotes-CodeSystem-documentreference-category-clinical-note\"> </a><a href=\"CodeSystem-documentreference-category.html#documentreference-category-clinical-note\">clinical-note</a></td><td>Clinical Note</td><td>Part of a medical record where healthcare professionals record details to document a patient's clinical status or achievements during the course of a hospitalization or over the course of outpatient care ( [Wikipedia](https://en.wikipedia.org/wiki/Progress_note))</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.org-guides-argonaut-clinicalnotes-CodeSystem-documentreference-category-other\"> </a><a href=\"CodeSystem-documentreference-category.html#documentreference-category-other\">other</a></td><td>Other</td><td>Indicates that the category is not covered by one of the pre-defined codes.</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\">Expansion based on http://fhir.org/guides/argonaut/clinicalnotes/CodeSystem/documentreference-category version 1.0.0</p><p>All codes from system <a href=\"CodeSystem-documentreference-category.html\"><code>http://fhir.org/guides/argonaut/clinicalnotes/CodeSystem/documentreference-category</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.org-guides-argonaut-clinicalnotes-CodeSystem-documentreference-category-clinical-note\"> </a><a href=\"CodeSystem-documentreference-category.html#documentreference-category-clinical-note\">clinical-note</a></td><td>Clinical Note</td><td>Part of a medical record where healthcare professionals record details to document a patient's clinical status or achievements during the course of a hospitalization or over the course of outpatient care ( [Wikipedia](https://en.wikipedia.org/wiki/Progress_note))</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.org-guides-argonaut-clinicalnotes-CodeSystem-documentreference-category-other\"> </a><a href=\"CodeSystem-documentreference-category.html#documentreference-category-other\">other</a></td><td>Other</td><td>Indicates that the category is not covered by one of the pre-defined codes.</td></tr></table></div>"
       },
-      "url" : "http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/documentreference-category",
+      "url" : "http://fhir.org/guides/argonaut/clinicalnotes/ValueSet/documentreference-category",
       "version" : "1.0.0",
       "name" : "Argonaut DocumentReference Category Codes",
       "title" : "Argonaut DocumentReferences Category Value Set",
@@ -111,8 +111,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:05f21e0a-5a3e-4ce9-8529-70dcde619b6c",
-        "timestamp" : "2019-03-20T16:57:33-07:00",
+        "identifier" : "urn:uuid:be845e96-cfc6-4ade-a923-f5f33da5fb87",
+        "timestamp" : "2019-03-22T20:59:00-07:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -120,15 +120,15 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category|1.0.0"
+          "valueUri" : "http://fhir.org/guides/argonaut/clinicalnotes/CodeSystem/documentreference-category|1.0.0"
         }],
         "contains" : [{
-          "system" : "http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category",
+          "system" : "http://fhir.org/guides/argonaut/clinicalnotes/CodeSystem/documentreference-category",
           "code" : "clinical-note",
           "display" : "Clinical Note"
         },
         {
-          "system" : "http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category",
+          "system" : "http://fhir.org/guides/argonaut/clinicalnotes/CodeSystem/documentreference-category",
           "code" : "other",
           "display" : "Other"
         }]

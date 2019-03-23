@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="d504f6cc-a162-44f8-9dfb-4ad8e87418b4"/>
+  <id value="fcf847b9-2bc7-4e68-9b31-7984c18a5156"/>
   <meta>
-    <lastUpdated value="2019-03-20T16:57:28.858-07:00"/>
+    <lastUpdated value="2019-03-22T20:58:53.617-07:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -177,7 +177,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/documentreference-category"/>
+    <fullUrl value="http://fhir.org/guides/argonaut/clinicalnotes/ValueSet/documentreference-category"/>
     <resource>
       <ValueSet>
         <id value="documentreference-category"/>
@@ -185,10 +185,10 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category version 1.0.0</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://fhir.org/guides/argonaut/clinicalnotes/CodeSystem/documentreference-category version 1.0.0</p>
             <p>All codes from system 
               <a href="CodeSystem-documentreference-category.html">
-                <code>http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category</code>
+                <code>http://fhir.org/guides/argonaut/clinicalnotes/CodeSystem/documentreference-category</code>
               </a>
             </p>
             <table class="codes">
@@ -222,7 +222,7 @@
             </table>
           </div>
         </text>
-        <url value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/documentreference-category"/>
+        <url value="http://fhir.org/guides/argonaut/clinicalnotes/ValueSet/documentreference-category"/>
         <version value="1.0.0"/>
         <name value="Argonaut DocumentReference Category Codes"/>
         <title value="Argonaut DocumentReferences Category Value Set"/>
@@ -237,8 +237,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:05f21e0a-5a3e-4ce9-8529-70dcde619b6c"/>
-          <timestamp value="2019-03-20T16:57:33-07:00"/>
+          <identifier value="urn:uuid:be845e96-cfc6-4ade-a923-f5f33da5fb87"/>
+          <timestamp value="2019-03-22T20:59:00-07:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -246,15 +246,15 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category|1.0.0"/>
+            <valueUri value="http://fhir.org/guides/argonaut/clinicalnotes/CodeSystem/documentreference-category|1.0.0"/>
           </parameter>
           <contains>
-            <system value="http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category"/>
+            <system value="http://fhir.org/guides/argonaut/clinicalnotes/CodeSystem/documentreference-category"/>
             <code value="clinical-note"/>
             <display value="Clinical Note"/>
           </contains>
           <contains>
-            <system value="http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category"/>
+            <system value="http://fhir.org/guides/argonaut/clinicalnotes/CodeSystem/documentreference-category"/>
             <code value="other"/>
             <display value="Other"/>
           </contains>

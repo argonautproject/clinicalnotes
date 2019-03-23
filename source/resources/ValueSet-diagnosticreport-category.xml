@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<id value="diagnosticreport-category"/>
-	<url value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/diagnosticreport-category"/>
+	<url value="http://fhir.org/guides/argonaut/clinicalnotes/ValueSet/diagnosticreport-category"/>
 	<version value="0.0.0"/>
 	<name value="Argonaut DiagnosticReport Category Codes"/>
 	<title value="Argonaut DiagnosticReport Category Value Set"/>

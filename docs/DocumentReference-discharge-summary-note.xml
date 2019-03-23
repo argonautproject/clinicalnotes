@@ -3,10 +3,10 @@
 <DocumentReference xmlns="http://hl7.org/fhir">
   <id value="discharge-summary-note"/>
   <meta>
-    <profile value="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-clinicalnotes"/>
+    <profile value="http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/argo-clinicalnotes"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: discharge-summary-note</p><p><b>meta</b>: </p><p><b>status</b>: current</p><p><b>type</b>: Discharge Summary <span style="background: LightGoldenRodYellow">(Details : {LOINC code '8648-8' = 'Hospital course Narrative', given as 'Discharge Summary'})</span></p><p><b>class</b>: Discharge Summary <span style="background: LightGoldenRodYellow">(Details : {http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category code 'clinical-note' = 'Clinical Note', given as 'Clinical Notes'})</span></p><p><b>subject</b>: <a href="Patient/1316024">Patient/1316024</a></p><p><b>created</b>: May 10, 2018, 9:39:30 PM</p><p><b>indexed</b>: May 10, 2018, 9:39:30 PM</p><h3>Contents</h3><table class="grid"><tr><td>-</td><td><b>Attachment</b></td></tr><tr><td>*</td><td/></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: discharge-summary-note</p><p><b>meta</b>: </p><p><b>status</b>: current</p><p><b>type</b>: Discharge Summary <span style="background: LightGoldenRodYellow">(Details : {LOINC code '8648-8' = 'Hospital course Narrative', given as 'Discharge Summary'})</span></p><p><b>class</b>: Discharge Summary <span style="background: LightGoldenRodYellow">(Details : {http://fhir.org/guides/argonaut/clinicalnotes/CodeSystem/documentreference-category code 'clinical-note' = 'Clinical Note', given as 'Clinical Notes'})</span></p><p><b>subject</b>: <a href="Patient/1316024">Patient/1316024</a></p><p><b>created</b>: May 10, 2018, 9:39:30 PM</p><p><b>indexed</b>: May 10, 2018, 9:39:30 PM</p><h3>Contents</h3><table class="grid"><tr><td>-</td><td><b>Attachment</b></td></tr><tr><td>*</td><td/></tr></table></div>
   </text>
   <status value="current"/>
   <type>
@@ -19,7 +19,7 @@
   </type>
   <class>
     <coding>
-      <system value="http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category"/>
+      <system value="http://fhir.org/guides/argonaut/clinicalnotes/CodeSystem/documentreference-category"/>
       <code value="clinical-note"/>
       <display value="Clinical Notes"/>
     </coding>

@@ -2,7 +2,7 @@
     "resourceType": "DocumentReference",
     "id": "progress-note",
     "meta": {
-    "profile": ["http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-clinicalnotes"]
+    "profile": ["http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/argo-clinicalnotes"]
   },
     "type": {
         "coding": [{
@@ -14,7 +14,7 @@
     },
      "class": {
         "coding": [{
-            "system": "http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category",
+            "system": "http://fhir.org/guides/argonaut/clinicalnotes/CodeSystem/documentreference-category",
             "code": "clinical-note",
             "display": "Clinical Notes"
         }],

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="template-basic" />
-  <url value="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/template-basic" />
+  <url value="http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/template-basic" />
   <version value="0.0.0" />
   <name value="Profile template-basic" />
   <status value="active" />
@@ -50,7 +50,7 @@
       <definition value="This is a simple extension applied to a Profile." />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/extension-blah" />
+        <profile value="http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/extension-blah" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -61,7 +61,7 @@
       <definition value="This is a complex extension applied to a Profile." />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/extension-complex" />
+        <profile value="http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/extension-complex" />
       </type>
       <mustSupport value="true" />
     </element>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<id value="documentreference-category"/>
-	<url value="http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category"/>
+	<url value="http://fhir.org/guides/argonaut/clinicalnotes/CodeSystem/documentreference-category"/>
 	<version value="0.0.0"/>
 	<name value="DocumentReference Category"/>
 	<title value="Argonaut DocumentReferences Category Code System"/>
@@ -16,7 +16,7 @@
 		</coding>
 	</jurisdiction>
 	<caseSensitive value="true"/>
-	<valueSet value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/documentreference-category"/>
+	<valueSet value="http://fhir.org/guides/argonaut/clinicalnotes/ValueSet/documentreference-category"/>
 	<content value="complete"></content>
 	<count value="2"></count>
 	<concept>

@@ -6,18 +6,18 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.org/guides/argonaut-clinicalnotes/DocumentReference/discharge-summary-note> a fhir:DocumentReference;
+<http://fhir.org/guides/argonaut/clinicalnotes/DocumentReference/discharge-summary-note> a fhir:DocumentReference;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "discharge-summary-note"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-clinicalnotes";
+       fhir:value "http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/argo-clinicalnotes";
        fhir:index 0
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: discharge-summary-note</p><p><b>meta</b>: </p><p><b>status</b>: current</p><p><b>type</b>: Discharge Summary <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '8648-8' = 'Hospital course Narrative', given as 'Discharge Summary'})</span></p><p><b>class</b>: Discharge Summary <span style=\"background: LightGoldenRodYellow\">(Details : {http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category code 'clinical-note' = 'Clinical Note', given as 'Clinical Notes'})</span></p><p><b>subject</b>: <a href=\"Patient/1316024\">Patient/1316024</a></p><p><b>created</b>: May 10, 2018, 9:39:30 PM</p><p><b>indexed</b>: May 10, 2018, 9:39:30 PM</p><h3>Contents</h3><table class=\"grid\"><tr><td>-</td><td><b>Attachment</b></td></tr><tr><td>*</td><td/></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: discharge-summary-note</p><p><b>meta</b>: </p><p><b>status</b>: current</p><p><b>type</b>: Discharge Summary <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '8648-8' = 'Hospital course Narrative', given as 'Discharge Summary'})</span></p><p><b>class</b>: Discharge Summary <span style=\"background: LightGoldenRodYellow\">(Details : {http://fhir.org/guides/argonaut/clinicalnotes/CodeSystem/documentreference-category code 'clinical-note' = 'Clinical Note', given as 'Clinical Notes'})</span></p><p><b>subject</b>: <a href=\"Patient/1316024\">Patient/1316024</a></p><p><b>created</b>: May 10, 2018, 9:39:30 PM</p><p><b>indexed</b>: May 10, 2018, 9:39:30 PM</p><h3>Contents</h3><table class=\"grid\"><tr><td>-</td><td><b>Attachment</b></td></tr><tr><td>*</td><td/></tr></table></div>"
   ];
   fhir:DocumentReference.status [ fhir:value "current"];
   fhir:DocumentReference.type [
@@ -33,14 +33,14 @@
   fhir:DocumentReference.class [
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category" ];
+       fhir:Coding.system [ fhir:value "http://fhir.org/guides/argonaut/clinicalnotes/CodeSystem/documentreference-category" ];
        fhir:Coding.code [ fhir:value "clinical-note" ];
        fhir:Coding.display [ fhir:value "Clinical Notes" ]
      ];
      fhir:CodeableConcept.text [ fhir:value "Discharge Summary" ]
   ];
   fhir:DocumentReference.subject [
-     fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/Patient/1316024>;
+     fhir:link <http://fhir.org/guides/argonaut/clinicalnotes/Patient/1316024>;
      fhir:Reference.reference [ fhir:value "Patient/1316024" ]
   ];
   fhir:DocumentReference.created [ fhir:value "2018-05-10T21:39:30.000Z"^^xsd:dateTime];
@@ -55,7 +55,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://fhir.org/guides/argonaut-clinicalnotes/DocumentReference/discharge-summary-note.ttl> a owl:Ontology;
+<http://fhir.org/guides/argonaut/clinicalnotes/DocumentReference/discharge-summary-note.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

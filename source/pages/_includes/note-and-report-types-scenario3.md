@@ -20,7 +20,7 @@ HTTP/1.1 200 OK
 {
   "resourceType": "ValueSet",
   "id": "scenario3-server-documentreference-category",
-  "url": "http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/documentreference-category",
+  "url": "http://fhir.org/guides/argonaut/clinicalnotes/ValueSet/documentreference-category",
   "version": "3.0.1",
   "name": "ArgonautDocumentReferenceCategoryCodes",
   "title": "Argonaut DocumentReference Category Codes",
@@ -39,7 +39,7 @@ HTTP/1.1 200 OK
       }
     ],
     "contains": [{
-        "system": "http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category",
+        "system": "http://fhir.org/guides/argonaut/clinicalnotes/CodeSystem/documentreference-category",
         "code": "clinical-note",
         "display": "Clinical Note"
       }

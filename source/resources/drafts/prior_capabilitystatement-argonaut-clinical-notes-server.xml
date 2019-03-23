@@ -6,7 +6,7 @@
 		<div xmlns="http://www.w3.org/1999/xhtml">
 <ul><li>FHIR Version: 3.0.0</li><li>Supported formats: xml, json</li><li>Published: 2017-03-08</li><li>Published by: Health eData Inc</li></ul><p>The Section describes the expected capabilities etc....</p></div>
 </text>
-	<url value="http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/argonaut-clinical-notes-server"/>
+	<url value="http://fhir.org/guides/argonaut/clinicalnotes/CapabilityStatement/argonaut-clinical-notes-server"/>
 	<name value="ArgonautClinicalNotesServer"/>
 	<title value="Argonaut Clinical Notes Server"/>
 	<status value="draft"/>
@@ -27,7 +27,7 @@
 
 	<profile>
 
-		<reference value="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/template-basic"/>
+		<reference value="http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/template-basic"/>
 		<display value="StructureDefinition-template-basic"/>
 	</profile>
 	<rest>

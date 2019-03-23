@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/fhir-all-xsd%20-STU3/fhir-all.xsd">
 	<id value="cn-plus-uscore"/>
-	<url value="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/cn-plus-uscore"/>
+	<url value="http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/cn-plus-uscore"/>
 	<version value="1.1.0"/>
 	<name value="Clinical Notes Plus US Core DocumentReference Differential Profile"/>
 	<status value="draft"/>
@@ -78,7 +78,7 @@
 			<isModifier value="false"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet">
-					<valueUri value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/argonaut-clinical-note-type"/>
+					<valueUri value="http://fhir.org/guides/argonaut/clinicalnotes/ValueSet/argonaut-clinical-note-type"/>
 				</extension>
 				<strength value="required"/>
 				<description value="This is the code specifying the precise type of document"/>
@@ -93,7 +93,7 @@
 			<mustSupport value="true"/>
 			<binding>
 				<strength value="extensible"/>
-				<valueSetUri value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/documentreference-category"/>
+				<valueSetUri value="http://fhir.org/guides/argonaut/clinicalnotes/ValueSet/documentreference-category"/>
 			</binding>
 		</element>
 		<element id="DocumentReference.author">

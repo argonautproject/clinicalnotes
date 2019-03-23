@@ -3,9 +3,9 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="argonaut.us.clinicalnotes-1.0.0"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Argonaut Clinical Notes</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/argonaut.us.clinicalnotes-1.0.0</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Argonaut Clinical Notes</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/guides/argonaut/clinicalnotes/ImplementationGuide/argonaut.us.clinicalnotes-1.0.0</pre></div>
   </text>
-  <url value="http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/argonaut.us.clinicalnotes-1.0.0"/>
+  <url value="http://fhir.org/guides/argonaut/clinicalnotes/ImplementationGuide/argonaut.us.clinicalnotes-1.0.0"/>
   <version value="1.0.0"/>
   <name value="Argonaut Clinical Notes"/>
   <status value="draft"/>

@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/argonaut.us.clinicalnotes-1.0.0> a fhir:ImplementationGuide;
+<http://fhir.org/guides/argonaut/clinicalnotes/ImplementationGuide/argonaut.us.clinicalnotes-1.0.0> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "argonaut.us.clinicalnotes-1.0.0"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Argonaut Clinical Notes</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/argonaut.us.clinicalnotes-1.0.0</pre></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Argonaut Clinical Notes</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/guides/argonaut/clinicalnotes/ImplementationGuide/argonaut.us.clinicalnotes-1.0.0</pre></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/argonaut.us.clinicalnotes-1.0.0"];
+  fhir:ImplementationGuide.url [ fhir:value "http://fhir.org/guides/argonaut/clinicalnotes/ImplementationGuide/argonaut.us.clinicalnotes-1.0.0"];
   fhir:ImplementationGuide.version [ fhir:value "1.0.0"];
   fhir:ImplementationGuide.name [ fhir:value "Argonaut Clinical Notes"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
@@ -40,7 +40,7 @@
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/DocumentReference/progress-note>;
+         fhir:link <http://fhir.org/guides/argonaut/clinicalnotes/DocumentReference/progress-note>;
          fhir:Reference.reference [ fhir:value "DocumentReference/progress-note" ]
        ]
      ], [
@@ -52,7 +52,7 @@
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/Encounter/example-1>;
+         fhir:link <http://fhir.org/guides/argonaut/clinicalnotes/Encounter/example-1>;
          fhir:Reference.reference [ fhir:value "Encounter/example-1" ]
        ]
      ], [
@@ -64,7 +64,7 @@
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/DiagnosticReport/cardiology-report>;
+         fhir:link <http://fhir.org/guides/argonaut/clinicalnotes/DiagnosticReport/cardiology-report>;
          fhir:Reference.reference [ fhir:value "DiagnosticReport/cardiology-report" ]
        ]
      ], [
@@ -76,7 +76,7 @@
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/DiagnosticReport/chest-xray-report>;
+         fhir:link <http://fhir.org/guides/argonaut/clinicalnotes/DiagnosticReport/chest-xray-report>;
          fhir:Reference.reference [ fhir:value "DiagnosticReport/chest-xray-report" ]
        ]
      ], [
@@ -88,7 +88,7 @@
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/DocumentReference/discharge-summary-note>;
+         fhir:link <http://fhir.org/guides/argonaut/clinicalnotes/DocumentReference/discharge-summary-note>;
          fhir:Reference.reference [ fhir:value "DocumentReference/discharge-summary-note" ]
        ]
      ], [
@@ -100,7 +100,7 @@
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/argonaut-clinical-note-type>;
+         fhir:link <http://fhir.org/guides/argonaut/clinicalnotes/ValueSet/argonaut-clinical-note-type>;
          fhir:Reference.reference [ fhir:value "ValueSet/argonaut-clinical-note-type" ]
        ]
      ], [
@@ -112,7 +112,7 @@
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/diagnosticreport-category>;
+         fhir:link <http://fhir.org/guides/argonaut/clinicalnotes/ValueSet/diagnosticreport-category>;
          fhir:Reference.reference [ fhir:value "ValueSet/diagnosticreport-category" ]
        ]
      ], [
@@ -124,7 +124,7 @@
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/documentreference-category>;
+         fhir:link <http://fhir.org/guides/argonaut/clinicalnotes/ValueSet/documentreference-category>;
          fhir:Reference.reference [ fhir:value "ValueSet/documentreference-category" ]
        ]
      ], [
@@ -136,7 +136,7 @@
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/argonaut-clinical-notes-client>;
+         fhir:link <http://fhir.org/guides/argonaut/clinicalnotes/CapabilityStatement/argonaut-clinical-notes-client>;
          fhir:Reference.reference [ fhir:value "CapabilityStatement/argonaut-clinical-notes-client" ]
        ]
      ], [
@@ -148,7 +148,7 @@
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/documentreference-category>;
+         fhir:link <http://fhir.org/guides/argonaut/clinicalnotes/CodeSystem/documentreference-category>;
          fhir:Reference.reference [ fhir:value "CodeSystem/documentreference-category" ]
        ]
      ], [
@@ -160,7 +160,7 @@
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/argonaut-clinical-notes-server>;
+         fhir:link <http://fhir.org/guides/argonaut/clinicalnotes/CapabilityStatement/argonaut-clinical-notes-server>;
          fhir:Reference.reference [ fhir:value "CapabilityStatement/argonaut-clinical-notes-server" ]
        ]
      ], [
@@ -172,7 +172,7 @@
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-clinicalnotes>;
+         fhir:link <http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/argo-clinicalnotes>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/argo-clinicalnotes" ]
        ]
      ], [
@@ -184,7 +184,7 @@
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-diagnosticreport-notes-and-reports>;
+         fhir:link <http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/argo-diagnosticreport-notes-and-reports>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/argo-diagnosticreport-notes-and-reports" ]
        ]
      ]
@@ -276,7 +276,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/argonaut.us.clinicalnotes-1.0.0.ttl> a owl:Ontology;
+<http://fhir.org/guides/argonaut/clinicalnotes/ImplementationGuide/argonaut.us.clinicalnotes-1.0.0.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

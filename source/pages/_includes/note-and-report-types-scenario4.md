@@ -20,7 +20,7 @@ HTTP/1.1 200 OK
 {
   "resourceType": "ValueSet",
   "id": "scenario4-server-diagnosticreport-category",
-  "url": "http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/diagnosticreport-category",
+  "url": "http://fhir.org/guides/argonaut/clinicalnotes/ValueSet/diagnosticreport-category",
   "version": "3.0.1",
   "name": "ArgonautDiagnosticReportCategoryCodes",
   "title": "Argonaut DiagnosticReport Category Value Set",

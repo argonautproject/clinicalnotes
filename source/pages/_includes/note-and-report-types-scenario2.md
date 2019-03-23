@@ -20,7 +20,7 @@ HTTP/1.1 200 OK
 {
   "resourceType": "ValueSet",
   "id": "scenario2-server-clinical-note-type",
-  "url": "http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/argonaut-clinical-note-type",
+  "url": "http://fhir.org/guides/argonaut/clinicalnotes/ValueSet/argonaut-clinical-note-type",
   "version": "3.0.1",
   "name": "ArgonautClinicalNotes",
   "title": "Argonaut DocumentReferences Type Value Set",

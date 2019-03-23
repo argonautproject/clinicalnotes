@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="blah-codes"/>
-<url value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/blah-codes"/>
+<url value="http://fhir.org/guides/argonaut/clinicalnotes/ValueSet/blah-codes"/>
 <version value="0.0.0"/>
 <name value="BlahCodes"/>
 <status value="draft"/>
@@ -25,7 +25,7 @@
 <immutable value="true"/>
 <compose>
   <include>
-    <system value="http://fhir.org/guides/argonaut-clinicalnotes/CodeSystem/blah-codes"/>
+    <system value="http://fhir.org/guides/argonaut/clinicalnotes/CodeSystem/blah-codes"/>
   </include>
 </compose>
 </ValueSet>

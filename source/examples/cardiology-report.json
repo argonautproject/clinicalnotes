@@ -2,7 +2,7 @@
     "resourceType": "DiagnosticReport",
     "id": "cardiology-report",
     "meta": {
-        "profile": ["http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/argo-diagnosticreport-notes-and-reports"]
+        "profile": ["http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/argo-diagnosticreport-notes-and-reports"]
     },
     "status": "final",
     "category": {

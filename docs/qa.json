@@ -1,9 +1,9 @@
 ﻿{
-  "url": "http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/argonaut.us.clinicalnotes-1.0.0",
+  "url": "http://fhir.org/guides/argonaut/clinicalnotes/ImplementationGuide/argonaut.us.clinicalnotes-1.0.0",
   "name": "Argonaut Clinical Notes",
   "package-id": "argonaut.us.clinicalnotes",
   "ig-ver": "1.0.0",
-  "date": "Wed, 20 Mar, 2019 16:57:28 -0700",
+  "date": "Fri, 22 Mar, 2019 20:58:53 -0700",
   "errs": 22,
   "warnings": 30,
   "hints": 40,

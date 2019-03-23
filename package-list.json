@@ -1,7 +1,7 @@
 {
    "package-id": "argonaut.us.clinicalnotes",
    "title": "Argonaut Clinical Notes Implementation Guide",
-   "canonical": "http://fhir.org/guides/argonaut-clinicalnotes",
+   "canonical": "http://fhir.org/guides/argonaut/clinicalnotes",
    "introduction": "This implementation guide provides implementers with FHIR profiles and guidance to create, use, and share Clinical Notes. The requirements were developed by the Argonaut Clinical Notes project team and tested through pilot implementations, and HL7 sponsored Connectathons. This guide is based on FHIR Version 3.0.1 The content and profiles used in this guide were submitted to the HL7 US Realm Steering Committee for consideration in the December 2018 ballot of US Core for FHIR Version R4.",
    "list": [
       {
@@ -15,8 +15,7 @@
          "version": "1.0.0",
          "date": "2019-05-01 00:00:00",
          "desc": " First published version ( 1.0.0 )",
-         "changes": "",
-         "path": "http://build.fhir.org/ig/argonautproject/clinicalnotes/1.0.0",
+         "path": "http://fhir.org/guides/argonaut/clinicalnotes/1.0.0",
          "status": "published",
          "sequence": "Release 1"
       }

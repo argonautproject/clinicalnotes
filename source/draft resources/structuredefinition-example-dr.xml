@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/fhir-all-xsd%20-STU3/fhir-all.xsd">
 	<id value="example-dr"/>
-	<url value="http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/example-dr"/>
+	<url value="http://fhir.org/guides/argonaut/clinicalnotes/StructureDefinition/example-dr"/>
 	<name value="Example DR to show how to base off of US Core DR"/>
 	<status value="draft"/>
 	<date value="2018-04-10T09:48:14.298-04:00"/>
@@ -25,7 +25,7 @@
 			<isModifier value="false"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet">
-					<valueUri value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/argonaut-clinical-note-type"/>
+					<valueUri value="http://fhir.org/guides/argonaut/clinicalnotes/ValueSet/http://fhir.org/guides/argonaut/clinicalnotes/ValueSet/argonaut-clinical-note-type"/>
 				</extension>
 				<strength value="required"/>
 				<description value="This is the code specifying the precise type of document"/>
@@ -40,7 +40,7 @@
 			<mustSupport value="true"/>
 			<binding>
 				<strength value="extensible"/>
-				<valueSetUri value="http://fhir.org/guides/argonaut-clinicalnotes/ValueSet/documentreference-category"/>
+				<valueSetUri value="http://fhir.org/guides/argonaut/clinicalnotes/ValueSet/documentreference-category"/>
 			</binding>
 		</element>
 		<element id="DocumentReference.author">

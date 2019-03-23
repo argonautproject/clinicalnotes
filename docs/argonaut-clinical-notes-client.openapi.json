@@ -12,7 +12,7 @@
     }
   },
   "externalDocs": {
-    "url": "http://fhir.org/guides/argonaut-clinicalnotes/CapabilityStatement/argonaut-clinical-notes-client",
+    "url": "http://fhir.org/guides/argonaut/clinicalnotes/CapabilityStatement/argonaut-clinical-notes-client",
     "description": "FHIR CapabilityStatement"
   }
 }

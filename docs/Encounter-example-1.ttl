@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.org/guides/argonaut-clinicalnotes/Encounter/example-1> a fhir:Encounter;
+<http://fhir.org/guides/argonaut/clinicalnotes/Encounter/example-1> a fhir:Encounter;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "example-1"];
   fhir:Resource.meta [
@@ -35,7 +35,7 @@
      fhir:CodeableConcept.text [ fhir:value "Office Visit" ]
   ];
   fhir:Encounter.subject [
-     fhir:link <http://fhir.org/guides/argonaut-clinicalnotes/Patient/example>;
+     fhir:link <http://fhir.org/guides/argonaut/clinicalnotes/Patient/example>;
      fhir:Reference.reference [ fhir:value "Patient/example" ]
   ];
   fhir:Encounter.period [
@@ -45,7 +45,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://fhir.org/guides/argonaut-clinicalnotes/Encounter/example-1.ttl> a owl:Ontology;
+<http://fhir.org/guides/argonaut/clinicalnotes/Encounter/example-1.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
