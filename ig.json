@@ -6,7 +6,7 @@
       "framework",
       "source/pages"
     ],
-    "output": "docs",
+    "output": "output",
     "resources": [
       "source/resources",
       "source/examples"

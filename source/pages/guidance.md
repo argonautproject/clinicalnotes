@@ -59,10 +59,12 @@ For example, when `DiagnosticReport.presentedForm.url` references a Scan (PDF), 
 
 {% include img.html img="both-url.jpg" caption="Figure 2: Expose a PDF Report Through Both DiagnosticReport and DocumentReference" %}
 
-**DocumentReference and DiagnosticReport Snippets Referencing Common Binary**
+**Example JSON Snippets Referencing Common Binary in DocumentReference and DiagnosticReport**
+
+DocumentReference:
 ```
 {
-  ...DoucmentReference snip...
+  ...snip...
     "content": [
         {
             "attachment": {
@@ -74,9 +76,10 @@ For example, when `DiagnosticReport.presentedForm.url` references a Scan (PDF), 
     ]
 }
 ```
+DiagnosticReport:
 ```
 {
-  ...DiagnosticReport snip...
+  ...snip...
    "presentedForm": [
         {
             "contentType": "application/xhtml",
@@ -160,8 +163,8 @@ where:
 
  **Examples**
 
- {% include examplebutton.html example="read-and-write-format-scenario1" b_title = "Scenario 1" %}
- {% include examplebutton.html example="read-and-write-format-scenario2" b_title = "Scenario 2" %}
+ {% include examplebutton.html example="read-and-write-format-scenario1" b_title = "Click on Here To See Scenario 1 Example" %}
+ {% include examplebutton.html example="read-and-write-format-scenario2" b_title = "Click on Here To See Scenario 2 Example" %}
 
 ### Resource Selection
 
