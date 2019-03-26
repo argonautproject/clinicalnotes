@@ -7,8 +7,8 @@
     "type": {
         "coding": [{
             "system": "http://loinc.org",
-            "code": "8648-8",
-            "display": "Hospital course Narrative"
+            "code": "18842-5",
+            "display": "Discharge Summary"
         }],
         "text": "Discharge Summary"
     },

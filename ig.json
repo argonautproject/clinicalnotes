@@ -165,5 +165,6 @@
     }
   },
   "mappings": "true",
-  "working-dir": "/Users/ehaas/Documents/FHIR/Argonaut-ClinicalNotes/"
+  "working-dir": "/Users/ehaas/Documents/FHIR/Argonaut-ClinicalNotes/",
+  "history": "http://fhir.org/guides/argonaut/clinicalnotes/history.cfml"
 }
