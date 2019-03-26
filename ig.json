@@ -1,1 +1,169 @@
-{"tool": "jekyll", "igtemplate-dir": "/Users/ehaas/Documents/FHIR/IG-Template2/", "logging": ["progress"], "canonicalBase": "http://fhir.org/guides/argonaut/clinicalnotes", "pub_url": "ehaas@healthedatainc.com", "license": "CC0-1.0", "topofpage": "true", "allviews": "true", "publisher": "Argonaut Project", "source": "ig.xml", "do-transforms": "false", "paths": {"temp": "generated_output/temp", "pages": ["framework", "source/pages"], "specification": "http://hl7.org/fhir/STU3", "txCache": "generated_output/txCache", "resources": ["source/resources", "source/examples"], "output": "output", "qa": "generated_output/qa"}, "contact": [{"system": "url", "value": "http://argonautwiki.hl7.org"}], "fixed-business-version": "1.0.0", "extraTemplates": ["mappings"], "swagger": [{"mode": "single", "capabilities": "server"}], "sct-edition": "http://snomed.info/sct/731000124108", "npm-name": "argonaut.us.clinicalnotes", "no-inactive-codes": "false", "version": "3.0.1", "title": "Argonaut Clinical Notes", "broken-links": "warning", "status": "draft", "jurisdiction": "US", "dependencyList": [{"name": "uscore", "version": "2.0.0", "location": "http://hl7.org/fhir/us/core", "package": "hl7.fhir.us.core"}], "gen-examples": "false", "defaults": {"ValueSet": {"template-base": "base.html"}, "Any": {"template-base": "base.html", "swagger": "true", "template-format": "format.html"}, "StructureDefinition": {"template-mappings": "sd-mappings.html", "template-base": "sd.html", "template-defns": "sd-definitions.html"}, "CodeSystem": {"template-base": "base.html"}, "ConceptMap": {"template-base": "base.html"}, "SearchParameter": {"template-base": "base.html"}, "DocumentReference": {"template-base": "ex.html"}, "DiagnosticReport": {"template-base": "ex.html"}, "OperationDefinition": {"template-base": "base.html"}, "Patient": {"template-base": "ex.html"}, "Encounter": {"template-base": "ex.html"}, "StructureMap": {"content": false, "script": false, "template-base": "ex.html", "profiles": false}, "CapabilityStatement": {"template-base": "base.html"}}, "resources": {"DiagnosticReport/cardiology-report": {"source": "cardiology-report.json", "base": "DiagnosticReport-cardiology-report.html"}, "CodeSystem/documentreference-category": {"source": "CodeSystem-documentreference-category.xml", "base": "CodeSystem-documentreference-category.html"}, "Patient/example": {"source": "patient-example.xml", "base": "Patient-example.html"}, "StructureDefinition/argo-clinicalnotes": {"source": "structuredefinition-argo-clinicalnotes.xml", "defns": "StructureDefinition-argo-clinicalnotes-definitions.html", "base": "StructureDefinition-argo-clinicalnotes.html"}, "ValueSet/documentreference-category": {"source": "ValueSet-documentreference-category.xml", "base": "ValueSet-documentreference-category.html"}, "ValueSet/diagnosticreport-category": {"source": "ValueSet-diagnosticreport-category.xml", "base": "ValueSet-diagnosticreport-category.html"}, "CapabilityStatement/argonaut-clinical-notes-server": {"source": "capabilitystatement-argonaut-clinical-notes-server.json", "base": "CapabilityStatement-argonaut-clinical-notes-server.html"}, "ValueSet/argonaut-clinical-note-type": {"source": "ValueSet-argonaut-clinical-note-type.xml", "base": "ValueSet-argonaut-clinical-note-type.html"}, "Encounter/example-1": {"source": "encounter-example-1.xml", "base": "Encounter-example-1.html"}, "DocumentReference/progress-note": {"source": "progress-note.json", "base": "DocumentReference-progress-note.html"}, "DocumentReference/discharge-summary-note": {"source": "discharge-summary-note.json", "base": "DocumentReference-discharge-summary-note.html"}, "StructureDefinition/argo-diagnosticreport-notes-and-reports": {"source": "structuredefinition-argo-diagnosticreport-notes-and-reports.xml", "defns": "StructureDefinition-argo-diagnosticreport-notes-and-reports-definitions.html", "base": "StructureDefinition-argo-diagnosticreport-notes-and-reports.html"}, "DiagnosticReport/chest-xray-report": {"source": "chest-xray-report.json", "base": "DiagnosticReport-chest-xray-report.html"}, "CapabilityStatement/argonaut-clinical-notes-client": {"source": "capabilitystatement-argonaut-clinical-notes-client.json", "base": "CapabilityStatement-argonaut-clinical-notes-client.html"}}, "mappings": "true", "working-dir": "/Users/ehaas/Documents/FHIR/Argonaut-ClinicalNotes/"}
+{
+  "tool": "jekyll",
+  "igtemplate-dir": "/Users/ehaas/Documents/FHIR/IG-Template2/",
+  "logging": [
+    "progress"
+  ],
+  "canonicalBase": "http://fhir.org/guides/argonaut/clinicalnotes",
+  "pub_url": "ehaas@healthedatainc.com",
+  "license": "CC0-1.0",
+  "topofpage": "true",
+  "allviews": "true",
+  "publisher": "Argonaut Project",
+  "source": "ig.xml",
+  "do-transforms": "false",
+  "paths": {
+    "temp": "generated_output/temp",
+    "pages": [
+      "framework",
+      "source/pages"
+    ],
+    "specification": "http://hl7.org/fhir/STU3",
+    "txCache": "generated_output/txCache",
+    "resources": [
+      "source/resources",
+      "source/examples"
+    ],
+    "output": "output",
+    "qa": "generated_output/qa"
+  },
+  "contact": [
+    {
+      "system": "url",
+      "value": "http://argonautwiki.hl7.org"
+    }
+  ],
+  "fixed-business-version": "1.0.0",
+  "extraTemplates": [
+    "mappings"
+  ],
+  "swagger": [
+    {
+      "mode": "single",
+      "capabilities": "server"
+    }
+  ],
+  "sct-edition": "http://snomed.info/sct/731000124108",
+  "npm-name": "argonaut.us.clinicalnotes",
+  "no-inactive-codes": "false",
+  "version": "3.0.1",
+  "title": "Argonaut Clinical Notes",
+  "broken-links": "warning",
+  "status": "draft",
+  "jurisdiction": "US",
+  "dependencyList": [
+    {
+      "name": "uscore",
+      "version": "2.0.0",
+      "location": "http://hl7.org/fhir/us/core",
+      "package": "hl7.fhir.us.core"
+    }
+  ],
+  "gen-examples": "false",
+  "defaults": {
+    "ValueSet": {
+      "template-base": "base.html"
+    },
+    "Any": {
+      "template-base": "base.html",
+      "swagger": "true",
+      "template-format": "format.html"
+    },
+    "StructureDefinition": {
+      "template-mappings": "sd-mappings.html",
+      "template-base": "sd.html",
+      "template-defns": "sd-definitions.html"
+    },
+    "CodeSystem": {
+      "template-base": "base.html"
+    },
+    "ConceptMap": {
+      "template-base": "base.html"
+    },
+    "SearchParameter": {
+      "template-base": "base.html"
+    },
+    "DocumentReference": {
+      "template-base": "ex.html"
+    },
+    "DiagnosticReport": {
+      "template-base": "ex.html"
+    },
+    "OperationDefinition": {
+      "template-base": "base.html"
+    },
+    "Patient": {
+      "template-base": "ex.html"
+    },
+    "Encounter": {
+      "template-base": "ex.html"
+    },
+    "StructureMap": {
+      "content": false,
+      "script": false,
+      "template-base": "ex.html",
+      "profiles": false
+    },
+    "CapabilityStatement": {
+      "template-base": "base.html"
+    }
+  },
+  "resources": {
+    "DiagnosticReport/cardiology-report": {
+      "source": "cardiology-report.json",
+      "base": "DiagnosticReport-cardiology-report.html"
+    },
+    "CodeSystem/documentreference-category": {
+      "source": "CodeSystem-documentreference-category.xml",
+      "base": "CodeSystem-documentreference-category.html"
+    },
+    "Patient/example": {
+      "source": "patient-example.xml",
+      "base": "Patient-example.html"
+    },
+    "StructureDefinition/argo-clinicalnotes": {
+      "source": "structuredefinition-argo-clinicalnotes.xml",
+      "defns": "StructureDefinition-argo-clinicalnotes-definitions.html",
+      "base": "StructureDefinition-argo-clinicalnotes.html"
+    },
+    "ValueSet/documentreference-category": {
+      "source": "ValueSet-documentreference-category.xml",
+      "base": "ValueSet-documentreference-category.html"
+    },
+    "ValueSet/diagnosticreport-category": {
+      "source": "ValueSet-diagnosticreport-category.xml",
+      "base": "ValueSet-diagnosticreport-category.html"
+    },
+    "CapabilityStatement/argonaut-clinical-notes-server": {
+      "source": "capabilitystatement-argonaut-clinical-notes-server.json",
+      "base": "CapabilityStatement-argonaut-clinical-notes-server.html"
+    },
+    "ValueSet/argonaut-clinical-note-type": {
+      "source": "ValueSet-argonaut-clinical-note-type.xml",
+      "base": "ValueSet-argonaut-clinical-note-type.html"
+    },
+    "DocumentReference/progress-note": {
+      "source": "progress-note.json",
+      "base": "DocumentReference-progress-note.html"
+    },
+    "DocumentReference/discharge-summary-note": {
+      "source": "discharge-summary-note.json",
+      "base": "DocumentReference-discharge-summary-note.html"
+    },
+    "StructureDefinition/argo-diagnosticreport-notes-and-reports": {
+      "source": "structuredefinition-argo-diagnosticreport-notes-and-reports.xml",
+      "defns": "StructureDefinition-argo-diagnosticreport-notes-and-reports-definitions.html",
+      "base": "StructureDefinition-argo-diagnosticreport-notes-and-reports.html"
+    },
+    "DiagnosticReport/chest-xray-report": {
+      "source": "chest-xray-report.json",
+      "base": "DiagnosticReport-chest-xray-report.html"
+    },
+    "CapabilityStatement/argonaut-clinical-notes-client": {
+      "source": "capabilitystatement-argonaut-clinical-notes-client.json",
+      "base": "CapabilityStatement-argonaut-clinical-notes-client.html"
+    }
+  },
+  "mappings": "true",
+  "working-dir": "/Users/ehaas/Documents/FHIR/Argonaut-ClinicalNotes/"
+}

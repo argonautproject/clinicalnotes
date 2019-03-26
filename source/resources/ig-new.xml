@@ -53,13 +53,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Encounter/example-1"/>
-      </reference>
-      <exampleBoolean value="true"/>
-      <groupingId value="p1"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="DiagnosticReport/cardiology-report"/>
       </reference>
       <exampleBoolean value="true"/>
@@ -190,11 +183,6 @@
           <title value="CodeSystem DocumentReference Category"/>
           <generation value="generated"/>
         </page>
-      </page>
-      <page>
-        <nameUrl value="searchparameters.html"/>
-        <title value="Search Parameters"/>
-        <generation value="html"/>
       </page>
       <page>
         <nameUrl value="capstatements.html"/>

@@ -8,7 +8,7 @@
         "coding": [{
             "system": "http://loinc.org",
             "code": "8648-8",
-            "display": "Discharge Summary"
+            "display": "Hospital course Narrative"
         }],
         "text": "Discharge Summary"
     },
@@ -16,7 +16,7 @@
         "coding": [{
             "system": "http://fhir.org/guides/argonaut/clinicalnotes/CodeSystem/documentreference-category",
             "code": "clinical-note",
-            "display": "Clinical Notes"
+            "display": "Clinical Note"
         }],
         "text": "Discharge Summary"
     },
