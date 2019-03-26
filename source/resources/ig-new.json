@@ -72,6 +72,13 @@
     },
     {
       "reference" : {
+        "reference" : "Patient/example"
+      },
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
         "reference" : "DiagnosticReport/chest-xray-report"
       },
       "exampleBoolean" : true,
@@ -188,6 +195,11 @@
           "title" : "CodeSystem DocumentReference Category",
           "generation" : "generated"
         }]
+      },
+      {
+        "nameUrl" : "searchparameters.html",
+        "title" : "Search Parameters",
+        "generation" : "html"
       },
       {
         "nameUrl" : "capstatements.html",

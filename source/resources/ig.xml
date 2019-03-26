@@ -8,7 +8,8 @@
   <status value="draft"/>
   <experimental value="true"/>
   <publisher value="Argonaut Project"/>
-  <contact><!-- 0..* ContactDetail Contact details for the publisher -->
+  <contact>
+    <!-- 0..* ContactDetail Contact details for the publisher -->
     <telecom>
       <system value="url"/>
       <value value="http://argonautwiki.hl7.org"/>
@@ -16,72 +17,204 @@
   </contact>
   <package>
     <name value="base"/>
-<!-- <resource>   1..* Resource in the implementation guide -->
-<!--   <example value="[boolean]"/> 1..1 If not an example, has its normal meaning -->
-<!--   <name value="[string]"/> 0..1 Human Name for the resource -->
-<!--   <description value="[string]"/> 0..1 Reason why included in guide -->
-<!--   <acronym value="[string]"/> 0..1 Short code to identify the resource -->
-<!--   <source[x]>1..1 uri|Reference(Any) Location of the resource </source[x]> -->
-<!--    <exampleFor> 0..1 Reference(StructureDefinition) Resource this is an example of (if applicable) </exampleFor> -->
-<!-- </resource> -->
-    <!-- insert resources --><resource><example value="true"/><sourceReference><reference value="DocumentReference/progress-note"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="Encounter/example-1"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="DiagnosticReport/cardiology-report"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="DiagnosticReport/chest-xray-report"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="DocumentReference/discharge-summary-note"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="ValueSet/argonaut-clinical-note-type"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="ValueSet/diagnosticreport-category"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="ValueSet/documentreference-category"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="CapabilityStatement/argonaut-clinical-notes-client"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="CodeSystem/documentreference-category"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="CapabilityStatement/argonaut-clinical-notes-server"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="StructureDefinition/argo-clinicalnotes"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="StructureDefinition/argo-diagnosticreport-notes-and-reports"/></sourceReference></resource>
+    <!-- <resource>   1..* Resource in the implementation guide -->
+    <!--   <example value="[boolean]"/> 1..1 If not an example, has its normal meaning -->
+    <!--   <name value="[string]"/> 0..1 Human Name for the resource -->
+    <!--   <description value="[string]"/> 0..1 Reason why included in guide -->
+    <!--   <acronym value="[string]"/> 0..1 Short code to identify the resource -->
+    <!--   <source[x]>1..1 uri|Reference(Any) Location of the resource </source[x]> -->
+    <!--    <exampleFor> 0..1 Reference(StructureDefinition) Resource this is an example of (if applicable) </exampleFor> -->
+    <!-- </resource> -->
+    <!-- insert resources -->
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="DocumentReference/progress-note"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Encounter/example-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="DiagnosticReport/cardiology-report"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Patient/example"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="DiagnosticReport/chest-xray-report"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="DocumentReference/discharge-summary-note"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/argonaut-clinical-note-type"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/diagnosticreport-category"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/documentreference-category"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CapabilityStatement/argonaut-clinical-notes-client"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CodeSystem/documentreference-category"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CapabilityStatement/argonaut-clinical-notes-server"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/argo-clinicalnotes"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/argo-diagnosticreport-notes-and-reports"/>
+      </sourceReference>
+    </resource>
   </package>
   <!-- ============ Home Page =============== -->
-<page><source value="index.html"/><title value="Home"/><kind value="page"/>
-
-  <!-- ============ Guidance Page =============== -->
-  <page><source value="guidance.html"/><title value="General Guidance"/><kind value="page"/></page>
-
-  <!-- ============ Profiles Page =============== -->
-  <page><source value="profiles.html"/><title value="Profiles and Extensions"/><kind value="page"/>
-
-     <!-- ============ Profiles and examples=============== -->
-     <!-- insert profiles --><page><source value="StructureDefinition-argo-clinicalnotes.html"/><title value="StructureDefinition Argo Clinicalnotes"/><kind value="resource"/></page><page><source value="StructureDefinition-argo-diagnosticreport-notes-and-reports.html"/><title value="StructureDefinition Argo DiagnosticReport Notes And Reports"/><kind value="resource"/></page>
-    <!-- ============ End Profiles and examples=============== -->
-
-    <!-- ============ Extensions and examples =============== -->
-    <!-- insert extensions -->
-    <!-- ============ End Extensions and examples =============== -->
-
+  <page>
+    <source value="index.html"/>
+    <title value="Home"/>
+    <kind value="page"/>
+    <!-- ============ Guidance Page =============== -->
+    <page>
+      <source value="guidance.html"/>
+      <title value="General Guidance"/>
+      <kind value="page"/>
     </page>
-
-  <!-- ============ Terminology Page =============== -->
-
-  <page><source value="terminology.html"/><title value="Terminology"/><kind value="page"/>
-     <!-- ============ ValueSet   =============== -->
-    <!-- insert valuesets --><page><source value="ValueSet-argonaut-clinical-note-type.html"/><title value="ValueSet Argonaut Clinical Note Type"/><kind value="resource"/></page><page><source value="ValueSet-diagnosticreport-category.html"/><title value="ValueSet DiagnosticReport Category"/><kind value="resource"/></page><page><source value="ValueSet-documentreference-category.html"/><title value="ValueSet DocumentReference Category"/><kind value="resource"/></page>
-    <!-- ============ End ValueSet   =============== -->
-
-    <!-- ============ CodeSystems  =============== -->
-    <!-- insert codesystems --><page><source value="CodeSystem-documentreference-category.html"/><title value="CodeSystem DocumentReference Category"/><kind value="resource"/></page>
-    <!-- ============ End CodeSystems  =============== -->
-
-    <!-- ============ ConceptMaps   =============== -->
-    <!-- insert conceptmaps -->
-    <!-- ============ End ConceptMaps   =============== -->
-
+    <!-- ============ Profiles Page =============== -->
+    <page>
+      <source value="profiles.html"/>
+      <title value="Profiles and Extensions"/>
+      <kind value="page"/>
+      <!-- ============ Profiles and examples=============== -->
+      <!-- insert profiles -->
+      <page>
+        <source value="StructureDefinition-argo-clinicalnotes.html"/>
+        <title value="StructureDefinition Argo Clinicalnotes"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="StructureDefinition-argo-diagnosticreport-notes-and-reports.html"/>
+        <title value="StructureDefinition Argo DiagnosticReport Notes And Reports"/>
+        <kind value="resource"/>
+      </page>
+      <!-- ============ End Profiles and examples=============== -->
+      <!-- ============ Extensions and examples =============== -->
+      <!-- insert extensions -->
+      <!-- ============ End Extensions and examples =============== -->
+    </page>
+    <!-- ============ Terminology Page =============== -->
+    <page>
+      <source value="terminology.html"/>
+      <title value="Terminology"/>
+      <kind value="page"/>
+      <!-- ============ ValueSet   =============== -->
+      <!-- insert valuesets -->
+      <page>
+        <source value="ValueSet-argonaut-clinical-note-type.html"/>
+        <title value="ValueSet Argonaut Clinical Note Type"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-diagnosticreport-category.html"/>
+        <title value="ValueSet DiagnosticReport Category"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="ValueSet-documentreference-category.html"/>
+        <title value="ValueSet DocumentReference Category"/>
+        <kind value="resource"/>
+      </page>
+      <!-- ============ End ValueSet   =============== -->
+      <!-- ============ CodeSystems  =============== -->
+      <!-- insert codesystems -->
+      <page>
+        <source value="CodeSystem-documentreference-category.html"/>
+        <title value="CodeSystem DocumentReference Category"/>
+        <kind value="resource"/>
+      </page>
+      <!-- ============ End CodeSystems  =============== -->
+      <!-- ============ ConceptMaps   =============== -->
+      <!-- insert conceptmaps -->
+      <!-- ============ End ConceptMaps   =============== -->
+    </page>
+    <!-- ============ CapabilityStatement Page =============== -->
+    <page>
+      <source value="capstatements.html"/>
+      <title value="Capability Statements"/>
+      <kind value="page"/>
+      <!-- ============ CapabilityStatements    =============== -->
+      <!-- insert capabilitystatements -->
+      <page>
+        <source value="CapabilityStatement-argonaut-clinical-notes-client.html"/>
+        <title value="CapabilityStatement Argonaut Clinical Notes Client"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="CapabilityStatement-argonaut-clinical-notes-server.html"/>
+        <title value="CapabilityStatement Argonaut Clinical Notes Server"/>
+        <kind value="resource"/>
+      </page>
+      <!-- ============ End CapabilityStatements    =============== -->
+    </page>
+    <!-- ============ Downloads Page =============== -->
+    <page>
+      <source value="downloads.html"/>
+      <title value="Downloads"/>
+      <kind value="page"/>
+    </page>
+    <!-- ============ Examples Page=============== -->
+    <page>
+      <source value="all-examples.html"/>
+      <title value="All Examples"/>
+      <kind value="page"/>
+    </page>
+    <!-- ============ Table of Contents =============== -->
+    <page>
+      <source value="toc.html"/>
+      <title value="Table of Contents"/>
+      <kind value="toc"/>
+    </page>
   </page>
-
-
-
-  <!-- ============ CapabilityStatement Page =============== -->
-  <page><source value="capstatements.html"/><title value="Capability Statements"/><kind value="page"/>
-
-  <!-- ============ CapabilityStatements    =============== -->
-    <!-- insert capabilitystatements --><page><source value="CapabilityStatement-argonaut-clinical-notes-client.html"/><title value="CapabilityStatement Argonaut Clinical Notes Client"/><kind value="resource"/></page><page><source value="CapabilityStatement-argonaut-clinical-notes-server.html"/><title value="CapabilityStatement Argonaut Clinical Notes Server"/><kind value="resource"/></page>
-  <!-- ============ End CapabilityStatements    =============== -->
-
-  </page>
-
-
-  <!-- ============ Downloads Page =============== -->
-  <page><source value="downloads.html"/><title value="Downloads"/><kind value="page"/></page>
-
-  <!-- ============ Examples Page=============== -->
-  <page><source value="all-examples.html"/><title value="All Examples"/><kind value="page"/></page>
-
-  <!-- ============ Table of Contents =============== -->
-  <page><source value="toc.html"/><title value="Table of Contents"/><kind value="toc"/></page>
-
-</page>
 </ImplementationGuide>

@@ -42,6 +42,7 @@
         <expression
           value="(DiagnosticReport.status = 'final' or DiagnosticReport.status = 'amended' or DiagnosticReport.status = 'corrected' or DiagnosticReport.status = 'appended') implies (presentedForm.exists() or conclusion.exists() or codedDiagnosis.exists())"
         />
+        <xpath value="not(DiagnosticReport/status[@value=('final','amended','appended','corrected')]) or (DiagnosticReport/conclusion or DiagnosticReport/presentedForm or DiagnosticReport/codedDiagnosis)" />
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>

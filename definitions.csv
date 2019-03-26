@@ -4,8 +4,8 @@ working-dir,/Users/ehaas/Documents/FHIR/Argonaut-ClinicalNotes/
 title,Argonaut Clinical Notes
 status,draft
 publisher,Argonaut Project
-contact_system,url
-contact_value,http://argonautwiki.hl7.org
+contact.system,url
+contact.value,http://argonautwiki.hl7.org
 extensions,
 searches,
 codesystems,

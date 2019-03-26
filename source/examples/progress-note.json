@@ -16,14 +16,14 @@
         "coding": [{
             "system": "http://fhir.org/guides/argonaut/clinicalnotes/CodeSystem/documentreference-category",
             "code": "clinical-note",
-            "display": "Clinical Notes"
+            "display": "Clinical Note"
         }],
         "text": "Progress Note"
     },
     "created": "2018-05-15T21:39:30.000Z",
     "indexed": "2018-05-15T21:39:30.000Z",
     "status": "current",
-    "subject": {"reference": "Patient/1316024"},
+    "subject": {"reference": "Patient/example"},
     "content": [{"attachment": {
         "contentType": "application/xhtml",
         "data": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IURPQ1RZUEUgaHRtbCBQVUJMSUMgIi0vL1czQy8vRFREIFhIVE1MIDEuMCBUcmFuc2l0aW9uYWwvL0VOIiAiRFREL3hodG1sMS10cmFuc2l0aW9uYWwuZHRkIj4KPGh0bWwgeG1sOmxhbmc9ImVuIiBsYW5nPSJlbiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiPgoJPGhlYWQ+CgkJPHRpdGxlPlByb2dyZXNzIE5vdGUgLSBEci4gQm9iIC0gMDEvMjUvMjAxODwvdGl0bGU+Cgk8L2hlYWQ+Cgk8Ym9keT4KCQk8cD5CZW56b2NhaW5lIHdhcyBwbGFjZWQgb24gdGhlIHBhbGF0ZSwgYWRqYWNlbnQgdG8gdG9vdGggMS4gCiAgICAgICAgICAgICAgICAgICAgQSB0b3RhbCBvZiAyIGNhcnB1bGVzIG9mIEFydGljYWluZSwgNCUgd2l0aCBFcGluZXBocmluZSAxOjEwMCwwMDAgCiAgICAgICAgICAgICAgICAgICAgd2FzIGluamVjdGVkIGludG8gdGhlIHBhbGF0ZSB1c2luZyBhIGxvbmcsIDI1LWdhdWdlIG5lZWRsZS4gQSBzdWNrLWJhY2sgCiAgICAgICAgICAgICAgICAgICAgc2FmZXR5IHN5cmluZ2Ugd2FzIHVzZWQgdG8gYXZvaWQgaW50ZXItdmVzaWN1bGFyIGluamVjdGlvbi4gVGhlIHBhdGllbnQgCiAgICAgICAgICAgICAgICAgICAgdG9sZXJhdGVkIHRoZSBpbmplY3Rpb24gYW5kIGhhZCBubyBhZHZlcnNlIHJlYWN0aW9ucyB0byB0aGUgYW5lc3RoZXRpYy4uPC9wPgoJPC9ib2R5Pgo8L2h0bWw+"
