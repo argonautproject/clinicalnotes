@@ -133588,3 +133588,47 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "30746-2",
+    "display" : "Radiology"
+  }],
+  "text" : "Radiology"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LP29684-5",
+        "display" : "Radiology"
+      },
+      {
+        "code" : "LP29708-2",
+        "display" : "Cardiology"
+      },
+      {
+        "code" : "LP7839-6",
+        "display" : "Pathology"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The display \"Radiology\" is not a valid display for the code ,{http://loinc.org}30746-2 - should be one of [\"Portable XR Chest Views\",\"XR port Chest Views\"]; The code provided (http://loinc.org#30746-2, (Radiology)) is not  valid in the value set Argonaut DiagnosticReport Category Codes"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "30746-2",
+  "display" : "Radiology"
+}, "valueSet" :null}####
+v: {
+  "display" : "Portable XR Chest Views",
+  "severity" : "warning",
+  "error" : "The display \"Radiology\" is not a valid display for the code {http://loinc.org}30746-2 - should be one of [\"Portable XR Chest Views\",\"XR port Chest Views\"]"
+}
+-------------------------------------------------------------------------------------

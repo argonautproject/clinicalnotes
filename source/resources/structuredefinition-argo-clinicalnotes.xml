@@ -155,6 +155,7 @@
       <path value="DocumentReference.content.attachment.data"/>
       <min value="0"/>
       <max value="1"/>
+      <condition value="argonaut-6"/>
       <mustSupport value="true"/>
       <isModifier value="false"/>
     </element>
@@ -162,6 +163,7 @@
       <path value="DocumentReference.content.attachment.url"/>
       <min value="0"/>
       <max value="1"/>
+      <condition value="argonaut-6"/>
       <mustSupport value="true"/>
       <isModifier value="false"/>
     </element>
