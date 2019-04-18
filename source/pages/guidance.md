@@ -8,7 +8,6 @@ topofpage: true
 {:.no_toc}
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
-
 <!--* Do not remove this line (it will not be displayed)
  {:toc} -->
 
@@ -99,8 +98,8 @@ This guide requires systems implement the Argonaut Clinical Notes DocumentRefere
 
 This guide requires systems implement the Argonaut Clinical Notes DiagnosticReport profile and to SHOULD support a *minimum* of the three report categories:
 
-- Cardiology (LP29684-5)
-- Radiology (LP29708-2)
+- Cardiology (LP29708-2)
+- Radiology (LP29684-5)
 - Pathology (LP7839-6)
 
 Other categories may be supported as well.  
@@ -222,7 +221,7 @@ The following **SHOULD** be exposed via DiagnosticReport
 * Pathology Report Narrative
 * Procedure Note
 
-The servers that participated in the development of this guide didn't differentiate between the Diagnostic Report categories of Imaging and Radiology. Client applications that query with category code of Radiology (LP29708-2) will receive Radiology and other imaging reports.     
+The servers that participated in the development of this guide didn't differentiate between the Diagnostic Report categories of Imaging and Radiology. Client applications that query with category code of Radiology (LP29684-5) will receive Radiology and other imaging reports.     
 
 ---
 footnotes:
