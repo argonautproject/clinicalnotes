@@ -26,8 +26,8 @@ Specifically, this implementation guide defines the exchange of the following fi
 
 and SHOULD support the DiagnosticReport categories:
 
-* Cardiology (LP29684-5)
-* Radiology (LP29708-2)
+* Cardiology (LP29708-2)
+* Radiology (LP29684-5)
 * Pathology (LP7839-6)
 
 The Argonaut project team developed this initial list after surveying the participants in Argonaut and the US Veterans Administration (VA). They represent the *minimum* set a system must support to claim conformance to this guide. In addition, systems are encouraged to support other common notes types such as:
