@@ -1,5 +1,7 @@
 ## Publishing Information
 
+**Publish History** http://www.fhir.org/guides/argonaut/clinicalnotes/history.shtml
+
 **IG code:** `guides/argonaut/clinicalnotes`
 <!--Proposed IG realm and code
 What is the realm code (2-character country code or 'uv') and IG code to use for the path when the IG is published under http://hl7.org/fhir? E.g. us/ccda -->
