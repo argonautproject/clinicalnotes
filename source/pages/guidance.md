@@ -29,6 +29,8 @@ and SHOULD support the DiagnosticReport categories:
 * Radiology (LP29684-5)
 * Pathology (LP7839-6)
 
+Note: The above LOINC Part numbers are for the LOINC CLASS and should not be confused with the LOINC part number for the category name in the multi-axial hiearchy. (e.g. LP34218-5 | Radiology) 
+
 The Argonaut project team developed this initial list after surveying the participants in Argonaut and the US Veterans Administration (VA). They represent the *minimum* set a system must support to claim conformance to this guide. In addition, systems are encouraged to support other common notes types such as:
 
 * Referral Note
